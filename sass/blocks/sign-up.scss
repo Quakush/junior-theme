@@ -1,0 +1,43 @@
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.sign-up select {
+    margin-bottom: 40px;
+    padding: 10px 22px 10px 26px;
+    width: 202px;
+    font-size: 13px;
+    color: $light-text;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #a7a7a7;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.sign-up__btn {
+    padding: 0;
+    width: 202px;
+    white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+
+    .sign-up {
+        flex-direction: row;
+    }
+
+    .sign-up select {
+        margin-right: 50px;
+        margin-bottom: 0;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .sign-up__btn {
+        padding: 0 70px;
+        width: unset;
+        height: 48px
+    }
+}

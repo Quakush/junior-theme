@@ -1,0 +1,123 @@
+.main-nav {
+	order: 2;
+	margin-left: 20px;
+}
+
+.main-nav__list {
+	@include list-style;
+	display: none;
+}
+
+@media (min-width: 375px) {
+	.main-nav {
+		margin-left: 52px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-nav {
+		order: 1;
+		margin-left: auto;
+	}
+    
+    .main-nav__list {
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-between;
+    }
+
+	.main-nav__list li {
+		position: relative;
+		margin-left: 44px;
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+	}
+
+	.main-nav__list li::before {
+		@include element-style(17px, 17px, transparent);
+		left: 0;
+		top: 50%;
+		background-repeat: no-repeat;
+		transform: translate(0, -50%);
+	}
+
+	.main-nav__list li:first-of-type::before {
+		background-image: url("../images/icons/student-grad-cap.svg");
+	}
+
+	.main-nav__list li:nth-of-type(2)::before {
+		background-image: url("../images/icons/softtware-engineer.svg");
+	}
+
+	.main-nav__list li:last-of-type::before {
+		background-image: url("../images/icons/angel.svg");
+	}
+
+	.main-nav__list a {
+		@include link-style;
+		padding: 13px 0;
+		padding-left: 37px;
+	}
+
+	.main-nav__list li:hover {
+		color: $corp-blue;
+	}
+
+	.main-nav .sub-menu {
+		display: none;
+	}
+
+	.menu-item-has-children {
+		position: relative;
+	}
+
+	.menu-item-has-children:hover .sub-menu {
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 5px;
+		@include list-style;
+		width: 268px;
+		background-color: $dark-text;
+		border: 1px solid $white;
+		border-radius: 16px;
+		transform: translate(0, 100%);
+		z-index: 100;
+		
+	}
+
+	.sub-menu li:hover {
+		background-image: linear-gradient(to bottom, rgba(0,167,207,1) 0%,rgba(1,98,122,1) 100%);
+	}
+
+	.sub-menu li:hover a {
+		color: $white;
+	}
+
+	.menu-item-has-children:hover li {
+        margin-left: 0;
+        color: $light-text;
+
+		&::before{
+			display: none;
+		}
+	}
+
+	.menu-item-has-children:hover li a {
+		padding: 11px 0;
+		padding-left: 16px;
+	}
+
+	.sub-menu li:first-of-type {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+	}
+
+	.sub-menu li:last-of-type {
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+	}
+}

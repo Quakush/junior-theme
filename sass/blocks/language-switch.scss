@@ -1,0 +1,68 @@
+.language-switch {
+	display: none;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+	position: relative;
+	width: 88px;
+	cursor: pointer;
+
+	&::before {
+		@include element-style(60px, 24px, transparent);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-image: url("../images/svg/lang-switch.svg");
+		background-size: cover;
+	}
+}
+
+.language-switch input {
+	display: none;
+	cursor: pointer;
+}
+
+.language-switch label {
+	position: relative;
+	flex-basis: 50%;
+	font-size: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.language-switch label[for="rus"] {
+    padding-right: 27px;
+}
+
+.language-switch label[for="eng"] {
+	padding-left: 27px;
+}
+
+.language-switch input[type="radio"]:checked + label::before {
+	@include element-style(12px, 12px, $white);
+	border-radius: 50%;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.language-switch input[type="radio"]:checked + label[for="rus"]::before {
+	right: 8px;
+}
+
+.language-switch input[type="radio"]:checked + label[for="eng"]::before {
+	left: 6px;
+}
+
+
+.language-switch input[type="radio"]:not(checked) + label::before {
+	display: none;
+}
+
+@media (min-width: 1440px) {
+
+	.language-switch {
+        display: flex;
+        order: 2;
+        margin-left: 52px;
+	}
+}

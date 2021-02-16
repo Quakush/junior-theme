@@ -1,0 +1,98 @@
+.contact-us {
+	position: absolute;
+	left: 42%;
+	top: 243px;
+	font-size: 12px;
+}
+
+.contact-us__title {
+	margin-bottom: 18px;
+	margin-left: 48px;
+	font-weight: 400;
+}
+
+.contact-us__list {
+	@include list-style;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 48px;
+}
+
+.contact-us__item {
+	flex-basis: 100%;
+	margin-bottom: 20px;
+}
+
+.contact-us__item--vk,
+.contact-us__item--fb {
+	flex-basis: 30%;
+	width: 28px;
+	height: 28px;
+}
+
+.contact-us__list a {
+	@include link-style;
+}
+
+.contact-us__item--vk a,
+.contact-us__item--fb a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+}
+
+.contact-us__item--vk a {
+    background-color: #4D76A1;
+}
+
+.contact-us__item--fb a {
+	background-color: #3B5998;
+}
+
+.contact-us__item--fb svg,
+.contact-us__item--vk svg {
+    fill: $white;
+}
+
+.contact-us__item--vk svg {
+	width: 18px;
+	height: 10px;
+}
+
+.contact-us__item--fb svg {
+	width: 8px;
+	height: 18px;
+}
+
+.contact-us__download-links {
+	display: inline-flex;
+    align-items: center;
+}
+
+.contact-us__download-item--apple img {
+	width: 87px;
+	height: 29px;
+}
+
+.contact-us__download-item--google img {
+	width: 112px;
+	height: 43px;
+}
+
+@media (min-width: 1024px) {
+	.contact-us {
+		position: static;
+		left: 0;
+		margin-top: 0;
+		font-size: 16px;
+		  /*обнуляем позиционирование */ 
+	}
+
+	.contact-us__socials {
+		opacity: 0;
+	}
+}

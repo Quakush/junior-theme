@@ -1,0 +1,150 @@
+.courses {
+	padding-top: 61px;
+    padding-bottom: 25px;
+}
+
+.courses .container {
+	position: relative;
+}
+
+.courses__list {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.courses__headers {
+	display: none;
+}
+
+.courses__item {
+	margin-bottom: 15px;
+	padding: 20px;
+	background-color: $white;
+	color: $dark-text;
+	border-radius: 7px;
+}
+
+.courses__item p {
+	display: none;
+}
+
+.courses__item img {
+	margin-bottom: 20px;
+}
+
+.courses__title {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.courses__item span {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.courses__item-price {
+	margin-left: auto;
+}
+
+.courses__item-btn {
+	margin-top: 20px;
+	white-space: nowrap;
+}
+
+.courses__btn {
+    margin: 0 auto;
+	width: 167px;
+	height: 36px;
+	color: $white;
+	font-size: 12px;
+	font-weight: 700;
+	white-space: nowrap;
+	background-color: $dark-text;
+	border: 1px solid $corp-green;
+	border-radius: 7px;
+	background-image: none;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    
+    .courses__item {
+    	display: flex;
+    	flex-direction: row;
+    	align-items: center;
+    	justify-content: space-between;
+    	margin: 0;
+    	color: $white;
+    }
+
+    .courses__item img {
+    	display: none;
+    }
+
+    .courses__item span {
+    	margin: 0;
+    }
+
+    .courses__title {
+    	order: 0;
+    	flex-basis: 20%;
+    	margin: 0;
+    }
+
+    .courses__item-btn {
+    	order: 4;
+    	flex-basis: 25%;
+		margin: 0;
+		color: $white;
+		background-image: none;
+		border: 2px solid $corp-green;
+	}
+
+    .courses__item:nth-child(odd) {
+    	background-color: #272A30;
+    }
+
+    .courses__item:nth-child(even) {
+    	background-color: $dark-text;
+    }
+
+    .courses__headers {
+    	display: flex;
+    	justify-content: flex-start;
+    	width: 75%;
+    }
+
+    .courses__headers-item {
+    	justify-self: flex-start;
+    	font-size: 20px;
+    	color: $corp-green;
+    }
+
+    .courses__headers-item--course {
+    	flex-basis: 27%;
+    }
+
+    .courses__headers-item--partner {
+    	flex-basis: 19%;
+    }
+
+    .courses__headers-item--price {
+    	flex-basis: 22%;
+    }
+
+    .courses__headers-item--duration {
+    	flex-basis: 27%;
+    }
+
+    .courses__partner {
+    	order: 1;
+    }
+    .courses__price {
+    	order: 2;
+    }
+
+    .courses__duration {
+    	order: 3;
+    }
+}

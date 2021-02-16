@@ -1,0 +1,33 @@
+.main-footer{
+    padding-bottom: 26px;
+    width: 100%;
+    background-color: $dark-text;
+}
+
+.main-footer .container {
+    position: relative;
+    padding-top: 26px;
+
+    &::before {
+        @include element-style(100%, 1px, $white);
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+
+.main-footer__flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.main-footer__info-line {
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+    margin:15px 5% 0px 10%;
+    }
+}

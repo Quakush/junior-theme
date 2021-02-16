@@ -1,0 +1,126 @@
+::-webkit-input-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+}
+
+::-moz-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+}/* Firefox 19+ */
+
+:-moz-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+}/* Firefox 18- */
+
+:-ms-input-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+}
+
+.searching-form {
+	margin-bottom: 30px;
+}
+
+.searching-form input[type="text"] {
+	padding: 9px 15px;
+	width: 100%;
+	color: $white;
+	font-size: 14px;
+	background-color: $dark-text;
+	border: none;
+	border-radius: 12px;
+	box-sizing: border-box;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 1.6);
+}
+
+.searching-form input[type="text"]:focus {
+    color: $white;
+    background-color: $dark-text;
+    outline: none;
+}
+
+.searching-form__inner-wrap {
+	position: relative;
+	width: 100%;
+}
+
+.searching-form button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 43px;
+	height: 33px;
+	font-size: 0;
+	border-radius: 12px;
+}
+
+.searching-form svg {
+	width: 13px;
+	height: 13px;
+	fill: $light-text;
+}
+
+.searching-form input[type="text"]:focus + .searching-form button {
+	background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);
+}
+
+@media (min-width: 1440px) {
+
+	::-webkit-input-placeholder {
+		font-size: 16px;
+	}
+
+	::-moz-placeholder {
+		font-size: 16px;
+	}/* Firefox 19+ */
+
+	:-moz-placeholder {
+		font-size: 16px;
+	}/* Firefox 18- */
+
+	:-ms-input-placeholder {
+		font-size: 16px;
+	}
+
+	.searching-form {
+		margin-bottom: 0;
+		order: 1;
+		flex-basis: 65%;
+	}
+
+	.searching-form input[type="text"] {
+		padding: 18px 22px;
+		padding-left: 48px;
+		width: 74%;
+	}
+
+	.searching-form button {
+		position: static;
+		width: 156px;
+		height: 55px;
+		font-size: 23px;
+		border-radius: 172px;
+		background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);
+	}
+
+	.searching-form svg {
+		position: absolute;
+		left: 14px;
+		top: 50%;
+		width: 14px;
+		height: 14px;
+		transform: translate(0, -50%);
+	}
+
+	.searching-form__inner-wrap {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

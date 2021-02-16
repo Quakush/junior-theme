@@ -1,0 +1,52 @@
+.mobile-nav {
+	display: none;
+}
+
+.mobile-nav--shown {
+	display: block;
+	position: absolute;
+	top: 52px;
+	left: 0;
+	padding-bottom: 60px;
+	width: 100%;
+	background-color: $dark-text;
+	z-index: 50;
+}
+
+.mobile-nav--shown .mobile-nav__list {
+	@include list-style;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.mobile-nav--shown .sub-menu {
+	@include list-style;
+}
+
+.mobile-nav--shown a {
+	@include link-style;
+	padding: 8px 0;
+	padding-left: 16px;
+	width: 100%;
+	color: $white;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.mobile-nav--shown .sub-menu a {
+	padding-left: 46px;
+	font-size: 16px;
+}
+
+.mobile-nav--shown .mobile-menu__link--active {
+	background-color: $corp-blue;
+}
+
+.mobile-nav__btn {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 11px;
+	height: 30px;
+}

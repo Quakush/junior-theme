@@ -1,0 +1,49 @@
+.btn {
+	@include link-style;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 11px;
+	color: $white;
+	font-weight: 700;
+	white-space: nowrap;
+	border-radius: 7px;
+	background-image: linear-gradient(to bottom, rgba(0,167,207,1) 0%,rgba(1,98,122,1) 100%);
+	box-sizing: border-box;
+	box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
+	cursor: pointer;
+}
+
+.btn--accent {
+    background-image: linear-gradient(to bottom, rgba(239,72,100,1) 0%,rgba(193,0,32,1) 100%);
+}
+
+.btn--green {
+	color: $dark-text;
+	background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);
+}
+
+.btn--small {
+	height: 30px;
+	width: 167px;
+}
+
+.btn--big {
+	width: 202px;
+	font-size: 12px;
+	height: 36px;
+}
+
+@media (min-width: 1024px) {
+
+	.btn {
+		font-size: 15px;
+	}
+
+	
+
+	.btn--big {
+		font-size: 16px;
+		border-radius: 15px;
+	}
+}

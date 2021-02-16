@@ -1,0 +1,22 @@
+.bullets {
+	@include list-style;
+	display: flex;
+	flex-direction: row;
+	display: none;
+}
+
+.bullets li {
+	margin-right: 8px;
+	width: 12px;
+	height: 12px;
+	background-color: $white;
+	border-radius: 50%;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	&:first-of-type {
+		background-color: $corp-blue;
+	}
+}

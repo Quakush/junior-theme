@@ -1,0 +1,45 @@
+.getnews {
+	max-width: 580px;
+}
+
+.getnews__email {
+	border: none;
+	text-align: left;
+	color: $light-text;
+	padding: 10px 14px;
+	font-size: 12px;
+	height: 16px;
+	border-radius: 7px;
+	width: 344px;
+	margin: 30px 0 20px;
+}
+
+.getnews__info-polity {
+	margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+
+	.getnews__email {
+		width: 267px;
+		margin-top: 15px;
+		font-size: 16px;
+		border-radius: 15px;
+		margin-bottom: 0px;
+		margin-right: 20px;
+	}
+
+	.getnews__btn {
+		width: 267px;
+		height: 36px;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 15px;
+		margin-top: 15px;
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1440px) {
+
+}

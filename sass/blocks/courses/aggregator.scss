@@ -1,0 +1,124 @@
+.aggregator {
+	position: relative;
+    margin: 69px 0;
+    color: $dark-text;
+	background-color: $white;
+	background-image: url("../images/aggregator.png");
+	background-repeat: no-repeat;
+	background-position: 135% 40%;
+	background-size: 50%;
+
+	&::before {
+		@include clouds(80px, -79px);
+	}
+
+	&::after {
+		@include clouds-bottom(80px, -79px, -79px);
+	}
+}
+
+.aggregator__title {
+	margin-bottom: 37px;
+	padding-right: 23%;
+}
+
+.aggregator__text {
+	margin-bottom: 103px;
+	padding-right: 46%;
+	font-size: 14px;
+	line-height: 1.57;
+}
+
+.aggregator__download-links-list {
+	position: relative;
+	@include list-style;
+	display: flex;
+	flex-direction: column;
+
+	&::before {
+		content: "Скачайте наше приложение для своего телефона";
+		position: absolute;
+		display: block;
+		right: 10px;
+		bottom: 13px;
+		width: 45%;
+		background-color: transparent;
+	}
+}
+
+.aggregator__download-links-item {
+	margin-bottom: 26px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.aggregator__download-links-item a {
+	@include link-style;
+}
+
+.aggregator__download-links-item--apple img {
+	width: 143px;
+}
+
+.aggregator__download-links-item--google img {
+	width: 163px;
+}
+
+@media (min-width: 1440px) {
+
+    .aggregator {
+    	margin: 131px 0;
+    	background-image: none;
+
+		&::before {
+		@include clouds(131px, -130px);
+	    }
+
+	    &::after {
+            @include clouds-bottom(131px, -130px, -129px);
+        }
+    }
+
+    .aggregator .container {
+    	padding-top: 20px;
+    	padding-bottom: 35px;
+    	background-image: url("../images/svg/application.svg");
+    	background-repeat: no-repeat;
+    	background-position: 90% -7%;
+    }
+
+    .aggregator__text {
+    	margin-bottom: 54px;
+    	font-size: 23px;
+    }
+
+    .aggregator__download-links-list {
+    	flex-direction: row;
+
+    	&::before {
+    		font-size: 16px;
+    		right: unset;
+    		left: 414px;
+    		width: 207px;
+    	}
+    }
+
+    .aggregator__download-links-item {
+    	margin-bottom: 0;
+    	margin-right: 36px;
+
+    	&:last-of-type {
+    		margin-right: 0;
+    	}
+    }
+
+    .aggregator__download-links-item--apple img {
+		width: 167px;
+	}
+
+	.aggregator__download-links-item--google img {
+		width: 185px;
+	}
+}

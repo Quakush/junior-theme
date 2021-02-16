@@ -1,0 +1,84 @@
+.ecosystem {
+    position: relative;
+    padding: 30px 0;
+    margin-top:80px;
+    width: 100%;
+    background-image: 
+    url("../images/phone.png"), 
+    url("../images/tablet.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 80%;
+    background-position: 230px 260px, 285px 140px;
+    color: $dark-text;
+    background-color: $white;
+
+        &::before {
+        @include clouds(80px, -79px);
+    }
+
+    &::after {
+        @include clouds-bottom(80px, -79px, -79px);
+    }
+}
+
+
+.ecosystem__images {
+    position: relative;
+    top: -180px;
+}
+
+.ecosystem__images img {
+    width: 158px;
+    padding-left: 240px;
+}
+
+.our-mission__container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+}
+
+.ecosystem p {
+    font-size: 14px;
+    line-height: 1.66;
+    width: 240px;
+    margin-bottom: 40px;
+}
+
+.ecosystem__form select {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+@media (min-width: 768px) {
+    .ecosystem p {
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .ecosystem__title {
+        max-width:640px;
+    }
+
+    .ecosystem {
+        min-height: 650px;
+        background-size: 350px 563px, 617px 733px;
+        background-position: 70% 220px, 617px 100px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ecosystem p {
+        font-size: 24px;
+        width: 491px;
+    }
+
+    .ecosystem__title {
+        max-width:660px;
+    }
+
+    .ecosystem {
+        min-height: 650px;
+        background-size: 350px 563px, 617px 733px;
+        background-position: 60% 220px, 85% 100px;
+    }
+}

@@ -1,0 +1,194 @@
+.main-offer {
+	padding-top: 26px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+.main-offer--education {
+	padding-bottom: 53px;
+	background-image: url("../images/svg/svg-student.svg");
+	background-position: 160px 20px;
+}
+
+.main-offer--courses {
+	padding-bottom: 20px;
+}
+
+.main-offer--education .title span,
+.main-offer--courses .title span{
+    display: block;
+}
+
+.main-offer--courses .title span {
+	margin-bottom: 20px;
+}
+
+.main-offer__text--desktop {
+	display: none;
+}
+
+.main-offer--courses p,
+.main-offer--courses .sign-up {
+	display: none;
+}
+
+.main-offer--education .title {
+	margin-bottom: 70px;
+}
+
+.main-offer--courses .title {
+	font-size: 32px;
+}
+
+.main-offer p {
+	margin-bottom: 50px;
+	font-size: 14px;
+	line-height: 1.66;
+	color: $light-text;
+}
+
+.main-offer--education p {
+	margin-bottom: 46px;
+	width: 70%;
+}
+
+.main-offer--main { 
+	background-image: url("../images/svg/corn.svg");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: 165px 60px;
+	padding-bottom: 53px;
+	padding-top: 26px;
+}
+
+.main-offer--main p {
+	width: 70%;
+	margin: 30px 0;
+}
+
+.title__colored--blue {
+	color: $corp-blue;
+}
+
+.main-offer--main  .title {
+	line-height: 1.1;
+}
+
+.title__strong--your-ideas {
+	font-size: 42px;
+}
+
+@media (min-width: 375px) {
+
+	.main-offer--education {
+		background-position: 190px 12px;
+	}
+
+	.main-offer--courses .title {
+		font-size: 36px;
+	}
+
+	.main-offer--main { 
+		background-size: contain;
+		background-position: 130% 10px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.main-offer--education {
+		background-position: 95% 0;
+	}
+
+	.main-offer--education p {
+		width: 50%;
+		font-size: 20px;
+	}
+
+	.main-offer--your-ideas {
+		background-size:contain;
+		background-position: right 5% bottom 25%;
+ 	}
+
+ 	.main-offer--your-ideas p {
+		font-size: 20px;
+		width: 50%;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.main-offer--education {
+        padding-top: 130px;
+	    padding-bottom: 113px;
+	    background-size: contain;
+	    background-position: 80% 20%;
+	}
+
+	.main-offer--courses {
+		padding-top: 64px;
+		padding-bottom: 67px;
+	}
+
+	.main-offer--courses .container {
+		background-image: url("../images/svg/socrat.svg");
+	    background-position: right top;
+	    background-repeat: no-repeat;
+	}
+
+	.main-offer--education .title {
+		margin-bottom: 44px;
+	}
+
+	.main-offer--courses .title {
+		font-size: 70px;
+		line-height: 1.4;
+	}
+
+	.main-offer--courses .title span {
+		margin-bottom: 0;
+	}
+
+	.main-offer p {
+		font-size: 24px;
+	}
+
+	.main-offer--courses p {
+		display: block;
+		width: 552px;
+	}
+
+	.main-offer__text--desktop {
+		display: block;
+	}
+
+	.main-offer__text--mobile {
+		display: none;
+	}
+
+	.main-offer--education p {
+		margin-bottom: 34px;
+		width: 574px;
+	}
+
+	.main-offer--courses .sign-up {
+		display: flex;
+	}
+
+	.main-offer--main p {
+		font-size: 24px;
+		width: 574px;
+	}
+	
+	.main-offer--main {
+		padding-top: 40px;
+		background-image: none;
+		
+ 	}
+
+ 	.main-offer--main .container {
+ 		background-image: url("../images/svg/corn.svg");
+ 		background-repeat: no-repeat;
+ 		background-size: contain;
+		background-position: right 10% bottom 25%;
+ 	}
+}

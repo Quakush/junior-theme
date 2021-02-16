@@ -1,0 +1,81 @@
+.our-mission {
+    position: relative;
+    margin: 79px 0;
+    padding: 30px 10px;
+    color: $dark-text;
+    background-color: $white;
+
+    &::before {
+        @include clouds(80px, -79px);
+    }
+
+    &::after {
+        @include clouds-bottom(80px, -79px, -79px);
+    }
+}
+
+.our-mission  .container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/svg/rocket.svg");
+    background-repeat: no-repeat;
+}
+
+
+.our-mission__img {
+    align-self: center;
+    width: 103px;
+    height: 118px;
+    background: url("/img/svg/rocket-on-display.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.our-mission p {
+    font-size: 14px;
+    line-height: 1.66;
+}
+
+@media (min-width: 768px) {
+    
+    .our-mission__container {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    }
+
+    .our-mission__text {
+        width: 546px;
+        align-self: center;
+        margin-left:440px;
+    }
+
+    .our-mission__img {
+        position: relative;
+        margin-top: -300px;
+        align-self: center;
+        margin-right: 480px; 
+        width: 307px;
+        height: 352px;
+    }
+
+    .our-mission p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .our-mission p {
+        font-size: 24px;
+    }
+
+    .our-mission__img img {
+        width: 307px;
+    }
+
+    .our-mission__img {
+        margin-top: -370px;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+}

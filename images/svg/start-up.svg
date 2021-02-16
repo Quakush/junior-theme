@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168.156" height="168.156" viewBox="0 0 168.156 168.156">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00a7cf"/>
+      <stop offset="1" stop-color="#01627a"/>
+    </linearGradient>
+    <filter id="Контур_59" x="21.452" y="82.636" width="32.429" height="37.741" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_60" x="47.771" y="114.248" width="38.048" height="32.831" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_61" x="17.475" y="91.296" width="59.375" height="59.438" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_62" x="0" y="48.033" width="58.374" height="48.489" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_63" x="72.04" y="110.415" width="47.943" height="57.741" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_64" x="83.478" y="40.269" width="44.382" height="44.382" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_65" x="113.724" y="0" width="54.433" height="54.387" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_66" x="33.532" y="7.037" width="128.162" height="127.887" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="start-up" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Контур_59)">
+      <path id="Контур_59-2" data-name="Контур 59" d="M73.616,295.353a4.4,4.4,0,0,0,.82,5.085l1.076,1.076c3.108-3.683,6.73-7.68,11.124-12.072.31-.31.63-.46.942-.747l-6.921-6.922c-4.023,7.277-6.37,12.249-7.041,13.58Zm0,0" transform="translate(-42.7 -193.14)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Контур_60)">
+      <path id="Контур_60-2" data-name="Контур 60" d="M174.943,390.5c-4.4,4.4-8.39,8.033-12.053,11.143l1.457,1.457a4.4,4.4,0,0,0,5.122.8c2.279-1.174,5.862-2.861,13.469-7.1l-7.247-7.247C175.4,389.875,175.255,390.193,174.943,390.5Zm0,0" transform="translate(-106.12 -269.31)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Контур_61)">
+      <path id="Контур_61-2" data-name="Контур 61" d="M99.592,312.661c-3.179-3.179-12.119-.329-16.319,3.87-14.05,14.05-20.4,24.011-23.244,29.892A4.4,4.4,0,0,0,65.91,352.3c5.75-2.792,15.589-9.107,29.806-23.323,4.618-4.62,6.9-13.291,3.879-16.31Zm0,0" transform="translate(-33.11 -214.01)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Контур_62)">
+      <path id="Контур_62-2" data-name="Контур 62" d="M13.732,174.32,1.289,186.763a4.4,4.4,0,0,0,4.249,7.361c6.725-1.8,12.642-2.565,16.626-1.543A236.062,236.062,0,0,1,40.375,164.8c-3.731-2.392-16.061-1.06-26.643,9.522Zm0,0" transform="translate(9 -109.75)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Контур_63)">
+      <path id="Контур_63-2" data-name="Контур 63" d="M248.061,415.761a4.391,4.391,0,0,0,5.088-.817L265.592,402.5c9.633-9.636,11.329-22.068,9.143-26.01a251.086,251.086,0,0,1-27.8,18.072c.613,3.461.205,6.819-1.244,16.625A4.39,4.39,0,0,0,248.061,415.761Zm0,0" transform="translate(-164.6 -260.08)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Контур_64)">
+      <path id="Контур_64-2" data-name="Контур 64" d="M288.5,141.168a13.2,13.2,0,1,0,18.664,0A13.213,13.213,0,0,0,288.5,141.168Zm0,0" transform="translate(-192.17 -91.04)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Контур_65)">
+      <path id="Контур_65-2" data-name="Контур 65" d="M423.947,4.292A4.393,4.393,0,0,0,419.888.235a86.968,86.968,0,0,0-32.115,3.742c.794,7.247,4.542,15.09,10.942,21.489,6.476,6.475,14.532,10.222,21.909,10.923a90.975,90.975,0,0,0,3.323-32.1Zm0,0" transform="translate(-265.05 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Контур_66)">
+      <path id="Контур_66-2" data-name="Контур 66" d="M199.251,48.645A46.215,46.215,0,0,1,186.026,24c-26.416,10.834-51.7,34.493-71.687,67.729l9.928,9.928c6.783-2.754,15.018-3.481,20.24,1.74s4.488,13.462,1.736,20.236L156.5,133.883c25.572-15.412,55.344-39.693,68-72a45.994,45.994,0,0,1-25.25-13.241Zm-6.223,37.327a22,22,0,1,1,0-31.106,22.022,22.022,0,0,1,0,31.106Zm0,0" transform="translate(-71.81 -10.96)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

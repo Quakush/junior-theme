@@ -1,0 +1,47 @@
+.pop-up {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 85px 0 64px;
+	color: $dark-text;
+	background-color: $corp-green;
+	background-image: url("../images/aggregator.png");
+	background-repeat: no-repeat;
+	background-position: 135% 55%;
+	background-size: 50%;
+	z-index: 100;
+}
+
+.pop-up--close {
+	display: none;
+}
+
+.pop-up .toggler {
+	position: absolute;
+	top: 25px;
+	right: 16px;
+	z-index: 100;
+}
+
+.pop-up .toggler span {
+	background-color: $dark-text;
+
+	&::before {
+		background-color: $dark-text;
+	}
+}
+
+.pop-up__download-links-list {
+	@include list-style;
+}
+
+.pop-up__download-links-item {
+	@include link-style;
+}
+
+@media (min-width: 1024px) {
+
+	.pop-up {
+		display: none;
+	}
+}

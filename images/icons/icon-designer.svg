@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="73.198" viewBox="0 0 78 73.198">
+  <defs>
+    <filter id="Контур_17704" x="0" y="0" width="78" height="50.894" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_17706" x="0" y="36.416" width="78" height="26.217" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_17707" x="19.436" y="48.154" width="39.13" height="25.043" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Сгруппировать_888" data-name="Сгруппировать 888" transform="translate(-641.836 -1819)">
+    <path id="Контур_17703" data-name="Контур 17703" d="M165.867,211.106c-3.19,0-4.991,2.858-5.314,5.514a21.018,21.018,0,0,1-1.385,5.088h6.7a5.3,5.3,0,1,0,0-10.6Z" transform="translate(510.08 1636.262)" fill="#fff"/>
+    <path id="Контур_17705" data-name="Контур 17705" d="M259.818,122.894l9.042-9.042a1.733,1.733,0,1,0-2.45-2.45l-9.042,9.042A8.731,8.731,0,0,1,259.818,122.894Z" transform="translate(423.559 1724.475)" fill="#fff"/>
+    <g id="Сгруппировать_364" data-name="Сгруппировать 364" transform="translate(12 6)">
+      <g transform="matrix(1, 0, 0, 1, 629.84, 1813)" filter="url(#Контур_17704)">
+        <path id="Контур_17704-2" data-name="Контур 17704" d="M58.242,20.894H1.758A1.759,1.759,0,0,0,0,22.655V53.788H14.821a19.567,19.567,0,0,0,1.72-5.5,10.524,10.524,0,0,1,2.707-5.971,8.3,8.3,0,0,1,6.07-2.621,8.815,8.815,0,0,1,1.242.09L36.848,29.485A5.278,5.278,0,0,1,44.3,36.955L34.017,47.261a8.871,8.871,0,0,1,.089,1.244,8.769,8.769,0,0,1-1.763,5.283H60V22.655A1.759,1.759,0,0,0,58.242,20.894Z" transform="translate(9 -14.89)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 629.84, 1813)" filter="url(#Контур_17706)">
+        <path id="Контур_17706-2" data-name="Контур 17706" d="M0,337.562a1.759,1.759,0,0,0,1.758,1.761H58.242A1.759,1.759,0,0,0,60,337.562v-6.456H0Z" transform="translate(9 -288.69)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 629.84, 1813)" filter="url(#Контур_17707)">
+        <path id="Контур_17707-2" data-name="Контур 17707" d="M185.369,434.628h-1.761v-3.522H169.522v3.522h-1.761a1.761,1.761,0,0,0,0,3.522h17.608a1.761,1.761,0,1,0,0-3.522Z" transform="translate(-137.56 -376.95)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

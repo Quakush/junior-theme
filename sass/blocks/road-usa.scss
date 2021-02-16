@@ -1,0 +1,47 @@
+.road-usa {
+	padding-bottom: 40px;
+}
+
+.road-usa__title {
+	margin-bottom: 0;
+    color: $corp-blue;
+}
+
+.road-usa__title span {
+	display: block;
+	color: #EF4864;
+}
+
+.road-usa p {
+	padding-top: 27px;
+	padding-bottom: 84px;
+	padding-right: 90px;
+	font-size: 14px;
+	color: $light-text;
+	line-height: $line-height-p;
+	background-image: url("../images/svg/freedom.svg");
+	background-repeat: no-repeat;
+	background-size: 170px;
+	background-position: 130px;
+}
+
+.road-usa__btn {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+@media (min-width: 375px) {
+
+	.road-usa p {
+		background-position: 180px 30px;
+	}
+}
+
+@media (min-width: 1440px) {
+
+    .road-usa p {
+	    width: 513px;
+	    font-size: 24px;
+	}	
+}

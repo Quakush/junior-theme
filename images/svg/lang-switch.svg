@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.066" height="33.154" viewBox="0 0 58.066 33.154">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00a7cf"/>
+      <stop offset="1" stop-color="#01627a"/>
+    </linearGradient>
+    <filter id="Контур_20278" x="0" y="0" width="58.066" height="33.154" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Контур_20278)">
+    <path id="Контур_20278-2" data-name="Контур 20278" d="M34.019.01A9.692,9.692,0,0,0,27.71,1.934,10.676,10.676,0,0,1,21.277,4.07H21.09a10.316,10.316,0,0,1-6.12-1.894A9.692,9.692,0,0,0,8.459.357,8.937,8.937,0,0,0,.012,8.443c-.267,4.97,4.04,9.038,9.332,8.967,2.128-.029,5.623-1.865,5.623-1.865s4.14-2.2,6.527-2.2h.188a10.717,10.717,0,0,1,6.226,1.974,9.656,9.656,0,0,0,5.752,1.769c5.29-.071,9.484-4.251,9.083-9.21C42.4,3.625,38.614.215,34.019.01Z" transform="matrix(1, 0.02, -0.02, 1, 6.8, 2.5)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

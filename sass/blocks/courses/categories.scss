@@ -1,0 +1,128 @@
+.categories__dropdown {
+	position: relative;
+	display: block;
+    padding: 9px 15px;
+	width: 100%;
+	color: $light-text;
+	font-size: 14px;
+	background-color: $dark-text;
+	border-radius: 12px;
+	box-sizing: border-box;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 1.6);
+
+	&::before {
+		@include element-style(8px, 8px, transparent);
+		right: 15px;
+		border: 2px solid $light-text;
+		border-left: none;
+		border-top: none;
+		border-radius: 1px;
+		transform: rotate(45deg);
+		z-index: 50;
+	}
+}
+
+.categories__dropdown--open {
+
+	&::before {
+		width: 6px;
+		height: 10px;
+		border-color: $dark-text;
+	}
+
+	&::after {
+		@include element-style(44px, 100%, transparent);
+		right: 0;
+		top: 0;
+		border-radius: 12px;
+		background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);
+	}
+}
+
+.categories__list {
+	@include list-style;
+	display: none;
+	flex-direction: column;
+	margin-top: 10px;
+	padding: 10px 0;
+	padding-left: 28px;
+	background-color: $dark-text;
+	border-radius: 7px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 1.6);
+}
+
+.categories__list--shown {
+	display: flex;
+}
+
+.categories__item {
+	padding: 8px 0;
+	font-size: 14px;
+	color: $light-text;
+	letter-spacing: 0;
+}
+
+.categories__link {
+	@include link-style;
+}
+
+.categories__link::hover,
+.categories__link::active {
+	color: $corp-blue;
+}
+
+.categories__link--active {
+	position: relative;
+	color: $corp-blue;
+
+	&::before {
+		@include element-style(13px, 10px, transparent);
+		top: 50%;
+		left: -6px;
+		transform: translate(-100%, -60%);
+		background-image: url("../images/svg/tick.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		z-index: 50;
+	}
+}
+
+.categories__selected {
+	margin-top: 30px;
+}
+
+.categories__selected span,
+.categories__selected a {
+	display: inline-block;
+	padding: 10px 30px;
+	height: 38px;
+	color: $dark-text;
+	font-size: 14px;
+	font-weight: 800;
+	background-color: $corp-green;
+	border-radius: 47px;
+	box-sizing: border-box;
+}
+
+.categories__selected .categories__link--active::before {
+	display: none;
+}
+
+@media (min-width: 1440px) {
+
+	.categories {
+		order: 0;
+		flex-basis: 32%;
+	}
+
+	.categories__dropdown {
+		padding: 18px 30px;
+		font-size: 16px;
+	}
+
+	.categories__selected {
+		margin-top: 22px;
+	}
+}
+
