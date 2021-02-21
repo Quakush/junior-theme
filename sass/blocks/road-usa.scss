@@ -2,6 +2,13 @@
 	padding-bottom: 40px;
 }
 
+.road-usa .container {
+	background-image: url("../images/svg/freedom.svg");
+	background-repeat: no-repeat;
+	background-size: 170px;
+	background-position: 230px;
+}
+
 .road-usa__title {
 	margin-bottom: 0;
     color: $corp-blue;
@@ -19,10 +26,6 @@
 	font-size: 14px;
 	color: $light-text;
 	line-height: $line-height-p;
-	background-image: url("../images/svg/freedom.svg");
-	background-repeat: no-repeat;
-	background-size: 170px;
-	background-position: 130px;
 }
 
 .road-usa__btn {
@@ -34,7 +37,7 @@
 @media (min-width: 375px) {
 
 	.road-usa p {
-		background-position: 180px 30px;
+		background-position: 198px 30px;
 	}
 }
 

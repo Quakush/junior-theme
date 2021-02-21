@@ -1,21 +1,16 @@
 .getnews {
-	max-width: 580px;
+	padding-bottom: 5px;
+	width: 100%;
 }
 
 .getnews__email {
-	border: none;
-	text-align: left;
 	color: $light-text;
-	padding: 10px 14px;
 	font-size: 12px;
-	height: 16px;
-	border-radius: 7px;
-	width: 344px;
-	margin: 30px 0 20px;
+	width: 100%;
 }
 
-.getnews__info-polity {
-	margin-top: 10px;
+.getnews__btn {
+	margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {

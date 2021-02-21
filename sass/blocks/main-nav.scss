@@ -9,6 +9,7 @@
 }
 
 @media (min-width: 375px) {
+
 	.main-nav {
 		margin-left: 52px;
 	}
@@ -29,7 +30,7 @@
 
 	.main-nav__list li {
 		position: relative;
-		margin-left: 44px;
+		margin-left: 34px;
 
 		&:first-of-type {
 			margin-left: 0;
@@ -59,11 +60,33 @@
 	.main-nav__list a {
 		@include link-style;
 		padding: 13px 0;
-		padding-left: 37px;
+		padding-left: 30px;
+		font-size: 14px;
 	}
 
 	.main-nav__list li:hover {
 		color: $corp-blue;
+	}
+
+	.main-nav__list li:first-of-type:hover {
+
+		&::before {
+		background-image: url("../images/icons/student-grad-cap-blue.svg");
+	    }
+	}
+
+	.main-nav__list li:nth-of-type(2):hover {
+
+	    &::before {
+		background-image: url("../images/icons/softtware-engineer-blue.svg");
+	    }
+	}
+
+	.main-nav__list li:last-of-type:hover {
+
+		&::before {
+		background-image: url("../images/icons/angel-blue.svg");
+	    }
 	}
 
 	.main-nav .sub-menu {
@@ -119,5 +142,17 @@
 	.sub-menu li:last-of-type {
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.main-nav__list li {
+		margin-left: 44px;
+	}
+
+	.main-nav__list a {
+		padding-left: 37px;
+		font-size: 16px;
 	}
 }

@@ -1,11 +1,13 @@
 .read-us {
 	margin-top: 100px;
+	padding-bottom: 42px;
 }
 
-.read-us__p {
+.read-us__text {
 	color: $light-text;
 	font-size: 14px;
-	max-width: 535px;
+	width: 80%;
+	margin-bottom: 30px;
 }
 
 .read-us__link {
@@ -25,7 +27,7 @@
 }
 
 @media (min-width: 768px) {
-	.read-us__p {
+	.read-us__text {
 		font-size: 24px;
 		line-height: 2;
 	}
@@ -58,7 +60,7 @@
 }
 
 @media (min-width: 1440px) {
-	.read-us__p {
+	.read-us__text {
 		font-size: 24px;
 	}
 }

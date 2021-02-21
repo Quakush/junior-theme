@@ -48,13 +48,22 @@
     margin-left: 47px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
+
     .top-header {
         background-color: transparent;
     }
 
     .top-header__btn {
         order: 3;
+        margin-left: 27px;
+        width: 120px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .top-header__btn {
         margin-left: 32px;
         width: 150px;
     }

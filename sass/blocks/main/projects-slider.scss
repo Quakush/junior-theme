@@ -18,15 +18,10 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .projects-slider__btn {
-	background: linear-gradient(to bottom, rgba(223,53,81,1) 0%, rgba(185,47,70,1) 100%);
-	@include link-style;
-	text-align: center;
-	vertical-align: middle;
-	color: $white;
-	font-weight: 800;
 	border-radius: 7px;
 	height: 13px;
 	padding: 4px 10px;

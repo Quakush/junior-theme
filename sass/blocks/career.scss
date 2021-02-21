@@ -77,12 +77,19 @@
 }
 
 .career .sign-up {
+    margin: 0 auto;
     padding-bottom: 10px;
-    align-items: center;
 }
 
-.career .sign-up select {
-    margin-bottom: 30px;
+.career .sign-up__dropdown {
+    text-align: left;
+}
+
+.career .sign-up__options {
+    background-color: $dark-text;
+}
+
+.career .sign-up__mark {
     color: $light-text;
     background-color: $dark-text;
 }

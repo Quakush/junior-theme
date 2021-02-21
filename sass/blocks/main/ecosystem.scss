@@ -1,14 +1,21 @@
 .ecosystem {
     position: relative;
-    padding: 30px 0;
-    margin-top:80px;
+    padding-top: 115px;
+    padding-bottom: 85px;
+    margin:80px 0;
     width: 100%;
     background-image: 
-    url("../images/phone.png"), 
-    url("../images/tablet.png");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 60%, 80%;
-    background-position: 230px 260px, 285px 140px;
+        url("../images/svg/phone.svg"), 
+        url("../images/svg/tablet.svg");
+    background-repeat:
+        no-repeat,
+        no-repeat;
+    background-size:
+        158px 253px,
+        327px 388px;
+    background-position:
+        230px 350px,
+        265px 215px;
     color: $dark-text;
     background-color: $white;
 
@@ -17,25 +24,12 @@
     }
 
     &::after {
-        @include clouds-bottom(80px, -79px, -79px);
+        @include clouds-bottom(80px, -79px, -78px);
     }
 }
 
-
-.ecosystem__images {
-    position: relative;
-    top: -180px;
-}
-
-.ecosystem__images img {
-    width: 158px;
-    padding-left: 240px;
-}
-
-.our-mission__container {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 10px;
+.ecosystem__title span {
+    display: block;
 }
 
 .ecosystem p {
@@ -49,6 +43,18 @@
     background-color: rgba(0,0,0, 0.8);
 }
 
+.ecosystem .sign-up {
+    padding-bottom: 10px;
+}
+
+.ecosystem .sign-up .sign-up__mark {
+    background-color: $dark-text;
+}
+
+.ecosystem .sign-up__options {
+    background-color: $dark-text;
+}
+
 @media (min-width: 768px) {
     .ecosystem p {
         font-size: 20px;
@@ -60,13 +66,64 @@
     }
 
     .ecosystem {
-        min-height: 650px;
+        
         background-size: 350px 563px, 617px 733px;
         background-position: 70% 220px, 617px 100px;
     }
 }
 
+@media (min-width: 1024px) {
+
+    .ecosystem {
+        margin: 131px 0;
+        padding: 0;
+        background-image: none;
+
+        &::before {
+            @include clouds(100px, -99px);
+        }
+
+        &::after {
+            @include clouds-bottom(100px, -99px, -99px);
+        }
+    }
+
+    .ecosystem .container {
+        padding-top: 420px;
+        padding-bottom: 197px;
+        background-image: 
+            url("../images/svg/phone.svg"), 
+            url("../images/svg/tablet.svg");
+        background-repeat:
+            no-repeat,
+            no-repeat;
+        background-size:
+            351px 563px,
+            617px 733px;
+        background-position:
+            unset,
+            unset;
+        background-position:
+            right 56px bottom,
+            right -316px bottom 33px;
+    }
+}
+
 @media (min-width: 1440px) {
+
+    .ecosystem {
+        margin: 131px 0;
+
+        &::before {
+            @include clouds(131px, -130px);
+            background-position: 50%;
+        }
+
+        &::after {
+            @include clouds-bottom(131px, -130px, -130px);
+        }
+    }
+
     .ecosystem p {
         font-size: 24px;
         width: 491px;
@@ -74,11 +131,5 @@
 
     .ecosystem__title {
         max-width:660px;
-    }
-
-    .ecosystem {
-        min-height: 650px;
-        background-size: 350px 563px, 617px 733px;
-        background-position: 60% 220px, 85% 100px;
     }
 }

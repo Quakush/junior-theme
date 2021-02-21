@@ -10,13 +10,13 @@
 }
 
 .logo__svg-container {
-    width: 38px;
-    height: 27px;
+    width: 37px;
+    height: 25px;
 }
 
 .logo svg {
-    width: 38px;
-    height: 27px;
+    width: 37px;
+    height: 25px;
     fill: #00a7ce;
 }
 
@@ -31,6 +31,25 @@
 
 .top-header--mobile .logo span {
     display: none;
+}
+
+@media (min-width: 1024px) {
+
+    .logo__svg-container {
+        width: 50px;
+        height: 34px;
+    }
+
+    .logo svg {
+        width: 50px;
+        height: 34px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+
+
 }
 
 @media (min-width: 1440px) {

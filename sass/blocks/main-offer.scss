@@ -1,10 +1,11 @@
 .main-offer {
+	position: relative;
 	padding-top: 26px;
+	padding-bottom: 53px;
 	width: 100%;
 	background-repeat: no-repeat;
 }
 .main-offer--education {
-	padding-bottom: 53px;
 	background-image: url("../images/svg/svg-student.svg");
 	background-position: 160px 20px;
 }
@@ -39,6 +40,12 @@
 	font-size: 32px;
 }
 
+.main-offer__text-block {
+	font-size: 14px;
+	line-height: 1.66;
+	color: $light-text;
+}
+
 .main-offer p {
 	margin-bottom: 50px;
 	font-size: 14px;
@@ -55,26 +62,29 @@
 	background-image: url("../images/svg/corn.svg");
 	background-size: 80%;
 	background-repeat: no-repeat;
-	background-position: 165px 60px;
-	padding-bottom: 53px;
-	padding-top: 26px;
+	background-position: 190px 105px;
+}
+
+.main-offer--main .main-offer__text-block {
+	margin-bottom: 30px;
 }
 
 .main-offer--main p {
+	margin-bottom: 0;
 	width: 70%;
-	margin: 30px 0;
-}
-
-.title__colored--blue {
-	color: $corp-blue;
 }
 
 .main-offer--main  .title {
+	margin-bottom: 30px;
 	line-height: 1.1;
 }
 
-.title__strong--your-ideas {
+.main-offer--main  .title__strong {
 	font-size: 42px;
+}
+
+.main-offer--main .title__colored {
+	color: $corp-blue;
 }
 
 @media (min-width: 375px) {
@@ -87,9 +97,14 @@
 		font-size: 36px;
 	}
 
-	.main-offer--main { 
-		background-size: contain;
-		background-position: 130% 10px;
+	.main-offer--main {
+		background-position: 225px 55px;
+		background-size: 256px 322px;
+	}
+
+	.main-offer--main p {
+		width: 65%;
+		line-height: 1.9;
 	}
 }
 
@@ -104,14 +119,32 @@
 		font-size: 20px;
 	}
 
-	.main-offer--your-ideas {
-		background-size:contain;
-		background-position: right 5% bottom 25%;
+	.main-offer--main {
+		background-size: 360px;
+		background-position: 380px 120px;
  	}
 
- 	.main-offer--your-ideas p {
+ 	.main-offer__text-block {
+ 		font-size: 20px;
+ 	}
+
+ 	.main-offer--main p {
 		font-size: 20px;
 		width: 50%;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-offer--main {
+		background-image: none;
+	}
+
+	.main-offer--main .container {
+		background-image: url("../images/svg/corn.svg");
+		background-size: 360px;
+		background-repeat: no-repeat;
+		background-position: right 10px center;
 	}
 }
 
@@ -186,9 +219,39 @@
  	}
 
  	.main-offer--main .container {
- 		background-image: url("../images/svg/corn.svg");
- 		background-repeat: no-repeat;
- 		background-size: contain;
-		background-position: right 10% bottom 25%;
+ 		position: relative;
+ 		overflow: visible;
+ 		background-image: none;
+
+ 		&::before {
+ 			@include element-style(558px, 701px, transparent);
+ 			right: -141px;
+ 			background-image: url("../images/svg/corn.svg");
+ 		    background-repeat: no-repeat;
+ 		    background-size: contain;
+ 		    background-position: center;
+ 		}
+
+ 		&::after {
+ 			@include element-style(220px, 325px, transparent);
+ 			left: -95px;
+ 			bottom: 0;
+ 			background-image: url("../images/svg/rocket-main-offer.svg");
+ 		    background-repeat: no-repeat;
+ 		    background-size: contain;
+ 		    background-position: center;
+ 		    transform: translate(0, 72%);
+ 		    opacity: 0.5;
+ 		}
+		
  	}
+
+ 	.main-offer--main  .title {
+ 		margin-bottom: 10px;
+		font-size: 88px;
+	}
+
+	.main-offer--main  .title__strong {
+		font-size: 112px;
+	}
 }

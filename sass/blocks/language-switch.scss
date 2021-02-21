@@ -4,7 +4,7 @@
     flex-wrap: nowrap;
     align-items: center;
 	position: relative;
-	width: 88px;
+	width: 92px;
 	cursor: pointer;
 
 	&::before {
@@ -58,11 +58,11 @@
 	display: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
 
 	.language-switch {
-        display: flex;
-        order: 2;
+		display: flex;
+		order: 2;
         margin-left: 52px;
 	}
 }

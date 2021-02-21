@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sass Project</title>
+    <title>Junior Specialist Corporation</title>
 
     <?php wp_head();?>
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 
     <header class="main-header">
         <div class="top-bar">

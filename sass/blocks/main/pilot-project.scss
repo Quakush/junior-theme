@@ -1,13 +1,14 @@
 .pilot-project {
     position: relative;
-    margin: 70px 0;
-    padding: 20px 0 0;
+    margin: 79px 0;
+    padding-top: 8px;
+    padding-bottom: 20px;
     color: $dark-text;
     background-color: $white;
     background-image: url("../images/svg/meeting.svg");
-    background-size: 70%;
+    background-size: 281px;
     background-repeat: no-repeat;
-    background-position: 205px 80px;
+    background-position: 175px 123px;
 
     &::before {
         @include clouds(80px, -79px);
@@ -20,104 +21,150 @@
 
 
 .pilot-project__text-block {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    
+    &:first-of-type {
+        margin-bottom: 170px;
+    }
+
+    &:nth-of-type(3) {
+        margin-bottom: 0;
+        text-align: center;
+    }
 }
 
-.pilot-project__text-block p {
+.pilot-project__text {
     font-size: 14px;
     line-height: 1.66;
 }
 
-
-.text-block--one p {
-    width: 60%;
+.pilot-project__text--desktop {
+    display: none;
 }
 
-.text-block--two p {
-    width: 80%;
+.pilot-project__text-block:nth-of-type(2) p {
+    width: 88%;
 }
 
-.text-block--three {
-    text-align: center;
+.pilot-project__text-block-title--desktop {
+    display: none;
+}
+
+.pilot-project__text-block-title--mobile span {
+    display: block;
+    font-size: 22px;
 }
 
 .pilot-project__btn {
-    margin: 0 auto 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 375px) {
+
     .pilot-project {
-    background-size: 80%;
-    background-position: 205px 80px;
-    }
-
-    .text-block--one p {
-    width: 55%;
-    }
-
-    .text-block--one {
-    margin-bottom: 170px;
-    }
-
+        background-position: 162px 103px;
+    }    
 }
 
-
 @media (min-width: 768px) {
+
     .pilot-project {
-    background-size: 487px;
-    background-position: 5% 30px;
+        background-position: 5% 30px;
     }
 
     .pilot-project__text-block p {
-    font-size: 20px;
+        font-size: 20px;
+        line-height: 1.45;
     }
-
-    .text-block--one {
-    margin-bottom: 40px;
-    }
-
-    .text-block--one, .text-block--two {
-        margin-left: 50%;
-    }  
-
-    .text-block--one p {
-    width: 504px;
-    }
-
-    .text-block--two p {
-    width: 504px;
-    } 
-
-    .text-block--three {
-        width: 626px;
-        margin: 40px auto 50px;
-    } 
 
     .pilot-project__btn {
-    margin: auto;
-    border-radius: 10px;
-    font-size: 16px;
-    width: 202px;
-    padding: 10px 0;
+        border-radius: 10px;
+        font-size: 16px;
+        width: 202px;
+        padding: 10px 0;
     } 
+}
+
+@media (min-width: 1024px) {
+
+    .pilot-project {
+        background-image: none;
+    }
+
+    .pilot-project .container {
+        background-image: url("../images/svg/meeting.svg");
+        background-repeat: no-repeat;
+        background-size: 487px;
+        background-position: left 30px top 30px;
+    }
+
+    .pilot-project__text--mobile {
+        display: none;
+    }
+
+    .pilot-project__text--desktop {
+        display: block;
+        margin-left: auto;
+    }
+
+    .pilot-project__text-block {
+        margin-left: auto;
+        width: 48%;
+
+        &:first-of-type {
+            margin-bottom: 40px;
+        }
+
+        &:nth-of-type(2) {
+            margin-bottom: 116px;
+        }
+
+        &:last-of-type {
+            margin: 0 auto;
+            width: 60%;
+        }
+    }
+
+    .pilot-project__text-block:nth-of-type(2) p {
+        width: 100%;
+    }
+
+    .pilot-project__text-block .title__secondary {
+        margin-bottom: 20px;
+    }
+
+    .pilot-project__text-block-title--mobile {
+        display: none;
+    }
+
+    .pilot-project__text-block-title--desktop {
+        display: block;
+    }
+
+    .pilot-project__btn {
+        width: 267px;
+        height: 48px;
+    }
 }
 
 @media (min-width: 1440px) {
-    .pilot-project__text-block p {
-    font-size: 24px;
-    }
-
-    .text-block--one {
-        margin-top: 50px;
-    }
 
     .pilot-project {
-    background-size: 550px;
-    background-position: 15% 80px;
+        margin: 131px 0;
+
+        &::before {
+            @include clouds(131px, -130px);
+            background-position: 50%;
+        }
+
+        &::after {
+            @include clouds-bottom(131px, -130px, -130px);
+        }
     }
 
-    .pilot-project__btn {
-        margin-bottom: 90px;
+    .pilot-project__text-block p {
+        font-size: 24px;
     }
-
 }

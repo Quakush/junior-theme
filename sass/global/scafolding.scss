@@ -6,15 +6,20 @@ body {
     margin: 0;
     min-width: 320px;
     @include font-base(12px, $base-line-height);
-    letter-spacing: -1px;
+    letter-spacing: 0;
     background: #24272d;
     background-image: url("../images/body-background.png");
     background-repeat: repeat-y;
     background-position: center;
+    background-size: 1045px;
 }
 
 h1, h2, h3, h4, p {
     margin: 0;
+}
+
+input {
+    box-sizing: border-box;
 }
 
 button {
@@ -22,6 +27,10 @@ button {
     padding: 0;
     background-color: transparent;
     border: none;
+}
+
+main {
+    padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {
@@ -35,6 +44,5 @@ button {
 
     body {
         font-size: $base-font-size;
-        letter-spacing: -2px;
     }
 }

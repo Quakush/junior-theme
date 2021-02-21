@@ -1,9 +1,14 @@
 .our-mission {
     position: relative;
     margin: 79px 0;
-    padding: 30px 10px;
+    padding-top: 30px;
+    padding-bottom: 132px;
     color: $dark-text;
     background-color: $white;
+    background-image: url("../images/svg/rocket.svg");
+    background-repeat: no-repeat;
+    background-size: 103px;
+    background-position: 50% 100%;
 
     &::before {
         @include clouds(80px, -79px);
@@ -14,23 +19,15 @@
     }
 }
 
-.our-mission  .container {
+.our-mission__container {
     display: flex;
     flex-direction: column;
-    background-image: url("../images/svg/rocket.svg");
-    background-repeat: no-repeat;
+    padding: 30px 10px;
 }
 
-
-.our-mission__img {
-    align-self: center;
-    width: 103px;
-    height: 118px;
-    background: url("/img/svg/rocket-on-display.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+.our-mission .title__colored {
+    color: $corp-blue;
 }
-
 
 .our-mission p {
     font-size: 14px;
@@ -38,11 +35,6 @@
 }
 
 @media (min-width: 768px) {
-    
-    .our-mission__container {
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    }
 
     .our-mission__text {
         width: 546px;
@@ -64,7 +56,51 @@
     }
 }
 
+@media (min-width: 1024px) {
+
+    .our-mission {
+        margin: 100px 0;
+        padding: 20px 0;
+        background-image: none;
+
+        &::before {
+            @include clouds(100px, -99px);
+        }
+
+        &::after {
+            @include clouds-bottom(100px, -99px, -99px);
+        }
+    }
+
+    .our-mission .container {
+        background-image: url("../images/svg/rocket.svg");
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: left 77px center;
+
+    }
+}
+
 @media (min-width: 1440px) {
+    
+    .our-mission {
+        margin: 131px 0;
+
+        &::before {
+            @include clouds(131px, -130px);
+            background-position: 50%;
+        }
+
+        &::after {
+            @include clouds-bottom(131px, -130px, -130px);
+        }
+    }
+
+    .our-mission .container {
+        background-size: 306px;
+        background-position: left 41px center;
+    }
+
     .our-mission p {
         font-size: 24px;
     }
@@ -77,5 +113,21 @@
         margin-top: -370px;
         align-self: flex-start;
         margin-left: 20px;
+    }
+}
+
+@media (min-width: 1820px) {
+
+    .our-mission {
+        margin: 200px 0;
+
+        &::before {
+            @include clouds(200px, -200px);
+            background-position: 50%;
+        }
+
+        &::after {
+            @include clouds-bottom(200px, -200px, -200px);
+        }
     }
 }
