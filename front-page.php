@@ -103,6 +103,7 @@
             <p>Мы создали место, где вы сможете реализовать свои идеи, найти будущую профессию, пройти практику и найти партнеров.</p>
 
             <?php get_template_part('/includes/block', 'sign_up');?>
+            <?php get_template_part('/includes/block', 'partners');?>
         </div>
     </section>
 

@@ -89,23 +89,31 @@
     }
 
     .ecosystem .container {
+        position: relative;
         padding-top: 420px;
         padding-bottom: 197px;
-        background-image: 
-            url("../images/svg/phone.svg"), 
-            url("../images/svg/tablet.svg");
-        background-repeat:
-            no-repeat,
-            no-repeat;
-        background-size:
-            351px 563px,
-            617px 733px;
-        background-position:
-            unset,
-            unset;
-        background-position:
-            right 56px bottom,
-            right -316px bottom 33px;
+        overflow: visible;
+
+        &::before {
+            @include element-style(351px, 563px, transparent);
+            right: 56px;
+            bottom: 0;
+            background-image: url("../images/svg/phone.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 20;
+        }
+
+        &::after {
+            @include element-style(617px, 733px, transparent);
+            right: -316px;
+            bottom: 33px;
+            background-image: url("../images/svg/tablet.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 0;
+        }
+                
     }
 }
 
@@ -131,5 +139,21 @@
 
     .ecosystem__title {
         max-width:660px;
+    }
+}
+
+@media (min-width: 1820px) {
+
+    .ecosystem {
+        margin: 200px 0;
+
+        &::before {
+            @include clouds(200px, -199px);
+            background-position: 50%;
+        }
+
+        &::after {
+            @include clouds-bottom(200px, -198px, -198px);
+        }
     }
 }

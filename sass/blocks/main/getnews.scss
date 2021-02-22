@@ -3,31 +3,15 @@
 	width: 100%;
 }
 
-.getnews__email {
-	color: $light-text;
-	font-size: 12px;
-	width: 100%;
-}
-
-.getnews__btn {
+.getnews input[type="email"] {
 	margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-
-	.getnews__email {
-		width: 267px;
-		margin-top: 15px;
-		font-size: 16px;
-		border-radius: 15px;
-		margin-bottom: 0px;
-		margin-right: 20px;
-	}
-
+	
 	.getnews__btn {
 		width: 267px;
 		height: 36px;
-		padding: 10px 20px;
 		font-size: 16px;
 		border-radius: 15px;
 		margin-top: 15px;
@@ -36,5 +20,8 @@
 }
 
 @media (min-width: 1440px) {
-
+    
+    .getnews input[type="email"] {
+    	width: 267px;
+    }
 }
