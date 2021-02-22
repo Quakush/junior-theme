@@ -1,0 +1,14 @@
+.blog {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 17px;
+}
+
+@media (min-width: 1440px) {
+  .blog {
+    padding-top: 46px;
+  }
+}
+
+
+
