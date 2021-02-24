@@ -2522,9 +2522,9 @@ main {
   margin: 80px 0;
   width: 100%;
   background-image: url("../images/svg/phone.svg"), url("../images/svg/tablet.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 158px 253px, 327px 388px;
-  background-position: 230px 350px, 265px 215px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 158px 253px, 327px 388px;
+  background-position: 230px 350px, 265px 215px;
   color: #24272D;
   background-color: white; }
   .ecosystem::before {
@@ -3729,7 +3729,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "read-us__title-container projects-slider" "read-us__p projects-slider" "getnews projects-slider"; } }
+    grid-template-areas: "read-us__title-container projects-slider" "read-us__p projects-slider" "getnews projects-slider"; } }
 
 @media (min-width: 1440px) {
   .read-us__text {
@@ -3848,28 +3848,34 @@ main {
   position: relative;
   border: none;
   text-align: center;
-  margin: 0;
-  margin-right: 20px; }
+  margin-bottom: 40px; }
 
 .blog-content .blog-content__image-wrapper {
-  position: relative; }
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 30px; }
   .blog-content .blog-content__image-wrapper::before {
     position: absolute;
     content: "Подробнее...";
-    color: white;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    color: white;
     z-index: 5;
     display: none; }
   .blog-content .blog-content__image-wrapper:hover::before {
     display: block; }
 
 .blog-content .blog-content__image {
-  border-radius: 20px;
-  margin-bottom: 30px; }
+  border-radius: 20px; }
   .blog-content .blog-content__image:hover {
     opacity: .6; }
+
+.blog-content .blog-content__item-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 293px; }
 
 .blog-content .blog-content__title {
   position: relative;
@@ -3877,15 +3883,7 @@ main {
   font-weight: bold;
   line-height: 24px;
   text-align: left;
-  margin-bottom: 16px; }
-  .blog-content .blog-content__title:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url("../images/svg/foodtech.svg");
-    width: 53px;
-    height: 14px; }
+  margin: 0; }
 
 .blog-content .blog-content__info {
   display: block;
@@ -3893,10 +3891,13 @@ main {
   line-height: 13px;
   font-weight: 400;
   text-align: left;
-  margin-bottom: 40px; }
+  margin-top: 16px; }
 
-.blog-content .blog-content__item-description {
-  width: 290px; }
+.blog-content .blog-content__description-foodtech {
+  font-size: 6px;
+  width: 53px;
+  height: 13px;
+  align-self: center; }
 
 .blog-content .showmore__btn {
   margin: 0 auto;
@@ -3914,42 +3915,41 @@ main {
 
 @media (min-width: 768px) {
   .blog-content .blog-content__item {
-    margin: 0;
-    margin-right: 20px; }
+    margin-right: 5px; }
   .blog-content .blog-content__item:last-child {
     margin-right: 0; }
+  .blog-content .blog-content__list {
+    flex-wrap: wrap; }
   .blog-content .blog-content__image {
-    width: 270px;
-    height: 270px; }
+    width: 293px;
+    height: 293px; }
   .blog-content .blog-content__title {
     font-size: 14px;
     line-height: 17px; } }
 
 @media (min-width: 1024px) {
   .blog-content .blog-content__image {
-    width: 270px;
-    height: 270px; } }
+    width: 300px;
+    height: 300px; }
+  .blog-content .blog-content__item-description {
+    width: 300px; } }
 
 @media (min-width: 1440px) {
   .blog-content .blog-content__list {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around; }
+    flex-wrap: nowrap; }
   .blog-content .blog-content__item {
-    margin: 0;
-    margin-right: 30px; }
-  .blog-content .blog-content__item:nth-child(3n) {
+    margin-right: 15px;
+    margin-bottom: 24px; }
+  .blog-content .blog-content__item:last-child {
     margin-right: 0; }
   .blog-content .blog-content__image {
     width: 343px;
-    height: 342px;
+    height: 343px;
     margin-bottom: 7px; }
-  .blog-content .blog-content__title {
-    font-size: 17px;
-    margin-bottom: 8px; }
-  .blog-content .blog-content__info {
-    margin-bottom: 24px; }
   .blog-content .blog-content__item-description {
-    width: 340px; }
+    width: 343px; }
+  .blog-content .blog-content__title {
+    font-size: 17px; }
   .blog-content .showmore__btn {
     margin-bottom: 32px; } }
