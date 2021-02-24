@@ -31,7 +31,8 @@ get_header();
             </div>
             <div class="blog-content__item-description">
               <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+              <button class="btn btn--accent  blog-content__description-foodtech">foodtech</button>
+              <p class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</p>
             </div>
           </li>
           <li class="blog-content__item">
@@ -40,7 +41,8 @@ get_header();
             </div>
             <div class="blog-content__item-description">
               <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+              <button class="btn btn--accent  blog-content__description-foodtech">foodtech</button>
+              <p class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</p>
             </div>
           </li>
           <li class="blog-content__item">
@@ -49,7 +51,8 @@ get_header();
             </div>
             <div class="blog-content__item-description">
               <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+              <button class="btn btn--accent  blog-content__description-foodtech">foodtech</button>
+              <p class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</p>
             </div>
           </li>
         </ul>
