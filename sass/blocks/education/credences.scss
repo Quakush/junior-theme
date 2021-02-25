@@ -44,11 +44,24 @@
 @media (min-width: 1440px) {
 
     .credences {
-        padding: 30px 0 141px;
+        padding: 30px 0;
+    }
+
+    .credences__title {
+        font-weight: 400;
+        padding: 0;
     }
 
     .credences p {
         width: 592px;
         font-size: 24px;
+        padding: 0;
+        text-align: left;
+        margin-bottom: 55px;
+    }
+
+    .credences__btn {
+        margin-top: 30px;
+        margin-left: 0;
     }
 }

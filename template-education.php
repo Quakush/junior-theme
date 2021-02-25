@@ -7,19 +7,19 @@ Template Name: Education Page
 get_header();
 
 ?>
-                            
+
     <main>
     <section class="main-offer  main-offer--education">
         <div class="container">
             <h1 class="title"><span class="title__colored">Твоя дорога</span><br>в Digital</h1>
             <p class="main-offer__text  main-offer__text--mobile">
-                Старт в IT-профессии &mdash;<br>это обучение и первый опыт 
-                работы. Обучись у наших партнёров и приходи на 
+                Старт в IT-профессии &mdash;<br>это обучение и первый опыт
+                работы. Обучись у наших партнёров и приходи на
                 практику в один из наших проектов!
             </p>
             <p class="main-offer__text  main-offer__text--desktop">
-                Старт в IT-профессии &mdash; это обучение и первый опыт 
-                работы. Обучись у наших партнёров и приходи на 
+                Старт в IT-профессии &mdash; это обучение и первый опыт
+                работы. Обучись у наших партнёров и приходи на
                 практику в один из наших проектов!
             </p>
             <?php get_template_part('/includes/block', 'sign_up');?>
@@ -31,7 +31,7 @@ get_header();
                 <h2 class="title__secondary  choose-course__title"><span class="title__colored">Все курсы</span> в одном месте</h2>
                 <p>
                     Мы сотрудничаем с различными онлайн и офлайн
-                    платформами, чтобы вам проще было найти 
+                    платформами, чтобы вам проще было найти
                     нужный курс. Создайте аккаунт в нашей системе,
                     чтобы получить гарантированную практику после
                     окончания обучения.
@@ -44,11 +44,11 @@ get_header();
         <div class="container">
             <h2 class="title__secondary  choose-profession__title"><span class="title__colored">Все профессии</span> в одном месте</h2>
             <p class="choose-profession__text-mobile">
-                Выбери одну из множества профессий<br> и начни свою карьеру<br>с 
+                Выбери одну из множества профессий<br> и начни свою карьеру<br>с
                 <span class="choose-profession__text-colored">Junior Specialists Corporation</span>
             </p>
             <p class="choose-profession__text-desktop">
-                Выбери одну из множества профессий и начни свою<br>карьеру с 
+                Выбери одну из множества профессий и начни свою<br>карьеру с
                 <span class="choose-profession__text-colored">Junior Specialists Corporation</span>
             </p>
             <ul class="choose-profession__list">
@@ -127,7 +127,7 @@ get_header();
         </div>
     </section>
     <section class="educational-programms">
-        
+
         <div class="container">
             <h2 class="title__secondary  educational-programms__title">Образовательные программы</h2>
             <div class="educational-programms__inner-wrap">
@@ -137,8 +137,8 @@ get_header();
                         <p>
                             Программа обучения школьников -
                             это возможность с раннего возраста
-                            начать изучение современных 
-                            профессий, а также разобраться в 
+                            начать изучение современных
+                            профессий, а также разобраться в
                             мире стартапов.
                         </p>
                     </li>
