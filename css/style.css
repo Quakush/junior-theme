@@ -1096,7 +1096,7 @@ main {
     position: relative;
     margin: 110px 0;
     background-position: 300px, 20px;
-    background-image: url("./images/phone_education.svg");
+    background-image: url("../images/phone_education.svg");
     background-repeat: no-repeat; }
     .choose-course::before {
       content: "";
@@ -1561,7 +1561,7 @@ main {
     padding-bottom: 90px; }
   .road-usa .container {
     position: relative;
-    background-image: url("./images/svg/freedom.svg");
+    background-image: url("../images/svg/freedom.svg");
     background-repeat: no-repeat;
     background-size: 320px;
     background-position: 0;
