@@ -1,4 +1,15 @@
-<?php get_header();?>
+<?php
+
+$posts = get_posts( array(
+    'numberposts' => 3,
+    'category'    => 0,
+    'orderby'     => 'date',
+    'order'       => 'DESC',
+));
+
+get_header();
+
+?>
 
 <main>
 
@@ -189,52 +200,45 @@
     </section>
     
     <section class="read-us">
-        <div class="container read-us__container">
+        <div class="container">
             <div class="read-us__title-container"><h2 class="title__secondary read-us__title">Читайте нас</h2>
-            <a class="read-us__link" href="#">Все статьи</a></div>
+            <a class="read-us__link" href="/blog">Все статьи</a></div>
 
             <div class="projects-slider">
-                <div class="projects-slider__item projects-slider__item--one">
-                    <div class="projects-slider__item__box">
-                        <img src="#" alt="">
-                    </div>
-                    <div class="projects-slider__item__caption">
-                        <div class="row-container"><h4>Шаурма "По-Братски"</h4>
-                        <button class="btn  btn--accent  projects-slider__btn" >
-                            foodtech
-                        </button>
-                    </div>
-                        <p>Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</p>
-                    </div>
-                </div>
+                <ul class="projects-slider__list">
 
-                <div class="projects-slider__item projects-slider__item--two">
-                    <div class="projects-slider__item__box">
-                        <img src="#" alt="">
-                    </div>
-                    <div class="projects-slider__item__caption">
-                        <div class="row-container"><h4>Шаурма "По-Братски" 2</h4>
-                        <button class="projects-slider__btn" type="button">foodtech</button></div>
-                        <p>Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</p>
-                    </div>
-                </div>
+                    <?php if ($posts) :
+                    $i = 0;
+                    foreach ($posts as $post) : ?>
+                     
+                        <li class="
+                        <?php if($i === 0){echo "projects-slider__item--active";}?> projects-slider__item">
+                            <div class="projects-slider__image-wrap">
+                                <?php if(has_post_thumbnail()):?>
 
-                <div class="projects-slider__item projects-slider__item--three">
-                    <div class="projects-slider__item__box">
-                        <img src="#" alt="">
-                    </div>
-                    <div class="projects-slider__item__caption">
-                        <div class="row-container"><h4>Шаурма "По-Братски" 3</h4>
-                        <button class="projects-slider__btn" type="button">foodtech</button></div>
-                        <p>Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</p>
-                    </div>
-                </div>
+                                    <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>">
 
-                <div class="dots--projects-slider">
-                    <span class="dot--projects-slider"></span>
-                    <span class="dot--projects-slider"></span>
-                    <span class="dot--projects-slider"></span>
-                </div>  
+                                <?php endif;?>
+                            </div>
+                            <div class="projects-slider__item-caption">
+                                <h4><?php the_title();?></h4>
+                                <button class="btn  btn--accent  projects-slider__cat-btn" >
+                                    foodtech
+                                </button>
+                                <p><?php the_content();?></p>
+                            </div>
+                        </li>
+                        <?php $i++; ?>
+
+                    <?php endforeach; endif; ?>
+
+                </ul>
+
+                <ul class="projects-slider__bullets">
+                    <li data="0"></li>
+                    <li data="1"></li>
+                    <li data="2"></li>
+                </ul> 
             </div>
 
             <p class="read-us__text">Мы собираем самые интересные новости о наших проектах, программах и наших партнерах. Будьте в курсе всех интересных событиях нашей компании.</p>
