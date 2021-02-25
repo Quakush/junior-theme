@@ -56,8 +56,8 @@ register_nav_menus(
 );
 
 // Custom Image sizes
-add_image_size('blog-small', 300, 200, true);
-add_image_size('blog-large', 800, 400, false);
+add_image_size('blog-small', 200, 200, true);
+add_image_size('blog-large', 343, 343, false);
 
 
 // Custom post type and taxonomy

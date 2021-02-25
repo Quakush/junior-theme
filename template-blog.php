@@ -4,6 +4,15 @@
 Template Name: Blog Page
 */
 
+$args = array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+    'order' => 'DESC'
+);
+
+$query = new WP_Query($args);
+
 get_header();
 
 ?>
@@ -25,33 +34,31 @@ get_header();
 
       <div class="blog-content">
         <ul class="blog-content__list">
+
+          <?php if ( $query->have_posts() ) :
+            while ( $query->have_posts() ) : $query->the_post();?>
           <li class="blog-content__item">
             <div class="blog-content__image-wrapper">
-              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/back_item.jpg" width="200" height="200" alt="background">
+              <?php if(has_post_thumbnail()):?>
+                  <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>">
+              <?php endif;?>
             </div>
             <div class="blog-content__item-description">
-              <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
-            </div>
+              <h2 class="blog-content__title">
+                <?php the_title();?>
+              </h2>
+              <button class="btn btn--accent  blog-content__description-foodtech">foodtech</button>
+              <p class="blog-content__info">
+                <?php the_content();?>
+              </p>
           </li>
-          <li class="blog-content__item">
-            <div class="blog-content__image-wrapper">
-              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/back_item.jpg" width="200" height="200" alt="background">
-            </div>
-            <div class="blog-content__item-description">
-              <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
-            </div>
-          </li>
-          <li class="blog-content__item">
-            <div class="blog-content__image-wrapper">
-              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/back_item.jpg" width="200" height="200" alt="background">
-            </div>
-            <div class="blog-content__item-description">
-              <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
-            </div>
-          </li>
+          
+          <?php endwhile; 
+          else :
+            get_template_part( 'includes/section', 'none' );
+            ?>
+
+          <?php endif; ?>
         </ul>
         <div id="true_loadmore" class="btn showmore__btn">Показать еще</div>
       </div>

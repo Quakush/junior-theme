@@ -43,3 +43,10 @@
 	color: $corp-blue;
 	text-decoration: underline;
 }
+
+@media (min-width: 1440px) {
+
+	.confidentiality {
+		margin-top: 25px;
+	}
+}

@@ -1,5 +1,5 @@
 .read-us {
-	margin-top: 100px;
+	padding-top: 20px;
 	padding-bottom: 42px;
 }
 
@@ -24,6 +24,11 @@
 	justify-content: space-between;
 	align-items: baseline;
 	max-width: 580px;
+	margin-bottom: 15px;
+}
+
+.read-us__title {
+	margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -31,32 +36,37 @@
 		font-size: 24px;
 		line-height: 2;
 	}
-
-	.read-us__title-container {
-		grid-area: read-us__title-container;
-	}
-
-	.projects-slider {
-		grid-area: projects-slider;
-	}
-
-	.read-us__p {
-		grid-area: read-us__p;
-	}
-
-	.read-us__container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-		grid-template-areas: 
-		"read-us__title-container projects-slider"
-		"read-us__p projects-slider"
-		"getnews projects-slider";
-	} 
 }
 
 @media (min-width: 1440px) {
+    
+    .read-us {
+    	padding-top: 125px;
+    	padding-bottom: 46px;
+    }
+
+	.read-us .container {
+		position: relative;
+		overflow: visible;
+	}
+
+	.read-us__title-container {
+		margin-bottom: 25px;
+	}
+
 	.read-us__text {
+		width: 47%;
 		font-size: 24px;
+		margin-bottom: 55px;
+	}
+
+	.read-us .getnews input[type="email"] {
+		margin: 0;
+		margin-right: 45px;
+	}
+
+	.read-us .getnews__btn {
+		display: inline-block;
+		margin: 0;
 	}
 }

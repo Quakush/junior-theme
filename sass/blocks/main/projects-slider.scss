@@ -1,4 +1,8 @@
-.projects-slider__item__box {
+.projects-slider__list {
+	@include list-style;
+}
+
+.projects-slider__image-wrap {
 	align-self: center;
 	position: relative;
 	margin: 0 auto 20px;
@@ -9,9 +13,14 @@
 	box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
 }
 
-.projects-slider__item__caption {
-	max-width: 344px;
-	margin: 0 auto;
+.projects-slider__image-wrap img {
+	width: 200px;
+	height: 200px;
+	border-radius: 15px;
+}
+
+.projects-slider__item-caption {
+	position: relative;
 }
 
 .row-container {
@@ -21,31 +30,35 @@
 	align-items: center;
 }
 
-.projects-slider__btn {
-	border-radius: 7px;
-	height: 13px;
-	padding: 4px 10px;
+.projects-slider__cat-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 53px;
+	height: 14px;
 	font-size: 6px;
 	box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.16);
+	z-index: 100;
 }
 
-.projects-slider__item__caption h4 {
+.projects-slider__item-caption h4 {
 	font-size: 16px;
 }
 
-.projects-slider__item__caption p {
+.projects-slider__item-caption p {
 	font-size: 12px;
 	margin: 8px 0;
 	color: $white;
 }
 
-.dots--projects-slider {
+.projects-slider__bullets {
+	@include list-style;
 	text-align: center;
 	margin-bottom: 30px;
 	margin-top: 13px;
 }
 
-.dot--projects-slider {
+.projects-slider__bullets li {
   cursor: pointer;
   height: 8px;
   width: 8px;
@@ -55,28 +68,50 @@
   display: inline-block;
 }
 
-.dot--projects-slider:hover {
+.projects-slider__bullets li:hover {
   background-color: $corp-blue;
 }
 
-.projects-slider__item--two, .projects-slider__item--three {
+.projects-slider__item {
 	display: none;
 }
 
+.projects-slider__item--active {
+	display: block;
+}
+
 @media (min-width: 768px) {
-	.projects-slider__item__box {
+	.projects-slider__image-wrap {
+		width: 300px;
+		height: 300px;
+	}
+
+	.projects-slider__image-wrap img {
 		width: 300px;
 		height: 300px;
 	}
 }
 
 @media (min-width: 1440px) {
-		.projects-slider__item__box {
+
+	.projects-slider {
+		position: absolute;
+		top: -50px;
+		right: 46px;
+		width: 343px;
+	}
+
+	.projects-slider__image-wrap {
 		width: 343px;
 		height: 343px;
 	}
 
-	.dot--projects-slider {
+	.projects-slider__image-wrap img {
+		width: 343px;
+		height: 343px;
+	}
+
+	.projects-slider__bullets li {
 		height: 12px;
   		width: 12px;
 	}
