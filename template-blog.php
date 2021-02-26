@@ -4,15 +4,6 @@
 Template Name: Blog Page
 */
 
-$args = array(
-    'post_type' => 'post',
-    'post_status' => 'publish',
-    'posts_per_page' => 3,
-    'order' => 'DESC'
-);
-
-$query = new WP_Query($args);
-
 get_header();
 
 ?>
@@ -54,8 +45,8 @@ get_header();
                 <?php the_content();?>
               </p>
           </li>
-          
-          <?php endwhile; 
+
+          <?php endwhile;
           else :
             get_template_part( 'includes/section', 'none' );
             ?>

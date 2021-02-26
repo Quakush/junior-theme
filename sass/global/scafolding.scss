@@ -46,3 +46,11 @@ main {
         font-size: $base-font-size;
     }
 }
+
+@media (min-width: 1440px) {
+
+    body {
+        font-size: $base-font-size;
+        background-size: 1920px;
+    }
+}

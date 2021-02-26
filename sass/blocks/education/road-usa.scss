@@ -1,50 +1,87 @@
 .road-usa {
-	padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .road-usa .container {
-	background-image: url("../images/svg/freedom.svg");
-	background-repeat: no-repeat;
-	background-size: 170px;
-	background-position: 230px;
+  background-image: url("../images/svg/freedom.svg");
+  background-repeat: no-repeat;
+  background-size: 170px;
+  background-position: 230px;
 }
 
 .road-usa__title {
-	margin-bottom: 0;
-    color: $corp-blue;
+  margin-bottom: 0;
+  color: $corp-blue;
 }
 
 .road-usa__title span {
-	display: block;
-	color: #EF4864;
+  display: block;
+  color: #EF4864;
 }
 
 .road-usa p {
-	padding-top: 27px;
-	padding-bottom: 84px;
-	padding-right: 90px;
-	font-size: 14px;
-	color: $light-text;
-	line-height: $line-height-p;
+  padding-top: 27px;
+  padding-bottom: 84px;
+  padding-right: 90px;
+  font-size: 14px;
+  color: $light-text;
+  line-height: $line-height-p;
 }
 
 .road-usa__btn {
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 @media (min-width: 375px) {
 
-	.road-usa p {
-		background-position: 198px 30px;
-	}
+  .road-usa p {
+    background-position: 198px 30px;
+  }
 }
 
 @media (min-width: 1440px) {
+  .road-usa {
+    padding-bottom: 90px;
+  }
 
-    .road-usa p {
-	    width: 513px;
-	    font-size: 24px;
-	}	
+  .road-usa .container {
+    position: relative;
+    background-image: url("../images/svg/freedom.svg");
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: 0;
+    box-sizing: border-box;
+    padding-left: 508px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .bullets {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .road-usa__title {
+    font-weight: 400;
+  }
+
+  .road-usa p {
+    width: 570px;
+    font-size: 24px;
+    line-height: 45px;
+    letter-spacing: -0.9px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .road-usa__btn {
+    left: 0;
+    transform: translate(0);
+    margin-bottom: 60px;
+  }
+
+
 }

@@ -1,125 +1,189 @@
 .career {
-    position: relative;
-    margin: 69px 0;
-    color: $dark-text;
-    background-color: $white;
+  position: relative;
+  margin: 69px 0;
+  color: $dark-text;
+  background-color: $white;
 
-    &::before {
-        @include clouds(80px, -79px);
-    }
+  &::before {
+    @include clouds(80px, -79px);
+  }
 
-    &::after {
-        @include clouds-bottom(80px, -79px, -79px);
-    }
+  &::after {
+    @include clouds-bottom(80px, -79px, -79px);
+  }
 }
 
 .career .container {
-    text-align: center;
+  text-align: center;
 }
 
 .career__title span {
-    display: block;
-    margin-top: 10px;
+  display: block;
+  margin-top: 10px;
 }
 
 .career p {
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: $line-height-p;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: $line-height-p;
 }
 
 .career__text--desktop {
-    display: none;
+  display: none;
 }
 
 .career__list {
-    @include list-style;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    padding: 0 15px;
+  @include list-style;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0 15px;
 }
 
 .career__item {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 84px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 84px;
 }
 
 .career__item:first-of-type,
 .career__item:nth-of-type(2) {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .career__step-number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 24px;
-    width: 84px;
-    height: 84px;
-    color: $corp-green;
-    font-size: 57px;
-    font-weight: 700;
-    background-color: $dark-text;
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 84px;
+  height: 84px;
+  color: $corp-green;
+  font-size: 57px;
+  font-weight: 700;
+  background-color: $dark-text;
+  border-radius: 10px;
 }
 
 .career__step {
-    width: 84px;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 700;
+  width: 84px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .career .sign-up {
-    margin: 0 auto;
-    padding-bottom: 10px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .career .sign-up__dropdown {
-    text-align: left;
+  text-align: left;
 }
 
 .career .sign-up__options {
-    background-color: $dark-text;
+  background-color: $dark-text;
 }
 
 .career .sign-up__mark {
-    color: $light-text;
-    background-color: $dark-text;
+  color: $light-text;
+  background-color: $dark-text;
 }
 
 @media (min-width: 1024px) {
 
-    .career .container {
-        padding: 10px 0 76px;
+  .career .container {
+    padding: 10px 0 76px;
+  }
+
+  .career p {
+    margin-bottom: 70px;
+    font-size: 24px;
+  }
+
+  .career__text--desktop {
+    display: block;
+  }
+
+  .career__list {
+    flex-wrap: nowrap;
+    margin-bottom: 80px;
+  }
+
+  .career__step-number {
+    margin-bottom: 26px;
+  }
+
+  .career__step {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .career {
+    margin-bottom: 110px
+  ;
+    &::before {
+      @include clouds(135px, -99px);
+      top: -131px;
     }
 
-    .career p {
-        margin-bottom: 70px;
-        font-size: 24px;
+    &::after {
+      @include clouds-bottom(135px, -99px, -99px);
+      bottom: -131px;
     }
+  }
 
-    .career__text--desktop {
-        display: block;
-    }
+  .career .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 10px;
+  }
 
-    .career__list {
-        flex-wrap: nowrap;
-        margin-bottom: 80px;
-    }
+  .career__title {
+    display: flex;
+    margin: 0;
 
-    .career__step-number {
-        margin-bottom: 26px;
+    & span {
+      margin: 0;
     }
+  }
 
-    .career__step {
-        font-size: 25px;
+  .career__text--desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .career__text--mobile {
+    display: none;
+  }
+
+  .career__list {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .career .sign-up {
+    margin-bottom: 130px;
+  }
+
+  .career__step {
+    font-weight: 400;
+  }
+
+  .career .sign-up__btn {
+    &--green {
+      color: #24272D;
+      background-image: linear-gradient(to bottom, #d1e92a 0%, #899b03 100%);
     }
+  }
 }
 
