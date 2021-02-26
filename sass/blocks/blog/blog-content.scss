@@ -71,12 +71,22 @@
     margin-top: 16px;
   }
 
-  .blog-content__description-foodtech {
+  .blog-content__cat-btn {
     font-size: 6px;
     width: 53px;
     height: 13px;
     align-self: center;
   }
+
+  .blog-content__cat-btn ul {
+    @include list-style;
+  }
+
+  .blog-content__cat-btn a {
+    @include link-style;
+  }
+
+
 
   .showmore__btn {
     margin: 0 auto;
