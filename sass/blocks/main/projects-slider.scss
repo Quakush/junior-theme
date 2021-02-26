@@ -52,20 +52,8 @@
 }
 
 .projects-slider__bullets {
-	@include list-style;
-	text-align: center;
 	margin-bottom: 30px;
 	margin-top: 13px;
-}
-
-.projects-slider__bullets li {
-  cursor: pointer;
-  height: 8px;
-  width: 8px;
-  margin: 0 4px;
-  background-color: $white;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 .projects-slider__bullets li:hover {

@@ -1,5 +1,4 @@
 <form class="form  getnews" action="#" method="post">
-
     <input type="email" name="email" placeholder="Введите ваш e-mail">
     <button class="btn btn--big getnews__btn" type="submit">Получать новости</button>
     <div class="confidentiality">

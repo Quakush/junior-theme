@@ -127,43 +127,46 @@ get_header();
             <p><span>Junior Specialists Corporation -</span> это возможность выбрать проффессию<span>в сфере ИТ, пройти обучение</span>в одном из онлайн-университетов и получить гарантированную практику в нашей компании!</p>
 
             <div class="slider  join-us__slider">
-                <figure class="slider__item item--one fade">
-                    <img src="/wp-content/themes/js-corp/images/svg/student-woman.svg" alt="student picture">
-                    <figcaption class="slider__caption">Студент</figcaption>
+                <ul class="join-us__slider-list">
+                    <li class="join-us__slider-item  join-us__slider-item--active">
+                        <div class="join-us__slider-item-img-wrap">
+                            <img src="/wp-content/themes/js-corp/images/svg/student-woman.svg" alt="student picture">
+                        </div>
+                        <span class="join-us__slider-caption">Студент</span>
+                    </li>
+                    <li class="join-us__slider-item">
+                        <div class="join-us__slider-item-img-wrap">
+                            <img src="/wp-content/themes/js-corp/images/svg/specialist.svg" alt="student picture">
+                        </div>
+                        <span class="join-us__slider-caption">Специалист</span>
+                    </li>
+                    <li class="join-us__slider-item">
+                        <div class="join-us__slider-item-img-wrap">
+                            <img src="/wp-content/themes/js-corp/images/svg/innovator.svg" alt="student picture">
+                        </div>
+                        <span class="join-us__slider-caption">Новатор</span>
+                    </li>
+                    <li class="join-us__slider-item">
+                        <div class="join-us__slider-item-img-wrap">
+                            <img src="/wp-content/themes/js-corp/images/svg/investor.svg" alt="student picture">
+                        </div>
+                        <span class="join-us__slider-caption">Инвестор</span>
+                    </li>
+                    <li class="join-us__slider-item">
+                        <div class="join-us__slider-item-img-wrap">
+                            <img src="/wp-content/themes/js-corp/images/svg/business.svg" alt="student picture">
+                        </div>
+                        <span class="join-us__slider-caption">Бизнес</span>
+                    </li>
+                </ul>
 
-                </figure>
-
-                <figure class="slider__item item--two fade">
-                    <img src="/wp-content/themes/js-corp/images/svg/specialist.svg" alt="student picture">
-                    <figcaption class="slider__caption">Специалист</figcaption>
-
-                </figure>
-
-                <figure class="slider__item item--three fade">
-                    <img src="/wp-content/themes/js-corp/images/svg/innovator.svg" alt="student picture">
-                    <figcaption class="slider__caption">Новатор</figcaption>
-
-                </figure>
-
-                <figure class="slider__item item--four fade">
-                    <img src="/wp-content/themes/js-corp/images/svg/investor.svg" alt="student picture">
-                    <figcaption class="slider__caption">Инвестор</figcaption>
-
-                </figure>
-
-                <figure class="slider__item item--five fade">
-                    <img src="/wp-content/themes/js-corp/images/svg/business.svg" alt="student picture">
-                    <figcaption class="slider__caption">Бизнес</figcaption>
-
-                </figure>
-
-                <div class="dots">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
+                <ul class="bullets  join-us__bullets">
+                    <li class="bullets__active" data="0"></li>
+                    <li data="1"></li>
+                    <li data="2"></li>
+                    <li data="3"></li>
+                    <li data="4"></li>
+                </ul>
             </div>
 
             <?php get_template_part('/includes/block', 'sign_up');?>
@@ -234,8 +237,8 @@ get_header();
 
                 </ul>
 
-                <ul class="projects-slider__bullets">
-                    <li data="0"></li>
+                <ul class="bullets  projects-slider__bullets">
+                    <li class="bullets__active" data="0"></li>
                     <li data="1"></li>
                     <li data="2"></li>
                 </ul> 

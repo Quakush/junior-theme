@@ -1,5 +1,4 @@
-<li class="
-<?php if($i === 0){echo "projects-slider__item--active";}?> projects-slider__item">
+<li class="projects-slider__item--active projects-slider__item">
     <div class="projects-slider__image-wrap">
         <?php if(has_post_thumbnail()):?>
 

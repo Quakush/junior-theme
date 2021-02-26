@@ -102,6 +102,23 @@
 		  /*обнуляем позиционирование */ 
 	}
 
+	.contact-us__title {
+		margin-left: 0;
+	}
+
+	.contact-us__list {
+		margin-left: 0;
+		margin-bottom: 53px;
+	}
+
+	.contact-us__item {
+		margin-bottom: 0;
+	}
+
+	.contact-us__item:first-of-type {
+		margin-bottom: 17px;
+	}
+
 	.contact-us__socials {
 		opacity: 0;
 	}

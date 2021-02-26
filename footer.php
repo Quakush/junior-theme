@@ -1,15 +1,8 @@
 <footer class="main-footer">
-        <div class="container">
-        <div class="main-footer__flex-container"> 
-
-         <form class="news-form">
-                <a class="news-form__link footer-link" href="#">ВСЕ СТАТЬИ ></a>
-                <input class="news-form__email-input" type="email" name="email" placeholder="Введите ваш e-mail"></input>
-                <button class="news-form__btn btn" type="submit">Получать новости</button>
-                <div class="news-form__info-polity"><input type="checkbox" id="confidentiality" name="confidentiality"></input>
-                <label for="confidentiality">Принимаю условия <a href="#" class="footer-link">политики конфиденциальности</a></label></div>
-         </form>
-
+    <div class="container">
+        <div class="main-footer__flex-container">
+            <?php get_template_part('/includes/block', 'getnews');?>
+            
             <section class="contact-us">
                 <h4 class="contact-us__title title-fourth">Связаться с нами:</h4>
                 <ul class="contact-us__list">

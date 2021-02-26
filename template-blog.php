@@ -38,16 +38,18 @@ get_header();
           <?php if ( $query->have_posts() ) :
             while ( $query->have_posts() ) : $query->the_post();?>
           <li class="blog-content__item">
-            <div class="blog-content__image-wrapper">
+            <a class="blog-content__image-wrapper" href="<?php echo get_permalink(); ?>">
               <?php if(has_post_thumbnail()):?>
                   <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>">
               <?php endif;?>
-            </div>
+            </a>
             <div class="blog-content__item-description">
               <h2 class="blog-content__title">
                 <?php the_title();?>
               </h2>
-              <button class="btn btn--accent  blog-content__description-foodtech">foodtech</button>
+              <button class="btn btn--accent  blog-content__cat-btn">
+                  <?php the_category();?>
+              </button>
               <p class="blog-content__info">
                 <?php the_content();?>
               </p>
@@ -60,7 +62,17 @@ get_header();
 
           <?php endif; ?>
         </ul>
-        <div id="true_loadmore" class="btn showmore__btn">Показать еще</div>
+        <?php if ($wp_query->max_num_pages > 1) : ?>
+
+                <script>
+                var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
+                var posts = '<?php echo addslashes(wp_json_encode($wp_query->query_vars)); ?>';
+                var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+                var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
+                </script>
+
+                <div id="true_loadmore" class="btn  courses__btn">Загрузить ещё</div>
+            <?php endif; ?>
       </div>
 
     </div>
