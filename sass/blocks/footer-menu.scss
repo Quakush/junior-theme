@@ -63,12 +63,17 @@
 
 @media (min-width: 1024px) {
 
+	.footer-menu {
+		margin-left: auto;
+	}
+
 	.footer-menu__list {
 	    flex-wrap: nowrap;
 	}
 
 	.footer-menu__list li {
 		margin-left: 54px;
+		margin-bottom: 0;
 
 		&:first-of-type {
 			margin-left: 0;
@@ -79,22 +84,12 @@
 		margin-left: 0;
 	}
 
-	.footer-menu__link {
-		font-size:16px;
-		line-height: 40px;
+	.footer-menu__list a {
+		font-size: 16px;
 	}
 
 	.footer-menu__title {
 		font-size: 16px;
 		margin-bottom: 15px;
 	}
-
-	.footer-menu__list--first, .footer-menu__list--third  {
-		margin-left: 0;
-	}
-
-	.footer-menu__list--second {
-		margin:0 30px;
-	}
-
 }

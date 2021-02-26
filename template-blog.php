@@ -4,6 +4,8 @@
 Template Name: Blog Page
 */
 
+$cats = get_categories('hide_empty=0');
+
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
@@ -21,15 +23,13 @@ get_header();
   <section class="blog">
     <div class="container">
       <ul class="blog-links-list">
-        <li class="blog-links-list__item">
-          <a class="blog-links-list__link blog-links-list__link--active" href="#">Новости</a>
-        </li>
-        <li class="blog-links-list__item">
-          <a class="blog-links-list__link" href="#">Стартапы</a>
-        </li>
-        <li class="blog-links-list__item">
-          <a class="blog-links-list__link" href="#">Интервью</a>
-        </li>
+        <?php foreach( $cats as $cat ):?>
+          <li class="blog-links-list__item">
+            <a class="blog-links-list__link blog-links-list__link--active" href="<?=get_category_link($cat->term_id);?>">
+              <?=$cat->name;?>
+            </a>
+          </li>
+        <?php endforeach; ?>
       </ul>
 
       <div class="blog-content">
@@ -64,15 +64,15 @@ get_header();
         </ul>
         <?php if ($wp_query->max_num_pages > 1) : ?>
 
-                <script>
-                var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
-                var posts = '<?php echo addslashes(wp_json_encode($wp_query->query_vars)); ?>';
-                var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
-                var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
-                </script>
+            <script>
+            var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
+            var posts = '<?php echo addslashes(wp_json_encode($wp_query->query_vars)); ?>';
+            var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+            var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
+            </script>
 
-                <div id="true_loadmore" class="btn  courses__btn">Загрузить ещё</div>
-            <?php endif; ?>
+            <div id="true_loadmore_blog" class="btn  blog-content__btn">Загрузить ещё</div>
+        <?php endif; ?>
       </div>
 
     </div>

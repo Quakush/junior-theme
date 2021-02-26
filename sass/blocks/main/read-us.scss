@@ -54,6 +54,26 @@
 		margin-bottom: 25px;
 	}
 
+	.read-us__link {
+		position: relative;
+		padding-right: 38px;
+		font-size: 20px;
+		font-weight: 700;
+
+		&::before {
+			@include element-style(9px, 9px, transparent);
+			right: 2px;
+			top: 7px;
+			border: 2px solid $corp-blue;
+			border-radius: 2px;
+			border-top: none;
+			border-left: none;
+			transform: rotate(-45deg);
+		}
+
+	}
+
+
 	.read-us__text {
 		width: 47%;
 		font-size: 24px;

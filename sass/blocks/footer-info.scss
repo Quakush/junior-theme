@@ -27,11 +27,28 @@
 
 @media (min-width: 1024px) {
 
+	.footer-info {
+		position: relative;
+		flex-basis: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 33px;
+
+		&::before {
+			@include element-style(90%, 1px, $white);
+			top: 0;
+			left: 95px;
+		}
+	}
+
 	.footer-info__logo:hover {
 		height: 80px;
 	}
 
-	.footer-info__company, .footer-info__polity {
+	.footer-info__company, 
+	.footer-info__polity {
+		margin: 0;
 		font-size: $base-font-size;
 	}
 
@@ -39,6 +56,7 @@
 	.footer-info__logo {
 		position: relative;
 		display: block;
+		margin-right: 25px;
 		width: 73px;
 		height: 73px;
 		background: rgb(0,167,207);
@@ -71,13 +89,5 @@
 		font-weight: 700;
 		letter-spacing: 0;
 		transform: rotate(-90deg) translate(0, -50%);
-	}
-
-	.footer-info {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		margin-bottom: 0;
 	}
 }

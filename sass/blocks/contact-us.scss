@@ -77,10 +77,15 @@
 	@include link-style;
 	margin-right: 20px;
 	height: 29px;
+	opacity: 0.2;
 
 	&:last-of-type{
 		margin-right: 0;
 	}
+}
+
+.contact-us__download-item:hover {
+	opacity: 1;
 }
 
 .contact-us__download-item--apple img {
