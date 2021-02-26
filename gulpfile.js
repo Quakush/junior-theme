@@ -1,7 +1,5 @@
 "use strict";
 
-let localhost = 'http://localhost:8888/JSCorporation/';
-
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sass = require("gulp-sass");
@@ -33,7 +31,7 @@ gulp.task("style", function() {
 
 gulp.task("server", function () {
   server.init({
-    proxy: localhost,
+    proxy: "junior-corporation",
     notify: false,
   });
 

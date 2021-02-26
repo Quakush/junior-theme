@@ -8,7 +8,7 @@
 	        <li>Я инвестор</li>
         </ul>
     </div>
-    <a class="btn  btn--big sign-up__btn sign-up__btn--green" href="https://jscorp.space/login" target="_blank">
+    <a class="btn  btn--big  sign-up__btn" href="https://jscorp.space/login" target="_blank">
         Создать аккаунт
     </a>
 </div>
