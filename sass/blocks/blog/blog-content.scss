@@ -1,94 +1,94 @@
-.blog-content {
-
-  .blog-content__list {
-    @include list-style;
+.blog-content__list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    flex-direction: column;
+    width: 100%;
+}
 
-  .blog-content__item {
+.blog-content__item {
     position: relative;
     border: none;
-    text-align: center;
-    margin-bottom: 40px;
-  }
+    margin-bottom: 30px;
+    width: 100%;
+}
 
-  .blog-content__image-wrapper {
+.blog-content__image-wrapper {
+    @include link-style;
     position: relative;
     border-radius: 20px;
     margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.4);
 
     &::before {
-      position: absolute;
-      content: "Подробнее...";
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-      color: $white;
-      z-index: 5;
-      display: none;
+        position: absolute;
+        content: "Подробнее...";
+        top: 50%;
+        left: 50%;
+        color: $white;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+        display: none;
     }
+}
 
-    &:hover {
-      &::before {
-        display: block;
-      }
-    }
-  }
-
-  .blog-content__image-wrapper img {
+.blog-content__image-wrapper img {
+    width: 100%;
     border-radius: 20px;
+}
 
-    &:hover {
-      opacity: .6;
+.blog-content__image-wrapper:hover img {
+    opacity: 0.6;
+}
+
+.blog-content__image-wrapper:hover {
+
+    &::before {
+      display: block;
     }
-  }
+}
 
-  .blog-content__item-description {
+.blog-content__item-description {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 293px;
-  }
+}
 
-  .blog-content__title {
+.blog-content__title {
     position: relative;
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
     text-align: left;
     margin: 0;
-  }
+}
 
-  .blog-content__info {
+.blog-content__info {
     display: block;
     font-size: 12px;
     line-height: 13px;
     font-weight: $base-font-weight;
     text-align: left;
     margin-top: 16px;
-  }
+}
 
-  .blog-content__cat-btn {
+.blog-content__cat-btn {
     font-size: 6px;
     width: 53px;
     height: 13px;
     align-self: center;
-  }
+}
 
-  .blog-content__cat-btn ul {
+.blog-content__cat-btn ul {
     @include list-style;
-  }
+}
 
-  .blog-content__cat-btn a {
+.blog-content__cat-btn a {
     @include link-style;
-  }
+}
 
-
-
-  .showmore__btn {
+.blog-content__btn {
+    flex-basis: 100%;
     margin: 0 auto;
     width: 130px;
     height: 36px;
@@ -101,70 +101,63 @@
     background-image: none;
     cursor: pointer;
     margin-bottom: 30px;
-  }
 }
 
-
 @media (min-width: 768px) {
-  .blog-content {
+
+    .blog-content__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .blog-content__item {
-      margin-right: 5px;
+        margin-right: 25px;
+        width: 293px;
     }
 
     .blog-content__item:last-child {
       margin-right: 0;
     }
 
-    .blog-content__list {
-      flex-wrap: wrap;
-    }
-
     .blog-content__image {
-      width: 293px;
-      height: 293px;
+        width: 293px;
+        height: 293px;
     }
 
     .blog-content__title {
       font-size: 14px;
       line-height: 17px;
     }
-  }
+  
 }
 
 @media (min-width: 1024px) {
-  .blog-content {
-    .blog-content__image {
-      width: 300px;
-      height: 300px;
+
+    .blog-content__list {
+        justify-content: space-between;
+    }
+
+    .blog-content__item {
+        width: 300px;
     }
 
     .blog-content__item-description {
       width: 300px;
     }
-  }
+  
 }
 
 @media (min-width: 1440px) {
-  .blog-content {
-    .blog-content__list {
-      display: flex;
-      flex-wrap: nowrap;
-    }
 
     .blog-content__item {
       margin-right: 15px;
       margin-bottom: 24px;
+      width: 343px;
     }
 
     .blog-content__item:last-child {
       margin-right: 0;
-    }
-
-    .blog-content__image {
-      width: 343px;
-      height: 343px;
-      margin-bottom: 7px;
     }
 
     .blog-content__item-description {
@@ -175,8 +168,7 @@
       font-size: 17px;
     }
 
-    .showmore__btn {
+    .blog-content__btn {
       margin-bottom: 32px;
     }
-  }
 }

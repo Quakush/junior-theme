@@ -3,20 +3,30 @@
 @import "mixins";
 @import "global/scafolding";
 @import "blocks/btn";
-@import "blocks/toggler";
 @import "blocks/bullets";
 @import "blocks/title";
 @import "blocks/container";
 @import "blocks/form";
-@import "blocks/main-header";
-@import "blocks/top-bar";
-@import "blocks/campaign";
-@import "blocks/top-header";
-@import "blocks/logo";
-@import "blocks/main-nav";
-@import "blocks/mobile-nav";
-@import "blocks/language-switch";
 @import "blocks/sign-up";
+@import "blocks/confidentiality";
+@import "blocks/ask-questions";
+@import "blocks/banners";
+
+@import "blocks/header/toggler";
+@import "blocks/header/main-header";
+@import "blocks/header/top-bar";
+@import "blocks/header/campaign";
+@import "blocks/header/top-header";
+@import "blocks/header/logo";
+@import "blocks/header/main-nav";
+@import "blocks/header/mobile-nav";
+@import "blocks/header/language-switch";
+
+@import "blocks/footer/main-footer";
+@import "blocks/footer/footer-menu";
+@import "blocks/footer/footer-info";
+@import "blocks/footer/contact-us";
+
 @import "blocks/main-offer";
 @import "blocks/main/ecosystem";
 @import "blocks/main/getnews";
@@ -33,9 +43,7 @@
 @import "blocks/education/credences";
 @import "blocks/education/road-usa";
 @import "blocks/education/educational-programms";
-@import "blocks/confidentiality";
-@import "blocks/ask-questions";
-@import "blocks/banners";
+
 @import "blocks/courses/pop-up";
 @import "blocks/courses/filters";
 @import "blocks/courses/searching-form";
@@ -44,10 +52,7 @@
 @import "blocks/courses/paginator";
 @import "blocks/courses/aggregator";
 @import "blocks/courses/education-paltforms-proposal";
-@import "blocks/main-footer";
-@import "blocks/footer-menu";
-@import "blocks/footer-info";
-@import "blocks/contact-us";
+
 @import "blocks/blog/blog";
 @import "blocks/blog/blog-links-list";
 @import "sass/blocks/blog/blog-content";

@@ -1,16 +1,18 @@
-<li class="projects-slider__item--active projects-slider__item">
-    <div class="projects-slider__image-wrap">
+<article class="blog-content__item">
+    <a class="blog-content__image-wrapper" href="<?php echo get_permalink(); ?>">
         <?php if(has_post_thumbnail()):?>
-
-			<img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>">
-
-		<?php endif;?>
-    </div>
-    <div class="projects-slider__item-caption">
-        <h4><?php the_title();?></h4>
-        <button class="btn  btn--accent  projects-slider__cat-btn" >
-            foodtech
+            <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>">
+        <?php endif;?>
+    </a>
+    <div class="blog-content__item-description">
+        <h2 class="blog-content__title">
+            <?php the_title();?>
+        </h2>
+        <button class="btn btn--accent  blog-content__cat-btn">
+            <?php the_category();?>
         </button>
-        <p><?php the_content();?></p>
+        <p class="blog-content__info">
+            <?php the_content();?>
+        </p>
     </div>
-</li>
+</article>

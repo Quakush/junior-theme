@@ -20,25 +20,27 @@ function scripts()
 	wp_register_script('filter-animation', get_template_directory_uri() . '/js/filter-animation.js', [], 1, true);
 	wp_enqueue_script('filter-animation');
 
-	wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery') );
+	wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery'));
 
-	wp_enqueue_script( 'true_loadcategory', get_stylesheet_directory_uri() . '/js/loadcategory.js', array('jquery') );
+	wp_enqueue_script( 'true_loadmoreblog', get_stylesheet_directory_uri() . '/js/loadblog.js', array('jquery'));
+
+	wp_enqueue_script( 'true_loadcategory', get_stylesheet_directory_uri() . '/js/loadcategory.js', array('jquery'));
 
 	wp_localize_script('true_loadcategory', 'myPlugin', array(
 		'ajaxurl' => admin_url('admin-ajax.php')
 	));
 
-	wp_register_script( 'custom-script', get_stylesheet_directory_uri(). '/js/custom.js', array('jquery'), false, true );
+	//wp_register_script( 'custom-script', get_stylesheet_directory_uri(). '/js/custom.js', array('jquery'), false, true );
 
 	// Localize the script with new data
-	$script_data_array = array(
-			'ajaxurl' => admin_url( 'admin-ajax.php' ),
-			'security' => wp_create_nonce( 'load_more_posts' ),
-	);
-	wp_localize_script( 'custom-script', 'blog', $script_data_array );
+	//$script_data_array = array(
+			//'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			//'security' => wp_create_nonce( 'load_more_posts' ),
+	//);
+	//wp_localize_script( 'custom-script', 'blog', $script_data_array );
 
 	// Enqueued script with localized data.
-	wp_enqueue_script( 'custom-script' );
+	//wp_enqueue_script( 'custom-script' );
 }
 
 add_action('wp_enqueue_scripts', 'scripts');
@@ -256,6 +258,7 @@ function true_load_posts(){
 	$args = json_decode( stripslashes( $_POST['query'] ), true );
 	$args['paged'] = $_POST['page'] + 1; // следующая страница
 	$args['post_status'] = 'publish';
+	$args['posts_per_page'] = 5;
  
 	// обычно лучше использовать WP_Query, но не здесь
 	query_posts( $args );
@@ -266,6 +269,36 @@ function true_load_posts(){
 		while( have_posts() ): the_post();
  
 			get_template_part('includes/section', 'courses');
+ 
+		endwhile;
+		wp_reset_postdata();
+ 
+	endif;
+
+	wp_die();
+}
+
+//подгрузка постов на странице блога
+
+add_action('wp_ajax_loadmoreblog', 'true_load_blog_posts');
+add_action('wp_ajax_nopriv_loadmoreblog', 'true_load_blog_posts');
+
+function true_load_blog_posts(){
+ 
+	$args = json_decode( stripslashes( $_POST['query'] ), true );
+	$args['paged'] = $_POST['page'] + 1; // следующая страница
+	$args['post_status'] = 'publish';
+	$args['posts_per_page'] = 3;
+ 
+	// обычно лучше использовать WP_Query, но не здесь
+	query_posts( $args );
+	// если посты есть
+	if( have_posts() ) :
+ 
+		// запускаем цикл
+		while( have_posts() ): the_post();
+ 
+			get_template_part('includes/section', 'blog-article');
  
 		endwhile;
 		wp_reset_postdata();

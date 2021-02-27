@@ -102,15 +102,14 @@ get_header();
 
             <div class="courses__list">
 
-            <?php
-
-            if ($courses->have_posts()) :
+            <?php if ($courses->have_posts()) :
 
             while($courses->have_posts()) : $courses-> the_post(); ?>
                             
                 <?php get_template_part('includes/section', 'courses'); ?>
 
             <?php endwhile; endif; ?>
+            <?php wp_reset_postdata(); ?>
 
             <?php if ($wp_query->max_num_pages > 1) : ?>
 
