@@ -1,5 +1,10 @@
 .filters {
 	padding-top: 20px;
+	overflow: visible;
+}
+
+.filters .container {
+	overflow: visible;
 }
 
 @media (min-width: 1440px) {

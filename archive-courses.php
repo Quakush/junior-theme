@@ -85,9 +85,6 @@ get_header();
                         </li>
                     <?php endforeach; endif; ?>
                 </ul>
-                <div class="categories__selected">
-                    <span>All</span>
-                </div>
             </div>
         </div>
     </section>     

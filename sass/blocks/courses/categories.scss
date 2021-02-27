@@ -1,6 +1,5 @@
 .categories {
 	position: relative;
-	
 	padding-bottom: 10px;
 }
 
@@ -48,13 +47,19 @@
 .categories__list {
 	@include list-style;
 	display: none;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
 	flex-direction: column;
-	margin-top: 10px;
 	padding: 10px 0;
 	padding-left: 28px;
+	width: 100%;
 	background-color: $dark-text;
 	border-radius: 7px;
+	transform: translate(0, 100%);
+	box-sizing: border-box;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 1.6);
+	z-index: 200;
 }
 
 .categories__list--shown {

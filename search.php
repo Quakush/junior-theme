@@ -40,7 +40,6 @@ get_header();
                         </li>
                     <?php endforeach; endif; ?>
                 </ul>
-                <div class="categories__selected"></div>
             </div>
         </div>
     </section>
