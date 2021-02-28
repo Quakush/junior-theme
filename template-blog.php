@@ -51,7 +51,9 @@ get_header();
                         var max_pages = '<?php echo $query->max_num_pages; ?>';
                         </script>
 
-                        <div id="true_loadmore_blog" class="btn  blog-content__btn">Загрузить ещё</div>
+                        <div class="blog-content__btn-container">
+                          <div id="true_loadmore_blog" class="btn  blog-content__btn">Загрузить ещё</div>
+                        </div>
                       <?php endif; ?>
                     
                 </div>

@@ -50,6 +50,29 @@
 	}
 }
 
+@media (min-width: 768px) {
+
+    .toggler {
+		width: 25px;
+		height: 10px;
+	}
+
+	.toggler span {
+		width: 25px;
+
+		&::before {
+			width: 25px;
+			top: 6px;
+		}
+
+		&::after {
+			width: 25px;
+			top: 12px;
+		}
+	}
+
+}
+
 @media (min-width: 1024px) {
 
 	.toggler {

@@ -89,19 +89,25 @@
 
 @media (min-width: 768px) {
 
-	.join-us__form {
-		align-self: center;
-		position: relative;
-		margin-top: -120px;
+	.join-us .container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
 	}
 
-	.join-us__text {
-		width: 646px;
-		margin-top:40px;
+	.join-us__title {
+		flex-basis: 100%;
+		padding-right: 23%;
 	}
 
 	.join-us p {
+		width: 50%;
 		font-size: 20px;
+	}
+
+	.join-us .sign-up {
+		flex-basis: 100%;
 	}
 }
 

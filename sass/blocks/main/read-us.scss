@@ -32,10 +32,25 @@
 }
 
 @media (min-width: 768px) {
-	.read-us__text {
-		font-size: 24px;
-		line-height: 2;
+
+	.read-us .container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
+
+	.read-us__title-container {
+		margin-bottom: 25px;
+		flex-basis: 100%;
+	}
+
+	.read-us__text {
+		margin-top: 30px;
+		width: 50%;
+		font-size: 20px;
+	}
+	
 }
 
 @media (min-width: 1440px) {
@@ -50,8 +65,9 @@
 		overflow: visible;
 	}
 
-	.read-us__title-container {
-		margin-bottom: 25px;
+	.read-us__text {
+		font-size: 24px;
+		line-height: 2;
 	}
 
 	.read-us__link {
@@ -72,7 +88,6 @@
 		}
 
 	}
-
 
 	.read-us__text {
 		width: 47%;

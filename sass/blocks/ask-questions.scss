@@ -28,7 +28,7 @@
 	text-decoration: underline;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
 
 	.ask-questions .container {
 		overflow: visible;
@@ -37,6 +37,7 @@
 	.ask-questions__wrap {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		margin-bottom: 30px;
 		padding: 25px;
 		padding-left: 28px;
@@ -48,15 +49,13 @@
 	}
 
 	.ask-questions__title {
-		margin: 0;
-		width: 30%;
+		flex-basis: 100%;
 	}
 
 	.ask-questions .form {
 		position: relative;
 		display: flex;
 		flex-direction: row;
-		margin-left: auto;
 		padding-bottom: 30px;
 		align-items: center;
 	}
@@ -80,4 +79,26 @@
 		bottom: 0;
 		left: 0;
 	}
+
+
+}
+
+@media (min-width: 1024px) {
+
+	.ask-questions__wrap {
+		flex-wrap: nowrap;
+	}
+
+	.ask-questions__title {
+		margin: 0;
+		flex-basis: 30%;
+	}
+
+	.ask-questions .form {
+		margin-left: auto;
+	}
+}
+
+@media (min-width: 1440px) {
+	
 }

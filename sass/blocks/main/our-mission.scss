@@ -36,24 +36,7 @@
 
 @media (min-width: 768px) {
 
-    .our-mission__text {
-        width: 546px;
-        align-self: center;
-        margin-left:440px;
-    }
-
-    .our-mission__img {
-        position: relative;
-        margin-top: -300px;
-        align-self: center;
-        margin-right: 480px; 
-        width: 307px;
-        height: 352px;
-    }
-
-    .our-mission p {
-        font-size: 20px;
-    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -78,6 +61,15 @@
         background-size: 200px;
         background-position: left 77px center;
 
+    }
+
+    .our-mission__text {
+        width: 546px;
+        margin-left:440px;
+    }
+
+    .our-mission p {
+        font-size: 20px;
     }
 }
 

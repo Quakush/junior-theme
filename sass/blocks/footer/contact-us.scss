@@ -98,26 +98,41 @@
 	height: 29px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+
 	.contact-us {
 		position: static;
-		left: 0;
-		margin-top: 0;
 		font-size: 16px;
-		  /*обнуляем позиционирование */ 
 	}
 
 	.contact-us__title {
 		margin-left: 0;
+		margin-bottom: 10px;
 	}
 
 	.contact-us__list {
 		margin-left: 0;
-		margin-bottom: 53px;
+		margin-bottom: 20px;
 	}
 
 	.contact-us__item {
 		margin-bottom: 0;
+
+		&:first-of-type {
+			margin-bottom: 20px;
+		}
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+    .contact-us__title {
+    	margin-bottom: 18px;
+    }
+
+	.contact-us__list {
+		margin-bottom: 53px;
 	}
 
 	.contact-us__item:first-of-type {

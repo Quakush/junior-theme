@@ -19,7 +19,6 @@
     }
 }
 
-
 .pilot-project__text-block {
     margin-bottom: 50px;
     
@@ -38,8 +37,8 @@
     line-height: 1.66;
 }
 
-.pilot-project__text--desktop {
-    display: none;
+.pilot-project__text span {
+    display: block;
 }
 
 .pilot-project__text-block:nth-of-type(2) p {
@@ -71,12 +70,28 @@
 @media (min-width: 768px) {
 
     .pilot-project {
-        background-position: 5% 30px;
+        background-position: right 5% top 70px;
+    }
+
+    .pilot-project__text span {
+        display: inline-block;
     }
 
     .pilot-project__text-block p {
         font-size: 20px;
         line-height: 1.45;
+    }
+
+    .pilot-project__text-block {
+
+        &:first-of-type {
+            margin-bottom: 40px;
+            width: 65%;
+        }
+
+        &:nth-of-type(2) {
+            width: 70%;
+        }
     }
 
     .pilot-project__btn {
@@ -112,10 +127,6 @@
     .pilot-project__text-block {
         margin-left: auto;
         width: 48%;
-
-        &:first-of-type {
-            margin-bottom: 40px;
-        }
 
         &:nth-of-type(2) {
             margin-bottom: 116px;

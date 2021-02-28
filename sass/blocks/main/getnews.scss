@@ -8,6 +8,10 @@
 }
 
 @media (min-width: 768px) {
+
+	.getnews input[type="email"] {
+    	width: 267px;
+    }
 	
 	.getnews__btn {
 		width: 267px;
@@ -26,11 +30,4 @@
 		font-size: 20px;
 		color: $corp-blue;
 	}
-}
-
-@media (min-width: 1440px) {
-    
-    .getnews input[type="email"] {
-    	width: 267px;
-    }
 }

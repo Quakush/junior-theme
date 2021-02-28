@@ -50,7 +50,7 @@ get_header();
 
             <div class="options-slider__shown-container">
                 <li class="options-slider__item  options-slider__item--green  options-slider__item--active">
-                    <div class="option-slider__text">
+                    <div class="options-slider__text">
                         <h2 class="title__secondary  options-slider__item-title">Дорога <span class="title__colored">в digital</span></h2>
                         <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!  
                         </p>
@@ -72,7 +72,7 @@ get_header();
 
             <ul class="options-slider__list">
                 <li class="options-slider__item  options-slider__item--blue">
-                    <div class="option-slider__text">
+                    <div class="options-slider__text">
                         <h2 class="title__secondary  options-slider__item-title">
                             <span class="title__colored">Сделай</span> первый шаг
                         </h2>
@@ -88,7 +88,7 @@ get_header();
                 </li>
 
                 <li class="options-slider__item  options-slider__item--red">
-                    <div class="option-slider__text">
+                    <div class="options-slider__text">
                         <h2 class="title__secondary  options-slider__item-title">
                             <span class="title__colored">КОММЕРЧЕСКАЯ</span>
                             РАЗРАБОТКА
@@ -178,8 +178,17 @@ get_header();
         <div class="container pilot-project__container">
             <div class="pilot-project__text-block">
                 <h2 class="title__secondary">Проект для пилота</h2>
-                <p class="pilot-project__text pilot-project__text--mobile">Автоматизация процессов, сокращение издержек, новые продукты -<br>все это даст вашему бизнесу<br> рост и конкурентное<br>преимущество.<br>Мы осуществляем поиск<br>проектов под ваши<br> задачи и помогаем<br>интегрировать<br>в вашу компанию.</p>
-                <p class="pilot-project__text pilot-project__text--desktop">Автоматизация процессов, сокращение издержек, новые продукты - все это даст вашему бизнесу рост и конкурентное преимущество. Мы осуществляем поиск проектов под ваши задачи и помогаем интегрировать в вашу компанию. </p>
+                <p class="pilot-project__text">
+                    <span>Автоматизация процессов, сокращение издержек, новые продукты -</span>
+                    <span>все это даст вашему бизнесу</span>
+                    <span>рост и конкурентное</span>
+                    <span>преимущество.</span>
+                    <span>Мы осуществляем поиск</span>
+                    <span>проектов под ваши</span>
+                    <span>задачи и помогаем</span>
+                    <span>интегрировать</span>
+                    <span>в вашу компанию.</span>
+                </p>
             </div>
 
             <div class="pilot-project__text-block">
@@ -193,8 +202,15 @@ get_header();
             <div class="pilot-project__text-block">
                 <h2 class="title__secondary pilot-project__text-block-title  pilot-project__text-block-title--mobile">Инвестируйте<br>в стартапы<span>с первыми продажами</span></h2>
                 <h2 class="title__secondary pilot-project__text-block-title  pilot-project__text-block-title--desktop">Инвестируйте в стартапы с первыми продажами</h2>
-                <p class="pilot-project__text  pilot-project__text--mobile">Мы ставим для себя задачу -<br>создать безопасный инструмент<br>инвестирования в стартапы ранних стадий.<br>Мы подберем проект специально для вас,<bt>познакомим с командой<br>и после подтвержденного спроса<br>поможем осуществить сделку. </p>
-                <p class="pilot-project__text  pilot-project__text--desktop">Мы ставим для себя задачу - создать безопасный инструмент инвестирования в стартапы ранних стадий. Мы подберем проект специально для вас, познакомим с командой и после подтвержденного спроса поможем осуществить сделку. </p>
+                <p class="pilot-project__text">
+                    <span>Мы ставим для себя задачу -</span>
+                    <span>создать безопасный инструмент</span>
+                    <span>инвестирования в стартапы ранних стадий.</span>
+                    <span>Мы подберем проект специально для вас,</span>
+                    <span>познакомим с командой</span>
+                    <span>и после подтвержденного спроса</span>
+                    <span>поможем осуществить сделку.</span>
+                </p>
                 <a class="pilot-project__btn btn btn--big" href="#">Подробнее</a>
             </div>
 
