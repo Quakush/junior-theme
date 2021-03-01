@@ -15,13 +15,17 @@
 	
 	.getnews__btn {
 		width: 267px;
-		height: 48px;
+		height: 36px;
 		font-size: 16px;
 		border-radius: 15px;
 	}
 }
 
 @media (min-width: 1024px) {
+
+	.getnews__btn {
+		height: 48px;
+	}
 
 	.getnews__link {
 		@include link-style;

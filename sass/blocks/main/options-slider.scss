@@ -50,7 +50,6 @@
 }
 
 .options-slider__visual {
-	align-self: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -252,14 +251,9 @@
 
 @media (min-width: 1024px) {
 
-    .options-slider {
-    	padding-top: 0;
-    	padding-bottom: 40px;
-    }	
-
 	.options-slider__list {
-		left: 0;
-		bottom: 90px;
+		left: 36px;
+		bottom: 40px;
 	}
 
 	.options-slider__item {
@@ -281,53 +275,10 @@
 
 	.options-slider__text p {
 		width: 100%;
-		font-size: 24px;
-		letter-spacing: -1px;
-	}
-
-	.options-slider__visual {
-		padding: 30px;
-		padding-top: 55px;
-		width: 267px;
-		height: 332px;
-	}
-
-	.options-slider__visual-title {
-		font-size: 25px;
-	}
-	
-	.options-slider__item--active .options-slider__visual {
-		padding: 24px;
-		padding-top: 47px;
-		width: 394px;
-		height: 394px;
-	}
-
-	.options-slider__item--blue img {
-		width: 150px;
-		height: 150px;
-	}
-
-	.options-slider__item--red img {
-		width: 139px;
-		height: 150px;
-	}
-
-	.options-slider__item--active .options-slider__visual-title {
-		font-size: 32px;
-	}
-
-	.options-slider__item--active img {
-		width: 222px;
-		height: 265px;
 	}
 
 	.options-slider__btn {
-		margin-top: 36px;
-		width: 394px;
-		height: 67px;
-		font-size: 21px;
-		border-radius: 15px;
+		width: 240px;
 	}
 
 	.options-slider__paginator {
@@ -391,5 +342,69 @@
 			background-color: $dark-text;
 		}
 	}
+}
+
+@media (min-width: 1440px) {
+
+	 .options-slider {
+    	padding-top: 0;
+    	padding-bottom: 40px;
+    }
+
+    .options-slider__list {
+		left: 0;
+		bottom: 90px;
+	}
+
+	.options-slider__visual {
+		padding: 30px;
+		padding-top: 55px;
+		width: 267px;
+		height: 332px;
+	}
+
+	.options-slider__visual-title {
+		font-size: 25px;
+	}
+
+	.options-slider__item--blue img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.options-slider__item--red img {
+		width: 139px;
+		height: 150px;
+	}
+
+	.options-slider__text p {
+		font-size: 24px;
+		letter-spacing: -1px;
+	}
+
+	.options-slider__item--active .options-slider__visual {
+		padding: 24px;
+		padding-top: 47px;
+		width: 394px;
+		height: 394px;
+	}
+
+	.options-slider__item--active img {
+		width: 222px;
+		height: 265px;
+	}
+
+	.options-slider__item--active .options-slider__visual-title {
+		font-size: 32px;
+	}
+
+	.options-slider__btn {
+		margin-top: 36px;
+		width: 394px;
+		height: 67px;
+		font-size: 21px;
+		border-radius: 15px;
+	}
+
 }
 

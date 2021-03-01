@@ -1,3 +1,7 @@
+.projects-slider {
+	margin-bottom: 30px;
+}
+
 .projects-slider__list {
 	@include list-style;
 }
@@ -52,7 +56,6 @@
 }
 
 .projects-slider__bullets {
-	margin-bottom: 30px;
 	margin-top: 13px;
 }
 
@@ -71,6 +74,10 @@
 @media (min-width: 768px) {
 
 	.projects-slider {
+		position: absolute;
+		top: -50px;
+		right: 22px;
+		margin-bottom: 0;
 		width: 300px;
 	}
 
@@ -93,8 +100,6 @@
 @media (min-width: 1440px) {
 
 	.projects-slider {
-		position: absolute;
-		top: -50px;
 		right: 46px;
 		width: 343px;
 	}
