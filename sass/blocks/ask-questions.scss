@@ -41,7 +41,6 @@
 		margin-bottom: 30px;
 		padding: 25px;
 		padding-left: 28px;
-		width: 1000px;
 		background-color: $dark-text;
 		border-radius: 20px;
 		box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
@@ -63,14 +62,14 @@
 	.ask-questions input[type="email"] {
 		margin-bottom: 0;
 		width: 303px;
-		height: 44px;
+		height: 36px;
 		border-radius: 30px;
 	}
 
 	.ask-questions__btn {
 		margin-left: 16px;
 		width: 203px;
-		height: 44px;
+		height: 36px;
 		border-radius: 35px;
 	}
 
@@ -80,13 +79,13 @@
 		left: 0;
 	}
 
-
 }
 
 @media (min-width: 1024px) {
 
 	.ask-questions__wrap {
 		flex-wrap: nowrap;
+		width: 1000px;
 	}
 
 	.ask-questions__title {
@@ -96,6 +95,14 @@
 
 	.ask-questions .form {
 		margin-left: auto;
+	}
+
+	.ask-questions input[type="email"] {
+		height: 44px;
+	}
+
+	.ask-questions__btn {
+		height: 44px;
 	}
 }
 
