@@ -64,13 +64,12 @@
 }
 
 .blog-content__info {
-    display: block;
     margin-top: 16px;
     font-size: 12px;
     line-height: 13px;
     font-weight: $base-font-weight;
     text-align: left;
-    
+
 }
 
 .blog-content__cat-btn {
@@ -79,7 +78,7 @@
     height: 13px;
     align-self: center;
     font-size: 6px;
-    
+
 }
 
 .blog-content__cat-btn ul {
@@ -140,7 +139,7 @@
       font-size: 14px;
       line-height: 17px;
     }
-  
+
 }
 
 @media (min-width: 1024px) {

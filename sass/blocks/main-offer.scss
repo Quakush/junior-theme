@@ -58,7 +58,7 @@
 	width: 70%;
 }
 
-.main-offer--main { 
+.main-offer--main {
 	background-image: url("../images/svg/corn.svg");
 	background-size: 80%;
 	background-repeat: no-repeat;
@@ -152,7 +152,6 @@
 
 	.main-offer--education {
         padding-top: 130px;
-	    padding-bottom: 113px;
 	    background-size: contain;
 	    background-position: 80% 20%;
 	}
@@ -169,6 +168,7 @@
 	}
 
 	.main-offer--education .title {
+		margin-top: 10px;
 		margin-bottom: 44px;
 	}
 
@@ -203,6 +203,10 @@
 		width: 574px;
 	}
 
+	.main-offer--education .sign-up__dropdown {
+		margin-bottom: 160px;
+	}
+
 	.main-offer--courses .sign-up {
 		display: flex;
 	}
@@ -211,11 +215,11 @@
 		font-size: 24px;
 		width: 574px;
 	}
-	
+
 	.main-offer--main {
 		padding-top: 40px;
 		background-image: none;
-		
+
  	}
 
  	.main-offer--main .container {
@@ -243,7 +247,7 @@
  		    transform: translate(0, 72%);
  		    opacity: 0.5;
  		}
-		
+
  	}
 
  	.main-offer--main  .title {

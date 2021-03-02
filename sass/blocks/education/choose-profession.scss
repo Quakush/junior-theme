@@ -1,6 +1,6 @@
 .choose-profession {
 	padding: 50px 0;
-	
+
 }
 
 .choose-profession .container {
@@ -20,7 +20,7 @@
 }
 
 .choose-profession__text-colored {
-    color: $corp-blue;
+	color: $corp-blue;
 }
 
 .choose-profession__text-desktop {
@@ -57,9 +57,9 @@
 .choose-profession__item--designer .choose-profession__link::before,
 .choose-profession__item--project .choose-profession__link::before,
 .choose-profession__item--developer .choose-profession__link::before {
-    @include element-style(100px, 100px, transparent);
-    top: 0;
-    left: 50%;
+	@include element-style(100px, 100px, transparent);
+	top: 0;
+	left: 50%;
 	border: 2px solid $white;
 	border-radius: 17px;
 	background-repeat: no-repeat;
@@ -85,10 +85,10 @@
 }
 
 @media (min-width: 375px) {
-    
-    .choose-profession__list {
-    	flex-wrap: nowrap;
-    }
+
+	.choose-profession__list {
+		flex-wrap: nowrap;
+	}
 
 	.choose-profession__item {
 		flex-basis: 30%;
@@ -121,6 +121,7 @@
 
 	.choose-profession__item {
 		margin-right: 120px;
+
 		&:last-of-type {
 			margin-right: 0;
 		}
@@ -154,3 +155,31 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.choose-profession .container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.choose-profession__title {
+		display: flex;
+	}
+
+	.choose-profession__text-mobile {
+		display: none;
+	}
+
+	.choose-profession__text-desktop {
+		display: block;
+	}
+
+	.choose-profession__list {
+		width: 100%;
+	}
+
+	.choose-profession__item {
+		margin-right: 0;
+	}
+}

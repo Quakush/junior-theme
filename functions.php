@@ -8,6 +8,12 @@ function scripts()
 
 	wp_enqueue_script('jquery');
 
+	wp_register_script('swiper-lib', get_template_directory_uri() . '/js/vendor/swiper-lib.min.js', [], 1, true);
+	wp_enqueue_script('swiper-lib');
+
+	wp_register_script('swiper-script', get_template_directory_uri() . '/js/swiper-script.js', [], 1, true);
+	wp_enqueue_script('swiper-script');
+
 	wp_register_script('mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', [], 1, true);
 	wp_enqueue_script('mobile-menu');
 
@@ -16,6 +22,7 @@ function scripts()
 
 	wp_register_script('slider-script', get_template_directory_uri() . '/js/slider-script.js', [], 1, true);
 	wp_enqueue_script('slider-script');
+
 
 	wp_register_script('filter-animation', get_template_directory_uri() . '/js/filter-animation.js', [], 1, true);
 	wp_enqueue_script('filter-animation');
@@ -243,25 +250,25 @@ add_action('wp_ajax_loadmore', 'true_load_posts');
 add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
 
 function true_load_posts(){
- 
+
 	$args = json_decode( stripslashes( $_POST['query'] ), true );
 	$args['paged'] = $_POST['page'] + 1; // следующая страница
 	$args['post_status'] = 'publish';
 	$args['posts_per_page'] = 5;
- 
+
 	// обычно лучше использовать WP_Query, но не здесь
 	query_posts( $args );
 	// если посты есть
 	if( have_posts() ) :
- 
+
 		// запускаем цикл
 		while( have_posts() ): the_post();
- 
+
 			get_template_part('includes/section', 'courses');
- 
+
 		endwhile;
 		wp_reset_postdata();
- 
+
 	endif;
 
 	wp_die();
@@ -273,25 +280,25 @@ add_action('wp_ajax_loadmoreblog', 'true_load_blog_posts');
 add_action('wp_ajax_nopriv_loadmoreblog', 'true_load_blog_posts');
 
 function true_load_blog_posts(){
- 
+
 	$args = json_decode( stripslashes( $_POST['query'] ), true );
 	$args['paged'] = $_POST['page'] + 1; // следующая страница
 	$args['post_status'] = 'publish';
 	$args['posts_per_page'] = 3;
- 
+
 	// обычно лучше использовать WP_Query, но не здесь
 	query_posts( $args );
 	// если посты есть
 	if( have_posts() ) :
- 
+
 		// запускаем цикл
 		while( have_posts() ): the_post();
- 
+
 			get_template_part('includes/section', 'blog-article');
- 
+
 		endwhile;
 		wp_reset_postdata();
- 
+
 	endif;
 
 	wp_die();
@@ -304,13 +311,13 @@ add_action( 'wp_ajax_get_cat', 'ajax_show_posts_in_cat' );
 add_action( 'wp_ajax_nopriv_get_cat', 'ajax_show_posts_in_cat' );
 
 function ajax_show_posts_in_cat() {
-	
+
 	$link = $_POST['link'];
-	
+
 	if (!$link) {
 		die( 'Рубрика не найдена' );
 	}
-	
+
 	$args['post_type'] = 'courses';
 	$args['paged'] = 1;
 	$args['post_status'] = 'publish';
@@ -319,22 +326,22 @@ function ajax_show_posts_in_cat() {
 		                     array(
 		                     	'taxonomy' => 'branches',   // taxonomy name
 					            'field' => 'term_id',
-					            'terms' => $link    
+					            'terms' => $link
 		                     ));
 	query_posts($args);
-		
+
 
 	if (have_posts()) :
 
         while(have_posts()) : the_post();
- 
+
 	    get_template_part('includes/section', 'courses');
 
 	    endwhile; endif;
 	    get_template_part('includes/block', 'load-button');
 	    wp_reset_postdata();
 
-    
+
 	wp_die();
 }
 
