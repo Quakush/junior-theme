@@ -83,10 +83,7 @@
 
 @media (min-width: 1024px) {
 
-	.ask-questions__wrap {
-		flex-wrap: nowrap;
-		width: 1000px;
-	}
+	
 
 	.ask-questions__title {
 		margin: 0;
@@ -107,5 +104,10 @@
 }
 
 @media (min-width: 1440px) {
+
+	.ask-questions__wrap {
+		flex-wrap: nowrap;
+		width: 1000px;
+	}
 	
 }

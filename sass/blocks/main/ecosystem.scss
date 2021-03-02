@@ -97,12 +97,12 @@
 
     .ecosystem .container {
         position: relative;
-        padding-top: 420px;
+        padding-top: 310px;
         padding-bottom: 197px;
         overflow: visible;
 
         &::before {
-            @include element-style(351px, 563px, transparent);
+            @include element-style(280px, 448px, transparent);
             right: 56px;
             bottom: 0;
             background-image: url("../images/svg/phone.svg");
@@ -112,8 +112,8 @@
         }
 
         &::after {
-            @include element-style(617px, 733px, transparent);
-            right: -316px;
+            @include element-style(493px, 587px, transparent);
+            right: -226px;
             bottom: 33px;
             background-image: url("../images/svg/tablet.svg");
             background-repeat: no-repeat;
@@ -136,6 +136,25 @@
 
         &::after {
             @include clouds-bottom(131px, -129px, -129px);
+        }
+    }
+
+    .ecosystem .container {
+        padding-top: 420px;
+        padding-bottom: 197px;
+
+        &::before {
+            width: 351px;
+            height: 563px;
+            right: 56px;
+            bottom: 0;
+        }
+
+        &::after {
+            width: 617px;
+            height: 733px;
+            right: -316px;
+            bottom: 33px;
         }
     }
 

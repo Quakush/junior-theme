@@ -55,6 +55,7 @@
 	}
 
 	.read-us__text {
+		margin-bottom: 55px;
 		width: 50%;
 		font-size: 20px;
 	}
@@ -68,11 +69,6 @@
 }
 
 @media (min-width: 1440px) {
-
-	.read-us__text {
-		font-size: 24px;
-		line-height: 2;
-	}
 
 	.read-us__link {
 		position: relative;
@@ -96,7 +92,7 @@
 	.read-us__text {
 		width: 47%;
 		font-size: 24px;
-		margin-bottom: 55px;
+		line-height: 2;
 	}
 
 	.read-us .getnews input[type="email"] {
