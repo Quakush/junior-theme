@@ -1,70 +1,110 @@
 .choose-course {
-    position: relative;
-    margin: 69px 0;
-    color: $dark-text;
-    background-color: $white;
+  position: relative;
+  margin: 69px 0;
+  color: $dark-text;
+  background-color: $white;
 
-    &::before {
-        @include clouds(80px, -79px);
-    }
+  &::before {
+    @include clouds(80px, -79px);
+  }
 
-    &::after {
-        @include clouds-bottom(80px, -79px, -79px);
-    }
-
+  &::after {
+    @include clouds-bottom(80px, -79px, -79px);
+  }
 }
 
 .choose-course .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .choose-course__inner-wrap {
-    position: relative;
-    padding: 10px 0;
+  position: relative;
+  padding: 10px 0;
 }
 
 .choose-course__title span {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .choose-course__btn {
-    position: relative;
-    left: 50%;
-    margin-top: 30px;
-    transform: translate(-50%);
+  position: relative;
+  left: 50%;
+  margin-top: 30px;
+  transform: translate(-50%);
 }
 
 .choose-course p {
-    width: 82%;
-    font-size: 14px;
-    line-height: 1.87;
+  width: 82%;
+  font-size: 14px;
+  line-height: 1.87;
 }
 
 @media (min-width: 1440px) {
+  .choose-course__inner-wrap {
+    position: relative;
+    padding: 10px 0;
+  }
 
-    .choose-course {
-        margin: 131px 0;
-        padding: 20px 0;
-        background-position: 20%;
-        background-image: url("../images/aggregator.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 160%;
+  .choose-course {
+    position: relative;
+    margin: 135px 0;
 
-        &::before {
-            @include clouds(100px, -99px);
-        }
-
-        &::after {
-            @include clouds-bottom(100px, -99px, -99px);
-        }
+    &::before {
+      @include clouds(135px, -133px);
+      background-position: 50%
     }
-    
-    .choose-course p {
-        width: 552px;
-        font-size: 24px;
+
+    &::after {
+      @include clouds-bottom(135px, -133px, -133px);
     }
+  }
+
+  .choose-course .container {
+    background-position: (150px, 20px);
+    background-image: url("../images/phone_education.svg");
+    background-repeat: no-repeat;
+  }
+
+  .choose-course__title {
+    display: flex;
+    font-weight: $base-font-weight;
+
+    & span {
+      margin-right: 10px;
+    }
+  }
+
+  .choose-course p {
+    width: 581px;
+    font-size: 24px;
+    line-height: 45px;
+    letter-spacing: -1px;
+    margin-bottom: 47px;
+  }
+
+  .choose-course__btn {
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1820px) {
+  .choose-course {
+    margin: 200px 0;
+
+    &::before {
+      @include clouds(200px, -199px);
+      background-position: 50%
+    }
+
+    &::after {
+      @include clouds-bottom(200px, -198px, -198px);
+    }
+  }
 }
