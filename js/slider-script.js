@@ -2,7 +2,6 @@
 
 (function () {
 
-
 if (document.querySelector('.projects-slider')) {
     var slider = document.querySelector('.projects-slider');
     var slides = slider.querySelectorAll('.projects-slider__item');
