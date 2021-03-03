@@ -200,8 +200,12 @@ get_header();
 
             
             <div class="pilot-project__text-block">
-                <h2 class="title__secondary pilot-project__text-block-title  pilot-project__text-block-title--mobile">Инвестируйте<br>в стартапы<span>с первыми продажами</span></h2>
-                <h2 class="title__secondary pilot-project__text-block-title  pilot-project__text-block-title--desktop">Инвестируйте в стартапы с первыми продажами</h2>
+                <h2 class="title__secondary  pilot-project__text-block-title">
+                    <span>Инвестируйте</span>
+                    в стартапы
+                    <span class="pilot-project__text-block-title-small">с первыми продажами</span>
+                </h2>
+                
                 <p class="pilot-project__text">
                     <span>Мы ставим для себя задачу -</span>
                     <span>создать безопасный инструмент</span>

@@ -72,6 +72,7 @@
 
 .educational-programms__item p {
   text-align: left;
+  color: #23272C;
   font-size: 14px;
   line-height: $line-height-p;
   letter-spacing: 0;
@@ -82,49 +83,125 @@
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+
+    .educational-programms {
+        margin: 100px 0;
+
+         &::before {
+            @include clouds(100px, -99px);
+        }
+
+        &::after {
+            @include clouds-bottom(100px, -99px, -99px);
+        }
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .educational-programms__title {
+      text-align: center;
+    }
+
+    .educational-programms__inner-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
 @media (min-width: 1440px) {
-  .educational-programms {
-    padding: 0;
-    margin: 135px 0;
 
-    &::before {
-      @include clouds(135px, -133px);
-      background-position: 50%
+    .educational-programms {
+        margin: 135px 0;
+        padding: 0;
+        padding-bottom: 30px;
+
+        &::before {
+          @include clouds(135px, -133px);
+          background-position: 50%
+        }
+
+        &::after {
+          @include clouds-bottom(135px, -133px, -133px);
+        }
     }
 
-    &::after {
-      @include clouds-bottom(135px, -133px, -133px);
+    .educational-programms__title {
+        margin-bottom: 30px;
+        font-weight: 800;
     }
-  }
 
-  .educational-programms .container {
-    margin: 0 auto;
-  }
+    .educational-programms__item {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-top: 135px;
+        box-shadow: none;
 
-  .educational-programms__title {
-    font-weight: 400;
-    text-align: center;
-  }
+        &::before {
+            @include element-style(103px, 103px, $white);
+            left: 0;
+            top: 0;
+            border-radius: 17px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
 
-  .educational-programms__inner-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+    .educational-programms__item--school {
+        background-image: none;
+
+        &::before {
+            background-image: url("../images/icons/icon-backpack.svg");
+        }
+    }
+
+    .educational-programms__item--junior {
+        background-image: none;
+
+        &::before {
+            background-image: url("../images/icons/icon-find.svg");
+        }
+    }
+
+    .educational-programms__item--middle {
+        background-image: none;
+
+        &::before {
+            background-image: url("../images/icons/icon-web-development.svg");
+        }
+    }
+
+    .educational-programms__item .title__third {
+        font-size: 18px;
+    }
+
+    .educational-programms__item p {
+        font-size: 15px;
+    }
+
+    .educational-programms__btn {
+        margin-top: 30px;
+        width: 267px;
+    }
 }
 
 @media (min-width: 1820px) {
-  .educational-programms {
-    margin: 200px 0;
 
-    &::before {
-      @include clouds(200px, -199px);
-      background-position: 50%
-    }
+    .educational-programms {
+        margin: 200px 0;
 
-    &::after {
-      @include clouds-bottom(200px, -198px, -198px);
+        &::before {
+          @include clouds(200px, -199px);
+          background-position: 50%
+        }
+
+        &::after {
+          @include clouds-bottom(200px, -198px, -198px);
+        }
     }
-  }
 }

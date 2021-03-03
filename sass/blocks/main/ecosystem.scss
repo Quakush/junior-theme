@@ -28,6 +28,10 @@
     }
 }
 
+.ecosystem .container {
+    overflow: visible;
+}
+
 .ecosystem__title span {
     display: block;
 }
@@ -82,7 +86,7 @@
 @media (min-width: 1024px) {
 
     .ecosystem {
-        margin: 131px 0;
+        margin: 100px 0;
         padding: 0;
         background-image: none;
 
