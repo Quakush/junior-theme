@@ -31,6 +31,7 @@ if (filterBlock) {
 			var target = event.currentTarget;
 			removeActive();
             target.classList.add('categories__link--active');
+            categoryContainer.classList.remove('categories__list--shown');
 		});
 	}
 }

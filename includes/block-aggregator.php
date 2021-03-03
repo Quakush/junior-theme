@@ -1,5 +1,6 @@
-<div class="container">
-    <h2 class="title__secondary  aggregator__title">Маркетплейс онлайн-курсов</h2>
+<div class="container  aggregator__container">
+    <h2 class="title__secondary  aggregator__title">
+        <span>Маркетплейс</span>онлайн-курсов</h2>
     <p class="aggregator__text">
         Скачайте новое приложение, чтобы постоянно быть
         в курсе новых онлайн-курсов. Проходите обучение

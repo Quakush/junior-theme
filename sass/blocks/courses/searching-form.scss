@@ -3,8 +3,9 @@
 }
 
 .searching-form input[type="text"] {
-	padding: 9px 15px;
+	padding-left: 15px;
 	width: 100%;
+	height: 36px;
 	color: $white;
 	font-size: 14px;
 	background-color: $dark-text;
@@ -29,20 +30,38 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 43px;
-	height: 33px;
+	width: 44px;
+	height: 36px;
 	font-size: 0;
 	border-radius: 12px;
 }
 
 .searching-form svg {
-	width: 13px;
-	height: 13px;
+	width: 14px;
+	height: 14px;
 	fill: $light-text;
 }
 
-.searching-form input[type="text"]:focus + .searching-form button {
+.searching-form input[type="text"]:focus {
+	background-color: $dark-text;
+}
+
+
+
+.searching-form input[type="text"]:focus + button {
 	background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);
+
+	svg {
+		fill: $dark-text;
+	}
+}
+
+.searching-form button[type="submit"]:focus {
+	background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);
+
+	svg {
+        fill: $dark-text;
+	}
 }
 
 @media (min-width: 1440px) {

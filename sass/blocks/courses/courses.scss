@@ -23,6 +23,10 @@
 	background-color: $white;
 	color: $dark-text;
 	border-radius: 7px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 .courses__item p {
@@ -54,6 +58,7 @@
 
 .courses__btn {
     margin: 0 auto;
+    margin-top: 30px;
 	width: 167px;
 	height: 36px;
 	color: $white;
@@ -65,6 +70,14 @@
 	border-radius: 7px;
 	background-image: none;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    .courses {
+        padding-bottom: 60px;
+    }
+
 }
 
 @media (min-width: 1024px) {

@@ -27,6 +27,7 @@ get_header();
     </section>
     <section class="choose-course">
         <div class="container">
+            <div class="choose-course__wrap">
                 <h2 class="title__secondary  choose-course__title"><span class="title__colored">Все курсы</span> в одном месте</h2>
                 <p>
                     Мы сотрудничаем с различными онлайн и офлайн
@@ -36,6 +37,7 @@ get_header();
                     окончания обучения.
                 </p>
                 <a class="btn btn--big  btn--green  choose-course__btn" href="/courses/">Еще 50+ профессий</a>
+            </div>
         </div>
     </section>
     <section class="choose-profession">
@@ -108,20 +110,22 @@ get_header();
     </section>
     <section class="road-usa">
         <div class="container">
-            <h2 class="title__secondary  road-usa__title"><span>Road to USA with</span> JS Corporation</h2>
-            <p>
-                Программа трудоустройства специалистов
-                в американские компании.<br>Закончил обучение
-                в одном из университетов и мечтаешь попасть
-                в одну из компаний в США?<br>Оставь заявку
-                и мы расскажем как это сделать.
-            </p>
-            <button class="btn  btn--green btn--big  road-usa__btn">Оставить заявку</button>
-            <ul class="bullets">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="road-usa__wrap">
+                <h2 class="title__secondary  road-usa__title"><span>Road to USA with</span> JS Corporation</h2>
+                <p>
+                    Программа трудоустройства специалистов
+                    в американские компании.<br>Закончил обучение
+                    в одном из университетов и мечтаешь попасть
+                    в одну из компаний в США?<br>Оставь заявку
+                    и мы расскажем как это сделать.
+                </p>
+                <button class="btn  btn--green btn--big  road-usa__btn">Оставить заявку</button>
+                <ul class="bullets">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="educational-programms">
