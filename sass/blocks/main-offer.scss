@@ -5,6 +5,11 @@
 	width: 100%;
 	background-repeat: no-repeat;
 }
+
+.main-offer .container {
+	overflow: visible;
+}
+
 .main-offer--education {
 	background-image: url("../images/svg/svg-student.svg");
 	background-position: 160px 20px;
@@ -56,6 +61,11 @@
 .main-offer--education p {
 	margin-bottom: 46px;
 	width: 70%;
+}
+
+.main-offer--education .sign-up__btn {
+	color: $dark-text;
+	background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);
 }
 
 .main-offer--main {

@@ -3,6 +3,10 @@
 	padding-bottom: 18px;
 }
 
+.join-us .container {
+	overflow: visible;
+}
+
 .join-us__title {
 	width: 77%;
 	line-height: 1.4;
@@ -124,7 +128,7 @@
 	}
 
 	.join-us__title {
-		width: 55%;
+		flex-basis: 55%;
 	}
 
 	.join-us p {

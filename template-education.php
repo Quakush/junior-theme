@@ -27,7 +27,6 @@ get_header();
     </section>
     <section class="choose-course">
         <div class="container">
-            <div class="choose-course__inner-wrap">
                 <h2 class="title__secondary  choose-course__title"><span class="title__colored">Все курсы</span> в одном месте</h2>
                 <p>
                     Мы сотрудничаем с различными онлайн и офлайн
@@ -36,8 +35,7 @@ get_header();
                     чтобы получить гарантированную практику после
                     окончания обучения.
                 </p>
-                <a class="btn btn--big  btn--green  choose-course__btn" href="/courses/">Выбрать курс</a>
-            </div>
+                <a class="btn btn--big  btn--green  choose-course__btn" href="/courses/">Еще 50+ профессий</a>
         </div>
     </section>
     <section class="choose-profession">
