@@ -189,7 +189,6 @@
 		    right 100px top 50px,
 		    right 210px top 0,
 		    right 0 top 0;
-
 	}
 
 	.main-offer--courses .title {
@@ -289,14 +288,16 @@
 	/* Стили для main-offer страницы Обучение - внутренняя (курсы) */
 
 	.main-offer--courses {
-		padding-top: 64px;
+		padding-top: 44px;
 		padding-bottom: 67px;
 	}
 
 	.main-offer--courses .container {
-		background-image: url("../images/svg/socrat.svg");
-	    background-position: right top;
-	    background-repeat: no-repeat;
+		padding: 0;
+		background-position:
+		    right 116px top 99px,
+		    right 237px top 0,
+		    right 0 top 0;
 	}
 
 	.main-offer--courses .title {
@@ -310,6 +311,10 @@
 
 	.main-offer--courses p {
 		width: 552px;
+	}
+
+	.main-offer--courses .sign-up__dropdown {
+		margin-right: 50px;
 	}
 
 	.main-offer__text--desktop {
