@@ -136,6 +136,11 @@
  		font-size: 20px;
  	}
 
+ 	.main-offer p {
+		font-size: 20px;
+		width: 50%;
+	}
+
 	/* Стили для main-offer главной страницы */
 
 	.main-offer--main {
@@ -143,21 +148,12 @@
 		background-position: 380px 120px;
  	}
 
- 	.main-offer--main p {
-		font-size: 20px;
-		width: 50%;
-	}
-
 	/* Стили для main-offer страницы Обучение */
 
 	.main-offer--education {
 		background-position: 95% 0;
 	}
-
-	.main-offer--education p {
-		width: 50%;
-		font-size: 20px;
-	}
+	
 }
 
 @media (min-width: 1024px) {
@@ -175,12 +171,42 @@
 		background-position: right 10px center;
 	}
 
+	.main-offer--courses .container {
+		padding-bottom: 70px;
+		background-image:
+		    url("../images/svg/socrat.svg"),
+            url("../images/svg/campaigns.svg"),
+		    url("../images/svg/socrat2.svg");
+		background-size:
+		    188px,
+		    200px,
+		    200px;
+		background-repeat:
+		    no-repeat,
+		    no-repeat,
+		    no-repeat;
+		background-position:
+		    right 100px top 50px,
+		    right 210px top 0,
+		    right 0 top 0;
+
+	}
+
+	.main-offer--courses .title {
+		margin-bottom: 22px;
+	}
+
 	.main-offer--courses p {
 		display: block;
+		width: 51%;
 	}
 
 	.main-offer--courses .sign-up {
 		display: flex;
+	}
+
+	.main-offer--courses .sign-up__dropdown {
+		margin-right: 30px;
 	}
 }
 

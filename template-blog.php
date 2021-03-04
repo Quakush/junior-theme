@@ -32,23 +32,7 @@ get_header();
               </a>
             </div>
           <?php endforeach; ?>
-<!---->
-<!--        <div class="swiper-slide blog-links-list__item">-->
-<!--          <a class="blog-links-list__link blog-links-list__link--active" href="#">Новости</a>-->
-<!--        </div>-->
-<!--        <div class="swiper-slide blog-links-list__item">-->
-<!--          <a class="blog-links-list__link" href="#">Стартапы</a>-->
-<!--        </div>-->
-<!--        <div class="swiper-slide blog-links-list__item">-->
-<!--          <a class="blog-links-list__link" href="#">Интервью</a>-->
-<!--        </div>     <div class="swiper-slide blog-links-list__item">-->
-<!--          <a class="blog-links-list__link" href="#">Интервью</a>-->
-<!--        </div>     <div class="swiper-slide blog-links-list__item">-->
-<!--          <a class="blog-links-list__link" href="#">Интервью</a>-->
-<!--        </div>-->
-<!--        <div class="swiper-slide blog-links-list__item">-->
-<!--          <a class="blog-links-list__link" href="#">Интервью</a>-->
-<!--        </div>-->
+
       </div>
     </div>
 

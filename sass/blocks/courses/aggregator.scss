@@ -85,6 +85,7 @@
 
 	.aggregator__text {
 		margin-bottom: 30px;
+		font-size: 20px;
 	}
 
 	.aggregator__download-links-list {
@@ -94,6 +95,62 @@
 			left: 180px;
 		}
 	}
+}
+
+@media (min-width: 1024px) {
+
+	.aggregator {
+		margin: 100px 0;
+		padding: 0;
+
+		&::before {
+            @include clouds(100px, -99px);
+        }
+
+        &::after {
+            @include clouds-bottom(100px, -99px, -99px);
+        }
+	}
+
+	.aggregator__container {
+		padding-top: 20px;
+		padding-bottom: 40px;
+		background-image:
+		    url("../images/svg/campaigns.svg"),
+		    url("../images/svg/socrat.svg");
+		background-repeat:
+		    no-repeat,
+		    no-repeat;
+		background-position:
+		    right 228px top 45px,
+		    right 20px top 10px;
+		background-size:
+		    165px,
+		    188px;
+	}
+
+	.aggregator__text {
+		width: 52%;
+	}
+
+	.aggregator__download-links-list {
+		flex-direction: row;
+
+		&::before {
+			left: 367px;
+			width: 207px;
+		}
+	}
+
+	.aggregator__download-links-item {
+		margin-bottom: 0;
+		margin-right: 36px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
 }
 
 @media (min-width: 1440px) {

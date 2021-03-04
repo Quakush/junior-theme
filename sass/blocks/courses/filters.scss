@@ -7,6 +7,23 @@
 	overflow: visible;
 }
 
+@media (min-width: 1024px) {
+
+	.filters {
+		padding: 0;
+	}
+
+	.filters .container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 20px 36px;
+		background-color: #272A30;
+		border-radius: 27px;
+	}
+
+}
+
 @media (min-width: 1440px) {
 
 	.filters {
@@ -16,10 +33,5 @@
 		background-color: #272A30;
 		border-radius: 27px;
 	}
-
-	.filters .container {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
+	
 }
