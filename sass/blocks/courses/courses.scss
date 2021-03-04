@@ -195,3 +195,11 @@
     	flex-basis: 43%;
     }
 }
+
+@media (min-width: 1440px) {
+
+    .courses .container {
+        min-width: 1164px;
+        max-width: 1164px;
+    }
+}

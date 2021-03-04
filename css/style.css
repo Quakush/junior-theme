@@ -928,6 +928,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
     margin-bottom: 30px;
     padding: 25px;
     padding-left: 28px;
@@ -1124,6 +1125,40 @@ main {
     margin-right: 32px; }
   .banners__item img {
     width: 144px; } }
+
+@media (min-width: 1820px) {
+  .banners {
+    margin: 200px 0; }
+    .banners::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background-color: transparent;
+      top: -199px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      background-position: 50%; }
+    .banners::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background-color: transparent;
+      top: -198px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -198px;
+      transform: rotate(180deg); } }
 
 .toggler {
   width: 15px;
@@ -2182,12 +2217,11 @@ main {
     margin-bottom: 160px; }
   /* Стили для main-offer страницы Обучение - внутренняя (курсы) */
   .main-offer--courses {
-    padding-top: 64px;
+    padding-top: 44px;
     padding-bottom: 67px; }
   .main-offer--courses .container {
-    background-image: url("../images/svg/socrat.svg");
-    background-position: right top;
-    background-repeat: no-repeat; }
+    padding: 0;
+    background-position: right 116px top 99px, right 237px top 0, right 0 top 0; }
   .main-offer--courses .title {
     font-size: 70px;
     line-height: 1.4; }
@@ -2195,6 +2229,8 @@ main {
     margin-bottom: 0; }
   .main-offer--courses p {
     width: 552px; }
+  .main-offer--courses .sign-up__dropdown {
+    margin-right: 50px; }
   .main-offer__text--desktop {
     display: block; }
   .main-offer__text--mobile {
@@ -4599,12 +4635,9 @@ main {
     border-radius: 27px; } }
 
 @media (min-width: 1440px) {
-  .filters {
-    margin: 0 auto;
-    padding-bottom: 20px;
-    width: 1178px;
-    background-color: #272A30;
-    border-radius: 27px; } }
+  .filters .container {
+    min-width: 1164px;
+    max-width: 1164px; } }
 
 .searching-form {
   margin-bottom: 30px; }
@@ -4678,6 +4711,7 @@ main {
     width: 156px;
     height: 48px;
     font-size: 20px;
+    font-weight: 700;
     border-radius: 172px;
     background-image: linear-gradient(to bottom, #d1e92a 0%, #899b03 100%);
     box-shadow: 0 3px 6px black; }
@@ -4693,7 +4727,8 @@ main {
   .searching-form input[type="text"] {
     padding: 18px 22px;
     padding-left: 48px;
-    width: 74%; }
+    width: 74%;
+    height: 55px; }
   .searching-form button {
     width: 156px;
     height: 55px;
@@ -4806,6 +4841,7 @@ main {
 @media (min-width: 1440px) {
   .categories__dropdown {
     padding-left: 30px;
+    height: 55px;
     font-size: 16px; } }
 
 .courses {
@@ -4948,6 +4984,11 @@ main {
     flex-basis: 16%; }
   .courses__headers-item--duration {
     flex-basis: 43%; } }
+
+@media (min-width: 1440px) {
+  .courses .container {
+    min-width: 1164px;
+    max-width: 1164px; } }
 
 .paginator {
   display: none; }
@@ -5138,10 +5179,7 @@ main {
       transform: rotate(180deg); }
   .aggregator .container {
     padding-top: 20px;
-    padding-bottom: 35px;
-    background-image: url("../images/svg/application.svg");
-    background-repeat: no-repeat;
-    background-position: 90% -7%; }
+    padding-bottom: 35px; }
   .aggregator__text {
     margin-bottom: 54px;
     font-size: 23px; }
@@ -5151,7 +5189,7 @@ main {
       font-size: 16px;
       right: unset;
       left: 414px;
-      width: 207px; }
+      width: 240px; }
   .aggregator__download-links-item {
     margin-bottom: 0;
     margin-right: 36px; }
@@ -5161,6 +5199,40 @@ main {
     width: 167px; }
   .aggregator__download-links-item--google img {
     width: 185px; } }
+
+@media (min-width: 1820px) {
+  .aggregator {
+    margin: 200px 0; }
+    .aggregator::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background-color: transparent;
+      top: -199px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      background-position: 50%; }
+    .aggregator::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background-color: transparent;
+      top: -198px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -198px;
+      transform: rotate(180deg); } }
 
 .education-paltforms-proposal {
   display: none; }

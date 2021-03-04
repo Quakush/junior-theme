@@ -26,12 +26,9 @@
 
 @media (min-width: 1440px) {
 
-	.filters {
-		margin: 0 auto;
-		padding-bottom: 20px;
-		width: 1178px;
-		background-color: #272A30;
-		border-radius: 27px;
+	.filters .container {
+		min-width: 1164px;
+        max-width: 1164px;
 	}
 	
 }
