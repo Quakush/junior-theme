@@ -5,10 +5,6 @@
 	padding: 85px 0 64px;
 	color: $dark-text;
 	background-color: $corp-green;
-	background-image: url("../images/aggregator.png");
-	background-repeat: no-repeat;
-	background-position: 135% 55%;
-	background-size: 50%;
 	z-index: 100;
 }
 
@@ -37,6 +33,24 @@
 
 .pop-up__download-links-item {
 	@include link-style;
+}
+
+@media (min-width: 768px) {
+
+	.pop-up .container {
+		padding: 0 50px;
+		background-position: right 50px top -6px;
+	}
+
+	.pop-up .aggregator__title {
+		margin-bottom: 30px;
+	}
+
+	.pop-up .aggregator__download-links-list {
+		&::before {
+			width: 38%;
+		}
+	}
 }
 
 @media (min-width: 1024px) {

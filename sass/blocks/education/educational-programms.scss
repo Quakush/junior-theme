@@ -134,6 +134,11 @@
         font-weight: 800;
     }
 
+    .educational-programms__list {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .educational-programms__item {
         position: relative;
         margin: 0;
@@ -196,7 +201,7 @@
         margin: 200px 0;
 
         &::before {
-          @include clouds(200px, -199px);
+          @include clouds(200px, -198px);
           background-position: 50%
         }
 

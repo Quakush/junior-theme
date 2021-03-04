@@ -49,8 +49,13 @@
     }
 
     .road-usa .container {
-      padding-left: 45%;
+        background-size: 250px;
         background-position: left 70px top 0;
+    }
+
+    .road-usa__wrap {
+        margin-left: auto;
+        width: 55%;
     }
 
     .road-usa__title {
@@ -81,9 +86,8 @@
     }
 
     .road-usa .container {
-        padding-left: 36%;
         background-size: 320px;
-        background-position: left 52px top 0;
+        background-position: left 52px top 40px;
         box-sizing: border-box;
     }
 
@@ -92,7 +96,6 @@
     }
 
     .road-usa p {
-        width: 570px;
         font-size: 24px;
         line-height: 45px;
         letter-spacing: -0.9px;
