@@ -667,7 +667,7 @@ main {
   box-sizing: border-box; }
 
 @media (min-width: 375px) {
-  container {
+  .container {
     min-width: 375px; } }
 
 @media (min-width: 768px) {
@@ -678,7 +678,7 @@ main {
 @media (min-width: 1024px) {
   .container {
     padding: 0 36px;
-    min-width: 920px; } }
+    min-width: 1024px; } }
 
 @media (min-width: 1440px) {
   .container {
@@ -1040,6 +1040,54 @@ main {
   color: inherit;
   text-decoration: none; }
 
+@media (min-width: 1024px) {
+  .banners {
+    margin: 100px 0;
+    height: unset; }
+    .banners::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%; }
+    .banners::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -99px;
+      transform: rotate(180deg); }
+  .banners__title {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400; }
+  .banners__list {
+    position: static;
+    align-items: center; }
+  .banners__item:nth-child(odd) {
+    margin-top: 0; }
+  .banners__item:nth-child(even) {
+    margin-bottom: 0; }
+  .banners__item {
+    margin-right: 18px; } }
+
 @media (min-width: 1440px) {
   .banners {
     margin: 131px 0; }
@@ -1072,13 +1120,6 @@ main {
       top: unset;
       bottom: -129px;
       transform: rotate(180deg); }
-  .banners__list {
-    position: static;
-    align-items: center; }
-  .banners__item:nth-child(odd) {
-    margin-top: 0; }
-  .banners__item:nth-child(even) {
-    margin-bottom: 0; }
   .banners__item {
     margin-right: 32px; }
   .banners__item img {
@@ -2044,19 +2085,16 @@ main {
 @media (min-width: 768px) {
   .main-offer__text-block {
     font-size: 20px; }
+  .main-offer p {
+    font-size: 20px;
+    width: 50%; }
   /* Стили для main-offer главной страницы */
   .main-offer--main {
     background-size: 360px;
     background-position: 380px 120px; }
-  .main-offer--main p {
-    font-size: 20px;
-    width: 50%; }
   /* Стили для main-offer страницы Обучение */
   .main-offer--education {
-    background-position: 95% 0; }
-  .main-offer--education p {
-    width: 50%;
-    font-size: 20px; } }
+    background-position: 95% 0; } }
 
 @media (min-width: 1024px) {
   /* Стили для main-offer главной страницы */
@@ -2067,10 +2105,21 @@ main {
     background-size: 360px;
     background-repeat: no-repeat;
     background-position: right 10px center; }
+  .main-offer--courses .container {
+    padding-bottom: 70px;
+    background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg"), url("../images/svg/socrat2.svg");
+    background-size: 188px, 200px, 200px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right 100px top 50px, right 210px top 0, right 0 top 0; }
+  .main-offer--courses .title {
+    margin-bottom: 22px; }
   .main-offer--courses p {
-    display: block; }
+    display: block;
+    width: 51%; }
   .main-offer--courses .sign-up {
-    display: flex; } }
+    display: flex; }
+  .main-offer--courses .sign-up__dropdown {
+    margin-right: 30px; } }
 
 @media (min-width: 1440px) {
   .main-offer p {
@@ -4538,17 +4587,24 @@ main {
 .filters .container {
   overflow: visible; }
 
+@media (min-width: 1024px) {
+  .filters {
+    padding: 0; }
+  .filters .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 36px;
+    background-color: #272A30;
+    border-radius: 27px; } }
+
 @media (min-width: 1440px) {
   .filters {
     margin: 0 auto;
     padding-bottom: 20px;
     width: 1178px;
     background-color: #272A30;
-    border-radius: 27px; }
-  .filters .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; } }
+    border-radius: 27px; } }
 
 .searching-form {
   margin-bottom: 30px; }
@@ -4601,34 +4657,47 @@ main {
   .searching-form button[type="submit"]:focus svg {
     fill: #24272D; }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .searching-form {
+    position: relative;
     margin-bottom: 0;
     order: 1;
     flex-basis: 65%; }
+  .searching-form__inner-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
   .searching-form input[type="text"] {
-    padding: 18px 22px;
     padding-left: 48px;
-    width: 74%; }
+    width: 74%;
+    height: 48px;
+    border-radius: 15px; }
   .searching-form button {
     position: static;
     width: 156px;
-    height: 55px;
-    font-size: 23px;
+    height: 48px;
+    font-size: 20px;
     border-radius: 172px;
-    background-image: linear-gradient(to bottom, #d1e92a 0%, #899b03 100%); }
+    background-image: linear-gradient(to bottom, #d1e92a 0%, #899b03 100%);
+    box-shadow: 0 3px 6px black; }
   .searching-form svg {
     position: absolute;
     left: 14px;
     top: 50%;
     width: 14px;
     height: 14px;
-    transform: translate(0, -50%); }
-  .searching-form__inner-wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; } }
+    transform: translate(0, -50%); } }
+
+@media (min-width: 1440px) {
+  .searching-form input[type="text"] {
+    padding: 18px 22px;
+    padding-left: 48px;
+    width: 74%; }
+  .searching-form button {
+    width: 156px;
+    height: 55px;
+    font-size: 23px; } }
 
 .categories {
   position: relative;
@@ -4722,33 +4791,22 @@ main {
     background-position: center;
     z-index: 50; }
 
-.categories__selected {
-  margin-top: 30px; }
-
-.categories__selected span,
-.categories__selected a {
-  display: inline-block;
-  padding: 10px 30px;
-  height: 38px;
-  color: #24272D;
-  font-size: 14px;
-  font-weight: 800;
-  background-color: #D1E92A;
-  border-radius: 47px;
-  box-sizing: border-box; }
-
-.categories__selected .categories__link--active::before {
-  display: none; }
-
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .categories {
     order: 0;
-    flex-basis: 32%; }
+    flex-basis: 32%;
+    padding-bottom: 0; }
   .categories__dropdown {
-    padding: 18px 30px;
-    font-size: 16px; }
-  .categories__selected {
-    margin-top: 22px; } }
+    padding-left: 20px;
+    height: 48px;
+    border-radius: 15px; }
+    .categories__dropdown::before {
+      right: 25px; } }
+
+@media (min-width: 1440px) {
+  .categories__dropdown {
+    padding-left: 30px;
+    font-size: 16px; } }
 
 .courses {
   padding-top: 51px;
@@ -4765,6 +4823,11 @@ main {
   display: none; }
 
 .courses__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 15px;
   padding: 20px;
   background-color: white;
@@ -4776,19 +4839,22 @@ main {
 .courses__item p {
   display: none; }
 
-.courses__item img {
-  margin-bottom: 20px; }
-
 .courses__title {
+  flex-basis: 100%;
   margin-bottom: 20px;
   font-size: 20px; }
 
 .courses__item span {
-  display: inline-block;
-  font-size: 16px; }
+  display: inline-block; }
 
-.courses__item-price {
-  margin-left: auto; }
+.courses__partner {
+  flex-basis: 100%;
+  margin-bottom: 18px;
+  font-size: 18px; }
+
+.courses__price,
+.courses__duration {
+  font-size: 16px; }
 
 .courses__item-btn {
   margin-top: 20px;
@@ -4799,14 +4865,12 @@ main {
   margin-top: 30px;
   width: 167px;
   height: 36px;
-  color: white;
+  color: #24272D;
   font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
-  background-color: #24272D;
-  border: 1px solid #D1E92A;
   border-radius: 7px;
-  background-image: none;
+  background-image: linear-gradient(to bottom, #d1e92a 0%, #899b03 100%);
   cursor: pointer; }
 
 @media (min-width: 768px) {
@@ -4814,54 +4878,76 @@ main {
     padding-bottom: 60px; } }
 
 @media (min-width: 1024px) {
+  .courses .container {
+    padding: 0; }
   .courses__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     margin: 0;
+    padding: 20px 36px;
     color: white; }
-  .courses__item img {
-    display: none; }
-  .courses__item span {
-    margin: 0; }
   .courses__title {
     order: 0;
-    flex-basis: 20%;
+    flex-basis: 25%;
     margin: 0; }
+  .courses__partner {
+    order: 1;
+    flex-basis: 15%;
+    margin-bottom: 0; }
+  .courses__price {
+    order: 2;
+    flex-basis: 17%; }
+  .courses__duration {
+    order: 3;
+    flex-basis: 23%; }
   .courses__item-btn {
     order: 4;
-    flex-basis: 25%;
+    flex-basis: 20%;
     margin: 0;
+    height: 48px;
     color: white;
+    font-size: 16px;
     background-image: none;
-    border: 2px solid #D1E92A; }
+    border: 2px solid #D1E92A;
+    border-radius: 15px; }
+    .courses__item-btn:hover {
+      color: #24272D;
+      background-image: linear-gradient(to bottom, #d1e92a 0%, #899b03 100%);
+      border: none; }
+  .courses__btn {
+    width: 267px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    background-image: none;
+    border: 2px solid #D1E92A;
+    border-radius: 15px; }
+  .courses__item-btn:hover,
+  .courses__btn:hover {
+    color: #24272D;
+    background-image: linear-gradient(to bottom, #d1e92a 0%, #899b03 100%);
+    border: none; }
   .courses__item:nth-child(odd) {
-    background-color: #272A30; }
-  .courses__item:nth-child(even) {
     background-color: #24272D; }
+  .courses__item:nth-child(even) {
+    background-color: #272A30; }
   .courses__headers {
     display: flex;
     justify-content: flex-start;
-    width: 75%; }
+    padding: 20px 36px;
+    width: 100%;
+    background-color: #272A30; }
   .courses__headers-item {
     justify-self: flex-start;
     font-size: 20px;
     color: #D1E92A; }
   .courses__headers-item--course {
-    flex-basis: 27%; }
+    flex-basis: 23%; }
   .courses__headers-item--partner {
-    flex-basis: 19%; }
+    flex-basis: 14%; }
   .courses__headers-item--price {
-    flex-basis: 22%; }
+    flex-basis: 16%; }
   .courses__headers-item--duration {
-    flex-basis: 27%; }
-  .courses__partner {
-    order: 1; }
-  .courses__price {
-    order: 2; }
-  .courses__duration {
-    order: 3; } }
+    flex-basis: 43%; } }
 
 .paginator {
   display: none; }
@@ -4958,10 +5044,64 @@ main {
   .aggregator__container {
     background-position: right 50px top 0; }
   .aggregator__text {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 20px; }
   .aggregator__download-links-list::before {
     right: unset;
     left: 180px; } }
+
+@media (min-width: 1024px) {
+  .aggregator {
+    margin: 100px 0;
+    padding: 0; }
+    .aggregator::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%; }
+    .aggregator::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -99px;
+      transform: rotate(180deg); }
+  .aggregator__container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-image: url("../images/svg/campaigns.svg"), url("../images/svg/socrat.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 228px top 45px, right 20px top 10px;
+    background-size: 165px, 188px; }
+  .aggregator__text {
+    width: 52%; }
+  .aggregator__download-links-list {
+    flex-direction: row; }
+    .aggregator__download-links-list::before {
+      left: 367px;
+      width: 207px; }
+  .aggregator__download-links-item {
+    margin-bottom: 0;
+    margin-right: 36px; }
+    .aggregator__download-links-item:last-of-type {
+      margin-right: 0; } }
 
 @media (min-width: 1440px) {
   .aggregator {

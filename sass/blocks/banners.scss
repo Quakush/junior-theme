@@ -44,18 +44,26 @@
 	@include link-style;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
 
 	.banners {
-		margin: 131px 0;
+		margin: 100px 0;
+		height: unset;
 
 		&::before {
-		@include clouds(131px, -130px);
-	    }
-
-	    &::after {
-            @include clouds-bottom(131px, -130px, -129px);
+            @include clouds(100px, -99px);
         }
+
+        &::after {
+            @include clouds-bottom(100px, -99px, -99px);
+        }
+	}
+
+	.banners__title {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 15px;
+		font-weight: 400;
 	}
 
 	.banners__list {
@@ -71,6 +79,26 @@
 		margin-bottom: 0;
 	}
 
+	.banners__item {
+		margin-right: 18px;
+	}
+	
+}
+
+@media (min-width: 1440px) {
+
+	.banners {
+		margin: 131px 0;
+
+		&::before {
+		@include clouds(131px, -130px);
+	    }
+
+	    &::after {
+            @include clouds-bottom(131px, -130px, -129px);
+        }
+	}
+	
 	.banners__item {
 		margin-right: 32px;
 	}
