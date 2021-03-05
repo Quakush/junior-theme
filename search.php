@@ -86,27 +86,8 @@ get_header();
 	    </div>
 	</section>
 	<section class="aggregator">
-	    <div class="container">
-	        <h2 class="title__secondary  aggregator__title">Агрегатор онлайн-курсов</h2>
-	        <p>
-	            Скачайте новое приложение, чтобы постоянно быть
-	            в курсе новых онлайн-курсов. Проходите обучение
-	            у наших партнеров, а практику вы сможете пройти
-	            в нашей компании или у наших партнеров.
-	        </p>
-	        <div class="aggregator__download-links"></div>
-	            <ul class="aggregator__download-links-list">
-	                <li class="aggregator__download-links-item  aggregator__download-links-item--apple">
-	                    <a href=""><img src="/wp-content/themes/js-corp/images/icons/icon-download-apple.svg" alt="download link"></a>
-	                </li>
-	                <li class="aggregator__download-links-item  aggregator__download-links-item--google">
-	                    <a href=""><img src="/wp-content/themes/js-corp/images/icons/icon-download-google.svg" alt="download link"></a>
-	                </li>
-	            </ul>
-	            <span class="aggregator__download-links-text">Скачайте наше приложение для своего телефона</span>
-	        </div>
-	    </div>
-	</section>
+        <?php get_template_part('/includes/block', 'aggregator');?>
+    </section>
 	<?php get_template_part('/includes/block', 'ask_questions');?>
 </main>
 

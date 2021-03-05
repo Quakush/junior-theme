@@ -56,9 +56,7 @@ get_header();
                       while($partners->have_posts()) : $partners-> the_post(); ?>
                     
                         <li class="banners__item">
-                            <a class="banners__link" href="#">
-                                <img src="<?=get_field('logo-svg')['url'];?>" alt="banner">
-                            </a>
+                            <img src="<?=get_field('logo-svg')['url'];?>" alt="banner">
                         </li>
 
             <?php endwhile; endif; ?>

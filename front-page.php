@@ -12,18 +12,19 @@ get_header();
 ?>
 
 <main>
-
     <section class="main-offer main-offer--main">
         <div class="container">
-            <h1 class="title"><div class="title__strong"><span class="title__colored">WE </span>START</div>
-                YOUR <span class="title__colored">IDEAS</span></h1>
+            <h1 class="title">
+                <div class="title__strong">
+                    <span class="title__colored">WE </span>START
+                </div>
+                <div class="title__small">
+                    YOUR <span class="title__colored">IDEAS</span>
+                </div>
+            </h1>
             <div class="main-offer__text-block">
-                <p>Junior Specialists Corporation - это современная, технологическая компания с распределенной командой. Мы создаем продукты из любой точки мира и верим, что они смогут улучшить жизнь любого человека. Хотите стать частью нашей компании?</p>
-                <span>
-                    Мы будем рады обсудить это с вами.
-                </span>
+                <p>Junior Specialists Corporation - это современная, технологическая компания с распределенной командой. Мы создаем продукты из любой точки мира и верим, что они смогут улучшить жизнь любого человека.</p>
             </div>
-            
             <?php get_template_part('/includes/block', 'sign_up');?>
         </div>
     </section>
@@ -35,8 +36,8 @@ get_header();
 	            <p>
 	                Мы специализируемся на предпосевной 
 	                стадии стартапов, улучшаем ваши навыки, 
-	                расширяем знания или дополняем команду. 
-	                Помогая вам созреть, вывести проект на 
+	                расширяем знания и дополняем команду. 
+	                Помогаем вам созреть, вывести проект на 
 	                рынок и получить первые продажи. Наша 
 	                программа акселерации - это возможность 
 	                дать необходимый импульс вашему проекту.

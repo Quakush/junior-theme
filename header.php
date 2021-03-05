@@ -19,7 +19,7 @@
                 </div>
                 <div class="top-bar__timer">
                     <p>Старт программы<br>акселератора</p>
-                    <div class="top-bar__timer-screen">
+                    <div id="timer" class="top-bar__timer-screen">
                         <div class="top-bar__timer-item">
                             <span class="top-bar__timer-number">30</span>
                             <span class="top-bar__timer-text">дней</span>

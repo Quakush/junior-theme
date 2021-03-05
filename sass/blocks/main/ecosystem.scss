@@ -1,21 +1,7 @@
 .ecosystem {
     position: relative;
-    padding-top: 115px;
-    padding-bottom: 85px;
     margin:80px 0;
     width: 100%;
-    background-image: 
-        url("../images/svg/phone.svg"), 
-        url("../images/svg/tablet.svg");
-    background-repeat:
-        no-repeat,
-        no-repeat;
-    background-size:
-        158px 253px,
-        327px 388px;
-    background-position:
-        230px 350px,
-        265px 215px;
     color: $dark-text;
     background-color: $white;
 
@@ -29,7 +15,44 @@
 }
 
 .ecosystem .container {
+    position: relative;
+    padding-top: 115px;
+    padding-bottom: 85px;
     overflow: visible;
+
+    &::before {
+        @include element-style(735px, 60px, transparent);
+        right: -600px;
+        bottom: 5px;
+        z-index: 300;
+        background-image: url("../images/svg/clouds.svg");
+        background-repeat: no-repeat;
+        background-size: 735px 52px;
+        background-position: left -30px bottom 10px;
+    }
+
+    &::after {
+        @include element-style(361px, 388px, transparent);
+        right: -220px;
+        bottom: 15px;
+        background-image: 
+            url("../images/svg/phone.svg"),
+            url("../images/svg/tablet.svg");
+        background-repeat:
+            no-repeat, 
+            no-repeat;
+        background-size:
+            158px 253px,
+            327px 388px;
+        background-position:
+            left 0 bottom -10px,
+            left 34px bottom 0;
+        z-index: 0;
+    }
+}
+
+.ecosystem__title {
+    font-weight: 800;
 }
 
 .ecosystem__title span {
@@ -39,7 +62,7 @@
 .ecosystem p {
     font-size: 14px;
     line-height: 1.66;
-    width: 240px;
+    width: 55%;
     margin-bottom: 40px;
 }
 
@@ -61,10 +84,17 @@
 
 @media (min-width: 768px) {
 
-    .ecosystem {
-        background-position:
-            right 50px top 220px,
-            right -140px top 70px;
+    .ecosystem .container {
+
+        &::before {
+            right: -470px;
+            bottom: 10px;
+        }
+
+        &::after {
+            right: -120px;
+            bottom: 30px;
+        }
     }
 
     .ecosystem p {
@@ -73,14 +103,12 @@
     }
 
     .ecosystem__title {
-        max-width:500px;
-        font-size: 30px;
+        width: 80%;
     }
 
     .ecosystem__title span {
         display: inline;
     }
-    
 }
 
 @media (min-width: 1024px) {
@@ -88,7 +116,6 @@
     .ecosystem {
         margin: 100px 0;
         padding: 0;
-        background-image: none;
 
         &::before {
             @include clouds(100px, -99px);
@@ -100,31 +127,37 @@
     }
 
     .ecosystem .container {
-        position: relative;
         padding-top: 310px;
         padding-bottom: 197px;
-        overflow: visible;
 
         &::before {
-            @include element-style(280px, 448px, transparent);
-            right: 56px;
             bottom: 0;
-            background-image: url("../images/svg/phone.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            z-index: 20;
+            right: -300px;
+            height: 60px;
+            background-size: 735px 52px;
+            background-position: left 0 bottom 0;
         }
 
         &::after {
-            @include element-style(493px, 587px, transparent);
-            right: -226px;
-            bottom: 33px;
-            background-image: url("../images/svg/tablet.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            z-index: 0;
+            right: -310px;
+            width: 723px;
+            height: 733px;            
+            bottom: -40px;
+            background-size:
+                351px 563px,
+                617px 733px;
+            background-position:
+                left 0 bottom 0,
+                left 106px bottom 0;
         }
-                
+    }
+
+    .ecosystem__title {
+        width: 60%;
+    }
+
+    .ecosystem .sign-up__dropdown {
+        margin-right: 28px;
     }
 }
 
@@ -144,21 +177,24 @@
     }
 
     .ecosystem .container {
-        padding-top: 420px;
-        padding-bottom: 197px;
+        padding-top: 456px;
+        padding-bottom: 150px;
 
         &::before {
-            width: 351px;
-            height: 563px;
-            right: 56px;
-            bottom: 0;
+            right: -340px;
+            bottom: -3px;
+            height: 70px;
+            background-size: 735px 65px;
+            background-position: left 0 bottom 0;
+
         }
 
         &::after {
-            width: 617px;
-            height: 733px;
             right: -316px;
-            bottom: 33px;
+            bottom: 0;
+            background-position: 
+                bottom -27px left 0,
+                bottom 0 left 106px;
         }
     }
 
