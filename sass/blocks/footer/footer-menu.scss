@@ -40,11 +40,6 @@
 	text-decoration: none;
 }
 
-
-.footer-menu__list a:hover {
-	color: $corp-blue;
-}
-
 .footer-menu .sub-menu {
 	@include list-style;
 }
