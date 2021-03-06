@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Education Page
+Template Name: StartUp Page
 */
 
 get_header();
