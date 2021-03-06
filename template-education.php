@@ -36,7 +36,7 @@ get_header();
                     чтобы получить гарантированную практику после
                     окончания обучения.
                 </p>
-                <a class="btn btn--big  btn--green  choose-course__btn" href="/courses/">Еще 50+ профессий</a>
+                <a class="btn btn--big  btn--green  choose-course__btn" href="/courses/">Выбрать курс</a>
             </div>
         </div>
     </section>
@@ -108,24 +108,51 @@ get_header();
             <a class="btn  btn--green  btn--big  credences__btn" href="/courses/">Выбрать курс</a>
         </div>
     </section>
-    <section class="road-usa">
+    <section class="immigration-slider">
         <div class="container">
-            <div class="road-usa__wrap">
-                <h2 class="title__secondary  road-usa__title"><span>Road to USA with</span> JS Corporation</h2>
-                <p>
-                    Программа трудоустройства специалистов
-                    в американские компании.<br>Закончил обучение
-                    в одном из университетов и мечтаешь попасть
-                    в одну из компаний в США?<br>Оставь заявку
-                    и мы расскажем как это сделать.
-                </p>
-                <button class="btn  btn--green btn--big  road-usa__btn">Оставить заявку</button>
-                <ul class="bullets">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+            <ul class="immigration-slider__list">
+                <li class="immigration-slider__item  immigration-slider__item--active">
+                    <h2 class="title__secondary  immigration-slider__item-title"><span>Road to USA with</span> JS Corporation</h2>
+                    <p>
+                        Программа трудоустройства специалистов
+                        в американские компании.<br>Закончил обучение
+                        в одном из университетов и мечтаешь попасть
+                        в одну из компаний в США?<br>Оставь заявку
+                        и мы расскажем как это сделать.
+                    </p>
+                    <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
+                </li>
+
+                <li class="immigration-slider__item">
+                    <h2 class="title__secondary  immigration-slider__item-title"><span>Road to USA with</span> JS Corporation</h2>
+                    <p>
+                        Программа трудоустройства специалистов
+                        в американские компании.<br>Закончил обучение
+                        в одном из университетов и мечтаешь попасть
+                        в одну из компаний в США?<br>Оставь заявку
+                        и мы расскажем как это сделать.
+                    </p>
+                    <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
+                </li>
+
+                <li class="immigration-slider__item">
+                    <h2 class="title__secondary  immigration-slider__item-title"><span>Road to USA with</span> JS Corporation</h2>
+                    <p>
+                        Программа трудоустройства специалистов
+                        в американские компании.<br>Закончил обучение
+                        в одном из университетов и мечтаешь попасть
+                        в одну из компаний в США?<br>Оставь заявку
+                        и мы расскажем как это сделать.
+                    </p>
+                    <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
+                </li>
+                
+            </ul>
+            <ul class="bullets">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </section>
     <section class="educational-programms">

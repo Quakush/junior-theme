@@ -47,7 +47,8 @@
              <p class="footer-info__company">2019-2021 © Junior Specialists Corporation llc.
              </p> 
              <div class="footer-info__polity-box">
-                <a href="#" class="footer-info__polity">Политика конфиденциальности |</a>
+                <a href="#" class="footer-info__polity">Политика конфиденциальности</a>
+                <span>|</span>
                 <a href="#" class="footer-info__polity">Условия использования</a>
             </div> 
         </div> 

@@ -17,6 +17,7 @@
   display: inline-block;
 	color: inherit;
 	text-decoration: none;
+  font-size: inherit;
 }
 
 @mixin element-style ($width, $height, $color) {

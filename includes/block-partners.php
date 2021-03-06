@@ -1,4 +1,5 @@
 <div class="partners">
+    <a class="partners__link" href="#">все партнеры</a>
     <ul class="partners__list">
         <li class="partners__item">
             <img src="/wp-content/themes/js-corp/images/banners/skillbox.svg" alt="Логотип партнера">

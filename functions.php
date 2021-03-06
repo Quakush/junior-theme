@@ -14,6 +14,9 @@ function scripts()
 	wp_register_script('swiper-script', get_template_directory_uri() . '/js/swiper-script.js', [], 1, true);
 	wp_enqueue_script('swiper-script');
 
+	wp_register_script('timer-script', get_template_directory_uri() . '/js/timer.js', [], 1, true);
+	wp_enqueue_script('timer-script');
+
 	wp_register_script('mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', [], 1, true);
 	wp_enqueue_script('mobile-menu');
 

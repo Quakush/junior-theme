@@ -12,18 +12,19 @@ get_header();
 ?>
 
 <main>
-
     <section class="main-offer main-offer--main">
         <div class="container">
-            <h1 class="title"><div class="title__strong"><span class="title__colored">WE </span>START</div>
-                YOUR <span class="title__colored">IDEAS</span></h1>
+            <h1 class="title">
+                <div class="title__strong">
+                    <span class="title__colored">WE </span>START
+                </div>
+                <div class="title__small">
+                    YOUR <span class="title__colored">IDEAS</span>
+                </div>
+            </h1>
             <div class="main-offer__text-block">
-                <p>Junior Specialists Corporation - это современная, технологическая компания с распределенной командой. Мы создаем продукты из любой точки мира и верим, что они смогут улучшить жизнь любого человека. Хотите стать частью нашей компании?</p>
-                <span>
-                    Мы будем рады обсудить это с вами.
-                </span>
+                <p>Junior Specialists Corporation - это современная, технологическая компания с распределенной командой. Мы создаем продукты из любой точки мира и верим, что они смогут улучшить жизнь любого человека.</p>
             </div>
-            
             <?php get_template_part('/includes/block', 'sign_up');?>
         </div>
     </section>
@@ -35,8 +36,8 @@ get_header();
 	            <p>
 	                Мы специализируемся на предпосевной 
 	                стадии стартапов, улучшаем ваши навыки, 
-	                расширяем знания или дополняем команду. 
-	                Помогая вам созреть, вывести проект на 
+	                расширяем знания и дополняем команду. 
+	                Помогаем вам созреть, вывести проект на 
 	                рынок и получить первые продажи. Наша 
 	                программа акселерации - это возможность 
 	                дать необходимый импульс вашему проекту.
@@ -178,16 +179,19 @@ get_header();
         <div class="container pilot-project__container">
             <div class="pilot-project__text-block">
                 <h2 class="title__secondary">Проект для пилота</h2>
-                <p class="pilot-project__text">
-                    <span>Автоматизация процессов, сокращение издержек, новые продукты -</span>
-                    <span>все это даст вашему бизнесу</span>
-                    <span>рост и конкурентное</span>
-                    <span>преимущество.</span>
-                    <span>Мы осуществляем поиск</span>
-                    <span>проектов под ваши</span>
-                    <span>задачи и помогаем</span>
-                    <span>интегрировать</span>
-                    <span>в вашу компанию.</span>
+                <p class="pilot-project__text  pilot-project__text--mobile">
+                    Автоматизация процессов, сокращение издержек, новые продукты -<br>
+                    все это даст вашему бизнесу<br>
+                    рост и конкурентное<br>
+                    преимущество.<br>
+                    Мы осуществляем поиск<br>
+                    проектов под ваши<br>
+                    задачи и помогаем<br>
+                    интегрировать<br>
+                    в вашу компанию.<br>
+                </p>
+                <p class="pilot-project__text  pilot-project__text--desktop">
+                    Автоматизация процессов, сокращение издержек, новые продукты - все это даст вашему бизнесу рост и конкурентное преимущество. Мы осуществляем поиск проектов под ваши задачи и помогаем интегрировать в вашу компанию.
                 </p>
             </div>
 

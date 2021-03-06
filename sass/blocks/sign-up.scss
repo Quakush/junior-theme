@@ -11,20 +11,25 @@
 }
 
 .sign-up__mark {
-    display: block;
-    padding: 10px 22px 10px 26px;
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+    width: 202px;
+    height: 36px;
     font-size: 13px;
     color: $light-text;
+    line-height: 1;
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid #a7a7a7;
     border-radius: 7px;
+    box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
     box-sizing: border-box;
     cursor: pointer;
 
     &::before {
         @include element-style(8px, 8px, transparent);
         right: 15px;
-        top: 10px;
+        top: 11px;
         border: 2px solid $light-text;
         border-left: none;
         border-top: none;
@@ -53,6 +58,7 @@
     border: 1px solid #a7a7a7;
     border-radius: 7px;
     box-sizing: border-box;
+    box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
     z-index: 200;
 }
 
@@ -80,7 +86,7 @@
 
 .sign-up__options li:hover {
     color: $white;
-    background-image: linear-gradient(to bottom, rgba(0,167,207,1) 0%,rgba(1,98,122,1) 100%);
+    background-image: $blue-gradient;
 }
 
 .sign-up__btn {
@@ -102,7 +108,8 @@
         width: 267px;
     }
 
-    .sign-up__dropdown span {
+    .sign-up__mark {
+        width: 267px;
         height: 48px;
         font-size: 16px;
         border-radius: 15px;
@@ -111,6 +118,12 @@
             top: 15px;
             right: 27px;
         }
+    }
+
+    .sign-up__options {
+        padding: 5px 0;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     .sign-up__btn {
