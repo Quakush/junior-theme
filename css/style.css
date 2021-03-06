@@ -4381,80 +4381,90 @@ main {
     margin-left: 0;
     width: 267px; } }
 
-.road-usa {
+.immigration-slider {
   padding-bottom: 40px; }
 
-.road-usa .container {
+.immigration-slider .container {
+  padding: 0; }
+
+.immigration-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.immigration-slider__item {
+  display: none;
+  padding: 0 15px;
   background-image: url("../images/svg/freedom.svg");
   background-repeat: no-repeat;
   background-size: 170px;
   background-position: 230px; }
 
-.road-usa__title {
-  margin-bottom: 0;
+.immigration-slider__item--active {
+  display: block; }
+
+.immigration-slider__item-title {
+  margin-bottom: 30px;
   color: #00A7CF; }
 
-.road-usa__title span {
+.immigration-slider__item-title span {
   display: block;
   color: #EF4864; }
 
-.road-usa p {
+.immigration-slider__item p {
   width: 67%;
   font-size: 14px;
   color: #AEAEAE;
   line-height: 1.57; }
 
-.road-usa__btn {
+.immigration-slider__item-btn {
   margin: 0 auto;
   margin-top: 85px; }
 
-.road-usa .bullets {
+.immigration-slider .bullets {
   margin-top: 30px; }
 
-@media (min-width: 375px) {
-  .road-usa p {
-    background-position: 198px 30px; } }
-
 @media (min-width: 768px) {
-  .road-usa {
+  .immigration-slider {
     padding-top: 60px; }
-  .road-usa .container {
-    background-size: 250px;
-    background-position: left 70px top 0; }
-  .road-usa__wrap {
-    margin-left: auto;
-    width: 55%; }
-  .road-usa__title {
-    margin-left: auto;
-    margin-bottom: 20px; }
-  .road-usa p {
-    margin-left: auto;
+  .immigration-slider__item {
+    padding: 0 22px;
+    padding-left: 45%;
+    background-size: 220px;
+    background-position: left 70px top 10px; }
+  .immigration-slider__item p {
     width: unset; }
-  .road-usa__btn {
+  .immigration-slider__item-btn {
     margin: 0;
     margin-top: 30px;
-    margin-right: auto; }
-  .road-usa .bullets {
-    display: inline-block; } }
+    margin-right: auto; } }
+
+@media (min-width: 1024px) {
+  .immigration-slider__item {
+    padding: 0 36px;
+    padding-left: 45%; }
+  .immigration-slider__item-btn {
+    margin-top: 50px; } }
 
 @media (min-width: 1440px) {
-  .road-usa {
+  .immigration-slider {
     padding: 90px 0;
     padding-bottom: 27px; }
-  .road-usa .container {
+  .immigration-slider__item {
+    padding: 0;
+    padding-left: 45%;
     background-size: 320px;
-    background-position: left 52px top 40px;
+    background-position: left 52px top 10px;
     box-sizing: border-box; }
-  .road-usa__title {
+  .immigration-slider__item-title {
     font-weight: 800; }
-  .road-usa p {
+  .immigration-slider__item p {
     font-size: 24px;
     line-height: 45px;
     letter-spacing: -0.9px; }
-  .road-usa__btn {
-    margin-top: 50px;
+  .immigration-slider__item-btn {
     width: 267px; }
-  .road-usa .bullets {
+  .immigration-slider .bullets {
     margin-top: 60px; } }
 
 .educational-programms {

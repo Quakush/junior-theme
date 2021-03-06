@@ -1,0 +1,119 @@
+.immigration-slider {
+    padding-bottom: 40px;
+}
+
+.immigration-slider .container {
+    padding: 0;
+}
+
+.immigration-slider__list {
+    @include list-style;
+}
+
+.immigration-slider__item {
+    display: none;
+    padding: 0 15px;
+    background-image: url("../images/svg/freedom.svg");
+    background-repeat: no-repeat;
+    background-size: 170px;
+    background-position: 230px;
+}
+
+.immigration-slider__item--active {
+    display: block;
+}
+
+.immigration-slider__item-title {
+    margin-bottom: 30px;
+    color: $corp-blue;
+}
+
+.immigration-slider__item-title span {
+    display: block;
+    color: #EF4864;
+}
+
+.immigration-slider__item p {
+    width: 67%;
+    font-size: 14px;
+    color: $light-text;
+    line-height: $line-height-p;
+}
+
+.immigration-slider__item-btn {
+    margin: 0 auto;
+    margin-top: 85px;
+}
+
+.immigration-slider .bullets {
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+
+    .immigration-slider {
+      padding-top: 60px;
+    }
+
+    .immigration-slider__item {
+        padding: 0 22px;
+        padding-left: 45%;
+        background-size: 220px;
+        background-position: left 70px top 10px;
+    }
+
+    .immigration-slider__item p {
+        width: unset;
+    }
+
+    .immigration-slider__item-btn {
+      margin: 0;
+      margin-top: 30px;
+      margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .immigration-slider__item {
+        padding: 0 36px;
+        padding-left: 45%;
+    }
+
+    .immigration-slider__item-btn {
+        margin-top: 50px;
+    }
+}
+@media (min-width: 1440px) {
+
+    .immigration-slider {
+        padding: 90px 0;
+        padding-bottom: 27px;
+    }
+
+    .immigration-slider__item {
+        padding: 0;
+        padding-left: 45%;
+        background-size: 320px;
+        background-position: left 52px top 10px;
+        box-sizing: border-box;
+    }
+
+    .immigration-slider__item-title {
+        font-weight: 800;
+    }
+
+    .immigration-slider__item p {
+        font-size: 24px;
+        line-height: 45px;
+        letter-spacing: -0.9px;
+    }
+
+    .immigration-slider__item-btn {
+        width: 267px;
+    }
+
+    .immigration-slider .bullets {
+        margin-top: 60px;
+    }
+}
