@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    min-width: 320px;
+    width: 320px;
     @include font-base(12px, $base-line-height);
     letter-spacing: 0;
     background: #24272d;
@@ -32,9 +32,19 @@ main {
     padding-bottom: 60px;
 }
 
+@media (min-width: 375px) {
+
+    body {
+        width: 375px;
+    }
+    
+}
+
 @media (min-width: 768px) {
 
     body {
+        width: unset;
+        min-width: 768px;
         font-size: 14px;
     }
 }

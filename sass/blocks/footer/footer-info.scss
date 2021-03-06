@@ -2,7 +2,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	align-content: space-between;
+	text-align: center;
+	margin-top: 37px;
+	color: $light-text;
+	font-size: 12px;
 }
 
 .footer-info__logo {
@@ -10,15 +13,20 @@
 }
 
 .footer-info__company {
-	color: $light-text;
-	font-size: 12px;
-	margin: 2rem 0;
+	flex-basis: 100%;
+	align-self: center;
+	margin-bottom: 37px;
+}
+
+.footer-info__polity-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	letter-spacing: -0.5px;
 }
 
 .footer-info__polity {
-	color: $light-text;
-	text-decoration: none;
-	font-size: 12px;
+	@include link-style;
 }
 
 .footer-info__polity:hover {
@@ -29,15 +37,39 @@
 
 	.footer-info {
 		position: relative;
-		flex-basis: 100%;
-		display: flex;
 		flex-direction: row;
-		align-items: center;
+		justify-content: space-between;
+        margin-top: 0;
+        padding-top: 34px;
+        padding-bottom: 34px;
+        width: 85%;
 
 		&::before {
 			@include element-style(80%, 1px, $white);
 			top: 0;
+			left: 50%;
+			transform: translate(-50%);
+		}
+	}
+
+	.footer-info__company {
+		flex-basis: unset;
+		margin: 0;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.footer-info {
+		justify-content: flex-start;
+		margin-top: 33px;
+		padding: 0;
+		width: 100%;
+
+		&::before {
 			left: 95px;
+			width: 90%;
+			transform: none;
 		}
 	}
 
@@ -62,9 +94,13 @@
 	}
 
 	.footer-info__logo svg {
+		position: absolute;
+		top: 50%;
+		left: 10px;
 		width: 43px;
 		height: 29px;
 		fill: $white;
+		transform: translate(0, -50%);
 	}
 
 	.footer-info__logo span {
@@ -73,27 +109,15 @@
 		left: 49px;
 		top: 42%;
 		font-size: 9px;
+		color: $white;
 		text-transform: uppercase;
 		font-weight: 700;
 		letter-spacing: 0;
 		transform: rotate(-90deg) translate(0, -50%);
 	}
 
-	.footer-info__company, 
-	.footer-info__polity {
-		margin: 0;
-		font-size: $base-font-size;
-	}
-
-}
-
-@media (min-width: 1024px) {
-
-	.footer-info {
-		margin-top: 33px;
-
-		&::before {
-			width: 90%;
-		}
+	.footer-info__polity-box {
+		margin-left: auto;
+		letter-spacing: unset;
 	}
 }

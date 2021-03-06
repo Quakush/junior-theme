@@ -37,8 +37,8 @@
     line-height: 1.66;
 }
 
-.pilot-project__text span {
-    display: block;
+.pilot-project__text--desktop {
+    display: none;
 }
 
 .pilot-project__text-block:nth-of-type(2) p {
@@ -96,7 +96,11 @@
     .pilot-project__btn {
         font-size: 16px;
         width: 202px;
-    } 
+    }
+
+    .pilot-project__text-block:nth-of-type(2) .pilot-project__btn {
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -121,7 +125,13 @@
         background-position: left 0 top 30px;
     }
 
-   
+    .pilot-project__text--mobile {
+        display: none;
+    }  
+ 
+    .pilot-project__text--desktop {
+        display: block;
+    }  
 
     .pilot-project__text {
         margin-left: auto;
@@ -208,7 +218,8 @@
     }
 
     .pilot-project__text-block p {
-        font-size: 24px;
+        font-size: 23px;
+        letter-spacing: -1px;
     }
 }
 

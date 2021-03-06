@@ -21,6 +21,10 @@
 
 @media (min-width: 768px) {
 
+    .main-footer {
+        padding-bottom: 0;
+    }
+
     .main-footer .container {
         display: flex;
         flex-direction: row;

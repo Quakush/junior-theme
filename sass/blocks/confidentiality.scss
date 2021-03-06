@@ -37,11 +37,15 @@
 	color: #00738F;
 }
 
-.ask-questions__link {
-	display: block;
-	text-align: center;
-	color: $corp-blue;
-	text-decoration: underline;
+@media (min-width: 1024px) {
+
+    .confidentiality label {
+    	font-size: 12px;
+    }
+
+    .confidentiality__link {
+    	font-size: 12px;
+    }
 }
 
 @media (min-width: 1440px) {
