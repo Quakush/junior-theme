@@ -6,21 +6,12 @@
     padding: 0;
 }
 
-.immigration-slider__list {
-    @include list-style;
-}
-
 .immigration-slider__item {
-    display: none;
     padding: 0 15px;
     background-image: url("../images/svg/freedom.svg");
     background-repeat: no-repeat;
     background-size: 170px;
     background-position: 230px;
-}
-
-.immigration-slider__item--active {
-    display: block;
 }
 
 .immigration-slider__item-title {
@@ -45,7 +36,7 @@
     margin-top: 85px;
 }
 
-.immigration-slider .bullets {
+.immigration-slider .slick-dots {
     margin-top: 30px;
 }
 
@@ -57,9 +48,13 @@
 
     .immigration-slider__item {
         padding: 0 22px;
-        padding-left: 45%;
         background-size: 220px;
         background-position: left 70px top 10px;
+    }
+
+    .immigration-slider__item-wrap {
+        margin-left: auto;
+        width: 55%;
     }
 
     .immigration-slider__item p {
@@ -77,7 +72,6 @@
 
     .immigration-slider__item {
         padding: 0 36px;
-        padding-left: 45%;
     }
 
     .immigration-slider__item-btn {
@@ -93,7 +87,6 @@
 
     .immigration-slider__item {
         padding: 0;
-        padding-left: 45%;
         background-size: 320px;
         background-position: left 52px top 10px;
         box-sizing: border-box;
@@ -111,9 +104,5 @@
 
     .immigration-slider__item-btn {
         width: 267px;
-    }
-
-    .immigration-slider .bullets {
-        margin-top: 60px;
     }
 }

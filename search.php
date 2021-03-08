@@ -7,20 +7,6 @@ get_header();
 
 <main>
 
-	<section class="main-offer  main-offer--courses">
-        <div class="container">
-            <h1 class="title"><span class="title__colored">ВСЕ КУРСЫ</span>В ОДНОМ МЕСТЕ</h1>
-            <p>
-                Мы сотрудничаем с различными онлайн и офлайн
-                платформами, чтобы вам проще было найти 
-                нужный курс. Создайте аккаунт в нашей системе,
-                чтобы получить гарантированную практику после
-                окончания обучения.
-            </p>
-            <?php get_template_part('/includes/block', 'sign_up');?>
-        </div>
-    </section>
-
 	<section class="filters">
 
         <div class="container">
@@ -29,11 +15,13 @@ get_header();
             <div class="categories">
                 <span class="categories__dropdown">Выберите специальность</span>
                 <ul class="categories__list">
-                    
+                    <li class="categories__item  categories__item--all">
+                        <a class="categories__link" href="/">All</a>
+                    </li>
                     <?php if ($terms && ! is_wp_error($terms)):
    
                         foreach ($terms as $term ):?>
-                        <li class="categories__item">
+                        <li class="categories__item  categories__item--cat">
                             <a class="categories__link" data-cat="<?=$term->term_id;?>" href="#">
                                 <?=$term->name;?>
                             </a>

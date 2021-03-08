@@ -2,9 +2,13 @@
 @import "variables";
 @import "mixins";
 @import "global/vendor/swiper.min";
+@import "global/vendor/slick";
+@import "global/vendor/slick-theme";
 @import "global/scafolding";
+@import "blocks/scroll-bar";
 @import "blocks/btn";
 @import "blocks/bullets";
+@import "blocks/slick-dots";
 @import "blocks/title";
 @import "blocks/container";
 @import "blocks/form";

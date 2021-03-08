@@ -128,46 +128,38 @@ get_header();
             <p><span>Junior Specialists Corporation -</span> это возможность выбрать проффессию<span>в сфере ИТ, пройти обучение</span>в одном из онлайн-университетов и получить гарантированную практику в нашей компании!</p>
 
             <div class="slider  join-us__slider">
-                <ul class="join-us__slider-list">
-                    <li class="join-us__slider-item  join-us__slider-item--active">
+                <div class="slider join-us__slider-list">
+                    <div class="join-us__slider-item">
                         <div class="join-us__slider-item-img-wrap">
                             <img src="/wp-content/themes/js-corp/images/svg/student-woman.svg" alt="student picture">
                         </div>
                         <span class="join-us__slider-caption">Студент</span>
-                    </li>
-                    <li class="join-us__slider-item">
+                    </div>
+                    <div class="join-us__slider-item">
                         <div class="join-us__slider-item-img-wrap">
                             <img src="/wp-content/themes/js-corp/images/svg/specialist.svg" alt="student picture">
                         </div>
                         <span class="join-us__slider-caption">Специалист</span>
-                    </li>
-                    <li class="join-us__slider-item">
+                    </div>
+                    <div class="join-us__slider-item">
                         <div class="join-us__slider-item-img-wrap">
                             <img src="/wp-content/themes/js-corp/images/svg/innovator.svg" alt="student picture">
                         </div>
                         <span class="join-us__slider-caption">Новатор</span>
-                    </li>
-                    <li class="join-us__slider-item">
+                    </div>
+                    <div class="join-us__slider-item">
                         <div class="join-us__slider-item-img-wrap">
                             <img src="/wp-content/themes/js-corp/images/svg/investor.svg" alt="student picture">
                         </div>
                         <span class="join-us__slider-caption">Инвестор</span>
-                    </li>
-                    <li class="join-us__slider-item">
+                    </div>
+                    <div class="join-us__slider-item">
                         <div class="join-us__slider-item-img-wrap">
                             <img src="/wp-content/themes/js-corp/images/svg/business.svg" alt="student picture">
                         </div>
                         <span class="join-us__slider-caption">Бизнес</span>
-                    </li>
-                </ul>
-
-                <ul class="bullets  join-us__bullets">
-                    <li class="bullets__active" data="0"></li>
-                    <li data="1"></li>
-                    <li data="2"></li>
-                    <li data="3"></li>
-                    <li data="4"></li>
-                </ul>
+                    </div>
+                </div>
             </div>
 
             <?php get_template_part('/includes/block', 'sign_up');?>
@@ -177,6 +169,20 @@ get_header();
 
     <section class="pilot-project">
         <div class="container pilot-project__container">
+            <span class="pilot-project__meeting">
+                <div class="logo">
+                    <a class="logo__link" href="/">
+                        <div class="logo__svg-container">
+                            <svg><use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#logo"></use></svg>
+                        </div>
+                        <span>Junior<br>Specialists<br>Corporation</span>
+                    </a>
+                </div>
+                <h4 class="pilot-project__meeting-title">
+                    <div class="title__strong"><span>We</span> start</div> 
+                    <div class="title__small">your <span>ideas</span></div>
+                </h4>
+            </span>
             <div class="pilot-project__text-block">
                 <h2 class="title__secondary">Проект для пилота</h2>
                 <p class="pilot-project__text  pilot-project__text--mobile">
@@ -232,13 +238,13 @@ get_header();
             <a class="read-us__link" href="/blog">Все статьи</a></div>
 
             <div class="projects-slider">
-                <ul class="projects-slider__list">
+                <div class="projects-slider__list">
 
                     <?php if ($posts) :
                     $i = 0;
                     foreach ($posts as $post) : ?>
                      
-                        <li class="
+                        <div class="
                         <?php if($i === 0){echo "projects-slider__item--active";}?> projects-slider__item">
                             <div class="projects-slider__image-wrap">
                                 <?php if(has_post_thumbnail()):?>
@@ -254,18 +260,18 @@ get_header();
                                 </button>
                                 <p><?php the_content();?></p>
                             </div>
-                        </li>
+                        </div>
                         <?php $i++; ?>
 
                     <?php endforeach; endif; ?>
 
-                </ul>
+                </div>
 
-                <ul class="bullets  projects-slider__bullets">
+                <!--<ul class="bullets  projects-slider__bullets">
                     <li class="bullets__active" data="0"></li>
                     <li data="1"></li>
                     <li data="2"></li>
-                </ul> 
+                </ul>-->
             </div>
 
             <p class="read-us__text">Мы собираем самые интересные новости о наших проектах, программах и наших партнерах. Будьте в курсе всех интересных событиях нашей компании.</p>
