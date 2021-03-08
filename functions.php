@@ -26,9 +26,12 @@ function scripts()
 	wp_register_script('slider-script', get_template_directory_uri() . '/js/slider-script.js', [], 1, true);
 	wp_enqueue_script('slider-script');
 
-
 	wp_register_script('filter-animation', get_template_directory_uri() . '/js/filter-animation.js', [], 1, true);
 	wp_enqueue_script('filter-animation');
+
+	wp_enqueue_script( 'slick-slider-lib', get_stylesheet_directory_uri() . '/js/vendor/slick.min.js', array('jquery'));
+
+	wp_enqueue_script( 'slick-slider', get_stylesheet_directory_uri() . '/js/slick.js', array('jquery'));
 
 	wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery'));
 

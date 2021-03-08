@@ -1,0 +1,34 @@
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: $dark-text;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-image: $blue-gradient;
+	border-radius: 4px;
+}
+
+html, body {
+    scrollbar-color: $corp-blue $dark-text;     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: thin;  /* толщина */
+}
+
+/*
+::-webkit-scrollbar-button {
+	
+}
+
+::-webkit-scrollbar-track-piece {
+	
+}
+
+::-webkit-scrollbar-corner {
+	
+}
+
+::-webkit-resizer {
+	
+}*/

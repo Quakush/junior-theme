@@ -110,49 +110,43 @@ get_header();
     </section>
     <section class="immigration-slider">
         <div class="container">
-            <ul class="immigration-slider__list">
-                <li class="immigration-slider__item  immigration-slider__item--active">
-                    <h2 class="title__secondary  immigration-slider__item-title"><span>Road to USA with</span> JS Corporation</h2>
-                    <p>
-                        Программа трудоустройства специалистов
-                        в американские компании.<br>Закончил обучение
-                        в одном из университетов и мечтаешь попасть
-                        в одну из компаний в США?<br>Оставь заявку
-                        и мы расскажем как это сделать.
-                    </p>
-                    <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
-                </li>
+            <div class="immigration-slider__list">
+                <div class="immigration-slider__item">
+                    <div class="immigration-slider__item-wrap">
+                        <h2 class="title__secondary  immigration-slider__item-title"><span>Road to USA with</span> JS Corporation</h2>
+                        <p>
+                            Программа трудоустройства специалистов
+                            в американские компании.<br>Закончил обучение
+                            в одном из университетов и мечтаешь попасть
+                            в одну из компаний в США?<br>Оставь заявку
+                            и мы расскажем как это сделать.
+                        </p>
+                        <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
+                    </div>
+                </div>
 
-                <li class="immigration-slider__item">
-                    <h2 class="title__secondary  immigration-slider__item-title"><span>Road to USA with</span> JS Corporation</h2>
-                    <p>
-                        Программа трудоустройства специалистов
-                        в американские компании.<br>Закончил обучение
-                        в одном из университетов и мечтаешь попасть
-                        в одну из компаний в США?<br>Оставь заявку
-                        и мы расскажем как это сделать.
-                    </p>
-                    <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
-                </li>
+                <div class="immigration-slider__item">
+                    <div class="immigration-slider__item-wrap">
+                        <h2 class="title__secondary  immigration-slider__item-title"><span>Road to Afganistan with</span> JS Corporation</h2>
+                        <p>
+                            Афканистан прекрасен в это время года<br>Тут даже нечего добавлять - он просто перкрасен<br>Оставь заявку
+                            и мы расскажем как это сделать. Как же попасть в эту сказку. Главное потом не выпасть...
+                        </p>
+                        <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
+                    </div>
+                </div>
 
-                <li class="immigration-slider__item">
-                    <h2 class="title__secondary  immigration-slider__item-title"><span>Road to USA with</span> JS Corporation</h2>
-                    <p>
-                        Программа трудоустройства специалистов
-                        в американские компании.<br>Закончил обучение
-                        в одном из университетов и мечтаешь попасть
-                        в одну из компаний в США?<br>Оставь заявку
-                        и мы расскажем как это сделать.
-                    </p>
-                    <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
-                </li>
-                
-            </ul>
-            <ul class="bullets">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+                <div class="immigration-slider__item">
+                    <div class="immigration-slider__item-wrap">
+                        <h2 class="title__secondary  immigration-slider__item-title"><span>Road to OLBANIA with</span> JS Corporation</h2>
+                        <p>
+                            Унекальная вазможназдь уфидеть и нафсигда палюбидь страну ПАДОНКАФФ<br>Только с наме у тибя будит возможнздь выпить йаду и поржадь изпацтала, передадь превед медведу и узбагоицца<br>Оставь заявку
+                            и мы расскажем как это сделать.
+                        </p>
+                        <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="educational-programms">

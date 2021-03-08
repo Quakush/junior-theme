@@ -49,19 +49,19 @@ get_header();
     <section class="banners">
         <div class="container">
             <h2 class="banners__title">наши партнеры</h2>
-            <ul class="banners__list">
+            <div class="banners__list">
 
             <?php if ($partners->have_posts()) :
 
                       while($partners->have_posts()) : $partners-> the_post(); ?>
                     
-                        <li class="banners__item">
+                        <div class="banners__item">
                             <img src="<?=get_field('logo-svg')['url'];?>" alt="banner">
-                        </li>
+                        </div>
 
             <?php endwhile; endif; ?>
                 
-            </ul>
+            </div>
         </div>
     </section>
     <section class="filters">
@@ -72,11 +72,14 @@ get_header();
             <div class="categories">
                 <span class="categories__dropdown">Выберите специальность</span>
                 <ul class="categories__list">
-                    
+                    <li class="categories__item  categories__item--all">
+                        <a class="categories__link" href="/courses">All</a>
+                    </li>
+
                     <?php if ($terms && ! is_wp_error($terms)):
    
                         foreach ($terms as $term ):?>
-                        <li class="categories__item">
+                        <li class="categories__item  categories__item--cat">
                             <a class="categories__link" data-cat="<?=$term->term_id;?>" href="#">
                                 <?=$term->name;?>
                             </a>

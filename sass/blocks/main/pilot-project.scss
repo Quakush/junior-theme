@@ -5,10 +5,6 @@
     padding-bottom: 20px;
     color: $dark-text;
     background-color: $white;
-    background-image: url("../images/svg/meeting.svg");
-    background-size: 281px;
-    background-repeat: no-repeat;
-    background-position: 175px 123px;
 
     &::before {
         @include clouds(80px, -79px);
@@ -16,6 +12,101 @@
 
     &::after {
         @include clouds-bottom(80px, -79px, -79px);
+    }
+}
+
+.pilot-project .container {
+    position: relative;
+}
+
+.pilot-project__meeting {
+    position: absolute;
+    display: block;
+    right: -70px;
+    top: 100px;
+    padding-top: 53px;
+    width: 282px;
+    height: 360px;
+    background-image:
+        url("../images/svg/corn.svg"),
+        url("../images/svg/meeting-table.svg");
+    background-size: 
+        72px 88px,
+        contain;
+    background-repeat: 
+        no-repeat,
+        no-repeat;
+    background-position: 
+        center bottom 12.64%,
+        center;
+        box-sizing: border-box;
+
+    &::before {
+        @include element-style(147px, 59px, transparent);
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-image: url("../images/svg/meeting-left.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+     &::after {
+        @include element-style(135px, 57px, transparent);
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-image: url("../images/svg/meeting-right.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.pilot-project__meeting .logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 47px;
+    height: 13px;
+
+    .logo__link {
+        width: 47px;
+        height: 12px;
+    }
+
+    .logo__svg-container {
+        width: 18px;
+        height: 12px;
+    }
+
+    svg {
+        width: 18px;
+        height: 12px;
+    }
+
+    span {
+        margin-left: 2px;
+        color: $white;
+        font-size: 4px;
+        line-height: 1;
+    }
+}
+
+.pilot-project__meeting-title {
+    text-align: center;
+    color: $white;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+
+    .title__strong {
+        font-size: 24px;
+    }
+
+    span {
+        color: $corp-blue;
     }
 }
 
@@ -59,17 +150,11 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 375px) {
-
-    .pilot-project {
-        background-position: 162px 103px;
-    }    
-}
-
 @media (min-width: 768px) {
 
-    .pilot-project {
-        background-position: right 5% top 70px;
+    .pilot-project__meeting {
+        right: 5%;
+        top: 70px;
     }
 
     .pilot-project__text span {
@@ -118,11 +203,59 @@
         }
     }
 
-    .pilot-project .container {
-        background-image: url("../images/svg/meeting.svg");
-        background-repeat: no-repeat;
-        background-size: 370px;
-        background-position: left 0 top 30px;
+    .pilot-project__meeting {
+        right: unset;
+        left: 10px;
+        top: 30px;
+        padding-top: 70px;
+        width: 370px;
+        height: 472px;
+        background-size: 
+            94px 114px,
+            contain;
+
+        &::before {
+            width: 193px;
+            height: 77px;
+        }
+
+        &::after {
+            width: 177px;
+            height: 75px;
+        }
+    }
+
+    .pilot-project__meeting .logo {
+        margin-bottom: 14px;
+        width: 62px;
+        height: 17px;
+
+        .logo__link {
+            width: 47px;
+            height: 17px;
+        }
+
+        .logo__svg-container {
+            width: 24px;
+            height: 17px;
+        }
+
+        svg {
+            width: 24px;
+            height: 17px;
+        }
+
+        span {
+            font-size: 5px;
+        }
+    }
+
+    .pilot-project__meeting-title {
+        font-size: 24px;
+
+        .title__strong {
+            font-size: 33px;
+        }
     }
 
     .pilot-project__text--mobile {
@@ -198,6 +331,61 @@
     .pilot-project .container {
         background-size: 487px;
         background-position: left 22px top 30px;
+    }
+
+    .pilot-project__meeting {
+        left: 22px;
+        padding-top: 95px;
+        width: 487px;
+        height: 621px;
+        background-size: 
+            146px 185px,
+            contain;
+
+        &::before {
+            width: 254px;
+            height: 101px;
+        }
+
+        &::after {
+            width: 232px;
+            height: 98px;
+        }
+    }
+
+    .pilot-project__meeting .logo {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 81px;
+        height: 22px;
+
+        .logo__link {
+            width: 81px;
+            height: 22px;
+        }
+
+        .logo__svg-container {
+            width: 30px;
+            height: 22px;
+        }
+
+        svg {
+            width: 30px;
+            height: 22px;
+        }
+
+        span {
+            font-size: 7px;
+        }
+    }
+
+    .pilot-project__meeting-title {
+        font-size: 33px; 
+
+        .title__strong {
+            margin-bottom: 5px;
+            font-size: 42px;
+        }
     }
 
     .pilot-project__text-block {

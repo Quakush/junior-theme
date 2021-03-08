@@ -6,9 +6,8 @@ jQuery(document).ready(function ($) {
 	var $mainBox = $('.courses__list');
 
 	// Отправка ajax запроса по клику на option в select  в фильтре
-	$('.categories__list a').click(function (e) {
+	$('.categories__list .categories__item--cat a').click(function (e) {
 		e.preventDefault();
-		
 
 		var linkCat = $(this).attr('data-cat');
 		var titleCat = $(this).text();
