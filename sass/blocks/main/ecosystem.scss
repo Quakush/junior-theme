@@ -18,7 +18,6 @@
     position: relative;
     padding-top: 115px;
     padding-bottom: 85px;
-    overflow: visible;
 
     &::before {
         @include element-style(735px, 60px, transparent);
@@ -122,13 +121,14 @@
         }
 
         &::after {
-            @include clouds-bottom(100px, -99px, -99px);
+            @include clouds-bottom(100px, -99px, -98px);
         }
     }
 
     .ecosystem .container {
         padding-top: 310px;
         padding-bottom: 197px;
+        overflow: visible;
 
         &::before {
             bottom: 0;

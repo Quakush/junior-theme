@@ -35,6 +35,7 @@
         border-top: none;
         border-radius: 1px;
         transform: rotate(45deg);
+        transition: width 1s, height 1s, border 1s, background-color 1s;
         z-index: 50;
     }
 }
@@ -42,13 +43,16 @@
 .sign-up__mark--opened {
 
     &::before {
-        transform: rotate(225deg);
-        top: 15px;
+        width: 12px;
+        height: 2px;
+        border: none;
+        background-color: $light-text;
+        transform: none;
+        top: 49%;
     }
 }
 
 .sign-up__options {
-    display: none;
     @include list-style;
     position: absolute;
     margin-top: 10px;
@@ -59,11 +63,13 @@
     border-radius: 7px;
     box-sizing: border-box;
     box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
+    opacity: 0;
     z-index: 200;
+    transition: opacity 1s;
 }
 
 .sign-up__options--shown {
-    display: block;
+    opacity: 1;
 }
 
 .sign-up__options li {
@@ -117,6 +123,13 @@
         &::before {
             top: 15px;
             right: 27px;
+        }
+    }
+
+    .sign-up__mark--opened {
+
+        &::before {
+            top: 49%;
         }
     }
 
