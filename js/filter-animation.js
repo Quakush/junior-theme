@@ -20,7 +20,7 @@ var removeActive = function () {
 
 if (categoryDropdown) {
     categoryDropdown.addEventListener('click', function () {
-    	categoryDropdown.classList.add('categories__dropdown--open');
+    	categoryDropdown.classList.toggle('categories__dropdown--open');
     	categoryContainer.classList.toggle('categories__list--shown');
     });
 }

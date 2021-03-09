@@ -31,6 +31,7 @@
 	.main-nav__list li {
 		position: relative;
 		margin-left: 34px;
+		transition: color 0.5s;
 
 		&:first-of-type {
 			margin-left: 0;
@@ -89,8 +90,24 @@
 	    }
 	}
 
-	.main-nav .sub-menu {
-		display: none;
+	.main-nav__list .menu-item-has-children .sub-menu {
+		position: absolute;
+		left: 0;
+		bottom: 5px;
+		@include list-style;
+		width: 268px;
+		height: 0;
+		background-color: $dark-text;
+		border: 1px solid $white;
+		border-radius: 16px;
+		transform: translate(0, 100%);
+		opacity: 0;
+		z-index: 100;
+		transition: opacity 1s, height 1s;
+
+		li::before { 
+			display: none;
+		}
 	}
 
 	.menu-item-has-children {
@@ -98,18 +115,8 @@
 	}
 
 	.main-nav__list .menu-item-has-children:hover .sub-menu {
-		display: block;
-		position: absolute;
-		left: 0;
-		bottom: 5px;
-		@include list-style;
-		width: 268px;
-		background-color: $dark-text;
-		border: 1px solid $white;
-		border-radius: 16px;
-		transform: translate(0, 100%);
-		z-index: 100;
-		
+		height: unset;
+		opacity: 1;
 	}
 
 	.main-nav__list .sub-menu li:hover {
@@ -123,10 +130,6 @@
 	.main-nav__list .menu-item-has-children:hover li {
         margin-left: 0;
         color: $light-text;
-
-		&::before{
-			display: none;
-		}
 	}
 
 	.main-nav__list .menu-item-has-children:hover li a {
