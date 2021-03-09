@@ -15,11 +15,15 @@ function getTimer() {
      
      diff%=60;
   	diff = Math.floor(diff);
-     return `${hours}:${min}:${diff}`;
- }
+  	document.querySelector('.top-bar__timer-number--days').textContent = days;
+  	document.querySelector('.top-bar__timer-number--hours').textContent = hours;
+  	document.querySelector('.top-bar__timer-number--minutes').textContent = min;
+  	document.querySelector('.top-bar__timer-number--seconds').textContent = diff;
+    return `${hours}:${min}:${diff}`;
+}
     
  (function(){
-    document.querySelector("#timer").innerHTML = getTimer();
+   getTimer();
    setTimeout(arguments.callee,1000);
  })();
  

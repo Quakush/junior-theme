@@ -52,6 +52,15 @@ main {
 @media (min-width: 1024px) {
 
     body {
+        min-width: 1024px;
+        font-size: $base-font-size;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    body {
+        min-width: 1440px;
         font-size: $base-font-size;
     }
 }
