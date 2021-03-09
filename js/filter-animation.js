@@ -18,10 +18,14 @@ var removeActive = function () {
 	}
 };
 
+var closeDropDown = function () {
+	categoryDropdown.classList.toggle('categories__dropdown--open');
+    categoryContainer.classList.toggle('categories__list--shown');
+};
+
 if (categoryDropdown) {
     categoryDropdown.addEventListener('click', function () {
-    	categoryDropdown.classList.toggle('categories__dropdown--open');
-    	categoryContainer.classList.toggle('categories__list--shown');
+    	closeDropDown();
     });
 }
 
@@ -31,7 +35,7 @@ if (filterBlock) {
 			var target = event.currentTarget;
 			removeActive();
             target.classList.add('categories__link--active');
-            categoryContainer.classList.remove('categories__list--shown');
+            closeDropDown();
 		});
 	}
 }

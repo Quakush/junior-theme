@@ -16,8 +16,8 @@
 }
 
 .searching-form input[type="text"]:focus {
-    color: $white;
-    background-color: $dark-text;
+    color: $white !important;
+    background-color: $dark-text !important;
     outline: none;
 }
 
@@ -41,12 +41,6 @@
 	height: 14px;
 	fill: $light-text;
 }
-
-.searching-form input[type="text"]:focus {
-	background-color: $dark-text;
-}
-
-
 
 .searching-form input[type="text"]:focus + button {
 	background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);

@@ -65,19 +65,17 @@
 	opacity: 1;
 }
 
-.categories__item {
+.categories__link {
+	@include link-style;
+	display: block;
 	padding: 8px 0;
 	font-size: 14px;
 	color: $light-text;
 	letter-spacing: 0;
 }
 
-.categories__link {
-	@include link-style;
-}
-
-.categories__link::hover,
-.categories__link::active {
+.categories__link:hover,
+.categories__link:active {
 	color: $corp-blue;
 }
 
