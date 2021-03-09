@@ -59,7 +59,7 @@ get_header();
               </p>
             </div>
             <div class="options-slider__visual">
-              <img src="/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="125" alt="slider visual image">
+              <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
               <span class="options-slider__visual-title">Startup University</span>
             </div>
             <a class="btn btn--green btn--small options-slider__btn" href="#">Выбрать обучение</a>
@@ -72,7 +72,7 @@ get_header();
               </p>
             </div>
             <div class="options-slider__visual">
-              <img src="/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="125" alt="slider visual image">
+              <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/start-up.svg" width="222" alt="slider visual image">
               <span class="options-slider__visual-title">Создай STARTUP</span>
             </div>
             <a class="btn  btn--small options-slider__btn" href="#">Подать заявку</a>
@@ -85,7 +85,7 @@ get_header();
               </p>
             </div>
             <div class="options-slider__visual">
-              <img src="/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="125" alt="slider visual image">
+              <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="222" alt="slider visual image">
               <span class="options-slider__visual-title">Разработка проектов</span>
             </div>
             <a class="btn btn--accent btn--small options-slider__btn" href="#">Оставить заявку</a>
@@ -100,16 +100,16 @@ get_header();
           <li class="swiper-slide options-slider__item options-slider__item--green swiper-small__item">
             <div class="options-slider__text">
               <h2 class="title__secondary  options-slider__item-title">
-                <span class="title__colored">Сделай первый шаг</span>
+                <span class="title__colored">Startup University</span>
               </h2>
               <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!
               </p>
             </div>
             <div class="options-slider__visual options-slider__visual--small">
-              <img src="/wp-content/themes/js-corp/images/svg/start-up.svg" width="140" alt="slider visual image">
-              <span class="options-slider__visual-title">1 Создай STARTUP</span>
+              <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="78" alt="slider visual image">
+              <span class="options-slider__visual-title">Startup University</span>
             </div>
-            <a class="btn btn--green btn--small options-slider__btn" href="#">Подать заявку</a>
+            <a class="btn btn--green btn--small options-slider__btn" href="#">Выбрать обучение</a>
           </li>
 
           <li class="swiper-slide options-slider__item options-slider__item--blue swiper-small__item">
@@ -121,8 +121,8 @@ get_header();
               </p>
             </div>
             <div class="options-slider__visual options-slider__visual--small">
-              <img src="/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="140" alt="slider visual image">
-              <span class="options-slider__visual-title">2 Разработка проектов</span>
+              <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/start-up.svg" width="93" alt="slider visual image">
+              <span class="options-slider__visual-title">Создай STARTUP</span>
             </div>
             <a class="btn btn--small btn--accent options-slider__btn" href="#">Оставить заявку</a>
           </li>
@@ -136,8 +136,8 @@ get_header();
               </p>
             </div>
             <div class="options-slider__visual options-slider__visual--small">
-              <img src="/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="140" alt="slider visual image">
-              <span class="options-slider__visual-title">3 Разработка проектов</span>
+              <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="86" alt="slider visual image">
+              <span class="options-slider__visual-title">Разработка проектов</span>
             </div>
             <a class="btn btn--small btn--accent options-slider__btn" href="#">Оставить заявку</a>
           </li>

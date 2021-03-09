@@ -341,12 +341,17 @@
     font-size: 25px;
   }
 
-  .options-slider__item--blue img {
+  .swiper-small__item.options-slider__item--green img {
+    width: 139px;
+    height: 150px;
+  }
+
+  .swiper-small__item.options-slider__item--blue img {
     width: 150px;
     height: 150px;
   }
 
-  .options-slider__item--red img {
+  .swiper-small__item.options-slider__item--red img {
     width: 139px;
     height: 150px;
   }
