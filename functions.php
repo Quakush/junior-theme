@@ -20,8 +20,8 @@ function scripts()
     wp_register_script('mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', [], 1, true);
     wp_enqueue_script('mobile-menu');
 
-    wp_register_script('join-us', get_template_directory_uri() . '/js/join-us.js', [], 1, true);
-    wp_enqueue_script('join-us');
+    wp_register_script('timer', get_template_directory_uri() . '/js/timer.js', [], 1, true);
+    wp_enqueue_script('timer');
 
     wp_register_script('slider-script', get_template_directory_uri() . '/js/slider-script.js', [], 1, true);
     wp_enqueue_script('slider-script');

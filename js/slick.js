@@ -9,7 +9,7 @@ jQuery(function($){
 
 	$('.projects-slider__list').slick({
 		infinite: true,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 2000,
 		arrows: false,
 		dots: true

@@ -121,13 +121,14 @@
         }
 
         &::after {
-            @include clouds-bottom(100px, -99px, -99px);
+            @include clouds-bottom(100px, -99px, -98px);
         }
     }
 
     .ecosystem .container {
         padding-top: 310px;
         padding-bottom: 197px;
+        overflow: visible;
 
         &::before {
             bottom: 0;
