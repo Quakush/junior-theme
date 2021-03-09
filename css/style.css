@@ -2616,8 +2616,7 @@ html, body {
 .ecosystem .container {
   position: relative;
   padding-top: 115px;
-  padding-bottom: 85px;
-  overflow: visible; }
+  padding-bottom: 85px; }
   .ecosystem .container::before {
     content: "";
     display: block;

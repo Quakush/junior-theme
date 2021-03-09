@@ -338,7 +338,8 @@ function ajax_show_posts_in_cat() {
     query_posts($args);
 
 
-    if (have_posts()) :
+	if (have_posts()) :
+
 
         while(have_posts()) : the_post();
 
@@ -350,6 +351,34 @@ function ajax_show_posts_in_cat() {
 
 
     wp_die();
+}
+
+// ajax загрузка всех курсов по нажатию кнопки "ALL"
+add_action( 'wp_ajax_get_courses', 'ajax_show_all_courses' );
+add_action( 'wp_ajax_nopriv_get_courses', 'ajax_show_all_courses' );
+
+function ajax_show_all_courses() {
+
+	
+
+	$args['post_type'] = 'courses';
+	$args['paged'] = 1;
+	$args['post_status'] = 'publish';
+	$args['posts_per_page'] = 5;
+	
+	query_posts($args);
+
+	if (have_posts()) :
+
+        while(have_posts()) : the_post();
+
+	    get_template_part('includes/section', 'courses');
+
+	    endwhile; endif;
+	    get_template_part('includes/block', 'load-button');
+	    wp_reset_postdata();
+
+	wp_die();
 }
 
 

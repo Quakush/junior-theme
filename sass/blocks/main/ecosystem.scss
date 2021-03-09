@@ -18,7 +18,6 @@
     position: relative;
     padding-top: 115px;
     padding-bottom: 85px;
-    overflow: visible;
 
     &::before {
         @include element-style(735px, 60px, transparent);
