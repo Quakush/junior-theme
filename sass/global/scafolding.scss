@@ -55,6 +55,10 @@ main {
         min-width: 1024px;
         font-size: $base-font-size;
     }
+
+    .search-results main {
+        padding-top: 150px;
+    }
 }
 
 @media (min-width: 1440px) {

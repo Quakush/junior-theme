@@ -99,8 +99,10 @@
 
     .courses__title {
         order: 0;
-        flex-basis: 25%;
+        flex-basis: 33%;
         margin: 0;
+        padding-right: 30px;
+        box-sizing: border-box;
     }
 
     .courses__partner {
@@ -116,7 +118,7 @@
 
     .courses__duration {
         order: 3;
-        flex-basis: 23%;
+        flex-basis: 15%;
     }
 
     .courses__item-btn {
@@ -180,7 +182,7 @@
     }
 
     .courses__headers-item--course {
-    	flex-basis: 23%;
+    	flex-basis: 31%;
     }
 
     .courses__headers-item--partner {
@@ -192,7 +194,7 @@
     }
 
     .courses__headers-item--duration {
-    	flex-basis: 43%;
+    	flex-basis: 35%;
     }
 }
 

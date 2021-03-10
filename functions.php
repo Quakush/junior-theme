@@ -23,9 +23,6 @@ function scripts()
     wp_register_script('timer', get_template_directory_uri() . '/js/timer.js', [], 1, true);
     wp_enqueue_script('timer');
 
-    wp_register_script('slider-script', get_template_directory_uri() . '/js/slider-script.js', [], 1, true);
-    wp_enqueue_script('slider-script');
-
     wp_register_script('filter-animation', get_template_directory_uri() . '/js/filter-animation.js', [], 1, true);
     wp_enqueue_script('filter-animation');
 
