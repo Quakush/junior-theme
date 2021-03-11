@@ -1,0 +1,46 @@
+.feedback {
+    position: relative;
+    padding-top: 100px;
+    color: $white;
+}
+
+.feedback .title__secondary {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.feedback__text-block {
+    margin-top: 25px;
+    margin-bottom: 42px;
+    font-size: 13px;
+    line-height: 1.66;
+}
+
+.feedback__write-us {
+    margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+    .feedback__grid {
+        display: grid;
+        grid-template-columns: 57% 40%;
+        justify-items: center;
+        grid-column-gap: 25px;
+    }
+
+    .feedback__text-block {
+        font-size: 20px;
+    }
+    .feedback__get-news {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+    .feedback__text-block {
+        font-size: 24px;
+    }
+}

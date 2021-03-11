@@ -41,17 +41,17 @@
 	width: 70%;
 }
 
-.main-offer--main  .title {
+.main-offer--main .title {
 	margin-bottom: 30px;
 	line-height: 1.1;
 }
 
-.main-offer--main  .title__strong {
+.main-offer--main .title__strong {
 	font-size: 42px;
 	letter-spacing: 1px;
 }
 
-.main-offer--main  .title__small {
+.main-offer--main .title__small {
 	margin-left: 7px;
 	letter-spacing: -1px;
 }
@@ -82,8 +82,8 @@
 }
 
 .main-offer--education .title span,
-.main-offer--courses .title span{
-    display: block;
+.main-offer--courses .title span {
+	display: block;
 }
 
 /* Стили для main-offer страницы Обучение - внутренняя (курсы) */
@@ -109,8 +109,51 @@
 	font-size: 32px;
 }
 
-@media (min-width: 375px) {
+/* Стили для main-offer страницы Стартапам */
 
+.main-offer--startup {
+	background-image: url("../images/svg/rocket1.svg");
+	background-repeat: no-repeat;
+	background-size: 280%;
+	background-position: -167px 94px;
+	padding-bottom: 270px;
+	padding-top: 16px;
+}
+
+.main-offer--startup .main-offer__text-block {
+	margin-bottom: 36px;
+}
+
+.main-offer--startup p {
+	margin-bottom: 50px;
+	width: 72%;
+	line-height: 1.9;
+}
+
+.main-offer--startup .title {
+	margin-bottom: 25px;
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 1.4;
+}
+
+.main-offer--startup .title__colored {
+	color: $corp-blue;
+}
+
+.main-offer--startup .title__bullet .title__colored:first-child {
+	color: $corp-green;
+}
+
+.main-offer--startup .title__bullet {
+	padding-left: 0;
+
+	::before {
+		content: none;
+	}
+}
+
+@media (min-width: 375px) {
 	/* Стили для main-offer главной страницы */
 
 	.main-offer--main {
@@ -134,15 +177,20 @@
 	.main-offer--courses .title {
 		font-size: 36px;
 	}
+
+	/* Стили для main-offer страницы Стартапам */
+
+	.main-offer--startup .title {
+		font-size: 30px;
+	}
 }
 
 @media (min-width: 768px) {
-
 	.main-offer__text-block {
- 		font-size: 20px;
- 	}
+		font-size: 20px;
+	}
 
- 	.main-offer p {
+	.main-offer p {
 		font-size: 20px;
 		width: 50%;
 	}
@@ -152,21 +200,34 @@
 	.main-offer--main {
 		background-size: 360px;
 		background-position: 380px 120px;
- 	}
+	}
 
- 	.main-offer--main .title__strong {
- 		font-size: 61px;
- 	}
+	.main-offer--main .title__strong {
+		font-size: 61px;
+	}
 
 	/* Стили для main-offer страницы Обучение */
 
 	.main-offer--education {
 		background-position: 95% 0;
 	}
+
+	/* Стили для main-offer страницы стартапам*/
+
+	.main-offer--startup {
+		background-size: 170%;
+		background-position: right -570px top 55px;
+	}
+
+	.main-offer--startup .title__strong {
+		font-size: 50px;
+	}
+	.main-offer--startup p {
+		width: 52%;
+	}
 }
 
 @media (min-width: 1024px) {
-
 	.main-offer {
 		padding-bottom: 140px;
 	}
@@ -190,22 +251,11 @@
 
 	.main-offer--courses .container {
 		padding-bottom: 70px;
-		background-image:
-		    url("../images/svg/socrat.svg"),
-            url("../images/svg/campaigns.svg"),
-		    url("../images/svg/socrat2.svg");
-		background-size:
-		    188px,
-		    200px,
-		    200px;
-		background-repeat:
-		    no-repeat,
-		    no-repeat,
-		    no-repeat;
-		background-position:
-		    right 100px top 50px,
-		    right 210px top 0,
-		    right 0 top 0;
+		background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg"),
+			url("../images/svg/socrat2.svg");
+		background-size: 188px, 200px, 200px;
+		background-repeat: no-repeat, no-repeat, no-repeat;
+		background-position: right 100px top 50px, right 210px top 0, right 0 top 0;
 	}
 
 	.main-offer--courses .title {
@@ -224,10 +274,30 @@
 	.main-offer--courses .sign-up__dropdown {
 		margin-right: 30px;
 	}
+
+	/* Стили для main-offer страницы стартапам*/
+
+	.main-offer--startup {
+		background-size: 1326px;
+		padding-bottom: 250px;
+	}
+
+	.main-offer--startup .title__strong {
+		position: relative;
+		font-size: 70px;
+		line-height: 1.2;
+	}
+
+	.main-offer--startup .title__bullet {
+		padding-left: 25px;
+
+		::before {
+			content: "";
+		}
+	}
 }
 
 @media (min-width: 1440px) {
-
 	.main-offer p {
 		font-size: 24px;
 	}
@@ -237,41 +307,41 @@
 	.main-offer--main {
 		padding-top: 40px;
 		background-image: none;
- 	}
+	}
 
- 	.main-offer--main .container {
- 		position: relative;
- 		overflow: visible;
- 		background-image: none;
+	.main-offer--main .container {
+		position: relative;
+		overflow: visible;
+		background-image: none;
 
- 		&::before {
- 			@include element-style(558px, 701px, transparent);
- 			right: -141px;
- 			background-image: url("../images/svg/corn.svg");
- 		    background-repeat: no-repeat;
- 		    background-size: contain;
- 		    background-position: center;
- 		}
+		&::before {
+			@include element-style(558px, 701px, transparent);
+			right: -141px;
+			background-image: url("../images/svg/corn.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
 
- 		&::after {
- 			@include element-style(220px, 325px, transparent);
- 			left: -95px;
- 			bottom: -63px;
- 			background-image: url("../images/svg/rocket-main-offer.svg");
- 		    background-repeat: no-repeat;
- 		    background-size: contain;
- 		    background-position: center;
- 		    transform: translate(0, 72%);
- 		    opacity: 0.5;
- 		}
- 	}
+		&::after {
+			@include element-style(220px, 325px, transparent);
+			left: -95px;
+			bottom: -63px;
+			background-image: url("../images/svg/rocket-main-offer.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			transform: translate(0, 72%);
+			opacity: 0.5;
+		}
+	}
 
- 	.main-offer--main  .title {
- 		margin-bottom: 20px;
+	.main-offer--main .title {
+		margin-bottom: 20px;
 		font-size: 88px;
 	}
 
-	.main-offer--main  .title__strong {
+	.main-offer--main .title__strong {
 		font-size: 112px;
 	}
 
@@ -287,11 +357,11 @@
 	/* Стили для main-offer страницы Обучение */
 
 	.main-offer--education {
-        padding-top: 130px;
-	    background-size: contain;
-	    background-position: 80% 20%;
+		padding-top: 130px;
+		background-size: contain;
+		background-position: 80% 20%;
 	}
-	
+
 	.main-offer--education .title {
 		margin-top: 10px;
 		margin-bottom: 44px;
@@ -315,10 +385,7 @@
 
 	.main-offer--courses .container {
 		padding: 0;
-		background-position:
-		    right 116px top 99px,
-		    right 237px top 0,
-		    right 0 top 0;
+		background-position: right 116px top 99px, right 237px top 0, right 0 top 0;
 	}
 
 	.main-offer--courses .title {
@@ -345,14 +412,20 @@
 	.main-offer__text--mobile {
 		display: none;
 	}
+
+	/* Стили для main-offer страницы стартапам*/
+
+	.main-offer--startup {
+		background-image: url("../images/svg/rocket1.svg"), url("../images/svg/rocket-small.svg");
+		background-size: 1326px, 620px;
+		background-position: right -570px top 55px, left -290px bottom -280px;
+	}
 }
 
 @media (min-width: 1820px) {
-
-    .main-offer--main .container {
-
-    	&::after {
-    		bottom: -95px;
-    	}
-    }	
+	.main-offer--main .container {
+		&::after {
+			bottom: -95px;
+		}
+	}
 }
