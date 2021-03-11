@@ -1,7 +1,5 @@
 <?php
 
-$terms = get_terms('branches', 'orderby=count&hide_empty=0');
-
 $courses_args = array(
     'post_type' => 'courses',
     'post_status' => 'publish',
@@ -65,28 +63,9 @@ get_header();
         </div>
     </section>
     <section class="filters">
-
         <div class="container">
             <?php get_search_form();?>
-            
-            <div class="categories">
-                <span class="categories__dropdown">Выберите специальность</span>
-                <ul class="categories__list">
-                    <li class="categories__item  categories__item--all">
-                        <a class="categories__link" href="/courses">All</a>
-                    </li>
-
-                    <?php if ($terms && ! is_wp_error($terms)):
-   
-                        foreach ($terms as $term ):?>
-                        <li class="categories__item  categories__item--cat">
-                            <a class="categories__link" data-cat="<?=$term->term_id;?>" href="#">
-                                <?=$term->name;?>
-                            </a>
-                        </li>
-                    <?php endforeach; endif; ?>
-                </ul>
-            </div>
+            <?php get_template_part('/includes/block', 'categories');?>
         </div>
     </section>     
     <section class="courses">
