@@ -5,12 +5,13 @@
         <?php endif;?>
     </a>
     <div class="blog-content__item-description">
+      <button class="btn btn--accent  blog-content__cat-btn">
+          <?=the_category();?>
+      </button>
         <h2 class="blog-content__title">
             <?=the_title();?>
         </h2>
-        <button class="btn btn--accent  blog-content__cat-btn">
-            <?=the_category();?>
-        </button>
+
         <p class="blog-content__info">
             <?=the_content();?>
         </p>
