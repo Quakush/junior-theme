@@ -7,9 +7,9 @@ jQuery(function($){
 		dots: true
 	});
 
-	$('.projects-slider__list').slick({
+	$('.news-slider__list').slick({
 		infinite: true,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 2000,
 		arrows: false,
 		dots: true

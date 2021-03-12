@@ -44,6 +44,22 @@ function scripts()
 
 add_action('wp_enqueue_scripts', 'scripts');
 
+// добавление колонки с ID в админку
+function true_id($args){
+	$args['post_page_id'] = 'ID';
+	return $args;
+}
+function true_custom($column, $id){
+	if($column === 'post_page_id'){
+		echo $id;
+	}
+}
+ 
+add_filter('manage_pages_columns', 'true_id', 5);
+add_action('manage_pages_custom_column', 'true_custom', 5, 2);
+add_filter('manage_posts_columns', 'true_id', 5);
+add_action('manage_posts_custom_column', 'true_custom', 5, 2);
+
 // Theme options
 
 add_theme_support('menus');
@@ -246,6 +262,29 @@ function my_skills_cpt()
     register_post_type('skills', $args);
 }
 add_action('init', 'my_skills_cpt');
+
+function guestarbaiter_post()
+{
+    $args = array(
+
+        'labels' => array(
+            'name' => 'Работа за границей',
+            'singular_name' => 'Предложение',
+        ),
+
+        'hierarchical' => false,
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-buddicons-activity',
+        'supports' => array('title', 'editor', 'thumbnail','custom-fields'),
+        'show_in_rest' => true,
+        'rest_base' => 'skills',
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
+    );
+
+    register_post_type('guestarbaiter', $args);
+}
+add_action('init', 'guestarbaiter_post');
 
 
 // подгрузка постов на страницу
