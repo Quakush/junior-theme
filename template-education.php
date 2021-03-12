@@ -4,6 +4,16 @@
 Template Name: Education Page
 */
 
+$guestarbaiter_args = array(
+    'post_type' => 'guestarbaiter',
+    'post_status' => 'publish',
+    'posts_per_page' => 5,
+    'paged' => 1,
+    'order' => 'DESC'
+);
+
+$guestarbaiter_suggestions = new WP_Query($guestarbaiter_args);
+
 get_header();
 
 ?>
@@ -62,7 +72,7 @@ get_header();
                     <a class="choose-profession__link" href="#">Developer</a>
                 </li>
             </ul>
-            <a class="btn btn--big  btn--green  choose-profession__btn" href="#">Еще 50+ профессий</a>
+            <a class="btn btn--big  btn--green  choose-profession__btn" href="/courses">Еще 50+ профессий</a>
         </div>
     </section>
     <section class="career">
@@ -111,41 +121,33 @@ get_header();
     <section class="immigration-slider">
         <div class="container">
             <div class="immigration-slider__list">
-                <div class="immigration-slider__item">
-                    <div class="immigration-slider__item-wrap">
-                        <h2 class="title__secondary  immigration-slider__item-title"><span>Road to USA with</span> JS Corporation</h2>
-                        <p>
-                            Программа трудоустройства специалистов
-                            в американские компании.<br>Закончил обучение
-                            в одном из университетов и мечтаешь попасть
-                            в одну из компаний в США?<br>Оставь заявку
-                            и мы расскажем как это сделать.
-                        </p>
-                        <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
-                    </div>
-                </div>
 
-                <div class="immigration-slider__item">
-                    <div class="immigration-slider__item-wrap">
-                        <h2 class="title__secondary  immigration-slider__item-title"><span>Road to Afganistan with</span> JS Corporation</h2>
-                        <p>
-                            Афканистан прекрасен в это время года<br>Тут даже нечего добавлять - он просто перкрасен<br>Оставь заявку
-                            и мы расскажем как это сделать. Как же попасть в эту сказку. Главное потом не выпасть...
-                        </p>
-                        <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
-                    </div>
-                </div>
+                <?php if ($guestarbaiter_suggestions->have_posts()) :
 
-                <div class="immigration-slider__item">
-                    <div class="immigration-slider__item-wrap">
-                        <h2 class="title__secondary  immigration-slider__item-title"><span>Road to OLBANIA with</span> JS Corporation</h2>
-                        <p>
-                            Унекальная вазможназдь уфидеть и нафсигда палюбидь страну ПАДОНКАФФ<br>Только с наме у тибя будит возможнздь выпить йаду и поржадь изпацтала, передадь превед медведу и узбагоицца<br>Оставь заявку
-                            и мы расскажем как это сделать.
-                        </p>
-                        <button class="btn  btn--green btn--big  immigration-slider__item-btn">Оставить заявку</button>
+                    while($guestarbaiter_suggestions->have_posts()) : $guestarbaiter_suggestions-> the_post(); ?>
+                            
+                <!-- get_template_part('includes/section', 'courses'); -->
+
+                    <div class="immigration-slider__item">
+                        <?php if(has_post_thumbnail()):?>
+                            <img src="<?=the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>">
+                        <?php endif;?>
+                        <div class="immigration-slider__item-wrap">
+                            <h2 class="title__secondary  immigration-slider__item-title">
+                                <span><?=the_title();?> with</span> JS Corporation
+                            </h2>
+                            <p>
+                                <?=the_content();?>
+                            </p>
+                            <button class="btn  btn--green btn--big  immigration-slider__item-btn">
+                                Оставить заявку
+                            </button>
+                        </div>
                     </div>
-                </div>
+
+                <?php endwhile; endif; ?>
+                <?php wp_reset_postdata(); ?>
+                
             </div>
         </div>
     </section>

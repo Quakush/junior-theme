@@ -1,9 +1,9 @@
 <div class="sign-up">
     <div class="sign-up__dropdown">
-    	<span class="sign-up__mark">Я студент</span>
+    	<span class="sign-up__mark">Я менеджер</span>
     	<ul class="sign-up__options">
 	        <li>Я основатель</li>
-	        <li>Я студент</li>
+	        <li>Я менеджер</li>
 	        <li>Я специалист</li>
 	        <li>Я инвестор</li>
         </ul>

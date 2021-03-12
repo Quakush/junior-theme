@@ -10,7 +10,9 @@
     <div class="aggregator__download-links">
         <ul class="aggregator__download-links-list">
             <li class="aggregator__download-links-item  aggregator__download-links-item--apple">
-                <a href=""><img src="/wp-content/themes/js-corp/images/icons/icon-download-apple.svg" alt="download link"></a>
+                <a href="https://apps.apple.com/ru/app/sokrat/id1548987952">
+                    <img src="/wp-content/themes/js-corp/images/icons/icon-download-apple.svg" alt="download link">
+                </a>
             </li>
             <li class="aggregator__download-links-item  aggregator__download-links-item--google">
                 <a href=""><img src="/wp-content/themes/js-corp/images/icons/icon-download-google.svg" alt="download link"></a>
