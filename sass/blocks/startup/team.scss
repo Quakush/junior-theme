@@ -1,0 +1,163 @@
+.team__text-block {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.team .title__secondary {
+    margin-top: 20px;
+}
+
+.team__visuals {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    border-radius: 15px;
+    background-color: #24272d;
+    box-sizing: border-box;
+}
+
+.team__visual-item {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: solid 2px white;
+    border-radius: 20px;
+
+    &--designer::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/svg/designer.svg);
+        width: 70px;
+        height: 65px;
+        top: 8px;
+        left: 1px;
+    }
+
+    &--designer::after {
+        content: "Designer";
+        position: absolute;
+        color: #ef4864;
+        font-size: 14px;
+        line-height: 24px;
+        bottom: -38px;
+        left: 9px;
+    }
+
+    &--pm::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/svg/pm.svg);
+        width: 70px;
+        height: 65px;
+        top: 12px;
+        left: 5px;
+    }
+
+    &--pm::after {
+        content: "Project\00a0manager";
+        position: absolute;
+        color: #ef4864;
+        font-size: 14px;
+        line-height: 24px;
+        bottom: -38px;
+        left: -18px;
+    }
+
+    &--developer::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/svg/developer.svg);
+        width: 70px;
+        height: 65px;
+        top: 8px;
+        left: 1px;
+    }
+
+    &--developer::after {
+        content: "Developer";
+        position: absolute;
+        color: #ef4864;
+        font-size: 14px;
+        line-height: 24px;
+        bottom: -38px;
+        left: 6px;
+    }
+}
+
+@media (min-width: 375px) {
+    .team__visual-item {
+        width: 100px;
+        height: 100px;
+    }
+    .team__visual-item--designer::before,
+    .team__visual-item--developer::before {
+        top: 16px;
+        left: 11px;
+    }
+
+    .team__visual-item--pm::before {
+        top: 20px;
+        left: 14px;
+    }
+
+    .team__visual-item--designer::after {
+        left: 19px;
+    }
+
+    .team__visual-item--pm::after {
+        left: -8px;
+    }
+
+    .team__visual-item--developer::after {
+        left: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .team__text-block {
+        font-size: 20px;
+        line-height: 2;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .team .title__secondary {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .team {
+        &::before {
+            @include clouds(100px, -99px);
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .team {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        &::before {
+            @include clouds(121px, -130px);
+        }
+    }
+
+    .team__text-block {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1820px) {
+    .team {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        &::before {
+            @include clouds(120px, -145px);
+        }
+    }
+}

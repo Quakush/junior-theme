@@ -1,0 +1,128 @@
+.prospects {
+    position: relative;
+    margin: 79px 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: $dark-text;
+    background-color: $white;
+    background-image: url("../images/svg/shuttle.svg");
+    background-repeat: no-repeat;
+    background-size: 353px;
+    background-position: 206px 122px;
+
+    &::before {
+        @include clouds(80px, -79px);
+    }
+
+    &::after {
+        @include clouds-bottom(80px, -79px, -79px);
+    }
+}
+
+.prospects .title__secondary {
+    margin-bottom: 35px;
+}
+
+.prospects__list {
+    list-style: none;
+    width: 50%;
+    padding-left: 18px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+    padding-bottom: 90px;
+}
+
+.prospects__item {
+    position: relative;
+    padding-bottom: 20px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $corp-blue;
+        width: 12px;
+        height: 12px;
+        border-radius: 20%;
+        box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.4);
+        left: -17px;
+        top: 3px;
+    }
+}
+
+.prospects__item span {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .prospects {
+        background-position: right 20px center;
+    }
+    .prospects__list {
+        font-size: 20px;
+    }
+
+    .prospects .title__secondary {
+        width: 50%;
+    }
+
+    .prospects__inner-wrap {
+        text-align: center;
+    }
+    .prospects__item::before {
+        top: 9px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .prospects {
+        background-position: right 180px center;
+
+        &::before {
+            @include clouds(100px, -99px);
+        }
+
+        &::after {
+            @include clouds-bottom(100px, -99px, -99px);
+        }
+    }
+
+    .prospects .btn--big {
+        width: 267px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .prospects {
+        background-size: 450px;
+        &::before {
+            @include clouds(131px, -115px);
+            background-position: 50%;
+        }
+
+        &::after {
+            @include clouds-bottom(131px, -129px, -113px);
+        }
+    }
+
+    .prospects__item::before {
+        top: 11px;
+    }
+
+    .prospects__list {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1820px) {
+    .prospects {
+        &::before {
+            @include clouds(150px, -130px);
+            background-position: 50%;
+        }
+
+        &::after {
+            @include clouds-bottom(200px, -198px, -198px);
+        }
+    }
+}

@@ -11,13 +11,28 @@
 
 .title__secondary {
 	margin-bottom: 27px;
-    font-size: 26px;
+	font-size: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .title__third {
 	font-size: 16px;
+}
+
+.title__bullet {
+	padding-left: 25px;
+
+	::before {
+		content: "";
+		position: absolute;
+		background-color: $corp-green;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		top: 30px;
+		left: 0;
+	}
 }
 
 @media (min-width: 375px) {
@@ -27,27 +42,24 @@
 }
 
 @media (min-width: 768px) {
-    
-    .title {
-    	font-size: 52px;
-    }
+	.title {
+		font-size: 52px;
+	}
 
-    .title__secondary {
+	.title__secondary {
 		font-size: 34px;
 		font-weight: 800;
 	}
 }
 
 @media (min-width: 1440px) {
-
 	.title {
 		margin-bottom: 40px;
 		font-size: 70px;
-		
 	}
 
 	.title__secondary {
 		margin-bottom: 10px;
-	    font-size: 40px;
+		font-size: 40px;
 	}
 }

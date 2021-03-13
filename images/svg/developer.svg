@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="70.947" viewBox="0 0 78 70.947">
+  <defs>
+    <filter id="Контур_17708" x="0" y="0" width="78" height="49.641" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_17709" x="0" y="34.961" width="78" height="26.203" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Контур_17710" x="20.092" y="46.281" width="38" height="24.666" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Сгруппировать_3160" data-name="Сгруппировать 3160" transform="translate(-1206.021 -1813)">
+    <g transform="matrix(1, 0, 0, 1, 1206.02, 1813)" filter="url(#Контур_17708)">
+      <path id="Контур_17708-2" data-name="Контур 17708" d="M58.242,26H1.758A1.758,1.758,0,0,0,0,27.758V57.641H60V27.758A1.758,1.758,0,0,0,58.242,26ZM20.677,50.554a1.757,1.757,0,0,1-2.4-.64l-4.261-7.357a1.758,1.758,0,0,1,.016-1.789L18.29,33.7A1.758,1.758,0,0,1,21.3,35.516l-3.725,6.179,3.741,6.458a1.758,1.758,0,0,1-.64,2.4ZM34.806,34.493,28.461,50.447a1.758,1.758,0,0,1-3.267-1.3l6.346-15.955a1.758,1.758,0,1,1,3.267,1.3Zm11.18,8.065-4.261,7.357a1.758,1.758,0,1,1-3.042-1.762l3.741-6.458L38.7,35.515A1.758,1.758,0,0,1,41.71,33.7l4.261,7.068A1.758,1.758,0,0,1,45.986,42.557Z" transform="translate(9 -20)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1206.02, 1813)" filter="url(#Контур_17709)">
+      <path id="Контур_17709-2" data-name="Контур 17709" d="M0,332.445A1.758,1.758,0,0,0,1.758,334.2H58.242A1.758,1.758,0,0,0,60,332.445V326H0Z" transform="translate(9 -285.04)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1206.02, 1813)" filter="url(#Контур_17710)">
+      <path id="Контур_17710-2" data-name="Контур 17710" d="M184.333,429.333h-1.667V426H169.333v3.333h-1.667a1.667,1.667,0,1,0,0,3.333h16.667a1.667,1.667,0,0,0,0-3.333Z" transform="translate(-136.91 -373.72)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

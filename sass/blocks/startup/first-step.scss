@@ -1,0 +1,121 @@
+.first-step {
+    position: relative;
+    margin: 0 0 79px 0;
+    padding-top: 15px;
+    color: $dark-text;
+    background-color: $white;
+    background-image: url("../images/svg/cosmonaut.svg");
+    background-repeat: no-repeat;
+    background-size: 305px;
+    background-position: -560% 92%;
+    padding-bottom: 50px;
+
+    &::before {
+        @include clouds(80px, -79px);
+    }
+
+    &::after {
+        @include clouds-bottom(80px, -79px, -79px);
+    }
+}
+
+.first-step .title__colored {
+    color: $corp-blue;
+}
+
+.first-step .btn {
+    margin-left: auto;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.first-step__text-block {
+    font-size: 14px;
+    line-height: 1.66;
+}
+
+.first-step__legend {
+    font-size: 10px;
+    width: 47%;
+    margin-left: auto;
+    text-align: right;
+    line-height: 1.6;
+}
+
+.first-step__legend p {
+    margin-top: 20px;
+}
+
+@media (min-width: 375px) {
+    .first-step {
+        background-position: -115% 92%;
+    }
+}
+
+@media (min-width: 768px) {
+    .first-step {
+        background-size: 380px;
+        background-position: -10% 0;
+    }
+    .first-step__text-block {
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    .first-step__inner-wrap {
+        width: 50%;
+        padding-left: 40%;
+    }
+
+    .first-step .btn {
+        margin-left: 0;
+    }
+
+    .first-step__legend {
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .first-step {
+        background-size: 430px;
+        background-position: 0% 20%;
+    }
+    .first-step::before {
+        @include clouds(115px, -100px);
+    }
+}
+
+@media (min-width: 1440px) {
+    .first-step {
+        background-size: 480px;
+        background-position: left 150px top 20px;
+    }
+    .first-step::before {
+        @include clouds(150px, -133px);
+    }
+
+    .first-step::after {
+        @include clouds-bottom(150px, -135px, -130px);
+    }
+
+    .first-step__text-block {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1820px) {
+    .first-step::before {
+        @include clouds(150px, -135px);
+    }
+
+    .first-step::after {
+        @include clouds-bottom(150px, -135px, -130px);
+    }
+
+    .first-step__text-block {
+        font-size: 24px;
+    }
+}

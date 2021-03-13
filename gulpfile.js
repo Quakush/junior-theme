@@ -31,7 +31,7 @@ gulp.task("style", function() {
 
 gulp.task("server", function () {
   server.init({
-    proxy: "junior-corporation",
+    proxy: "juniorcorp",
     notify: false,
   });
 

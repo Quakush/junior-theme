@@ -1,0 +1,79 @@
+.ideas {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    color: $white;
+    background-image: url("../images/svg/building.svg");
+    background-repeat: no-repeat;
+    background-size: 284px;
+    background-position: -100px 280px;
+}
+
+.ideas .title__secondary {
+    text-align: center;
+}
+
+.ideas__text-block {
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 1.66;
+}
+
+.ideas__sign-up {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding-bottom: 74px;
+}
+
+@media (min-width: 768px) {
+    .ideas {
+        background-size: 336px;
+        background-position: -87px 202px;
+        padding-bottom: 20px;
+    }
+    .ideas__text-block {
+        font-size: 20px;
+    }
+
+    .ideas__sign-up {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ideas {
+        background-size: 350px;
+        background-position: 20px 0px;
+    }
+    .ideas__inner-wrap {
+        width: 60%;
+        padding-left: 40%;
+    }
+    .ideas .title__secondary {
+        text-align: left;
+    }
+    .ideas__sign-up {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ideas {
+        background-position: left 180px top 37px;
+    }
+
+    .ideas__text-block {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1820px) {
+    .ideas {
+        background-size: 400px;
+        background-position: left 180px top 90px;
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+}
+
