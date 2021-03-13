@@ -40,11 +40,13 @@
     &::before {
         content: "";
         position: absolute;
-        background-image: url("../images/svg/bullet.svg");
-        width: 20px;
-        height: 20px;
-        left: -22px;
-        top: 0;
+        background-color: $corp-blue;
+        width: 12px;
+        height: 12px;
+        border-radius: 20%;
+        box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.4);
+        left: -17px;
+        top: 3px;
     }
 }
 
@@ -68,14 +70,14 @@
         text-align: center;
     }
     .prospects__item::before {
-        top: 7px;
+        top: 9px;
     }
 }
 
 @media (min-width: 1024px) {
     .prospects {
         background-position: right 180px center;
-    
+
         &::before {
             @include clouds(100px, -99px);
         }
@@ -101,6 +103,10 @@
         &::after {
             @include clouds-bottom(131px, -129px, -113px);
         }
+    }
+
+    .prospects__item::before {
+        top: 11px;
     }
 
     .prospects__list {

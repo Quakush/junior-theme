@@ -2327,9 +2327,9 @@ main {
   .main-offer--courses .container {
     padding-bottom: 70px;
     background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg"), url("../images/svg/socrat2.svg");
-    background-size: 188px, 200px, 200px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: right 100px top 50px, right 210px top 0, right 0 top 0; }
+    background-size: 188px, 200px, 200px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right 100px top 50px, right 210px top 0, right 0 top 0; }
   .main-offer--courses .title {
     margin-bottom: 22px; }
   .main-offer--courses p {
@@ -2342,7 +2342,8 @@ main {
   /* Стили для main-offer страницы стартапам*/
   .main-offer--startup {
     background-size: 1326px;
-    padding-bottom: 250px; }
+    padding-bottom: 250px;
+    padding-top: 80px; }
   .main-offer--startup .title__strong {
     position: relative;
     font-size: 70px;
@@ -2419,7 +2420,7 @@ main {
     padding-bottom: 67px; }
   .main-offer--courses .container {
     padding: 0;
-    background-position: right 116px top 99px, right 237px top 0, right 0 top 0; }
+    background-position: right 116px top 99px, right 237px top 0, right 0 top 0; }
   .main-offer--courses .title {
     font-size: 70px;
     line-height: 1.4; }
@@ -2436,8 +2437,8 @@ main {
   /* Стили для main-offer страницы стартапам*/
   .main-offer--startup {
     background-image: url("../images/svg/rocket1.svg"), url("../images/svg/rocket-small.svg");
-    background-size: 1326px, 620px;
-    background-position: right -570px top 55px, left -290px bottom -280px; } }
+    background-size: 1326px,  620px;
+    background-position: right -570px top 55px,  left -290px bottom -280px; } }
 
 @media (min-width: 1820px) {
   .main-offer--main .container::after {
@@ -3354,653 +3355,6 @@ main {
       bottom: -198px;
       transform: rotate(180deg); } }
 
-.first-step {
-  position: relative;
-  margin: 0 0 79px 0;
-  padding-top: 15px;
-  color: #24272D;
-  background-color: white;
-  background-image: url("../images/svg/cosmonaut.svg");
-  background-repeat: no-repeat;
-  background-size: 305px;
-  background-position: -560% 92%;
-  padding-bottom: 50px; }
-  .first-step::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .first-step::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
-
-.first-step .title__colored {
-  color: #00A7CF; }
-
-.first-step .btn {
-  margin-left: auto;
-  margin-top: 45px;
-  margin-bottom: 10px; }
-
-.first-step__text-block {
-  font-size: 14px;
-  line-height: 1.66; }
-
-.first-step__legend {
-  font-size: 10px;
-  width: 47%;
-  margin-left: auto;
-  text-align: right;
-  line-height: 1.6; }
-
-.first-step__legend p {
-  margin-top: 20px; }
-
-@media (min-width: 375px) {
-  .first-step {
-    background-position: -115% 92%; } }
-
-@media (min-width: 768px) {
-  .first-step {
-    background-size: 380px;
-    background-position: -10% 0; }
-  .first-step__text-block {
-    font-size: 20px;
-    line-height: 2; }
-  .first-step__inner-wrap {
-    width: 50%;
-    padding-left: 40%; }
-  .first-step .btn {
-    margin-left: 0; }
-  .first-step__legend {
-    margin-left: 0;
-    width: 100%;
-    text-align: left; } }
-
-@media (min-width: 1024px) {
-  .first-step {
-    background-size: 430px;
-    background-position: 0% 20%; }
-  .first-step::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 115px;
-    background-color: transparent;
-    top: -100px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; } }
-
-@media (min-width: 1440px) {
-  .first-step {
-    background-size: 480px;
-    background-position: left 150px top 20px; }
-  .first-step::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background-color: transparent;
-    top: -133px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .first-step::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background-color: transparent;
-    top: -135px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -130px;
-    transform: rotate(180deg); }
-  .first-step__text-block {
-    font-size: 24px; } }
-
-@media (min-width: 1820px) {
-  .first-step::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background-color: transparent;
-    top: -135px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .first-step::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background-color: transparent;
-    top: -135px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -130px;
-    transform: rotate(180deg); }
-  .first-step__text-block {
-    font-size: 24px; } }
-
-.team__text-block {
-  margin-top: 30px;
-  font-size: 14px;
-  line-height: 22px; }
-
-.team .title__secondary {
-  margin-top: 20px; }
-
-.team__visuals {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 25px;
-  padding-bottom: 60px;
-  border-radius: 15px;
-  background-color: #24272d;
-  box-sizing: border-box; }
-
-.team__visual-item {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  border: solid 2px white;
-  border-radius: 20px; }
-  .team__visual-item--designer::before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/svg/designer.svg);
-    width: 70px;
-    height: 65px;
-    top: 8px;
-    left: 1px; }
-  .team__visual-item--designer::after {
-    content: "Designer";
-    position: absolute;
-    color: #ef4864;
-    font-size: 14px;
-    line-height: 24px;
-    bottom: -38px;
-    left: 9px; }
-  .team__visual-item--pm::before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/svg/pm.svg);
-    width: 70px;
-    height: 65px;
-    top: 12px;
-    left: 5px; }
-  .team__visual-item--pm::after {
-    content: "Project\00a0manager";
-    position: absolute;
-    color: #ef4864;
-    font-size: 14px;
-    line-height: 24px;
-    bottom: -38px;
-    left: -18px; }
-  .team__visual-item--developer::before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/svg/developer.svg);
-    width: 70px;
-    height: 65px;
-    top: 8px;
-    left: 1px; }
-  .team__visual-item--developer::after {
-    content: "Developer";
-    position: absolute;
-    color: #ef4864;
-    font-size: 14px;
-    line-height: 24px;
-    bottom: -38px;
-    left: 6px; }
-
-@media (min-width: 375px) {
-  .team__visual-item {
-    width: 100px;
-    height: 100px; }
-  .team__visual-item--designer::before,
-  .team__visual-item--developer::before {
-    top: 16px;
-    left: 11px; }
-  .team__visual-item--pm::before {
-    top: 20px;
-    left: 14px; }
-  .team__visual-item--designer::after {
-    left: 19px; }
-  .team__visual-item--pm::after {
-    left: -8px; }
-  .team__visual-item--developer::after {
-    left: 14px; } }
-
-@media (min-width: 768px) {
-  .team__text-block {
-    font-size: 20px;
-    line-height: 2;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center; }
-  .team .title__secondary {
-    text-align: center; } }
-
-@media (min-width: 1024px) {
-  .team::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    background-color: transparent;
-    top: -99px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; } }
-
-@media (min-width: 1440px) {
-  .team {
-    padding-top: 50px;
-    padding-bottom: 30px; }
-    .team::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 121px;
-      background-color: transparent;
-      top: -130px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-  .team__text-block {
-    font-size: 24px; } }
-
-@media (min-width: 1820px) {
-  .team {
-    padding-bottom: 50px;
-    padding-top: 50px; }
-    .team::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 120px;
-      background-color: transparent;
-      top: -145px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; } }
-
-.prospects {
-  position: relative;
-  margin: 79px 0;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  color: #24272D;
-  background-color: white;
-  background-image: url("../images/svg/shuttle.svg");
-  background-repeat: no-repeat;
-  background-size: 353px;
-  background-position: 206px 122px; }
-  .prospects::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .prospects::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
-
-.prospects .title__secondary {
-  margin-bottom: 35px; }
-
-.prospects__list {
-  list-style: none;
-  width: 50%;
-  padding-left: 18px;
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.6;
-  padding-bottom: 90px; }
-
-.prospects__item {
-  position: relative;
-  padding-bottom: 20px; }
-  .prospects__item::before {
-    content: "";
-    position: absolute;
-    background-image: url("../images/svg/bullet.svg");
-    width: 20px;
-    height: 20px;
-    left: -22px;
-    top: 0; }
-
-.prospects__item span {
-  font-weight: bold; }
-
-@media (min-width: 768px) {
-  .prospects {
-    background-position: right 20px center; }
-  .prospects__list {
-    font-size: 20px; }
-  .prospects .title__secondary {
-    width: 50%; }
-  .prospects__inner-wrap {
-    text-align: center; }
-  .prospects__item::before {
-    top: 7px; } }
-
-@media (min-width: 1024px) {
-  .prospects {
-    background-position: right 180px center; }
-    .prospects::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .prospects::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -99px;
-      transform: rotate(180deg); }
-  .prospects .btn--big {
-    width: 267px; } }
-
-@media (min-width: 1440px) {
-  .prospects {
-    background-size: 450px; }
-    .prospects::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -115px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .prospects::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -129px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -113px;
-      transform: rotate(180deg); }
-  .prospects__list {
-    font-size: 24px; } }
-
-@media (min-width: 1820px) {
-  .prospects::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background-color: transparent;
-    top: -130px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    background-position: 50%; }
-  .prospects::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    background-color: transparent;
-    top: -198px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -198px;
-    transform: rotate(180deg); } }
-
-.ideas {
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 100px;
-  color: white;
-  background-image: url("../images/svg/building.svg");
-  background-repeat: no-repeat;
-  background-size: 284px;
-  background-position: -100px 280px; }
-
-.ideas .title__secondary {
-  text-align: center; }
-
-.ideas__text-block {
-  margin-top: 25px;
-  font-size: 13px;
-  line-height: 1.66; }
-
-.ideas__sign-up {
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-  padding-bottom: 74px; }
-
-@media (min-width: 768px) {
-  .ideas {
-    background-size: 336px;
-    background-position: -87px 202px;
-    padding-bottom: 20px; }
-  .ideas__text-block {
-    font-size: 20px; }
-  .ideas__sign-up {
-    margin-top: 100px; } }
-
-@media (min-width: 1024px) {
-  .ideas {
-    background-size: 350px;
-    background-position: 20px 0px; }
-  .ideas__inner-wrap {
-    width: 60%;
-    padding-left: 40%; }
-  .ideas .title__secondary {
-    text-align: left; }
-  .ideas__sign-up {
-    margin-top: 50px; } }
-
-@media (min-width: 1440px) {
-  .ideas {
-    background-position: left 180px top 37px; }
-  .ideas__text-block {
-    font-size: 24px; } }
-
-@media (min-width: 1820px) {
-  .ideas {
-    padding-top: 100px;
-    padding-bottom: 0px; } }
-
-.projects {
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  color: #24272D;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: 103px;
-  background-position: 50% 100%; }
-  .projects::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .projects::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
-
-.projects__image-wrap {
-  align-self: center;
-  position: relative;
-  margin: 0 auto 20px;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-  background-color: #24272d;
-  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16); }
-
-.feedback {
-  position: relative;
-  padding-top: 100px;
-  color: white; }
-
-.feedback .title__secondary {
-  margin-top: 10px;
-  width: 90%; }
-
-.feedback__text-block {
-  margin-top: 25px;
-  margin-bottom: 42px;
-  font-size: 13px;
-  line-height: 1.66; }
-
-.feedback__write-us {
-  margin-bottom: 45px; }
-
-@media (min-width: 768px) {
-  .feedback__grid {
-    display: grid;
-    grid-template-columns: 57% 40%;
-    justify-items: center;
-    grid-column-gap: 25px; }
-  .feedback__text-block {
-    font-size: 20px; }
-  .feedback__get-news {
-    display: none; } }
-
-@media (min-width: 1440px) {
-  .feedback__text-block {
-    font-size: 24px; } }
-
 .pilot-project {
   position: relative;
   margin: 79px 0;
@@ -4548,6 +3902,610 @@ main {
 @media (min-width: 1820px) {
   .partners {
     top: -135px; } }
+
+.first-step {
+  position: relative;
+  margin: 0 0 79px 0;
+  padding-top: 15px;
+  color: #24272D;
+  background-color: white;
+  background-image: url("../images/svg/cosmonaut.svg");
+  background-repeat: no-repeat;
+  background-size: 305px;
+  background-position: -560% 92%;
+  padding-bottom: 50px; }
+  .first-step::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .first-step::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -79px;
+    transform: rotate(180deg); }
+
+.first-step .title__colored {
+  color: #00A7CF; }
+
+.first-step .btn {
+  margin-left: auto;
+  margin-top: 45px;
+  margin-bottom: 10px; }
+
+.first-step__text-block {
+  font-size: 14px;
+  line-height: 1.66; }
+
+.first-step__legend {
+  font-size: 10px;
+  width: 47%;
+  margin-left: auto;
+  text-align: right;
+  line-height: 1.6; }
+
+.first-step__legend p {
+  margin-top: 20px; }
+
+@media (min-width: 375px) {
+  .first-step {
+    background-position: -115% 92%; } }
+
+@media (min-width: 768px) {
+  .first-step {
+    background-size: 380px;
+    background-position: -10% 0; }
+  .first-step__text-block {
+    font-size: 20px;
+    line-height: 2; }
+  .first-step__inner-wrap {
+    width: 50%;
+    padding-left: 40%; }
+  .first-step .btn {
+    margin-left: 0; }
+  .first-step__legend {
+    margin-left: 0;
+    width: 100%;
+    text-align: left; } }
+
+@media (min-width: 1024px) {
+  .first-step {
+    background-size: 430px;
+    background-position: 0% 20%; }
+  .first-step::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 115px;
+    background-color: transparent;
+    top: -100px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; } }
+
+@media (min-width: 1440px) {
+  .first-step {
+    background-size: 480px;
+    background-position: left 150px top 20px; }
+  .first-step::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -133px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .first-step::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -135px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -130px;
+    transform: rotate(180deg); }
+  .first-step__text-block {
+    font-size: 24px; } }
+
+@media (min-width: 1820px) {
+  .first-step::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -135px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .first-step::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -135px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -130px;
+    transform: rotate(180deg); }
+  .first-step__text-block {
+    font-size: 24px; } }
+
+.team__text-block {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 22px; }
+
+.team .title__secondary {
+  margin-top: 20px; }
+
+.team__visuals {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 60px;
+  border-radius: 15px;
+  background-color: #24272d;
+  box-sizing: border-box; }
+
+.team__visual-item {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: solid 2px white;
+  border-radius: 20px; }
+  .team__visual-item--designer::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/svg/designer.svg);
+    width: 70px;
+    height: 65px;
+    top: 8px;
+    left: 1px; }
+  .team__visual-item--designer::after {
+    content: "Designer";
+    position: absolute;
+    color: #ef4864;
+    font-size: 14px;
+    line-height: 24px;
+    bottom: -38px;
+    left: 9px; }
+  .team__visual-item--pm::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/svg/pm.svg);
+    width: 70px;
+    height: 65px;
+    top: 12px;
+    left: 5px; }
+  .team__visual-item--pm::after {
+    content: "Project\00a0manager";
+    position: absolute;
+    color: #ef4864;
+    font-size: 14px;
+    line-height: 24px;
+    bottom: -38px;
+    left: -18px; }
+  .team__visual-item--developer::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/svg/developer.svg);
+    width: 70px;
+    height: 65px;
+    top: 8px;
+    left: 1px; }
+  .team__visual-item--developer::after {
+    content: "Developer";
+    position: absolute;
+    color: #ef4864;
+    font-size: 14px;
+    line-height: 24px;
+    bottom: -38px;
+    left: 6px; }
+
+@media (min-width: 375px) {
+  .team__visual-item {
+    width: 100px;
+    height: 100px; }
+  .team__visual-item--designer::before,
+  .team__visual-item--developer::before {
+    top: 16px;
+    left: 11px; }
+  .team__visual-item--pm::before {
+    top: 20px;
+    left: 14px; }
+  .team__visual-item--designer::after {
+    left: 19px; }
+  .team__visual-item--pm::after {
+    left: -8px; }
+  .team__visual-item--developer::after {
+    left: 14px; } }
+
+@media (min-width: 768px) {
+  .team__text-block {
+    font-size: 20px;
+    line-height: 2;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+  .team .title__secondary {
+    text-align: center; } }
+
+@media (min-width: 1024px) {
+  .team::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    top: -99px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; } }
+
+@media (min-width: 1440px) {
+  .team {
+    padding-top: 50px;
+    padding-bottom: 30px; }
+    .team::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 121px;
+      background-color: transparent;
+      top: -130px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%; }
+  .team__text-block {
+    font-size: 24px; } }
+
+@media (min-width: 1820px) {
+  .team {
+    padding-bottom: 50px;
+    padding-top: 50px; }
+    .team::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 120px;
+      background-color: transparent;
+      top: -145px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%; } }
+
+.prospects {
+  position: relative;
+  margin: 79px 0;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: #24272D;
+  background-color: white;
+  background-image: url("../images/svg/shuttle.svg");
+  background-repeat: no-repeat;
+  background-size: 353px;
+  background-position: 206px 122px; }
+  .prospects::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .prospects::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -79px;
+    transform: rotate(180deg); }
+
+.prospects .title__secondary {
+  margin-bottom: 35px; }
+
+.prospects__list {
+  list-style: none;
+  width: 50%;
+  padding-left: 18px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  padding-bottom: 90px; }
+
+.prospects__item {
+  position: relative;
+  padding-bottom: 20px; }
+  .prospects__item::before {
+    content: "";
+    position: absolute;
+    background-color: #00A7CF;
+    width: 12px;
+    height: 12px;
+    border-radius: 20%;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.4);
+    left: -17px;
+    top: 3px; }
+
+.prospects__item span {
+  font-weight: bold; }
+
+@media (min-width: 768px) {
+  .prospects {
+    background-position: right 20px center; }
+  .prospects__list {
+    font-size: 20px; }
+  .prospects .title__secondary {
+    width: 50%; }
+  .prospects__inner-wrap {
+    text-align: center; }
+  .prospects__item::before {
+    top: 9px; } }
+
+@media (min-width: 1024px) {
+  .prospects {
+    background-position: right 180px center; }
+    .prospects::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%; }
+    .prospects::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -99px;
+      transform: rotate(180deg); }
+  .prospects .btn--big {
+    width: 267px; } }
+
+@media (min-width: 1440px) {
+  .prospects {
+    background-size: 450px; }
+    .prospects::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 131px;
+      background-color: transparent;
+      top: -115px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      background-position: 50%; }
+    .prospects::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 131px;
+      background-color: transparent;
+      top: -129px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -113px;
+      transform: rotate(180deg); }
+  .prospects__item::before {
+    top: 11px; }
+  .prospects__list {
+    font-size: 24px; } }
+
+@media (min-width: 1820px) {
+  .prospects::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -130px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    background-position: 50%; }
+  .prospects::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    top: -198px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -198px;
+    transform: rotate(180deg); } }
+
+.ideas {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  color: white;
+  background-image: url("../images/svg/building.svg");
+  background-repeat: no-repeat;
+  background-size: 284px;
+  background-position: -100px 280px; }
+
+.ideas .title__secondary {
+  text-align: center; }
+
+.ideas__text-block {
+  margin-top: 25px;
+  font-size: 13px;
+  line-height: 1.66; }
+
+.ideas__sign-up {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-bottom: 74px; }
+
+@media (min-width: 768px) {
+  .ideas {
+    background-size: 336px;
+    background-position: -87px 202px;
+    padding-bottom: 20px; }
+  .ideas__text-block {
+    font-size: 20px; }
+  .ideas__sign-up {
+    margin-top: 100px; } }
+
+@media (min-width: 1024px) {
+  .ideas {
+    background-size: 350px;
+    background-position: 20px 0px; }
+  .ideas__inner-wrap {
+    width: 60%;
+    padding-left: 40%; }
+  .ideas .title__secondary {
+    text-align: left; }
+  .ideas__sign-up {
+    margin-top: 50px; } }
+
+@media (min-width: 1440px) {
+  .ideas {
+    background-position: left 180px top 37px; }
+  .ideas__text-block {
+    font-size: 24px; } }
+
+@media (min-width: 1820px) {
+  .ideas {
+    background-size: 400px;
+    background-position: left 180px top 90px;
+    padding-top: 100px;
+    padding-bottom: 0px; } }
+
+.feedback {
+  position: relative;
+  padding-top: 100px;
+  color: white; }
+
+.feedback .title__secondary {
+  margin-top: 10px;
+  width: 90%; }
+
+.feedback__text-block {
+  margin-top: 25px;
+  margin-bottom: 42px;
+  font-size: 13px;
+  line-height: 1.66; }
+
+.feedback__write-us {
+  margin-bottom: 45px; }
+
+@media (min-width: 768px) {
+  .feedback__grid {
+    display: grid;
+    grid-template-columns: 57% 40%;
+    justify-items: center;
+    grid-column-gap: 25px; }
+  .feedback__text-block {
+    font-size: 20px; }
+  .feedback__get-news {
+    display: none; } }
+
+@media (min-width: 1440px) {
+  .feedback__text-block {
+    font-size: 24px; } }
 
 .choose-course {
   position: relative;

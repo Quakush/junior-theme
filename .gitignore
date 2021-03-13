@@ -6,3 +6,6 @@ build/
 **/vendor/
 /wordpress/
 nginx-wordpress.conf
+package-lock.json
+package.json
+gulpfile.js
