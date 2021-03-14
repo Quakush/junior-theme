@@ -1,125 +1,96 @@
 .team__text-block {
     margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 14px;
     line-height: 22px;
 }
 
 .team .title__secondary {
     margin-top: 20px;
+    font-size: 24px;
 }
 
-.team__visuals {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 25px;
-    padding-bottom: 60px;
-    border-radius: 15px;
-    background-color: #24272d;
-    box-sizing: border-box;
+.team__list {
+    @include list-style;
+    margin-bottom: 29px;
 }
 
-.team__visual-item {
+.team__item:first-of-type {
+    flex-basis: 100%;
+}
+
+.team__item {
+    margin-bottom: 25px;
+}
+
+.team__link {
     position: relative;
-    width: 80px;
-    height: 80px;
-    border: solid 2px white;
-    border-radius: 20px;
-
-    &--designer::before {
-        content: "";
-        position: absolute;
-        background-image: url(../images/svg/designer.svg);
-        width: 70px;
-        height: 65px;
-        top: 8px;
-        left: 1px;
-    }
-
-    &--designer::after {
-        content: "Designer";
-        position: absolute;
-        color: #ef4864;
-        font-size: 14px;
-        line-height: 24px;
-        bottom: -38px;
-        left: 9px;
-    }
-
-    &--pm::before {
-        content: "";
-        position: absolute;
-        background-image: url(../images/svg/pm.svg);
-        width: 70px;
-        height: 65px;
-        top: 12px;
-        left: 5px;
-    }
-
-    &--pm::after {
-        content: "Project\00a0manager";
-        position: absolute;
-        color: #ef4864;
-        font-size: 14px;
-        line-height: 24px;
-        bottom: -38px;
-        left: -18px;
-    }
-
-    &--developer::before {
-        content: "";
-        position: absolute;
-        background-image: url(../images/svg/developer.svg);
-        width: 70px;
-        height: 65px;
-        top: 8px;
-        left: 1px;
-    }
-
-    &--developer::after {
-        content: "Developer";
-        position: absolute;
-        color: #ef4864;
-        font-size: 14px;
-        line-height: 24px;
-        bottom: -38px;
-        left: 6px;
-    }
+    @include link-style;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 117px;
+    color: $corp-blue;
+    font-size: 16px;
+    white-space: nowrap;
 }
 
+.team__item--designer .team__link::before,
+.team__item--project .team__link::before,
+.team__item--developer .team__link::before {
+    @include element-style(100px, 100px, transparent);
+    top: 0;
+    left: 50%;
+    border: 2px solid $white;
+    border-radius: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px 54px;
+    transform: translate(-50%);
+}
+
+.team__item--designer .team__link::before {
+    background-image: url("../images/icons/icon-designer.svg");
+}
+
+.team__item--project .team__link::before {
+    background-image: url("../images/icons/icon-projectmanager.svg");
+}
+
+.team__item--developer .team__link::before {
+    background-image: url("../images/icons/icon-developer.svg");
+}
 @media (min-width: 375px) {
-    .team__visual-item {
-        width: 100px;
-        height: 100px;
+    .team .title__secondary {
+        font-size: 26px;
     }
-    .team__visual-item--designer::before,
-    .team__visual-item--developer::before {
-        top: 16px;
-        left: 11px;
-    }
-
-    .team__visual-item--pm::before {
-        top: 20px;
-        left: 14px;
+    .team__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
-    .team__visual-item--designer::after {
-        left: 19px;
+    .team__item {
+        flex-basis: 30%;
     }
 
-    .team__visual-item--pm::after {
-        left: -8px;
+    .team__item {
+        margin-bottom: 0;
     }
 
-    .team__visual-item--developer::after {
-        left: 14px;
+    .team__item:first-of-type {
+        flex-basis: 30%;
     }
 }
 
 @media (min-width: 768px) {
+    .team__list {
+        margin-top: 50px;
+    }
     .team__text-block {
         font-size: 20px;
-        line-height: 2;
+        line-height: 1.4;
         width: 80%;
         margin: 0 auto;
         text-align: center;
@@ -135,6 +106,48 @@
         &::before {
             @include clouds(100px, -99px);
         }
+    }
+
+    .team__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .team__item {
+        margin-right: 120px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .team__link {
+        padding-top: 172px;
+        font-size: 25px;
+    }
+
+    .team__item--designer .team__link::before,
+    .team__item--project .team__link::before,
+    .team__item--developer .team__link::before {
+        width: 158px;
+        height: 158px;
+        background-size: 120px;
+    }
+
+    .team__svg-wraper {
+        margin-bottom: 10px;
+        width: 158px;
+        height: 158px;
+        border: 2px solid $white;
+        border-radius: 17px;
+    }
+
+    .team__link svg {
+        width: 84px;
+        height: 76px;
+        fill: $white;
     }
 }
 

@@ -25,6 +25,11 @@
 	letter-spacing: -0.5px;
 }
 
+.footer-info__polity-box span {
+	margin-left: 5px;
+    margin-right: 5px;
+}
+
 .footer-info__polity {
 	@include link-style;
 }
@@ -119,5 +124,10 @@
 	.footer-info__polity-box {
 		margin-left: auto;
 		letter-spacing: unset;
+	}
+
+	.footer-info__polity-box span {
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }

@@ -38,13 +38,14 @@
 
     .ideas__sign-up {
         margin-top: 100px;
+        padding-bottom: 180px;
     }
 }
 
 @media (min-width: 1024px) {
     .ideas {
         background-size: 350px;
-        background-position: 20px 0px;
+        background-position: 20px 12px;
     }
     .ideas__inner-wrap {
         width: 60%;
@@ -60,7 +61,7 @@
 
 @media (min-width: 1440px) {
     .ideas {
-        background-position: left 180px top 37px;
+        background-position: left 180px top 42px;
     }
 
     .ideas__text-block {
@@ -70,8 +71,7 @@
 
 @media (min-width: 1820px) {
     .ideas {
-        background-size: 400px;
-        background-position: left 180px top 90px;
+        background-position: left 365px top 110px;
         padding-top: 100px;
         padding-bottom: 0px;
     }
