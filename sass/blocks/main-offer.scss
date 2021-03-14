@@ -113,11 +113,11 @@
 
 .main-offer--startup {
 	background-image: url("../images/svg/rocket1.svg");
-	background-repeat: no-repeat;
-	background-size: 280%;
-	background-position: -167px 94px;
-	padding-bottom: 270px;
-	padding-top: 16px;
+    background-repeat: no-repeat;
+	background-size: 200%;
+    background-position: -15px 152px;
+    padding-bottom: 81px;
+    padding-top: 16px;
 }
 
 .main-offer--startup .main-offer__text-block {
@@ -126,8 +126,8 @@
 
 .main-offer--startup p {
 	margin-bottom: 50px;
-	width: 72%;
-	line-height: 1.9;
+	width: 80%;
+	line-height: 1.5;
 }
 
 .main-offer--startup .title {
@@ -180,8 +180,17 @@
 
 	/* Стили для main-offer страницы Стартапам */
 
+	.main-offer--startup {
+	background-size: 280%;
+	background-position: -172px 94px;
+	padding-bottom: 270px;
+	}
+	
 	.main-offer--startup .title {
 		font-size: 30px;
+	}
+	.main-offer--main p {
+		width: 72%;
 	}
 }
 
@@ -292,6 +301,14 @@
 		background-size: 1326px;
 		padding-bottom: 250px;
 		padding-top: 80px;
+	}
+
+	.main-offer--startup p {
+        width: 100%;
+	}
+
+	.main-offer--startup .main-offer__text-block {
+		width: 600px;
 	}
 
 	.main-offer--startup .title__strong {
@@ -436,17 +453,36 @@
 		    url("../images/svg/rocket-small.svg");
 		background-size: 
 		    1326px, 
-		    620px;
+		    450px;
 		background-position: 
-		    right -570px top 55px, 
-		    left -290px bottom -280px;
+		    right -472px top 17px, 
+		    left -105px bottom -219px;
+	}
+
+	.main-offer--startup .title { 
+		margin-bottom: 0;
+	}
+
+	.main-offer--startup p { 
+		margin-bottom: 64px;
+	}
+
+	.main-offer--startup .main-offer__text-block {
+		width: 730px;
 	}
 }
 
 @media (min-width: 1820px) {
+	.main-offer--startup {
+		background-position: 
+		    right -222px top 17px, 
+		    left 25px bottom -219px;
+	}
+
 	.main-offer--main .container {
 		&::after {
 			bottom: -95px;
 		}
 	}
 }
+

@@ -6,7 +6,7 @@
 
 .feedback .title__secondary {
     margin-top: 10px;
-    width: 90%;
+    padding-right: 50px;
 }
 
 .feedback__text-block {
@@ -28,6 +28,11 @@
         grid-column-gap: 25px;
     }
 
+    .feedback .title__secondary {
+        padding-right: 0;
+    }
+
+
     .feedback__text-block {
         font-size: 20px;
     }
@@ -36,10 +41,10 @@
     }
 }
 
-@media (min-width: 1024px) {
-}
-
 @media (min-width: 1440px) {
+    .feedback .title__secondary {
+        padding-right: 0;
+    }
     .feedback__text-block {
         font-size: 24px;
     }

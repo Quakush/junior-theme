@@ -21,7 +21,7 @@ get_header();
                     компании, тогда вы в нужном месте.
                     Каждый день мы обучаем
                     основателей, создаем
-                    проекты и </p>
+                    проекты и&nbsp;выпускаем их на рынок.</p>
             </div>
             <?php get_template_part('/includes/block', 'sign_up'); ?>
         </div>
@@ -36,7 +36,7 @@ get_header();
                     первые продажи и мы проинвестируем в
                     создание твоего MVP**.
                 </p>
-                <a class="btn btn--small" href="#">Подать заявку</a>
+                <a class="btn btn--big" href="#">Подать заявку</a>
                 <div class="first-step__legend">
                     <p>
                         *Подходит для любого
@@ -55,27 +55,27 @@ get_header();
     </section>
     <section class="team">
         <div class="container">
-
-            <h2 class="title__secondary">Команда для твоего проекта</h2>
+            <h2 class="title__secondary">Команда для&nbsp;твоего&nbsp;проекта</h2>
             <p class="team__text-block">После прохождения акселератора
                 вы продолжите заниматься развитием проекта
                 и с командой параллельно создавать MVP.
             </p>
-
-            <div class="team__visuals">
-                <div class="team__visual-item team__visual-item--designer"></div>
-
-                <div class="team__visual-item team__visual-item--pm"></div>
-
-                <div class="team__visual-item team__visual-item--developer"></div>
-
-
-            </div>
+            <ul class="team__list">
+                <li class="team__item  team__item--designer">
+                    <a class="team__link" href="#">Designer</a>
+                </li>
+                <li class="team__item  team__item--project">
+                    <a class="team__link" href="#">Project manager</a>
+                </li>
+                <li class="team__item  team__item--developer">
+                    <a class="team__link" href="#">Developer</a>
+                </li>
+            </ul>
         </div>
     </section>
     <section class="prospects">
         <div class="container">
-            <h2 class="title__secondary">Ваши перспективы после инкубатора</h2>
+            <h2 class="title__secondary">Ваши&nbsp;перспективы после&nbsp;инкубатора</h2>
             <ul class="prospects__list">
                 <li class="prospects__item"><span>Самостоятельное развитие</span> -
                     при наличии продукта
