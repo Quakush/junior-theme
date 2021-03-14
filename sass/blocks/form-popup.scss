@@ -1,0 +1,69 @@
+.form-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+  width: 486px;
+
+  color: $white;
+
+  background: linear-gradient($corp-blue, #01627a);
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.form-popup__top {
+  box-sizing: border-box;
+  min-height: 348px;
+  padding: 38px 28px 38px 48px;
+
+  border-bottom: 1px solid $white;
+}
+
+.form-popup__title {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 58px;
+}
+
+.form-popup__close {
+  display: block;
+  width: $size-cross;
+  height: $size-cross;
+  margin: 0 0 63px auto;
+  padding: 0;
+
+  background: url("../images/svg/cross-light.svg") no-repeat;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.form-popup__bottom {
+  padding: 26px 48px 20px;
+}
+
+.form-popup__text {
+  margin: 0 0 50px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.form-popup__button {
+  min-width: 267px;
+  margin: 0 auto 45px;
+  padding: 14px;
+}
+
+.form-popup__logo {
+  display: block;
+  width: 52px;
+  height: 30px;
+  margin: 0 auto;
+}
