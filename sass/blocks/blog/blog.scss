@@ -1,18 +1,4 @@
 .blog {
-  width: 100%;
-  box-sizing: border-box;
-  padding-top: 17px;
+  max-width: 1092px;
+  margin: 0 auto;
 }
-
-.blog-container {
-  border-bottom: 1px solid $white;
-}
-
-@media (min-width: 1440px) {
-  .blog {
-    padding-top: 46px;
-  }
-}
-
-
-
