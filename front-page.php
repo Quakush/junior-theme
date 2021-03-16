@@ -63,7 +63,7 @@ get_header();
                       <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
                       <span class="options-slider__visual-title">Startup University</span>
                     </div>
-                    <a class="btn btn--green btn--small options-slider__btn" href="/courses">Выбрать обучение</a>
+                    <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
                 </li>
 
                 <li class="swiper-slide options-slider__item  options-slider__item--blue  options-slider__item--active">
@@ -109,7 +109,7 @@ get_header();
                       <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="78" alt="slider visual image">
                       <span class="options-slider__visual-title">Startup University</span>
                     </div>
-                    <a class="btn btn--green btn--small options-slider__btn" href="#">Выбрать обучение</a>
+                    <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
                 </li>
 
                 <li class="swiper-slide options-slider__item options-slider__item--blue swiper-small__item">
@@ -275,7 +275,7 @@ get_header();
         <div class="container">
             <div class="read-us__title-container">
                 <h2 class="title__secondary read-us__title">Читайте нас</h2>
-                <a class="read-us__link" href="/blog">Все статьи</a>
+                <a class="read-us__link" href="/news">Все статьи</a>
             </div>
 
             <div class="news-slider">

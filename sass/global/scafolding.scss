@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    width: 320px;
     @include font-base(12px, $base-line-height);
     letter-spacing: 0;
     background: #24272d;
@@ -32,19 +31,9 @@ main {
     padding-bottom: 60px;
 }
 
-@media (min-width: 375px) {
-
-    body {
-        width: 375px;
-    }
-    
-}
-
 @media (min-width: 768px) {
 
     body {
-        width: unset;
-        min-width: 768px;
         font-size: 14px;
     }
 }
@@ -52,7 +41,7 @@ main {
 @media (min-width: 1024px) {
 
     body {
-        min-width: 1024px;
+       
         font-size: $base-font-size;
     }
 
@@ -64,7 +53,7 @@ main {
 @media (min-width: 1440px) {
 
     body {
-        min-width: 1440px;
+       
         font-size: $base-font-size;
     }
 }

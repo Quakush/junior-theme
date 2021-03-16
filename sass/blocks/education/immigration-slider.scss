@@ -7,11 +7,15 @@
 }
 
 .immigration-slider__item {
+    position: relative;
     padding: 0 15px;
-    background-image: url("../images/svg/freedom.svg");
-    background-repeat: no-repeat;
-    background-size: 170px;
-    background-position: 230px;
+
+    img {
+        position: absolute;
+        width: 170px;
+        left: 230px;
+        bottom: 70px;
+    }
 }
 
 .immigration-slider__item-title {
@@ -48,8 +52,12 @@
 
     .immigration-slider__item {
         padding: 0 22px;
-        background-size: 220px;
-        background-position: left 70px top 10px;
+
+        img {
+            width: 220px;
+            left: 70px;
+            top: 10px;
+        }
     }
 
     .immigration-slider__item-wrap {
@@ -87,9 +95,14 @@
 
     .immigration-slider__item {
         padding: 0;
-        background-size: 320px;
-        background-position: left 52px top 10px;
         box-sizing: border-box;
+
+        img {
+            width: 320px;
+            left: 52px;
+            top: 10px;
+        }
+        
     }
 
     .immigration-slider__item-title {

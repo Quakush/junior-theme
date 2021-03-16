@@ -1,10 +1,8 @@
 <?php
 
 /*
-Template Name: Education Inner Page
+Template Name: All courses
 */
-
-$terms = get_terms('branches', 'orderby=count&hide_empty=0');
 
 $courses_args = array(
     'post_type' => 'courses',
@@ -53,48 +51,27 @@ get_header();
     <section class="banners">
         <div class="container">
             <h2 class="banners__title">наши партнеры</h2>
-            <ul class="banners__list">
+            <div class="banners__list">
 
             <?php if ($partners->have_posts()) :
 
                       while($partners->have_posts()) : $partners-> the_post(); ?>
                     
-                        <li class="banners__item">
-                            <a class="banners__link" href="#">
-                                <img src="<?=get_field('logo-svg')['url'];?>" alt="banner">
-                            </a>
-                        </li>
+                        <div class="banners__item">
+                            <img src="<?=get_field('logo-svg')['url'];?>" alt="banner">
+                        </div>
 
             <?php endwhile; endif; ?>
                 
-            </ul>
-        </div>
-    </section>
-    <section class="filters">
-
-        <div class="container">
-            <?php get_search_form();?>
-            
-            <div class="categories">
-                <span class="categories__dropdown">Выберите специальность</span>
-                <ul class="categories__list">
-                    
-                    <?php if ($terms && ! is_wp_error($terms)):
-   
-                        foreach ($terms as $term ):?>
-                        <li class="categories__item">
-                            <a class="categories__link" data-cat="<?=$term->term_id;?>" href="#">
-                                <?=$term->name;?>
-                            </a>
-                        </li>
-                    <?php endforeach; endif; ?>
-                </ul>
-                <div class="categories__selected">
-                    <span>All</span>
-                </div>
             </div>
         </div>
     </section>
+    <section class="filters">
+        <div class="container">
+            <?php get_search_form();?>
+            <?php get_template_part('/includes/block', 'categories');?>
+        </div>
+    </section>     
     <section class="courses">
         <div class="container">
             <div class="courses__headers">
@@ -106,27 +83,28 @@ get_header();
 
             <div class="courses__list">
 
-            <?php
-
-            if ($courses->have_posts()) :
+            <?php if ($courses->have_posts()) :
 
             while($courses->have_posts()) : $courses-> the_post(); ?>
                             
                 <?php get_template_part('includes/section', 'courses'); ?>
 
             <?php endwhile; endif; ?>
+            <?php wp_reset_postdata(); ?>
 
-            <script>
-            var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
-            var posts = '<?php echo addslashes(wp_json_encode($wp_query->query_vars)); ?>';
-            var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
-            var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
-            </script>
+            <?php if ($wp_query->max_num_pages > 1) : ?>
 
-            <div id="more_posts" class="btn  courses__btn" data-template="0">Загрузить ещё</div>
-                    
+                <script>
+                var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
+                var posts = '<?php echo addslashes(wp_json_encode($wp_query->query_vars)); ?>';
+                var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+                var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
+                </script>
+
+                <div id="true_loadmore" class="btn  courses__btn">Загрузить ещё</div>
+            <?php endif; ?>
+
             </div>
-           
         </div>
     </section>
     <section class="aggregator">

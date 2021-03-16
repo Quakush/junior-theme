@@ -30,7 +30,6 @@ function scripts()
 
     wp_enqueue_script( 'slick-slider', get_stylesheet_directory_uri() . '/js/slick.js', array('jquery'));
 
-
     wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery'));
 
     wp_enqueue_script( 'true_loadmoreblog', get_stylesheet_directory_uri() . '/js/loadblog.js', array('jquery'));
