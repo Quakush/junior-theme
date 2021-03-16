@@ -1,7 +1,7 @@
 "use strict";
 
 (function () {
-
+var body = document.querySelector('body');
 var menuBlock = document.querySelector('.top-header');
 var menuButton = menuBlock.querySelector('.toggler');
 var menu = menuBlock.querySelector('.mobile-nav');
@@ -35,9 +35,11 @@ for (var i = 0; i < signUpDropdowns.length; i++) {
 }
 
 if (popUp) {
+	
 	var popUpButton = popUp.querySelector('.toggler');
 	popUpButton.addEventListener('click', function () {
 		popUp.classList.add('pop-up--close');
+		
 	});
 }
 

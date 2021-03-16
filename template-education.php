@@ -46,7 +46,7 @@ get_header();
                     чтобы получить гарантированную практику после
                     окончания обучения.
                 </p>
-                <a class="btn btn--big  btn--green  choose-course__btn" href="/courses/">Выбрать курс</a>
+                <a class="btn btn--big  btn--green  choose-course__btn" href="/all-courses">Выбрать курс</a>
             </div>
         </div>
     </section>
@@ -72,7 +72,7 @@ get_header();
                     <a class="choose-profession__link" href="#">Developer</a>
                 </li>
             </ul>
-            <a class="btn btn--big  btn--green  choose-profession__btn" href="/courses">Еще 50+ профессий</a>
+            <a class="btn btn--big  btn--green  choose-profession__btn" href="/all-courses">Еще 50+ профессий</a>
         </div>
     </section>
     <section class="career">
@@ -115,7 +115,7 @@ get_header();
                 заказы от нашего отдела разработки, трудоустройство
                 у наших партнеров и даже переезд в другую страну.
             </p>
-            <a class="btn  btn--green  btn--big  credences__btn" href="/courses/">Выбрать курс</a>
+            <a class="btn  btn--green  btn--big  credences__btn" href="/all-courses">Выбрать курс</a>
         </div>
     </section>
     <section class="immigration-slider">
@@ -124,30 +124,11 @@ get_header();
 
                 <?php if ($guestarbaiter_suggestions->have_posts()) :
 
-                    while($guestarbaiter_suggestions->have_posts()) : $guestarbaiter_suggestions-> the_post(); ?>
-                            
-                <!-- get_template_part('includes/section', 'courses'); -->
-
-                    <div class="immigration-slider__item">
-                        <?php if(has_post_thumbnail()):?>
-                            <img src="<?=the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>">
-                        <?php endif;?>
-                        <div class="immigration-slider__item-wrap">
-                            <h2 class="title__secondary  immigration-slider__item-title">
-                                <span><?=the_title();?> with</span> JS Corporation
-                            </h2>
-                            <p>
-                                <?=the_content();?>
-                            </p>
-                            <button class="btn  btn--green btn--big  immigration-slider__item-btn">
-                                Оставить заявку
-                            </button>
-                        </div>
-                    </div>
-
-                <?php endwhile; endif; ?>
-                <?php wp_reset_postdata(); ?>
-                
+                    while($guestarbaiter_suggestions->have_posts()) : $guestarbaiter_suggestions-> the_post();
+                get_template_part('includes/section', 'guestarbaiter');
+                endwhile; endif;
+                wp_reset_postdata();
+                ?>
             </div>
         </div>
     </section>
@@ -187,7 +168,7 @@ get_header();
                     </li>
                 </ul>
             </div>
-            <a class="btn btn--big  btn--green  educational-programms__btn" href="/courses/">Выбрать курс</a>
+            <a class="btn btn--big  btn--green  educational-programms__btn" href="/all-courses">Выбрать курс</a>
         </div>
     </section>
 

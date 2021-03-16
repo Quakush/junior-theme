@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Blog Page
+Template Name: News Page
 */
 
 $cats = get_categories('hide_empty=0');
