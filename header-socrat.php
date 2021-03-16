@@ -43,35 +43,15 @@ $timer = get_post_meta( 310, 'timer', true);
                     <div class="toggler">
                         <span></span>
                     </div>
-                    <div class="mobile-nav">
-                        <?php wp_nav_menu (
-                            array(
-                                'theme_location' => 'mobile-menu',
-                                'menu_class' => 'mobile-nav__list'
-                            )
-                        );?>
-                        <button class="btn  btn--small  mobile-nav__btn">
-                            <svg class="top-header__btn-svg"><use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#user"></use></svg>
-                            Личный кабинет
-                        </button>
-                    </div>
+                    
                     <?php wp_nav_menu (
                         array(
-                            'theme_location' => 'top-menu',
-                            'menu_class' => 'main-nav__list'
+                            'theme_location' => 'socrat-menu',
+                            'menu_class' => ''
                         )
                     );?>
                 </nav>
-                <div class="language-switch">
-                    <input type="radio" name="lang" id="rus" value="rus" checked>
-                    <label for="rus">Rus</label>
-                    <input type="radio" name="lang" value="eng" id="eng">
-                    <label for="eng">Eng</label>
-                </div>
-                <button class="btn  btn--small  top-header__btn">
-                    <svg class="top-header__btn-svg"><use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#user"></use></svg>
-                    Войти
-                </button>
+                
             </div>
         </div>
     </header>

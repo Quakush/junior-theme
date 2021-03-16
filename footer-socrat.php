@@ -1,7 +1,7 @@
 <footer class="main-footer">
     <div class="container">
         
-        <?php get_template_part('/includes/block', 'getnews');?>
+       
         
         <section class="contact-us">
             <h4 class="contact-us__title title-fourth">Связаться с нами:</h4>
@@ -20,23 +20,8 @@
                     </a>
                 </li>
             </ul>
-            <div class="contact-us__download-links">
-                <a class="contact-us__download-item  contact-us__download-item--apple" href="https://apps.apple.com/ru/app/sokrat/id1548987952">
-                    <img src="/wp-content/themes/js-corp/images/icons/icon-download-apple.svg">
-                </a>
-                <a class="contact-us__download-item  contact-us__download-item--google" href="#">
-                    <img src="/wp-content/themes/js-corp/images/icons/icon-download-google.svg">
-                </a>
-            </div>
         </section>
-        <nav class="footer-menu">
-            <?php wp_nav_menu(
-                array(
-                    'theme_location' => 'footer-menu',
-                    'menu_class' => 'footer-menu__list'
-                )
-            );?>
-        </nav>
+       
         <div class="footer-info">
             <div class="footer-info__logo">
                 <a href="/">
