@@ -247,7 +247,7 @@ get_header();
                 <h2 class="title__secondary">Новые кадры</h2>
                 <p class="pilot-project__text">Поиск новых кадров один из основных бизнес - процессов в компании. Подходящих специалистов найти все сложнее. Наше партнерство с университетами позволит найти лучших специалистов и быть уверенным, что они готовы к выполнению ваших задач. </p>
 
-                <a class="pilot-project__btn btn btn--big" href="/partnership/">Стать партнером</a>
+                <a class="pilot-project__btn btn btn--big" href="/contact-form">Стать партнером</a>
             </div>
 
             <div class="pilot-project__text-block">
