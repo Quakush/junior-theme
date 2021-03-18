@@ -17,6 +17,9 @@ function scripts()
     wp_register_script('swiper-main', get_template_directory_uri() . '/js/swiper-main.js', [], 1, true);
     wp_enqueue_script('swiper-main');
 
+    wp_register_script('swiper-block', get_template_directory_uri() . '/js/swiper-block.js', [], 1, true);
+    wp_enqueue_script('swiper-block');
+
     wp_register_script('mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', [], 1, true);
     wp_enqueue_script('mobile-menu');
 
@@ -53,7 +56,7 @@ function true_custom($column, $id){
 		echo $id;
 	}
 }
- 
+
 add_filter('manage_pages_columns', 'true_id', 5);
 add_action('manage_pages_custom_column', 'true_custom', 5, 2);
 add_filter('manage_posts_columns', 'true_id', 5);
@@ -395,13 +398,13 @@ add_action( 'wp_ajax_nopriv_get_courses', 'ajax_show_all_courses' );
 
 function ajax_show_all_courses() {
 
-	
+
 
 	$args['post_type'] = 'courses';
 	$args['paged'] = 1;
 	$args['post_status'] = 'publish';
 	$args['posts_per_page'] = 5;
-	
+
 	query_posts($args);
 
 	if (have_posts()) :
