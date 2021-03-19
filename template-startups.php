@@ -75,7 +75,7 @@ get_header();
     </section>
     <section class="prospects">
         <div class="container">
-            <h2 class="title__secondary">Ваши&nbsp;перспективы после&nbsp;инкубатора</h2>
+            <h2 class="title__secondary">Ваши&nbsp;перспективы <br> после&nbsp;инкубатора</h2>
             <ul class="prospects__list">
                 <li class="prospects__item"><span>Самостоятельное развитие</span> -
                     при наличии продукта

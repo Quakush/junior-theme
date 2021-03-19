@@ -70,6 +70,8 @@
 
     .prospects__list {
         padding-bottom: 90px;
+        height: 400px;
+        width: 200px;
     }
 }
 
@@ -80,6 +82,8 @@
     .prospects__list {
         font-size: 20px;
         padding-bottom: 10px;
+        height: 500px;
+        width: 400px;
     }
 
     .prospects .btn--big {
@@ -100,9 +104,8 @@
 
 @media (min-width: 1024px) {
     .prospects {
-        padding-bottom: 140px;
         background-size: 400px;
-        background-position: right 35px bottom 60px;
+        background-position: right 35px bottom 20px;
 
         &::before {
             @include clouds(100px, -99px);
@@ -117,6 +120,10 @@
         width: 267px;
         margin-top: 30px;
         border-radius: 10px;
+    }
+
+    .prospects__list {
+        width: 400px;
     }
 }
 
@@ -142,6 +149,7 @@
 
     .prospects__list {
         font-size: 24px;
+        width: 600px;
     }
 }
 

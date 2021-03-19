@@ -4,7 +4,7 @@
     background-color: $dark-text;
 }
 
-.top-header .container{
+.top-header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     margin-right: 6px;
     width: 11px;
     height: 11px;
-    fill: $white
+    fill: $white;
 }
 
 .top-header--mobile {
@@ -48,8 +48,19 @@
     margin-left: 47px;
 }
 
-@media (min-width: 768px) {
+/* Стили для main-footer страницы Кубок Сократа */
 
+.top-header--socrat .btn-socrat {
+    display: none;
+}
+
+.top-header--socrat .main-nav {
+    ::before {
+        content: none;
+    }
+}
+
+@media (min-width: 768px) {
     .top-header {
         background-color: transparent;
     }
@@ -60,15 +71,19 @@
 }
 
 @media (min-width: 1024px) {
-
     .top-header__btn {
         order: 3;
         margin-left: 27px;
     }
+
+    .top-header--socrat .btn-socrat {
+        display: block;
+        order: 2;
+        margin-left: 50px;
+    }
 }
 
 @media (min-width: 1440px) {
-
     .top-header__btn {
         margin-left: 32px;
     }

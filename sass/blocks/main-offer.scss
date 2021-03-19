@@ -153,6 +153,40 @@
 	}
 }
 
+/* Стили для main-offer страницы Кубок Сократа */
+
+.main-offer--socrat {
+	background-image: url("../images/svg/socrat-main-bg.svg");
+    background-repeat: no-repeat;
+	background-size: 345px;
+	background-position: bottom 200px left 20px;
+    padding-bottom: 110px;
+    padding-top: 25px;
+}
+
+.main-offer--socrat .main-offer__text-block {
+	margin-bottom: 36px;
+}
+
+.main-offer--socrat p {
+    padding-bottom: 260px;
+	width: 85%;
+	font-size: 20px;
+}
+
+.main-offer--socrat .title {
+	font-size: 45px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
+
+.main-offer--socrat .btn-socrat{
+    margin-right: auto;
+}
+
+
+
 @media (min-width: 375px) {
 	/* Стили для main-offer главной страницы */
 
@@ -189,8 +223,17 @@
 	.main-offer--startup .title {
 		font-size: 30px;
 	}
-	.main-offer--main p {
+	.main-offer--startup p {
 		width: 72%;
+	}
+
+	/* Стили для main-offer страницы Кубок Сократа */
+
+	.main-offer--socrat title {
+		font-size: 50px;
+	}
+	.main-offer--socrat p {
+		font-size: 25px;
 	}
 }
 
@@ -233,6 +276,21 @@
 	}
 	.main-offer--startup p {
 		width: 52%;
+	}
+
+    /* Стили для main-offer страницы Кубок Сократа*/
+
+
+	.main-offer--socrat {
+		padding-top: 40px;
+        background-size: 360px;
+		background-position: bottom 218px right;
+	}
+
+	.main-offer--socrat p {
+        font-size: 28px;
+		width: 50%;
+		padding-bottom: 0;
 	}
 }
 
@@ -323,6 +381,22 @@
 		::before {
 			content: "";
 		}
+	}
+
+	/* Стили для main-offer страницы Кубок Сократа*/
+
+	.main-offer--socrat {
+		background-size: 500px;
+		background-position: bottom 151px right;
+	}
+
+	.main-offer--socrat .title {
+		font-size: 60px;
+	}
+
+	.main-offer--socrat p {
+		width: 50%;
+		padding-bottom: 0;
 	}
 }
 
@@ -470,19 +544,29 @@
 	.main-offer--startup .main-offer__text-block {
 		width: 730px;
 	}
-}
 
-@media (min-width: 1820px) {
-	.main-offer--startup {
-		background-position: 
-		    right -222px top 17px, 
-		    left 25px bottom -219px;
+    /* Стили для main-offer страницы Кубок Сократа*/
+
+	.main-offer--socrat {
+        background-size: 550px;
+        background-position: bottom 151px right 15%;
 	}
 
-	.main-offer--main .container {
-		&::after {
-			bottom: -95px;
-		}
+	.main-offer--socrat p {
+		font-size: 34px;
+		width: 60%;
+	}
+
+}
+
+
+@media (min-width: 1820px) {
+
+	/* Стили для main-offer страницы Кубок Сократа*/
+
+	.main-offer--socrat {
+        background-size: 550px;
+        background-position: bottom 151px right 27%;
 	}
 }
 

@@ -34,12 +34,32 @@
 	height: 36px;
 }
 
+.btn-socrat {
+	@include link-style;
+	display: flex;
+	justify-content: center;
+	width: 250px;
+	height: 44px;
+	align-items: center;
+	font-size: 16px;
+	color: $dark-text;
+	font-weight: 700;
+	white-space: nowrap;
+	border-radius: 30px;
+	background-color: $corp-green;
+	box-sizing: border-box;
+	cursor: pointer;
+
+	@media (max-width: 375px) {
+		width: 100%;
+}
+}
+
 @media (min-width: 768px) {
 
 	.btn {
 		font-size: 13px;
 	}
-}
 
 @media (min-width: 1024px) {
 
@@ -54,4 +74,5 @@
 	.btn--big {
 		height: 48px;
 	}
+}
 }

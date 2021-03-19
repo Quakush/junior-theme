@@ -822,16 +822,38 @@ html, body {
   font-size: 12px;
   height: 36px; }
 
+.btn-socrat {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 44px;
+  align-items: center;
+  font-size: 16px;
+  color: #24272D;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 30px;
+  background-color: #D1E92A;
+  box-sizing: border-box;
+  cursor: pointer; }
+  @media (max-width: 375px) {
+    .btn-socrat {
+      width: 100%; } }
+
 @media (min-width: 768px) {
   .btn {
     font-size: 13px; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (min-width: 1024px) {
   .btn {
     border-radius: 15px;
     font-size: 16px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .btn--big {
     height: 48px; } }
 
@@ -1757,6 +1779,13 @@ html, body {
 .top-header--mobile .main-nav {
   margin-left: 47px; }
 
+/* Стили для main-footer страницы Кубок Сократа */
+.top-header--socrat .btn-socrat {
+  display: none; }
+
+.top-header--socrat .main-nav ::before {
+  content: none; }
+
 @media (min-width: 768px) {
   .top-header {
     background-color: transparent; }
@@ -1766,7 +1795,11 @@ html, body {
 @media (min-width: 1024px) {
   .top-header__btn {
     order: 3;
-    margin-left: 27px; } }
+    margin-left: 27px; }
+  .top-header--socrat .btn-socrat {
+    display: block;
+    order: 2;
+    margin-left: 50px; } }
 
 @media (min-width: 1440px) {
   .top-header__btn {
@@ -2075,6 +2108,28 @@ html, body {
 .main-footer .getnews {
   display: none; }
 
+/* Стили для main-footer страницы Кубок Сократа */
+.main-footer--socrat .contact-us {
+  position: static; }
+
+.main-footer--socrat .contact-us__title {
+  margin-left: 0; }
+
+.main-footer--socrat .contact-us__list {
+  flex-wrap: nowrap;
+  margin-left: 0; }
+
+.main-footer--socrat .contact-us__item {
+  align-self: flex-end;
+  margin-bottom: 0; }
+
+.main-footer--socrat .contact-us__item:first-of-type {
+  margin-bottom: 0; }
+
+.main-footer--socrat .contact-us__item--vk,
+.main-footer--socrat .contact-us__item--fb {
+  flex-basis: 14%; }
+
 @media (min-width: 768px) {
   .main-footer {
     padding-bottom: 0; }
@@ -2087,7 +2142,14 @@ html, body {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-    width: 267px; } }
+    width: 267px; }
+  /* Стили для main-footer страницы Кубок Сократа */
+  .main-footer--socrat .contact-us {
+    margin-left: auto; }
+  .main-footer--socrat .contact-us__list {
+    flex-wrap: nowrap; }
+  .main-footer--socrat .contact-us__item {
+    margin-right: 25px; } }
 
 @media (min-width: 1024px) {
   .main-footer .container {
@@ -2109,7 +2171,11 @@ html, body {
   .main-footer .confidentiality {
     margin-top: 18px; }
   .main-footer .confidentiality__link {
-    margin-left: 0; } }
+    margin-left: 0; }
+  /* Стили для main-footer страницы Кубок Сократа */
+  .main-footer--socrat .container {
+    display: flex;
+    justify-content: flex-end; } }
 
 @media (min-width: 1440px) {
   .main-footer .container {
@@ -2543,6 +2609,32 @@ html, body {
   .main-offer--startup .title__bullet ::before {
     content: none; }
 
+/* Стили для main-offer страницы Кубок Сократа */
+.main-offer--socrat {
+  background-image: url("../images/svg/socrat-main-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 345px;
+  background-position: bottom 200px left 20px;
+  padding-bottom: 110px;
+  padding-top: 25px; }
+
+.main-offer--socrat .main-offer__text-block {
+  margin-bottom: 36px; }
+
+.main-offer--socrat p {
+  padding-bottom: 260px;
+  width: 85%;
+  font-size: 20px; }
+
+.main-offer--socrat .title {
+  font-size: 45px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  line-height: 1.2; }
+
+.main-offer--socrat .btn-socrat {
+  margin-right: auto; }
+
 @media (min-width: 375px) {
   /* Стили для main-offer главной страницы */
   .main-offer--main {
@@ -2564,8 +2656,13 @@ html, body {
     padding-bottom: 270px; }
   .main-offer--startup .title {
     font-size: 30px; }
-  .main-offer--main p {
-    width: 72%; } }
+  .main-offer--startup p {
+    width: 72%; }
+  /* Стили для main-offer страницы Кубок Сократа */
+  .main-offer--socrat title {
+    font-size: 50px; }
+  .main-offer--socrat p {
+    font-size: 25px; } }
 
 @media (min-width: 768px) {
   .main-offer__text-block {
@@ -2589,7 +2686,16 @@ html, body {
   .main-offer--startup .title__strong {
     font-size: 50px; }
   .main-offer--startup p {
-    width: 52%; } }
+    width: 52%; }
+  /* Стили для main-offer страницы Кубок Сократа*/
+  .main-offer--socrat {
+    padding-top: 40px;
+    background-size: 360px;
+    background-position: bottom 218px right; }
+  .main-offer--socrat p {
+    font-size: 28px;
+    width: 50%;
+    padding-bottom: 0; } }
 
 @media (min-width: 1024px) {
   .main-offer {
@@ -2635,7 +2741,16 @@ html, body {
   .main-offer--startup .title__bullet {
     padding-left: 25px; }
     .main-offer--startup .title__bullet ::before {
-      content: ""; } }
+      content: ""; }
+  /* Стили для main-offer страницы Кубок Сократа*/
+  .main-offer--socrat {
+    background-size: 500px;
+    background-position: bottom 151px right; }
+  .main-offer--socrat .title {
+    font-size: 60px; }
+  .main-offer--socrat p {
+    width: 50%;
+    padding-bottom: 0; } }
 
 @media (min-width: 1440px) {
   .main-offer p {
@@ -2728,13 +2843,20 @@ html, body {
   .main-offer--startup p {
     margin-bottom: 64px; }
   .main-offer--startup .main-offer__text-block {
-    width: 730px; } }
+    width: 730px; }
+  /* Стили для main-offer страницы Кубок Сократа*/
+  .main-offer--socrat {
+    background-size: 550px;
+    background-position: bottom 151px right 15%; }
+  .main-offer--socrat p {
+    font-size: 34px;
+    width: 60%; } }
 
 @media (min-width: 1820px) {
-  .main-offer--startup {
-    background-position: right -222px top 17px,  left 25px bottom -219px; }
-  .main-offer--main .container::after {
-    bottom: -95px; } }
+  /* Стили для main-offer страницы Кубок Сократа*/
+  .main-offer--socrat {
+    background-size: 550px;
+    background-position: bottom 151px right 27%; } }
 
 .ecosystem {
   position: relative;
@@ -4817,14 +4939,18 @@ html, body {
   .prospects .title__secondary {
     font-size: 26px; }
   .prospects__list {
-    padding-bottom: 90px; } }
+    padding-bottom: 90px;
+    height: 400px;
+    width: 200px; } }
 
 @media (min-width: 768px) {
   .prospects {
     background-position: right bottom 20px; }
   .prospects__list {
     font-size: 20px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    height: 500px;
+    width: 400px; }
   .prospects .btn--big {
     margin-left: 25%; }
   .prospects .title__secondary {
@@ -4836,9 +4962,8 @@ html, body {
 
 @media (min-width: 1024px) {
   .prospects {
-    padding-bottom: 140px;
     background-size: 400px;
-    background-position: right 35px bottom 60px; }
+    background-position: right 35px bottom 20px; }
     .prospects::before {
       content: "";
       display: block;
@@ -4871,7 +4996,9 @@ html, body {
   .prospects .btn--big {
     width: 267px;
     margin-top: 30px;
-    border-radius: 10px; } }
+    border-radius: 10px; }
+  .prospects__list {
+    width: 400px; } }
 
 @media (min-width: 1440px) {
   .prospects {
@@ -4911,7 +5038,8 @@ html, body {
   .prospects__item::before {
     top: 11px; }
   .prospects__list {
-    font-size: 24px; } }
+    font-size: 24px;
+    width: 600px; } }
 
 @media (min-width: 1820px) {
   .prospects {
@@ -5002,7 +5130,7 @@ html, body {
 
 @media (min-width: 1820px) {
   .ideas {
-    background-position: left 365px top 110px;
+    background-position: left 400px top 110px;
     padding-top: 100px;
     padding-bottom: 0px; } }
 
@@ -5042,6 +5170,640 @@ html, body {
     padding-right: 0; }
   .feedback__text-block {
     font-size: 24px; } }
+
+.cup-start {
+  position: relative;
+  margin: 0 0 79px 0;
+  padding-top: 15px;
+  color: #24272D;
+  background-color: white;
+  padding-bottom: 15px; }
+  .cup-start::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .cup-start::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -77px;
+    transform: rotate(180deg); }
+  .cup-start .title__colored {
+    color: #DF3551; }
+  .cup-start .title__secondary {
+    margin-bottom: 14px;
+    font-weight: 800; }
+
+.cup-start__text-block {
+  font-size: 20px;
+  line-height: 1.66;
+  margin-bottom: 15px; }
+
+@media (min-width: 768px) {
+  .cup-start {
+    background-repeat: no-repeat;
+    background-image: url("../images/svg/socrat-start-bg.svg");
+    background-size: 300px;
+    background-position: left 10% top 60px; }
+    .cup-start .btn-socrat {
+      margin-left: 50%; }
+    .cup-start .title__secondary {
+      margin-left: 50%; }
+  .cup-start__text-block {
+    padding-left: 50%;
+    height: 320px; } }
+
+@media (min-width: 1024px) {
+  .cup-start {
+    padding-bottom: 70px;
+    background-position: left 15% top 40px; }
+  .cup-start::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    top: -115px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .cup-start::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    top: -135px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -115px;
+    transform: rotate(180deg); }
+  .cup-start__text-block {
+    height: auto;
+    margin-bottom: 30px; } }
+
+@media (min-width: 1440px) {
+  .cup-start {
+    padding-bottom: 70px;
+    background-position: left 25% top 40px;
+    background-size: 350px; }
+  .cup-start::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -145px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .cup-start::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -135px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -130px;
+    transform: rotate(180deg); } }
+
+@media (min-width: 1820px) {
+  .cup-start {
+    background-size: 400px; }
+  .cup-start::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    background-color: transparent;
+    top: -160px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .cup-start::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    background-color: transparent;
+    top: -150px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -170px;
+    transform: rotate(180deg); } }
+
+.cup-partners {
+  position: relative;
+  margin: 0 0 79px 0;
+  padding-top: 15px;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 305px;
+  background-position: -560% 92%;
+  padding-bottom: 25px; }
+  .cup-partners .title__colored {
+    color: #DF3551; }
+  .cup-partners .title__secondary {
+    margin-bottom: 14px;
+    font-weight: 800;
+    font-size: 22px; }
+
+.cup-partners__text-block {
+  font-size: 20px;
+  line-height: 1.66;
+  margin-bottom: 15px; }
+
+.cup-partners__logo-title {
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.cup-partners__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px; }
+  .cup-partners__logo .logo {
+    margin-bottom: 25px; }
+
+@media (min-width: 375px) {
+  .cup-partners .title__secondary {
+    font-size: 25px; } }
+
+@media (min-width: 768px) {
+  .cup-partners .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .cup-partners__logo {
+    margin-top: 30px;
+    width: 40%;
+    order: 1; }
+  .cup-partners__text-block {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .cup-partners__info {
+    width: 50%; } }
+
+@media (min-width: 1024px) {
+  .cup-partners {
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    .cup-partners .title__secondary {
+      margin-bottom: 4px;
+      font-weight: 800;
+      font-size: 40px; }
+  .cup-partners__text-block {
+    font-size: 24px;
+    line-height: 1.66;
+    width: 75%; }
+  .cup-partners__logo {
+    margin-top: 55px; } }
+
+.cup-award {
+  position: relative;
+  margin: 0 0 79px 0;
+  padding-top: 15px;
+  color: #24272D;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 305px;
+  background-position: -560% 92%;
+  padding-bottom: 15px; }
+  .cup-award::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -77px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .cup-award::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -77px;
+    transform: rotate(180deg); }
+  .cup-award .title__colored {
+    color: #DF3551; }
+  .cup-award .title__secondary {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center; }
+
+.cup-award__text-block {
+  line-height: 1.66;
+  margin-bottom: 15px;
+  font-size: 14px; }
+  .cup-award__text-block span {
+    font-weight: 800; }
+
+.cup-award__logo-title {
+  font-weight: 700;
+  font-size: 21px; }
+
+.cup-award__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.4);
+  line-height: 1.66;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .cup-award__item .title__secondary {
+    margin-bottom: 0; }
+
+.cup-award__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .cup-award__list .title__secondary {
+    font-size: 37px;
+    text-transform: none;
+    font-weight: 700;
+    text-align: left; }
+
+.cup-award__item-title {
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+.cup-award__legend {
+  margin-top: auto;
+  font-size: 10px; }
+
+@media (min-width: 375px) {
+  .cup-award__item {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 275px; } }
+
+@media (min-width: 768px) {
+  .cup-award .title__secondary {
+    font-size: 42px; }
+  .cup-award__list {
+    display: flex;
+    justify-content: space-around; }
+  .cup-award__item {
+    width: 24%;
+    height: 340px; }
+    .cup-award__item:first-child {
+      order: 1; }
+    .cup-award__item:nth-child(2) {
+      order: 2; }
+    .cup-award__item .title__secondary {
+      font-size: 22px; } }
+
+@media (min-width: 1024px) {
+  .cup-award__item {
+    width: 25%; }
+    .cup-award__item .title__secondary {
+      font-size: 37px; }
+  .cup-award__legend {
+    font-size: 12px; }
+  .cup-award__item-title {
+    font-size: 30px; }
+  .cup-award::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: transparent;
+    top: -105px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .cup-award::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -105px;
+    transform: rotate(180deg); } }
+
+@media (min-width: 1440px) {
+  .cup-award::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -145px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .cup-award::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -145px;
+    transform: rotate(180deg); }
+  .cup-award .cup-award__item {
+    height: 300px; }
+  .cup-award .cup-award__legend {
+    font-size: 13px; } }
+
+@media (min-width: 1820px) {
+  .cup-award::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    background-color: transparent;
+    top: -160px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .cup-award::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    background-color: transparent;
+    top: -150px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -170px;
+    transform: rotate(180deg); } }
+
+.cup-guarantee {
+  position: relative;
+  margin: 0;
+  padding-top: 15px;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 305px;
+  background-position: -560% 92%;
+  padding-bottom: 15px; }
+  .cup-guarantee .title__colored {
+    color: #DF3551; }
+  .cup-guarantee .title__secondary {
+    margin-bottom: 14px;
+    font-weight: 800; }
+
+.cup-guarantee__text-block {
+  font-size: 20px;
+  line-height: 1.66;
+  margin-bottom: 25px; }
+
+@media (min-width: 768px) {
+  .cup-guarantee {
+    background-image: url("../images/svg/prize.svg");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: right 20% top 85px;
+    padding-top: 75px; }
+    .cup-guarantee .title__secondary {
+      width: 60%; }
+  .cup-guarantee__text-block {
+    width: 60%; } }
+
+@media (min-width: 1024px) {
+  .cup-guarantee {
+    background-position: right 20% top 90px; }
+    .cup-guarantee .title__secondary {
+      width: 52%; }
+  .cup-guarantee__text-block {
+    width: 43%; } }
+
+@media (min-width: 1440px) {
+  .cup-guarantee {
+    background-position: right 30% top 90px;
+    background-size: 180px; }
+  .cup-guarantee__text-block {
+    width: 37%; } }
+
+.footer-info-socrat {
+  display: flex;
+  text-align: center;
+  margin-top: 37px;
+  color: #AEAEAE;
+  font-size: 12px; }
+
+.footer-info-socrat__logo {
+  position: relative;
+  display: block;
+  margin-right: 25px;
+  width: 73px;
+  height: 73px;
+  background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+  cursor: pointer; }
+
+.footer-info-socrat__logo a {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  width: 73px;
+  height: 73px;
+  padding: 22px 10px;
+  box-sizing: border-box; }
+
+.footer-info-socrat__logo svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 43px;
+  height: 29px;
+  fill: white;
+  transform: translate(0, -50%); }
+
+.footer-info-socrat__logo span {
+  display: inline-block;
+  position: absolute;
+  left: 49px;
+  top: 42%;
+  font-size: 9px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0;
+  transform: rotate(-90deg) translate(0, -50%); }
+
+.footer-info-socrat__inner-wrap {
+  display: flex;
+  flex-direction: column; }
+
+.footer-info-socrat__company {
+  flex-basis: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+  order: 1; }
+
+.footer-info-socrat__polity-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  letter-spacing: -0.5px;
+  text-align: left; }
+
+.footer-info-socrat__polity-box span {
+  display: none; }
+
+.footer-info-socrat__polity {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  margin-bottom: 15px; }
+
+.footer-info-socrat__polity:hover {
+  color: #00A7CF; }
+
+@media (min-width: 768px) {
+  .footer-info-socrat {
+    position: relative;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 34px;
+    padding-bottom: 34px; }
+    .footer-info-socrat::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 80%;
+      height: 1px;
+      background-color: white;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%); }
+  .footer-info-socrat__company {
+    flex-basis: 40%;
+    margin: 0;
+    order: 0; }
+  .footer-info-socrat__inner-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px; }
+  .footer-info-socrat__polity-box {
+    flex-direction: row; }
+  .footer-info-socrat__polity-box span {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .footer-info-socrat__polity {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    margin-bottom: 0; } }
+
+@media (min-width: 1024px) {
+  .footer-info-socrat {
+    padding: 0;
+    width: 100%; }
+    .footer-info-socrat::before {
+      left: 95px;
+      width: 90%;
+      transform: none; }
+  .footer-info-socrat__inner-wrap {
+    width: 100%;
+    justify-content: space-around; }
+  .footer-info-socrat__company {
+    margin-right: 200px;
+    flex-basis: unset; }
+  .footer-info-socrat__polity-box {
+    margin-right: 55px;
+    letter-spacing: unset; } }
 
 .choose-course {
   position: relative;
