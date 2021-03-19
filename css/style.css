@@ -2853,6 +2853,12 @@ html, body {
     width: 60%; } }
 
 @media (min-width: 1820px) {
+  /* Стили для main-offer главной страницы */
+  .main-offer--main .container::after {
+    bottom: -95px; }
+  /* Стили для main-offer страницы Стартапам*/
+  .main-offer--startup {
+    background-position: right -222px top 17px,   left 25px bottom -219px; }
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
     background-size: 550px;
