@@ -35,6 +35,14 @@
 .news-slider__cat-btn ul {
 	@include list-style;
 
+	li {
+		display: none;
+	}
+
+	li:first-of-type {
+		display: block;
+	}
+
 	a {
 		@include link-style;
 	}

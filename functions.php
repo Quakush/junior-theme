@@ -14,14 +14,17 @@ function scripts()
     wp_register_script('swiper-blog', get_template_directory_uri() . '/js/swiper-blog.js', [], 1, true);
     wp_enqueue_script('swiper-blog');
 
-    wp_register_script('swiper-main', get_template_directory_uri() . '/js/swiper-main.js', [], 1, true);
-    wp_enqueue_script('swiper-main');
+    // wp_register_script('swiper-main', get_template_directory_uri() . '/js/swiper-main.js', [], 1, true);
+    // wp_enqueue_script('swiper-main');
 
     wp_register_script('mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', [], 1, true);
     wp_enqueue_script('mobile-menu');
 
     wp_register_script('timer', get_template_directory_uri() . '/js/timer.js', [], 1, true);
     wp_enqueue_script('timer');
+
+    wp_register_script('options-slider', get_template_directory_uri() . '/js/options-slider.js', [], 1, true);
+    wp_enqueue_script('options-slider');
 
     wp_register_script('filter-animation', get_template_directory_uri() . '/js/filter-animation.js', [], 1, true);
     wp_enqueue_script('filter-animation');
@@ -80,6 +83,33 @@ add_image_size('blog-small', 200, 200, true);
 add_image_size('blog-large', 343, 343, false);
 remove_filter('the_content', 'wpautop');
 
+// Register Sidebars
+function my_sidebars()
+{
+
+    register_sidebar(
+        array(
+            'name' => 'Getnews Sidebar',
+            'id' => 'getnews-sidebar',
+            'class'         => 'getnews',
+            'before_widget' => '<div id="%1$s" class="getnews %2$s">',
+            'after_widget'  => "</div>\n",
+            'before_title' => '<h3 class="getnews__title">',
+            'after_title' => '</h3>'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => 'Page Sidebar',
+            'id' => 'page-sidebar',
+            
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>'
+        )
+    );
+}
+add_action('widgets_init','my_sidebars');
 
 // Custom post type and taxonomy
 
@@ -120,7 +150,7 @@ function my_courses_taxonomy()
         'show_in_rest' => true,
     );
 
-    register_taxonomy('branches', array('courses'), $args);
+    register_taxonomy('branches', array('courses', 'internship'), $args);
 }
 add_action('init', 'my_courses_taxonomy');
 

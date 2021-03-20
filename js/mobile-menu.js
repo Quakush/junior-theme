@@ -7,6 +7,7 @@ var menuButton = menuBlock.querySelector('.toggler');
 var menu = menuBlock.querySelector('.mobile-nav');
 var popUp = document.querySelector('.pop-up');
 var signUpDropdowns = document.querySelectorAll('.sign-up__dropdown');
+var checkboxConfidLabels = document.querySelectorAll('.mailpoet_checkbox_label');
 
 menuButton.addEventListener('click', function () {
 	menu.classList.toggle('mobile-nav--shown');
@@ -42,5 +43,24 @@ if (popUp) {
 		
 	});
 }
+
+for (var i = 0; i < checkboxConfidLabels.length; i++) {
+	if (checkboxConfidLabels[i].querySelector('input[type="checkbox"]').checked == true) {
+		checkboxConfidLabels[i].classList.add('mailpoet_checkbox_label--checked');
+	} else {
+		if (checkboxConfidLabels[i].classList.contains('mailpoet_checkbox_label--checked')) {
+		     checkboxConfidLabels[i].classList.remove('mailpoet_checkbox_label--checked');
+		}
+	}
+}
+
+for (var i = 0; i < checkboxConfidLabels.length; i++) {
+
+	checkboxConfidLabels[i].addEventListener('click', function(evt) {
+		var target = event.target;
+		target.classList.toggle('mailpoet_checkbox_label--checked');
+	});
+}
+
 
 })();

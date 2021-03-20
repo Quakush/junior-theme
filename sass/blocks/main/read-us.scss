@@ -3,6 +3,10 @@
 	padding-bottom: 42px;
 }
 
+.read-us .container {
+	overflow-y: visible;
+}
+
 .read-us__text {
 	color: $light-text;
 	font-size: 14px;
@@ -39,7 +43,6 @@
 
 	.read-us .container {
 		position: relative;
-		overflow: visible;
 	}
 
 	.read-us__title-container {
@@ -95,9 +98,26 @@
 		line-height: 2;
 	}
 
+	.read-us #mailpoet_form_1 form.mailpoet_form {
+		text-align: left !important;
+	}
+
 	.read-us .getnews input[type="email"] {
 		margin: 0;
 		margin-right: 45px;
+	}
+
+	.read-us #mailpoet_form_1 form input[type="email"] {
+		margin: 0 !important;
+		margin-right: 45px !important;
+	}
+    
+    .read-us #mailpoet_form_1 > form > .mailpoet_paragraph {
+		display: inline-block !important;
+	}
+
+	.read-us #mailpoet_form_1 > form > div.mailpoet_paragraph.last {
+		display: block !important;
 	}
 
 	.read-us .getnews__btn {

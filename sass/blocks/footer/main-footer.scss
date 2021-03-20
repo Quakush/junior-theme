@@ -39,6 +39,11 @@
         width: 267px;
     }
 
+    .main-footer #mailpoet_form_1 form input[type="email"] {
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 1024px) {

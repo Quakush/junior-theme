@@ -6,10 +6,6 @@
 	background-repeat: no-repeat;
 }
 
-.main-offer .container {
-	overflow: visible;
-}
-
 .main-offer__text-block {
 	font-size: 14px;
 	line-height: 1.66;
@@ -237,8 +233,13 @@
 }
 
 @media (min-width: 1024px) {
+	
 	.main-offer {
 		padding-bottom: 140px;
+	}
+
+	.main-offer .container {
+		overflow: visible;
 	}
 
 	/* Стили для main-offer главной страницы */
