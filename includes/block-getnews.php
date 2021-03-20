@@ -1,4 +1,4 @@
-<!-- <form class="form  getnews" action="#" method="post">
+<form class="form  getnews" action="#" method="post">
     <input type="email" name="email" placeholder="Введите ваш e-mail">
     <button class="btn btn--big getnews__btn" type="submit">Получать новости</button>
     <div class="confidentiality">
@@ -10,10 +10,10 @@
         	</a>
         </label>
     </div>
-</form> -->
+</form>
 
-<?php if( is_active_sidebar('getnews-sidebar') ):?>
+<!-- <?php if( is_active_sidebar('getnews-sidebar') ):?>
                     
     <?php dynamic_sidebar('getnews-sidebar');?>
 
-<?php endif;?>
+<?php endif;?> -->
