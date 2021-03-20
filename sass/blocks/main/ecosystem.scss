@@ -4,8 +4,24 @@
     width: 100%;
     color: $dark-text;
     background-color: $white;
+    background-image: 
+        url("../images/svg/clouds.svg"),
+        url("../images/svg/phone.svg"),
+        url("../images/svg/tablet.svg");
+    background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-size: 
+        775px 72px,
+        158px 253px,
+        327px 388px;
+    background-position: 
+        right -600px bottom 17px,
+        right -20px bottom 15px,
+        right -217px bottom 20px;
 
-        &::before {
+    &::before {
         @include clouds(80px, -79px);
     }
 
@@ -18,36 +34,6 @@
     position: relative;
     padding-top: 115px;
     padding-bottom: 85px;
-
-    &::before {
-        @include element-style(735px, 60px, transparent);
-        right: -600px;
-        bottom: 5px;
-        z-index: 300;
-        background-image: url("../images/svg/clouds.svg");
-        background-repeat: no-repeat;
-        background-size: 735px 52px;
-        background-position: left -30px bottom 10px;
-    }
-
-    &::after {
-        @include element-style(361px, 388px, transparent);
-        right: -220px;
-        bottom: 15px;
-        background-image: 
-            url("../images/svg/phone.svg"),
-            url("../images/svg/tablet.svg");
-        background-repeat:
-            no-repeat, 
-            no-repeat;
-        background-size:
-            158px 253px,
-            327px 388px;
-        background-position:
-            left 0 bottom -10px,
-            left 34px bottom 0;
-        z-index: 0;
-    }
 }
 
 .ecosystem__title {
@@ -83,17 +69,11 @@
 
 @media (min-width: 768px) {
 
-    .ecosystem .container {
-
-        &::before {
-            right: -470px;
-            bottom: 10px;
-        }
-
-        &::after {
-            right: -120px;
-            bottom: 30px;
-        }
+    .ecosystem {
+        background-position: 
+            right -550px bottom 13px,
+            right 50px bottom 15px,
+            right -160px bottom 20px;
     }
 
     .ecosystem p {
@@ -115,6 +95,14 @@
     .ecosystem {
         margin: 100px 0;
         padding: 0;
+        background-size: 
+            775px 72px,
+            351px 563px,
+            617px 733px;
+        background-position: 
+            right -350px bottom 0,
+            right 50px bottom 0,
+            right -300px bottom 0;
 
         &::before {
             @include clouds(100px, -99px);
@@ -128,28 +116,6 @@
     .ecosystem .container {
         padding-top: 310px;
         padding-bottom: 197px;
-        overflow: visible;
-
-        &::before {
-            bottom: 0;
-            right: -300px;
-            height: 60px;
-            background-size: 735px 52px;
-            background-position: left 0 bottom 0;
-        }
-
-        &::after {
-            right: -310px;
-            width: 723px;
-            height: 733px;            
-            bottom: -40px;
-            background-size:
-                351px 563px,
-                617px 733px;
-            background-position:
-                left 0 bottom 0,
-                left 106px bottom 0;
-        }
     }
 
     .ecosystem__title {
@@ -158,6 +124,35 @@
 
     .ecosystem .sign-up__dropdown {
         margin-right: 28px;
+    }
+}
+
+@media (min-width: 1092px) {
+
+    .ecosystem {
+        background-image: none;
+    }
+
+    .ecosystem__wrap {
+        margin: 0 auto;
+        width: 1724px;
+
+         background-image: 
+            url("../images/svg/clouds.svg"),
+            url("../images/svg/phone.svg"),
+            url("../images/svg/tablet.svg");
+        background-repeat: 
+            no-repeat,
+            no-repeat,
+            no-repeat;
+        background-size: 
+            775px 72px,
+            351px 563px,
+            617px 733px;
+        background-position: 
+            right 0 bottom 17px,
+            right 372px bottom 15px,
+            right 0 bottom 20px;
     }
 }
 
@@ -179,23 +174,6 @@
     .ecosystem .container {
         padding-top: 456px;
         padding-bottom: 150px;
-
-        &::before {
-            right: -340px;
-            bottom: -3px;
-            height: 70px;
-            background-size: 735px 65px;
-            background-position: left 0 bottom 0;
-
-        }
-
-        &::after {
-            right: -316px;
-            bottom: 0;
-            background-position: 
-                bottom -27px left 0,
-                bottom 0 left 106px;
-        }
     }
 
     .ecosystem p {

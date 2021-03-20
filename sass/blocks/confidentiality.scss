@@ -22,7 +22,36 @@
 	}
 }
 
+#mailpoet_form_1 .mailpoet_checkbox_label {
+	position: relative;
+	display: inline-block;
+	padding-left: 28px;
+	font-size: 10px !important;
+	font-weight: 400;
+
+	&::before {
+		@include element-style(20px, 20px, $white);
+		left: 0;
+		top: 50%;
+		border-radius: 4px;
+		transform: translate(0, -50%);
+	}
+}
+
+#mailpoet_form_1 .mailpoet_paragraph.last input[type="checkbox"] {
+	position: absolute;
+    opacity: 0;
+}
+
 .confidentiality input[type="checkbox"]:checked + label::after {
+	@include element-style(10px, 10px, $corp-blue);
+	left: 5px;
+	top: 50%;
+	border-radius: 2px;
+	transform: translate(0, -50%);
+}
+
+#mailpoet_form_1 .mailpoet_checkbox_label--checked::after {
 	@include element-style(10px, 10px, $corp-blue);
 	left: 5px;
 	top: 50%;
@@ -37,14 +66,29 @@
 	color: #00738F;
 }
 
+#mailpoet_form_1 > form > div.mailpoet_paragraph.last a {
+	@include link-style;
+	margin-left: 3px;
+	color: #00738F !important;
+}
+
 @media (min-width: 1024px) {
 
     .confidentiality label {
     	font-size: 12px;
     }
 
+    #mailpoet_form_1 .mailpoet_checkbox_label {
+    	padding-left: 32px;
+    	font-size: 12px !important;
+    }
+
     .confidentiality__link {
     	font-size: 12px;
+    }
+
+    #mailpoet_form_1 > form > div.mailpoet_paragraph.last a {
+    	margin-left: 0;
     }
 }
 

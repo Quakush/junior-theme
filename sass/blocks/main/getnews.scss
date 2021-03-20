@@ -1,16 +1,70 @@
 .getnews {
+	padding: 0;
 	padding-bottom: 5px;
 	width: 100%;
+}
+
+.getnews__title {
+	display: none;
+}
+
+.getnews form {
+	padding: 0;
+	padding-bottom: 5px;
+	width: 100%;
+}
+
+.getnews #mailpoet_form_1 form.mailpoet_form {
+	padding: 0;
+	padding-bottom: 5px;
+	width: 100%;
+}
+
+#mailpoet_form_1 form input[type="email"] {
+	padding: 0 !important;
+	padding-left: 15px !important;
+	height: 36px !important;
+	font-family: $base-font-family !important;
+	border-radius: 7px !important;
 }
 
 .getnews__btn {
 	margin-top: 20px;
 }
 
+#mailpoet_form_1 > form > .mailpoet_paragraph {
+	text-align: left;
+}
+
+#mailpoet_form_1 form input[type="submit"] {
+	padding: 0 !important;
+	height: 36px !important;
+	width: 167px !important;
+	font-family: $base-font-family !important;
+	font-size: 12px !important;
+	border-radius: 7px !important;
+}
+
+#mailpoet_form_1 form input[type="email"]::-webkit-input-placeholder,
+#mailpoet_form_1 form input[type="email"]::-moz-placeholder,
+#mailpoet_form_1 form input[type="email"]:-moz-placeholder,
+#mailpoet_form_1 form input[type="email"]:-ms-input-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+	line-height: 1;
+}
+
 @media (min-width: 768px) {
 
 	.getnews input[type="email"] {
     	width: 267px;
+    }
+
+    #mailpoet_form_1 form input[type="email"] {
+    	margin: 0 !important;
+    	width: 267px !important;
+    	border-radius: 15px !important;
     }
 	
 	.getnews__btn {
@@ -19,12 +73,26 @@
 		font-size: 16px;
 		border-radius: 15px;
 	}
+
+	#mailpoet_form_1 form input[type="submit"] {
+		width: 267px !important;
+		font-size: 16px !important;
+		border-radius: 15px !important;
+	}
 }
 
 @media (min-width: 1024px) {
 
+	#mailpoet_form_1 form input[type="email"] {
+		height: 48px !important;
+	}
+
 	.getnews__btn {
 		height: 48px;
+	}
+
+	#mailpoet_form_1 form input[type="submit"] {
+		height: 48px !important;
 	}
 
 	.getnews__link {
@@ -34,4 +102,15 @@
 		font-size: 20px;
 		color: $corp-blue;
 	}
+}
+
+@media (min-width: 1440px) {
+
+	#mailpoet_form_1 form input[type="email"]::-webkit-input-placeholder,
+    #mailpoet_form_1 form input[type="email"]::-moz-placeholder,
+    #mailpoet_form_1 form input[type="email"]:-moz-placeholder,
+    #mailpoet_form_1 form input[type="email"]:-ms-input-placeholder {
+		font-size: 16px;
+	}
+
 }

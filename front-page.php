@@ -49,6 +49,77 @@ get_header();
     </section>
 
     <section class="options-slider">
+      <div class="container">
+        <div class="options-slider__shown-container">
+            <article class="options-slider__article  options-slider__article--green  options-slider__article--active" data="1">
+              <div class="options-slider__text">
+                <h2 class="title__secondary  options-slider__item-title">Дорога <span class="title__colored">в digital</span></h2>
+                <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!
+                </p>
+              </div>
+              <div class="options-slider__visual">
+                <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
+                <span class="options-slider__visual-title">Startup University</span>
+              </div>
+              <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
+            </article>
+        </div>
+          <ul class="options-slider__list">
+            <li data="1" class="options-slider__item  options-slider__item--hidden">
+              <article class="options-slider__article  options-slider__article--grren" data="1">
+                <div class="options-slider__text">
+                  <h2 class="title__secondary  options-slider__item-title">Дорога <span class="title__colored">в digital</span></h2>
+                  <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!
+                  </p>
+                </div>
+                <div class="options-slider__visual">
+                  <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
+                  <span class="options-slider__visual-title">Startup University</span>
+                </div>
+                <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
+            </article>
+          </li>
+            <li data="2" class="options-slider__item">
+              <article class="options-slider__article  options-slider__article--blue" data="2">
+                <div class="options-slider__text">
+                  <h2 class="title__secondary  options-slider__item-title">СДЕЛАЙ <span class="title__colored">ПЕРВЫЙ ШАГ</span></h2>
+                  <p>Junior Specialists Corporation - это первый в мире онлайн инкубатор для стартапов. Пройдите Junior Specialists Corporation - это первый в мире онлайн инкубатор для стартапов. Пройдите программу акселерации со своей идее и получите возможность стать резидентом и создать MVP. программу акселерации со своей идее и получите возможность стать резидентом и создать MVP.
+                  </p>
+                </div>
+                <div class="options-slider__visual">
+                  <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/start-up.svg" width="222" alt="slider visual image">
+                  <span class="options-slider__visual-title">Создай STARTUP</span>
+                </div>
+                <a class="btn  btn--small options-slider__btn" href="#">Подать заявку</a>
+              </article>
+            </li>
+
+            <li data="3" class="options-slider__item">
+              <article class="options-slider__article  options-slider__article--red" data="3">
+                <div class="options-slider__text">
+                  <h2 class="title__secondary  options-slider__item-title">КОММЕРЧЕСКАЯ<br><span class="title__colored">РАЗРАБОТКА</span></h2>
+                  <p>Junior Specialists Corporation - это ваш надежный партнер в разработке информационных продуктов. Наши специалисты готовы к разработке сайтов, мобильных приложений и сложных систем.
+                  </p>
+                </div>
+                <div class="options-slider__visual">
+                  <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="222" alt="slider visual image">
+                  <span class="options-slider__visual-title">Разработка проектов</span>
+                </div>
+                <a class="btn btn--accent btn--small options-slider__btn" href="#">Оставить заявку</a>
+              </article>
+            </li>
+
+          </ul>
+        <div class="paginator-slider">
+            <div class="paginator-slider__element  paginator-slider__element--back"></div>
+            <div class="paginator-slider__element  paginator-slider__element--forward"></div>
+            <span class="paginator-slider__line"></span>
+            <div class="paginator-slider__page">01</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="options-slider">
         <div class="container">
             <div class="options-slider__shown-container swiper-container">
                 <ul class="options-slider__list swiper-wrapper">
@@ -151,14 +222,16 @@ get_header();
         </div>
         </div>
     </section>
-
+ -->
     <section class="ecosystem">
+      <div class="ecosystem__wrap">
         <div class="container">
             <h2 class="title__secondary ecosystem__title"><span>Экосистема</span> для обучения и создания проектов</h2>
             <p>Мы создали место, где вы сможете реализовать свои идеи, найти будущую профессию, пройти практику и найти партнеров.</p>
             <?php get_template_part('/includes/block', 'sign_up'); ?>
             <?php get_template_part('/includes/block', 'partners'); ?>
         </div>
+      </div>
     </section>
 
     <section class="join-us">

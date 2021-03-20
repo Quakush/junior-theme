@@ -69,6 +69,7 @@
         width: 267px;
     }
 
+
     /* Стили для main-footer страницы Кубок Сократа */
 
     .main-footer--socrat .contact-us {
@@ -82,6 +83,13 @@
     .main-footer--socrat .contact-us__item {
         margin-right: 25px;
     }
+
+    .main-footer #mailpoet_form_1 form input[type="email"] {
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
+
 }
 
 @media (min-width: 1024px) {
