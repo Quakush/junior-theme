@@ -1,0 +1,73 @@
+.cup-guarantee {
+    position: relative;
+    margin: 0;
+    padding-top: 15px;
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: 305px;
+    background-position: -560% 92%;
+    padding-bottom: 15px;
+
+    .title__colored {
+        color: $accent-color;
+    }
+
+    .title__secondary {
+        margin-bottom: 14px;
+        font-weight: 800;
+    }
+}
+
+.cup-guarantee__text-block {
+    font-size: 20px;
+    line-height: 1.66;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    .cup-guarantee {
+        background-image: url("../images/svg/prize.svg");
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-position: right 20% top 85px;
+        padding-top: 75px;
+
+        .title__secondary {
+            width: 60%;
+        }
+    }
+
+    .cup-guarantee__text-block {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cup-guarantee {
+
+        background-position: right 20% top 90px;
+      
+        .title__secondary {
+            width: 52%;
+        }
+    }
+
+    .cup-guarantee__text-block {
+        width: 43%;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .cup-guarantee {
+
+        background-position: right 30% top 90px;
+        background-size: 180px;
+      
+    }
+
+    .cup-guarantee__text-block {
+        width: 37%;
+    }
+
+}

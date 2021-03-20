@@ -1,0 +1,154 @@
+.footer-info-socrat {
+    display: flex;
+    text-align: center;
+    margin-top: 37px;
+    color: $light-text;
+    font-size: 12px;
+}
+
+.footer-info-socrat__logo {
+    position: relative;
+    display: block;
+    margin-right: 25px;
+    width: 73px;
+    height: 73px;
+    background-image: $blue-gradient;
+    cursor: pointer;
+}
+
+.footer-info-socrat__logo a {
+    position: relative;
+    @include link-style;
+    width: 73px;
+    height: 73px;
+    padding: 22px 10px;
+    box-sizing: border-box;
+}
+
+.footer-info-socrat__logo svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 43px;
+    height: 29px;
+    fill: $white;
+    transform: translate(0, -50%);
+}
+
+.footer-info-socrat__logo span {
+    display: inline-block;
+    position: absolute;
+    left: 49px;
+    top: 42%;
+    font-size: 9px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0;
+    transform: rotate(-90deg) translate(0, -50%);
+}
+
+.footer-info-socrat__inner-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info-socrat__company {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+    order: 1;
+}
+
+.footer-info-socrat__polity-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
+
+.footer-info-socrat__polity-box span {
+    display: none;
+}
+
+.footer-info-socrat__polity {
+    @include link-style;
+    margin-bottom: 15px;
+}
+
+.footer-info-socrat__polity:hover {
+    color: $corp-blue;
+}
+
+@media (min-width: 768px) {
+    .footer-info-socrat {
+        position: relative;
+        flex-direction: row;
+        margin-top: 0;
+        padding-top: 34px;
+        padding-bottom: 34px;
+
+        &::before {
+            @include element-style(80%, 1px, $white);
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+    .footer-info-socrat__company {
+        flex-basis: 40%;
+        margin: 0;
+        order: 0;
+    }
+
+    .footer-info-socrat__inner-wrap {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .footer-info-socrat__polity-box {
+        flex-direction: row;
+    }
+
+    .footer-info-socrat__polity-box span {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-info-socrat__polity {
+        @include link-style;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-info-socrat {
+        padding: 0;
+        width: 100%;
+
+        &::before {
+            left: 95px;
+            width: 90%;
+            transform: none;
+        }
+    }
+
+    .footer-info-socrat__inner-wrap {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .footer-info-socrat__company {
+        margin-right: 200px;
+        flex-basis: unset;
+    }
+
+    .footer-info-socrat__polity-box {
+        margin-right: 55px;
+        letter-spacing: unset;
+    }
+}

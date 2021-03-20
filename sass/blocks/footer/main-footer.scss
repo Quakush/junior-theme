@@ -1,4 +1,4 @@
-.main-footer{
+.main-footer {
     padding-bottom: 26px;
     width: 100%;
     background-color: $dark-text;
@@ -19,8 +19,38 @@
     display: none;
 }
 
-@media (min-width: 768px) {
+/* Стили для main-footer страницы Кубок Сократа */
 
+.main-footer--socrat {
+    .contact-us {
+        position: static;
+    }
+
+    .contact-us__title {
+        margin-left: 0;
+    }
+
+    .contact-us__list {
+        flex-wrap: nowrap;
+        margin-left: 0;
+    }
+
+    .contact-us__item {
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+
+    .contact-us__item:first-of-type {
+        margin-bottom: 0;
+    }
+
+    .contact-us__item--vk,
+    .contact-us__item--fb {
+        flex-basis: 14%;
+    }
+}
+
+@media (min-width: 768px) {
     .main-footer {
         padding-bottom: 0;
     }
@@ -39,15 +69,30 @@
         width: 267px;
     }
 
+
+    /* Стили для main-footer страницы Кубок Сократа */
+
+    .main-footer--socrat .contact-us {
+        margin-left: auto;
+    }
+
+    .main-footer--socrat .contact-us__list {
+        flex-wrap: nowrap;
+    }
+
+    .main-footer--socrat .contact-us__item {
+        margin-right: 25px;
+    }
+
     .main-footer #mailpoet_form_1 form input[type="email"] {
         padding-left: 0 !important;
         text-align: center;
     }
 
+
 }
 
 @media (min-width: 1024px) {
-
     .main-footer .container {
         justify-content: space-between;
     }
@@ -63,7 +108,6 @@
     .main-footer label[for="getnews-accept"] {
         display: block;
         box-sizing: border-box;
-
     }
 
     .main-footer label[for="getnews-accept"]::before {
@@ -84,10 +128,16 @@
     .main-footer .confidentiality__link {
         margin-left: 0;
     }
+
+    /* Стили для main-footer страницы Кубок Сократа */
+
+    .main-footer--socrat .container {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media (min-width: 1440px) {
-
     .main-footer .container {
         padding: 0 40px;
         padding-top: 35px;
