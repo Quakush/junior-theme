@@ -932,6 +932,7 @@ html, body {
   line-height: 0.7; }
 
 .title__colored {
+  display: inline-block;
   color: #D1E92A; }
 
 .title__secondary {
@@ -978,7 +979,8 @@ html, body {
   margin: 0 auto;
   padding: 0 15px;
   min-width: 320px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: 1px solid red; }
 
 @media (min-width: 375px) {
   .container {
@@ -999,6 +1001,25 @@ html, body {
     padding: 0;
     min-width: 1092px;
     max-width: 1092px; } }
+
+.clouds {
+  display: block;
+  width: 1220px;
+  height: auto;
+  transform: translate(-27%); }
+
+.clouds--bottom {
+  transform: translate(-27%) rotate(180deg); }
+
+@media (min-width: 768px) {
+  .clouds {
+    transform: translate(-20px, 2px); }
+  .clouds--bottom {
+    transform: translate(-20px, -2px) rotate(180deg); } }
+
+@media (min-width: 1024px) {
+  .clouds {
+    width: 2000px; } }
 
 ::-webkit-input-placeholder {
   font-size: 14px;
@@ -1037,6 +1058,12 @@ html, body {
 .form input[type="email"] {
   width: 100%; }
 
+@media (min-width: 1024px) {
+  .form input {
+    height: 48px;
+    font-size: 16px;
+    border-radius: 15px; } }
+
 @media (min-width: 1440px) {
   ::-webkit-input-placeholder {
     font-size: 16px; }
@@ -1047,11 +1074,7 @@ html, body {
     font-size: 16px; }
   /* Firefox 18- */
   :-ms-input-placeholder {
-    font-size: 16px; }
-  .form input {
-    height: 48px;
-    font-size: 16px;
-    border-radius: 15px; } }
+    font-size: 16px; } }
 
 .sign-up {
   display: flex;
@@ -1431,40 +1454,13 @@ html, body {
     height: 44px; } }
 
 .banners {
-  position: relative;
-  margin: 79px 0;
-  height: 60px;
+  width: 100%;
   color: #24272D;
+  overflow: hidden; }
+
+.banners__background-wrap {
+  height: 60px;
   background-color: white; }
-  .banners::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .banners::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
 
 .banners__title {
   display: none; }
@@ -1483,37 +1479,7 @@ html, body {
 
 @media (min-width: 1024px) {
   .banners {
-    margin: 100px 0;
     height: unset; }
-    .banners::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .banners::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -98px;
-      transform: rotate(180deg); }
   .banners__title {
     display: block;
     margin-bottom: 15px;
@@ -1528,75 +1494,10 @@ html, body {
     margin-right: 18px; } }
 
 @media (min-width: 1440px) {
-  .banners {
-    margin: 131px 0; }
-    .banners::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -130px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .banners::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -130px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -129px;
-      transform: rotate(180deg); }
   .banners__item {
     margin-right: 32px; }
   .banners__item img {
     width: 144px; } }
-
-@media (min-width: 1820px) {
-  .banners {
-    margin: 200px 0; }
-    .banners::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -199px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .banners::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); } }
 
 .toggler {
   width: 15px;
@@ -2188,15 +2089,13 @@ html, body {
     flex-direction: column;
     margin-right: 50px;
     width: 267px; }
-
   /* Стили для main-footer страницы Кубок Сократа */
   .main-footer--socrat .contact-us {
     margin-left: auto; }
   .main-footer--socrat .contact-us__list {
     flex-wrap: nowrap; }
   .main-footer--socrat .contact-us__item {
-    margin-right: 25px; } }
-
+    margin-right: 25px; }
   .main-footer #mailpoet_form_1 form input[type="email"] {
     padding-left: 0 !important;
     text-align: center; } }
@@ -2263,6 +2162,9 @@ html, body {
   font-size: 12px;
   line-height: 30px; }
 
+.footer-menu__list a:hover {
+  color: #00A7CF; }
+
 .footer-menu__title {
   display: block;
   font-size: 12px;
@@ -2281,6 +2183,9 @@ html, body {
 
 .footer-menu .sub-menu a {
   color: #AEAEAE; }
+
+.footer-menu .sub-menu a:hover {
+  color: #00A7CF; }
 
 @media (min-width: 768px) {
   .footer-menu {
@@ -2319,7 +2224,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 37px;
+  margin-top: 45px;
   color: #AEAEAE;
   font-size: 12px; }
 
@@ -2429,8 +2334,8 @@ html, body {
 
 .contact-us {
   position: absolute;
-  left: 42%;
-  top: 243px;
+  left: 37%;
+  top: 205px;
   font-size: 12px; }
 
 .contact-us__title {
@@ -2762,15 +2667,9 @@ html, body {
   .main-offer--courses .container {
     padding-bottom: 70px;
     background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg"), url("../images/svg/socrat2.svg");
-    background-size: 188px,
- 200px,
- 200px;
-    background-repeat: no-repeat,
- no-repeat,
- no-repeat;
-    background-position: right 100px top 50px,
- right 210px top 0,
- right 0 top 0; }
+    background-size: 188px, 200px, 200px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right 100px top 50px, right 210px top 0, right 0 top 0; }
   .main-offer--courses .title {
     margin-bottom: 22px; }
   .main-offer--courses p {
@@ -2874,9 +2773,7 @@ html, body {
     padding-bottom: 67px; }
   .main-offer--courses .container {
     padding: 0;
-    background-position: right 116px top 99px,
- right 237px top 0,
- right 0 top 0; }
+    background-position: right 116px top 99px, right 237px top 0, right 0 top 0; }
   .main-offer--courses .title {
     font-size: 70px;
     line-height: 1.4; }
@@ -2893,10 +2790,8 @@ html, body {
   /* Стили для main-offer страницы стартапам*/
   .main-offer--startup {
     background-image: url("../images/svg/rocket1.svg"), url("../images/svg/rocket-small.svg");
-    background-size: 1326px, 
- 450px;
-    background-position: right -472px top 17px, 
- left -105px bottom -219px; }
+    background-size: 1326px,  450px;
+    background-position: right -472px top 17px,  left -105px bottom -219px; }
   .main-offer--startup .title {
     margin-bottom: 0; }
   .main-offer--startup p {
@@ -2917,63 +2812,54 @@ html, body {
     bottom: -95px; }
   /* Стили для main-offer страницы Стартапам*/
   .main-offer--startup {
-    background-position: right -222px top 17px,  
- left 25px bottom -219px; }
+    background-position: right -222px top 17px,   left 25px bottom -219px; }
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
     background-size: 550px;
     background-position: bottom 151px right 27%; } }
 
 .ecosystem {
-  position: relative;
-  margin: 80px 0;
   width: 100%;
   color: #24272D;
-  background-color: white;
-  background-image: url("../images/svg/clouds.svg"), url("../images/svg/phone.svg"), url("../images/svg/tablet.svg");
-  background-repeat: no-repeat,
- no-repeat,
- no-repeat;
-  background-size: 775px 72px,
- 158px 253px,
- 327px 388px;
-  background-position: right -600px bottom 17px,
- right -20px bottom 15px,
- right -217px bottom 20px; }
-  .ecosystem::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .ecosystem::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -78px;
-    transform: rotate(180deg); }
+  overflow: hidden; }
+
+.ecosystem__wrap {
+  width: 100%;
+  background-color: white; }
 
 .ecosystem .container {
   position: relative;
   padding-top: 115px;
   padding-bottom: 85px; }
+
+.ecosystem__background-content {
+  position: absolute;
+  right: -216px;
+  bottom: 10px;
+  width: 361px;
+  height: 388px;
+  overflow: hidden;
+  z-index: 100; }
+
+.ecosystem__background-content-tablet {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 327px; }
+
+.ecosystem__background-content-phone {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 158px;
+  z-index: 120; }
+
+.ecosystem__background-content-clouds {
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  width: 370px;
+  z-index: 130; }
 
 .ecosystem__title {
   font-weight: 800; }
@@ -3000,10 +2886,8 @@ html, body {
   background-color: #24272D; }
 
 @media (min-width: 768px) {
-  .ecosystem {
-    background-position: right -550px bottom 13px,
- right 50px bottom 15px,
- right -160px bottom 20px; }
+  .ecosystem__background-content {
+    right: -70px; }
   .ecosystem p {
     font-size: 20px;
     width: 400px; }
@@ -3013,144 +2897,36 @@ html, body {
     display: inline; } }
 
 @media (min-width: 1024px) {
-  .ecosystem {
-    margin: 100px 0;
-    padding: 0;
-    background-size: 775px 72px,
- 351px 563px,
- 617px 733px;
-    background-position: right -350px bottom 0,
- right 50px bottom 0,
- right -300px bottom 0; }
-    .ecosystem::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .ecosystem::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -98px;
-      transform: rotate(180deg); }
   .ecosystem .container {
     padding-top: 310px;
     padding-bottom: 197px; }
+  .ecosystem__background-content {
+    right: -316px;
+    bottom: 0;
+    width: 730px;
+    height: 730px; }
+  .ecosystem__background-content-tablet {
+    width: 617px; }
+  .ecosystem__background-content-phone {
+    width: 351px; }
+  .ecosystem__background-content-clouds {
+    width: 735px; }
   .ecosystem__title {
     width: 60%; }
   .ecosystem .sign-up__dropdown {
     margin-right: 28px; } }
 
-@media (min-width: 1092px) {
-  .ecosystem {
-    background-image: none; }
-  .ecosystem__wrap {
-    margin: 0 auto;
-    width: 1724px;
-    background-image: url("../images/svg/clouds.svg"), url("../images/svg/phone.svg"), url("../images/svg/tablet.svg");
-    background-repeat: no-repeat,
- no-repeat,
- no-repeat;
-    background-size: 775px 72px,
- 351px 563px,
- 617px 733px;
-    background-position: right 0 bottom 17px,
- right 372px bottom 15px,
- right 0 bottom 20px; } }
-
 @media (min-width: 1440px) {
-  .ecosystem {
-    margin: 131px 0; }
-    .ecosystem::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -130px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .ecosystem::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -129px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -129px;
-      transform: rotate(180deg); }
   .ecosystem .container {
     padding-top: 456px;
     padding-bottom: 150px; }
+  .ecosystem__background-content {
+    bottom: 40px; }
   .ecosystem p {
     font-size: 24px;
     width: 491px; }
   .ecosystem__title {
     max-width: 660px; } }
-
-@media (min-width: 1820px) {
-  .ecosystem {
-    margin: 200px 0; }
-    .ecosystem::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -199px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .ecosystem::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); } }
 
 .getnews {
   padding: 0;
@@ -3688,50 +3464,18 @@ html, body {
       background-color: #24272D; } }
 
 .our-mission {
-  position: relative;
-  margin: 79px 0;
+  color: #24272D;
+  overflow: hidden; }
+
+.our-mission__background-wrap {
   padding-top: 30px;
   padding-bottom: 132px;
-  color: #24272D;
+  width: 100%;
   background-color: white;
   background-image: url("../images/svg/rocket.svg");
   background-repeat: no-repeat;
   background-size: 103px;
   background-position: 50% 100%; }
-  .our-mission::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .our-mission::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
-
-.our-mission__container {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 10px; }
 
 .our-mission .title__colored {
   color: #00A7CF; }
@@ -3741,39 +3485,10 @@ html, body {
   line-height: 1.66; }
 
 @media (min-width: 1024px) {
-  .our-mission {
-    margin: 100px 0;
-    padding: 20px 0;
+  .our-mission__background-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-image: none; }
-    .our-mission::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .our-mission::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -99px;
-      transform: rotate(180deg); }
   .our-mission .container {
     background-image: url("../images/svg/rocket.svg");
     background-repeat: no-repeat;
@@ -3786,38 +3501,6 @@ html, body {
     font-size: 20px; } }
 
 @media (min-width: 1440px) {
-  .our-mission {
-    margin: 131px 0; }
-    .our-mission::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -130px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .our-mission::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -129px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -129px;
-      transform: rotate(180deg); }
   .our-mission .container {
     background-size: 306px;
     background-position: left 41px center; }
@@ -3830,76 +3513,14 @@ html, body {
     align-self: flex-start;
     margin-left: 20px; } }
 
-@media (min-width: 1820px) {
-  .our-mission {
-    margin: 200px 0; }
-    .our-mission::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -199px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .our-mission::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); } }
-
 .pilot-project {
-  position: relative;
-  margin: 79px 0;
+  color: #24272D;
+  overflow: hidden; }
+
+.pilot-project__background-wrap {
   padding-top: 8px;
   padding-bottom: 20px;
-  color: #24272D;
   background-color: white; }
-  .pilot-project::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .pilot-project::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
 
 .pilot-project .container {
   position: relative; }
@@ -3913,12 +3534,9 @@ html, body {
   width: 282px;
   height: 360px;
   background-image: url("../images/svg/corn.svg"), url("../images/svg/meeting-table.svg");
-  background-size: 72px 88px,
- contain;
-  background-repeat: no-repeat,
- no-repeat;
-  background-position: center bottom 12.64%,
- center;
+  background-size: 72px 88px, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom 12.64%, center;
   box-sizing: border-box; }
   .pilot-project__meeting::before {
     content: "";
@@ -4032,37 +3650,7 @@ html, body {
 
 @media (min-width: 1024px) {
   .pilot-project {
-    margin: 100px 0;
     background-image: none; }
-    .pilot-project::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .pilot-project::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -99px;
-      transform: rotate(180deg); }
   .pilot-project__meeting {
     right: unset;
     left: 10px;
@@ -4070,8 +3658,7 @@ html, body {
     padding-top: 70px;
     width: 370px;
     height: 472px;
-    background-size: 94px 114px,
- contain; }
+    background-size: 94px 114px, contain; }
     .pilot-project__meeting::before {
       width: 193px;
       height: 77px; }
@@ -4126,38 +3713,6 @@ html, body {
     height: 48px; } }
 
 @media (min-width: 1440px) {
-  .pilot-project {
-    margin: 131px 0; }
-    .pilot-project::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -130px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .pilot-project::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -129px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -129px;
-      transform: rotate(180deg); }
   .pilot-project .container {
     background-size: 487px;
     background-position: left 22px top 30px; }
@@ -4166,8 +3721,7 @@ html, body {
     padding-top: 95px;
     width: 487px;
     height: 621px;
-    background-size: 146px 185px,
- contain; }
+    background-size: 146px 185px, contain; }
     .pilot-project__meeting::before {
       width: 254px;
       height: 101px; }
@@ -4207,40 +3761,6 @@ html, body {
   .pilot-project__text-block p {
     font-size: 23px;
     letter-spacing: -1px; } }
-
-@media (min-width: 1820px) {
-  .pilot-project {
-    margin: 200px 0; }
-    .pilot-project::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -199px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .pilot-project::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); } }
 
 .news-slider {
   margin-bottom: 30px; }
@@ -4388,8 +3908,7 @@ html, body {
     font-size: 20px; }
   .read-us .getnews__btn {
     margin: 0;
-    margin-top: 25px;
-    height: 36px; } }
+    margin-top: 25px; } }
 
 @media (min-width: 1440px) {
   .read-us__link {
@@ -4428,8 +3947,7 @@ html, body {
   .read-us #mailpoet_form_1 > form > div.mailpoet_paragraph.last {
     display: block !important; }
   .read-us .getnews__btn {
-    display: inline-block;
-    height: 48px; } }
+    display: inline-block; } }
 
 .partners {
   display: none; }
@@ -4438,16 +3956,16 @@ html, body {
   .partners {
     display: block;
     position: absolute;
-    top: -80px;
-    right: 95px;
-    width: 300px;
+    top: -145px;
+    right: 30px;
+    width: 250px;
     z-index: 300; }
   .partners__link {
     display: inline-block;
     color: inherit;
     text-decoration: none;
     font-size: inherit;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: #00A7CF;
     font-size: 20px;
     text-decoration: underline; }
@@ -4460,24 +3978,23 @@ html, body {
     flex-wrap: wrap;
     align-items: center; }
   .partners__item {
-    margin-right: 25px;
     margin-bottom: 16px; }
     .partners__item:first-of-type {
-      margin-left: 23px; }
+      margin-right: 35px; }
     .partners__item:nth-of-type(2) {
       margin-right: 0;
       margin-left: 0; }
     .partners__item:nth-of-type(3) {
-      margin-right: 10px; }
+      margin-right: 20px;
+      margin-left: 10px; }
     .partners__item:nth-of-type(4) {
       margin-right: 0; }
     .partners__item:nth-of-type(5) {
-      margin-left: 33px;
+      margin-left: 10px;
       margin-right: 20px; }
-    .partners__item:nth-of-type(6) {
-      margin-right: 40px; }
     .partners__item:nth-of-type(7) {
-      margin-left: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
       margin-bottom: 0; }
     .partners__item:last-of-type {
       margin-bottom: 0;
@@ -4519,10 +4036,13 @@ html, body {
 @media (min-width: 1440px) {
   .partners {
     top: -115px;
-    right: 52px;
+    right: 0;
     width: 344px; }
   .partners__link {
-    margin-bottom: 64px; }
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    text-align: center; }
   .partners__item {
     margin-right: 50px;
     margin-bottom: 20px; }
@@ -5865,39 +5385,16 @@ html, body {
     letter-spacing: unset; } }
 
 .choose-course {
-  position: relative;
-  margin: 80px 0;
+  width: 100%;
   color: #24272D;
+  overflow: hidden; }
+
+.choose-course__background-wrap {
+  width: 100%;
   background-color: white; }
-  .choose-course::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .choose-course::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
+
+.choose-course .container {
+  padding-bottom: 10px; }
 
 .choose-course__wrap {
   width: 80%; }
@@ -5907,8 +5404,7 @@ html, body {
   margin-bottom: 10px; }
 
 .choose-course__btn {
-  margin-top: 30px;
-  margin-bottom: 10px; }
+  margin-top: 30px; }
 
 .choose-course p {
   font-size: 14px;
@@ -5918,12 +5414,9 @@ html, body {
   .choose-course .container {
     padding: 30px 36px;
     background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg");
-    background-repeat: no-repeat,
- no-repeat;
-    background-size: 188px,
- 165px;
-    background-position: left 36px top 0, 
- left 255px top 35px; }
+    background-repeat: no-repeat, no-repeat;
+    background-size: 188px, 165px;
+    background-position: left 36px top 0,  left 255px top 35px; }
   .choose-course__wrap {
     margin-left: auto;
     width: 50%; }
@@ -5933,43 +5426,9 @@ html, body {
     margin-right: auto; } }
 
 @media (min-width: 1440px) {
-  .choose-course {
-    position: relative;
-    margin: 135px 0; }
-    .choose-course::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      background-color: transparent;
-      top: -133px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .choose-course::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      background-color: transparent;
-      top: -133px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -133px;
-      transform: rotate(180deg); }
   .choose-course .container {
     padding: 0;
-    background-position: left 0 top 0, 
- left 219px top 35px; }
+    background-position: left 0 top 0,  left 219px top 35px; }
   .choose-course__wrap {
     width: 54%; }
   .choose-course__title {
@@ -5984,44 +5443,9 @@ html, body {
     margin-top: 47px;
     width: 267px; } }
 
-@media (min-width: 1820px) {
-  .choose-course {
-    margin: 200px 0; }
-    .choose-course::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -199px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .choose-course::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); } }
-
-.choose-profession {
-  padding: 50px 0; }
-
 .choose-profession .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center; }
 
 .choose-profession__title span {
@@ -6109,8 +5533,8 @@ html, body {
     margin-bottom: 0; } }
 
 @media (min-width: 1024px) {
-  .choose-profession {
-    padding: 50px 0 111px; }
+  .choose-profession .container {
+    padding-bottom: 111px; }
   .choose-profession p {
     margin-bottom: 77px;
     font-size: 24px; }
@@ -6165,39 +5589,12 @@ html, body {
     width: 267px; } }
 
 .career {
-  position: relative;
-  margin: 69px 0;
+  width: 100%;
   color: #24272D;
+  overflow: hidden; }
+
+.career__background-wrap {
   background-color: white; }
-  .career::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .career::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
 
 .career .container {
   text-align: center;
@@ -6275,37 +5672,6 @@ html, body {
   background-image: linear-gradient(to bottom, #d1e92a 0%, #899b03 100%); }
 
 @media (min-width: 1024px) {
-  .career {
-    margin: 100px 0; }
-    .career::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .career::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -99px;
-      transform: rotate(180deg); }
   .career .container {
     padding: 10px 0 76px; }
   .career p {
@@ -6324,38 +5690,6 @@ html, body {
     margin: 0 auto; } }
 
 @media (min-width: 1440px) {
-  .career {
-    margin: 135px 0; }
-    .career::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      background-color: transparent;
-      top: -133px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .career::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      background-color: transparent;
-      top: -133px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -133px;
-      transform: rotate(180deg); }
   .career .container {
     display: flex;
     flex-wrap: wrap;
@@ -6382,47 +5716,16 @@ html, body {
   .career__step {
     font-weight: 400; } }
 
-@media (min-width: 1820px) {
-  .career {
-    margin: 200px 0; }
-    .career::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -199px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .career::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); } }
-
 .credences {
-  padding: 20px 0 60px;
   text-align: right;
   background-image: url("../images/svg/letter.svg");
   background-repeat: no-repeat;
   background-size: 202px;
   background-position: -30% 65%; }
+
+.credences .container {
+  padding-top: 20px;
+  padding-bottom: 60px; }
 
 .credences__title {
   text-align: left;
@@ -6574,41 +5877,14 @@ html, body {
     width: 267px; } }
 
 .educational-programms {
-  position: relative;
-  margin: 69px 0;
+  width: 100%;
+  color: #24272D;
+  overflow: hidden; }
+
+.educational-programms__background-wrap {
   padding: 10px 0;
   text-align: center;
-  color: #24272D;
   background-color: white; }
-  .educational-programms::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .educational-programms::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
 
 .educational-programms__title {
   text-align: left; }
@@ -6667,39 +5943,6 @@ html, body {
   margin: 0 auto;
   margin-bottom: 10px; }
 
-@media (min-width: 768px) {
-  .educational-programms {
-    margin: 100px 0; }
-    .educational-programms::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .educational-programms::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -99px;
-      transform: rotate(180deg); } }
-
 @media (min-width: 1024px) {
   .educational-programms__title {
     text-align: center; }
@@ -6708,40 +5951,9 @@ html, body {
     justify-content: center; } }
 
 @media (min-width: 1440px) {
-  .educational-programms {
-    margin: 135px 0;
+  .educational-programms__background-wrap {
     padding: 0;
     padding-bottom: 30px; }
-    .educational-programms::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      background-color: transparent;
-      top: -133px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .educational-programms::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      background-color: transparent;
-      top: -133px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -133px;
-      transform: rotate(180deg); }
   .educational-programms__title {
     margin-bottom: 30px;
     font-weight: 800; }
@@ -6786,40 +5998,6 @@ html, body {
   .educational-programms__btn {
     margin-top: 30px;
     width: 267px; } }
-
-@media (min-width: 1820px) {
-  .educational-programms {
-    margin: 200px 0; }
-    .educational-programms::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .educational-programms::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); } }
 
 .pop-up {
   position: absolute;
@@ -7275,39 +6453,12 @@ html, body {
   display: none; }
 
 .aggregator {
-  position: relative;
-  margin: 69px 0;
+  width: 100%;
   color: #24272D;
+  overflow: hidden; }
+
+.aggregator__background-wrap {
   background-color: white; }
-  .aggregator::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .aggregator::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: transparent;
-    top: -79px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -79px;
-    transform: rotate(180deg); }
 
 .aggregator__container {
   background-image: url("../images/svg/socrat.svg");
@@ -7374,48 +6525,13 @@ html, body {
     left: 180px; } }
 
 @media (min-width: 1024px) {
-  .aggregator {
-    margin: 100px 0;
-    padding: 0; }
-    .aggregator::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .aggregator::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -99px;
-      transform: rotate(180deg); }
   .aggregator__container {
     padding-top: 20px;
     padding-bottom: 40px;
     background-image: url("../images/svg/campaigns.svg"), url("../images/svg/socrat.svg");
-    background-repeat: no-repeat,
- no-repeat;
-    background-position: right 228px top 45px,
- right 20px top 10px;
-    background-size: 165px,
- 188px; }
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 228px top 45px, right 20px top 10px;
+    background-size: 165px, 188px; }
   .aggregator__text {
     width: 52%; }
   .aggregator__download-links-list {
@@ -7431,37 +6547,7 @@ html, body {
 
 @media (min-width: 1440px) {
   .aggregator {
-    margin: 131px 0;
     background-image: none; }
-    .aggregator::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -130px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .aggregator::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 131px;
-      background-color: transparent;
-      top: -130px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -129px;
-      transform: rotate(180deg); }
   .aggregator .container {
     padding-top: 20px;
     padding-bottom: 35px; }
@@ -7484,40 +6570,6 @@ html, body {
     width: 167px; }
   .aggregator__download-links-item--google img {
     width: 185px; } }
-
-@media (min-width: 1820px) {
-  .aggregator {
-    margin: 200px 0; }
-    .aggregator::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -199px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .aggregator::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); } }
 
 .education-paltforms-proposal {
   display: none; }
@@ -7714,6 +6766,391 @@ html, body {
   .blog-content__item-description {
     width: 271px;
     margin: 0; } }
+
+.block {
+  position: relative;
+  padding-bottom: 20px; }
+
+.block .container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.block__teaser {
+  width: 306px;
+  display: flex;
+  flex-wrap: wrap; }
+  .block__teaser .news-slider__cat-btn {
+    margin-right: 11px;
+    margin-bottom: 23px; }
+
+.block img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  width: 100%; }
+
+.block__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+  width: 100%; }
+
+.block__description {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 48px; }
+
+.block__view-project {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #00A7CF;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px; }
+  .block__view-project::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: transparent;
+    right: -20px;
+    top: 5px;
+    border: 3px solid #00A7CF;
+    border-radius: 2px;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg); }
+
+@media (min-width: 768px) {
+  .block {
+    padding-top: 50px; }
+  .block__teaser {
+    width: 400px;
+    margin-right: 20px; }
+  .block img {
+    margin: 0 auto;
+    order: 1;
+    width: 300px;
+    height: 300px; }
+  .block__description {
+    margin-bottom: 23px; } }
+
+@media (min-width: 1024px) {
+  .block__teaser {
+    width: 450px; }
+  .block img {
+    width: 348px;
+    height: 348px; }
+  .block__title {
+    margin-bottom: 0; }
+  .block__teaser .news-slider__cat-btn {
+    margin-bottom: 0; }
+  .block__description {
+    margin-bottom: 0; } }
+
+@media (min-width: 1440px) {
+  .block__teaser {
+    width: 496px;
+    margin-right: 0; }
+    .block__teaser .news-slider__cat-btn {
+      width: 106px;
+      height: 36px;
+      font-size: 16px; }
+  .block__title {
+    font-size: 40px;
+    line-height: 46px; }
+  .block__description {
+    font-size: 24px;
+    line-height: 40px; } }
+
+.block-about {
+  position: relative;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  padding-top: 2px;
+  margin: 80px 0; }
+  .block-about::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%; }
+  .block-about::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    top: -79px;
+    left: 0;
+    background-image: url("../images/svg/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 39%;
+    top: unset;
+    bottom: -79px;
+    transform: rotate(180deg); }
+
+.block-about__item {
+  margin-bottom: 38px; }
+
+.block-about__item img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  border-radius: 20px; }
+
+.block-about__item p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: -1px; }
+
+.block-about__item-title {
+  font-size: 50px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-bottom: 27px; }
+
+.swiper-block {
+  margin-bottom: 57px; }
+
+.swiper-block__wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.swiper-block__slide {
+  text-align: center; }
+  .swiper-block__slide span {
+    font-size: 42px;
+    line-height: 36px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto; }
+  .swiper-block__slide img {
+    margin-bottom: 52px; }
+  .swiper-block__slide img:first-child {
+    margin-right: 55px; }
+
+.swiper-block__slide-title {
+  font-size: 92px;
+  line-height: 91px;
+  font-weight: 700;
+  margin-bottom: 26px; }
+
+@media (min-width: 768px) {
+  .block-about {
+    margin: 100px 0; }
+    .block-about::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%; }
+    .block-about::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -99px;
+      transform: rotate(180deg); } }
+
+@media (min-width: 1024px) {
+  .block-about {
+    margin: 100px 0; }
+    .block-about::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%; }
+    .block-about::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      top: -99px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -99px;
+      transform: rotate(180deg); } }
+
+@media (min-width: 1440px) {
+  .block-about .container {
+    min-width: unset;
+    max-width: unset;
+    width: 100%; }
+  .block-about {
+    margin: 135px 0; }
+    .block-about::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 135px;
+      background-color: transparent;
+      top: -133px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      background-position: 50%; }
+    .block-about::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 135px;
+      background-color: transparent;
+      top: -133px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -133px;
+      transform: rotate(180deg); }
+  .block-about__item:first-child {
+    text-align: center; }
+    .block-about__item:first-child p {
+      font-size: 25px;
+      line-height: 45px;
+      margin: 0 auto;
+      letter-spacing: -1px;
+      width: 734px; }
+  .block-about__item:not(:first-child) {
+    display: flex;
+    flex-wrap: wrap; }
+    .block-about__item:not(:first-child) img {
+      width: 677px;
+      height: 440px;
+      margin: 0;
+      order: 0;
+      border-radius: 20px; }
+    .block-about__item:not(:first-child) .block-about__item-wrapper {
+      order: 1;
+      width: 45%;
+      margin: 0 auto; }
+      .block-about__item:not(:first-child) .block-about__item-wrapper p {
+        width: 478px; }
+  .block-about__item:nth-child(4) {
+    flex-direction: row-reverse; }
+    .block-about__item:nth-child(4) .block-about__item-wrapper {
+      margin-right: 0;
+      width: 35%; }
+      .block-about__item:nth-child(4) .block-about__item-wrapper p {
+        width: 478px; }
+  .block-about__item-title {
+    font-weight: 700; }
+  .swiper-block__slide-title {
+    font-size: 70px; }
+  .swiper-block__slide span {
+    font-size: 32px;
+    line-height: 36px; } }
+
+@media (min-width: 1820px) {
+  .block-about {
+    margin: 200px 0; }
+    .block-about::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background-color: transparent;
+      top: -199px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      background-position: 50%; }
+    .block-about::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background-color: transparent;
+      top: -198px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -198px;
+      transform: rotate(180deg); }
+  .block-about__item .block-about__item-title {
+    font-size: 50px; }
+  .block-about__item p {
+    width: 714px;
+    font-size: 25px; }
+  .block-about__item:not(:first-child) {
+    display: flex;
+    flex-wrap: wrap; }
+    .block-about__item:not(:first-child) img {
+      width: 894px;
+      height: 620px;
+      margin: 0;
+      order: 0; }
+    .block-about__item:not(:first-child) .block-about__item-wrapper {
+      order: 1;
+      width: 45%;
+      margin: 0 auto; }
+  .block-about__item:nth-child(4) .block-about__item-wrapper {
+    margin-right: 0;
+    width: 30%; }
+    .block-about__item:nth-child(4) .block-about__item-wrapper p {
+      width: 478px; } }
 
 .contact-form {
   padding: 28px 0 35px;

@@ -32,6 +32,10 @@
 	line-height: 30px;  
 }
 
+.footer-menu__list a:hover {
+	color: $corp-blue;
+}
+
 .footer-menu__title {
 	
 	display: block;
@@ -54,6 +58,10 @@
 
 .footer-menu .sub-menu a {
 	color: $light-text;
+}
+
+.footer-menu .sub-menu a:hover {
+	color: $corp-blue;
 }
 
 @media (min-width: 768px) {

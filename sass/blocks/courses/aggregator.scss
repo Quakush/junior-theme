@@ -1,16 +1,11 @@
 .aggregator {
-	position: relative;
-    margin: 69px 0;
+	width: 100%;
     color: $dark-text;
+    overflow: hidden;
+}
+
+.aggregator__background-wrap {
 	background-color: $white;
-
-	&::before {
-		@include clouds(80px, -79px);
-	}
-
-	&::after {
-		@include clouds-bottom(80px, -79px, -79px);
-	}
 }
 
 .aggregator__container {
@@ -99,19 +94,6 @@
 
 @media (min-width: 1024px) {
 
-	.aggregator {
-		margin: 100px 0;
-		padding: 0;
-
-		&::before {
-            @include clouds(100px, -99px);
-        }
-
-        &::after {
-            @include clouds-bottom(100px, -99px, -99px);
-        }
-	}
-
 	.aggregator__container {
 		padding-top: 20px;
 		padding-bottom: 40px;
@@ -156,16 +138,7 @@
 @media (min-width: 1440px) {
 
     .aggregator {
-    	margin: 131px 0;
     	background-image: none;
-
-		&::before {
-		@include clouds(131px, -130px);
-	    }
-
-	    &::after {
-            @include clouds-bottom(131px, -130px, -129px);
-        }
     }
 
     .aggregator .container {
@@ -206,20 +179,4 @@
 	.aggregator__download-links-item--google img {
 		width: 185px;
 	}
-}
-
-@media (min-width: 1820px) {
-
-    .aggregator {
-        margin: 200px 0;
-
-        &::before {
-            @include clouds(200px, -199px);
-            background-position: 50%;
-        }
-
-        &::after {
-            @include clouds-bottom(200px, -198px, -198px);
-        }
-    }
 }

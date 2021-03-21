@@ -1,16 +1,11 @@
 .career {
-    position: relative;
-    margin: 69px 0;
+    width: 100%;
     color: $dark-text;
+    overflow: hidden;
+}
+
+.career__background-wrap {
     background-color: $white;
-
-    &::before {
-      @include clouds(80px, -79px);
-    }
-
-    &::after {
-      @include clouds-bottom(80px, -79px, -79px);
-    }
 }
 
 .career .container {
@@ -102,18 +97,6 @@
 
 @media (min-width: 1024px) {
 
-    .career {
-        margin: 100px 0;
-
-        &::before {
-            @include clouds(100px, -99px);
-        }
-
-        &::after {
-            @include clouds-bottom(100px, -99px, -99px);
-        }
-    }
-
     .career .container {
         padding: 10px 0 76px;
     }
@@ -146,19 +129,6 @@
 }
 
 @media (min-width: 1440px) {
-
-    .career {
-      margin: 135px 0;
-
-      &::before {
-        @include clouds(135px, -133px);
-        background-position: 50%
-      }
-
-      &::after {
-        @include clouds-bottom(135px, -133px, -133px);
-      }
-    }
 
     .career .container {
         display: flex;
@@ -200,20 +170,4 @@
     .career__step {
         font-weight: 400;
     }
-}
-
-@media (min-width: 1820px) {
-
-    .career {
-        margin: 200px 0;
-
-        &::before {
-            @include clouds(200px, -199px);
-            background-position: 50%
-        }
-
-        &::after {
-            @include clouds-bottom(200px, -198px, -198px);
-        }
-      }
 }

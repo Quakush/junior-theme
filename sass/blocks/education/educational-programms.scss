@@ -1,18 +1,13 @@
 .educational-programms {
-  position: relative;
-  margin: 69px 0;
+  width: 100%;
+  color: $dark-text;
+  overflow: hidden;
+}
+
+.educational-programms__background-wrap {
   padding: 10px 0;
   text-align: center;
-  color: $dark-text;
   background-color: $white;
-
-  &::before {
-    @include clouds(80px, -79px);
-  }
-
-  &::after {
-    @include clouds-bottom(80px, -79px, -79px);
-  }
 }
 
 .educational-programms__title {
@@ -83,22 +78,6 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-
-    .educational-programms {
-        margin: 100px 0;
-
-         &::before {
-            @include clouds(100px, -99px);
-        }
-
-        &::after {
-            @include clouds-bottom(100px, -99px, -99px);
-        }
-    }
-    
-}
-
 @media (min-width: 1024px) {
 
     .educational-programms__title {
@@ -113,20 +92,10 @@
 }
 
 @media (min-width: 1440px) {
-
-    .educational-programms {
-        margin: 135px 0;
-        padding: 0;
-        padding-bottom: 30px;
-
-        &::before {
-          @include clouds(135px, -133px);
-          background-position: 50%
-        }
-
-        &::after {
-          @include clouds-bottom(135px, -133px, -133px);
-        }
+   
+    .educational-programms__background-wrap {
+      padding: 0;
+      padding-bottom: 30px;
     }
 
     .educational-programms__title {
@@ -192,21 +161,5 @@
     .educational-programms__btn {
         margin-top: 30px;
         width: 267px;
-    }
-}
-
-@media (min-width: 1820px) {
-
-    .educational-programms {
-        margin: 200px 0;
-
-        &::before {
-          @include clouds(200px, -198px);
-          background-position: 50%
-        }
-
-        &::after {
-          @include clouds-bottom(200px, -198px, -198px);
-        }
     }
 }

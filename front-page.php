@@ -30,6 +30,8 @@ get_header();
     </section>
 
     <section class="our-mission">
+      <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+      <div class="our-mission__background-wrap">
         <div class="container">
             <div class="our-mission__text">
                 <h2 class="title__secondary  our-mission__title">
@@ -46,6 +48,8 @@ get_header();
                 </p>
             </div>
         </div>
+      </div>
+      <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
 
     <section class="options-slider">
@@ -58,7 +62,7 @@ get_header();
                 </p>
               </div>
               <div class="options-slider__visual">
-                <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
+                <img src="/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
                 <span class="options-slider__visual-title">Startup University</span>
               </div>
               <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
@@ -73,7 +77,7 @@ get_header();
                   </p>
                 </div>
                 <div class="options-slider__visual">
-                  <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
+                  <img src="/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
                   <span class="options-slider__visual-title">Startup University</span>
                 </div>
                 <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
@@ -87,7 +91,7 @@ get_header();
                   </p>
                 </div>
                 <div class="options-slider__visual">
-                  <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/start-up.svg" width="222" alt="slider visual image">
+                  <img src="/wp-content/themes/js-corp/images/svg/start-up.svg" width="222" alt="slider visual image">
                   <span class="options-slider__visual-title">Создай STARTUP</span>
                 </div>
                 <a class="btn  btn--small options-slider__btn" href="#">Подать заявку</a>
@@ -224,14 +228,21 @@ get_header();
     </section>
  -->
     <section class="ecosystem">
+      <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
       <div class="ecosystem__wrap">
         <div class="container">
+            <div class="ecosystem__background-content">
+              <img class="ecosystem__background-content-clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg" alt="background">
+              <img class="ecosystem__background-content-phone" src="/wp-content/themes/js-corp/images/svg/phone.svg" alt="background">
+              <img class="ecosystem__background-content-tablet" src="/wp-content/themes/js-corp/images/svg/tablet.svg" alt="background">
+            </div>
             <h2 class="title__secondary ecosystem__title"><span>Экосистема</span> для обучения и создания проектов</h2>
             <p>Мы создали место, где вы сможете реализовать свои идеи, найти будущую профессию, пройти практику и найти партнеров.</p>
             <?php get_template_part('/includes/block', 'sign_up'); ?>
             <?php get_template_part('/includes/block', 'partners'); ?>
         </div>
       </div>
+      <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
 
     <section class="join-us">
@@ -283,7 +294,9 @@ get_header();
     </section>
 
     <section class="pilot-project">
-        <div class="container pilot-project__container">
+      <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+      <div class="pilot-project__background-wrap">
+        <div class="container">
             <span class="pilot-project__meeting">
                 <div class="logo">
                     <a class="logo__link" href="/">
@@ -342,6 +355,8 @@ get_header();
                 <a class="pilot-project__btn btn btn--big" href="#">Подробнее</a>
             </div>
         </div>
+      </div>
+      <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
 
     <section class="read-us">

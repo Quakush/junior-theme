@@ -36,19 +36,23 @@ get_header();
         </div>
     </section>
     <section class="choose-course">
-        <div class="container">
-            <div class="choose-course__wrap">
-                <h2 class="title__secondary  choose-course__title"><span class="title__colored">Все курсы</span> в одном месте</h2>
-                <p>
-                    Мы сотрудничаем с различными онлайн и офлайн
-                    платформами, чтобы вам проще было найти 
-                    нужный курс. Создайте аккаунт в нашей системе,
-                    чтобы получить гарантированную практику после
-                    окончания обучения.
-                </p>
-                <a class="btn btn--big  btn--green  choose-course__btn" href="/all-courses">Выбрать курс</a>
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+        <div class="choose-course__background-wrap">
+            <div class="container">
+                <div class="choose-course__wrap">
+                    <h2 class="title__secondary  choose-course__title"><span class="title__colored">Все курсы</span> в одном месте</h2>
+                    <p>
+                        Мы сотрудничаем с различными онлайн и офлайн
+                        платформами, чтобы вам проще было найти 
+                        нужный курс. Создайте аккаунт в нашей системе,
+                        чтобы получить гарантированную практику после
+                        окончания обучения.
+                    </p>
+                    <a class="btn btn--big  btn--green  choose-course__btn" href="/all-courses">Выбрать курс</a>
+                </div>
             </div>
         </div>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
     <section class="choose-profession">
         <div class="container">
@@ -76,36 +80,40 @@ get_header();
         </div>
     </section>
     <section class="career">
-        <div class="container">
-            <h2 class="title__secondary  career__title">Ваша карьера <span class="title__colored">начинается здесь</span></h2>
-            <p class="career__text--mobile">
-                Мы понимаем, как тяжело начать карьеру в IT.<br>Именно поэтому одна
-                из наших миссий -<br>сделать ваш путь максимально простым.
-            </p>
-            <p class="career__text--desktop">
-                Мы понимаем, как тяжело начать карьеру в IT. Именно поэтому одна<br>
-                из наших миссий - сделать ваш путь максимально простым.
-            </p>
-            <ul class="career__list">
-                <li class="career__item">
-                    <span class="career__step-number">1</span>
-                    <span class="career__step">Выберите курс</span>
-                </li>
-                <li class="career__item">
-                    <span class="career__step-number">2</span>
-                    <span class="career__step">Пройдите обучение</span>
-                </li>
-                <li class="career__item">
-                    <span class="career__step-number">3</span>
-                    <span class="career__step">Пройдите практику</span>
-                </li>
-                <li class="career__item">
-                    <span class="career__step-number">4</span>
-                    <span class="career__step">Получите работу</span>
-                </li>
-            </ul>
-            <?php get_template_part('/includes/block', 'sign_up');?>
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+        <div class="career__background-wrap">
+            <div class="container">
+                <h2 class="title__secondary  career__title">Ваша карьера <span class="title__colored">начинается здесь</span></h2>
+                <p class="career__text--mobile">
+                    Мы понимаем, как тяжело начать карьеру в IT.<br>Именно поэтому одна
+                    из наших миссий -<br>сделать ваш путь максимально простым.
+                </p>
+                <p class="career__text--desktop">
+                    Мы понимаем, как тяжело начать карьеру в IT. Именно поэтому одна<br>
+                    из наших миссий - сделать ваш путь максимально простым.
+                </p>
+                <ul class="career__list">
+                    <li class="career__item">
+                        <span class="career__step-number">1</span>
+                        <span class="career__step">Выберите курс</span>
+                    </li>
+                    <li class="career__item">
+                        <span class="career__step-number">2</span>
+                        <span class="career__step">Пройдите обучение</span>
+                    </li>
+                    <li class="career__item">
+                        <span class="career__step-number">3</span>
+                        <span class="career__step">Пройдите практику</span>
+                    </li>
+                    <li class="career__item">
+                        <span class="career__step-number">4</span>
+                        <span class="career__step">Получите работу</span>
+                    </li>
+                </ul>
+                <?php get_template_part('/includes/block', 'sign_up');?>
+            </div>
         </div>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
     <section class="credences">
         <div class="container">
@@ -118,7 +126,7 @@ get_header();
             <a class="btn  btn--green  btn--big  credences__btn" href="/all-courses">Выбрать курс</a>
         </div>
     </section>
-    <section class="immigration-slider">
+    <section id="internship" class="immigration-slider">
         <div class="container">
             <div class="immigration-slider__list">
 
@@ -133,43 +141,46 @@ get_header();
         </div>
     </section>
     <section class="educational-programms">
-        
-        <div class="container">
-            <h2 class="title__secondary  educational-programms__title">Образовательные программы</h2>
-            <div class="educational-programms__inner-wrap">
-                <ul class="educational-programms__list">
-                    <li class="educational-programms__item  educational-programms__item--school">
-                        <h3 class="title__third">Обучение школьников</h3>
-                        <p>
-                            Программа обучения школьников -
-                            это возможность с раннего возраста
-                            начать изучение современных 
-                            профессий, а также разобраться в 
-                            мире стартапов.
-                        </p>
-                    </li>
-                    <li class="educational-programms__item  educational-programms__item--junior">
-                        <h3 class="title__third">От 0 до Junior с практикой в реальных проектах</h3>
-                        <p>
-                            Пройдите обучение у одного из наших
-                            партнеров и освойте одну из многих
-                            профессий будущего, а практику вы
-                            сможете пройти у нас.
-                        </p>
-                    </li>
-                    <li class="educational-programms__item  educational-programms__item--middle">
-                        <h3 class="title__third">От Junior до Middle - повышение квалификации</h3>
-                        <p>
-                            Для тех, кто уже обладает базовыми
-                            знаниями мы подготовили курсы от
-                            профессионалов своего дела, чтобы
-                            вы могли улучшить свои знания.
-                        </p>
-                    </li>
-                </ul>
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+        <div class="educational-programms__background-wrap">
+            <div class="container">
+                <h2 class="title__secondary  educational-programms__title">Образовательные программы</h2>
+                <div class="educational-programms__inner-wrap">
+                    <ul class="educational-programms__list">
+                        <li class="educational-programms__item  educational-programms__item--school">
+                            <h3 class="title__third">Обучение школьников</h3>
+                            <p>
+                                Программа обучения школьников -
+                                это возможность с раннего возраста
+                                начать изучение современных 
+                                профессий, а также разобраться в 
+                                мире стартапов.
+                            </p>
+                        </li>
+                        <li class="educational-programms__item  educational-programms__item--junior">
+                            <h3 class="title__third">От 0 до Junior с практикой в реальных проектах</h3>
+                            <p>
+                                Пройдите обучение у одного из наших
+                                партнеров и освойте одну из многих
+                                профессий будущего, а практику вы
+                                сможете пройти у нас.
+                            </p>
+                        </li>
+                        <li class="educational-programms__item  educational-programms__item--middle">
+                            <h3 class="title__third">От Junior до Middle - повышение квалификации</h3>
+                            <p>
+                                Для тех, кто уже обладает базовыми
+                                знаниями мы подготовили курсы от
+                                профессионалов своего дела, чтобы
+                                вы могли улучшить свои знания.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn--big  btn--green  educational-programms__btn" href="/all-courses">Выбрать курс</a>
             </div>
-            <a class="btn btn--big  btn--green  educational-programms__btn" href="/all-courses">Выбрать курс</a>
         </div>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
 
     <?php get_template_part('/includes/block', 'ask_questions');?>

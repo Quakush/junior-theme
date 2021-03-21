@@ -1,28 +1,17 @@
 .our-mission {
-    position: relative;
-    margin: 79px 0;
+    color: $dark-text;
+    overflow: hidden;
+}
+
+.our-mission__background-wrap {
     padding-top: 30px;
     padding-bottom: 132px;
-    color: $dark-text;
+    width: 100%;
     background-color: $white;
     background-image: url("../images/svg/rocket.svg");
     background-repeat: no-repeat;
     background-size: 103px;
     background-position: 50% 100%;
-
-    &::before {
-        @include clouds(80px, -79px);
-    }
-
-    &::after {
-        @include clouds-bottom(80px, -79px, -79px);
-    }
-}
-
-.our-mission__container {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 10px;
 }
 
 .our-mission .title__colored {
@@ -34,25 +23,12 @@
     line-height: 1.66;
 }
 
-@media (min-width: 768px) {
-
-    
-}
-
 @media (min-width: 1024px) {
 
-    .our-mission {
-        margin: 100px 0;
-        padding: 20px 0;
+    .our-mission__background-wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
         background-image: none;
-
-        &::before {
-            @include clouds(100px, -99px);
-        }
-
-        &::after {
-            @include clouds-bottom(100px, -99px, -99px);
-        }
     }
 
     .our-mission .container {
@@ -60,7 +36,6 @@
         background-repeat: no-repeat;
         background-size: 200px;
         background-position: left 77px center;
-
     }
 
     .our-mission__text {
@@ -75,19 +50,6 @@
 
 @media (min-width: 1440px) {
     
-    .our-mission {
-        margin: 131px 0;
-
-        &::before {
-            @include clouds(131px, -130px);
-            background-position: 50%;
-        }
-
-        &::after {
-            @include clouds-bottom(131px, -129px, -129px);
-        }
-    }
-
     .our-mission .container {
         background-size: 306px;
         background-position: left 41px center;
@@ -105,21 +67,5 @@
         margin-top: -370px;
         align-self: flex-start;
         margin-left: 20px;
-    }
-}
-
-@media (min-width: 1820px) {
-
-    .our-mission {
-        margin: 200px 0;
-
-        &::before {
-            @include clouds(200px, -199px);
-            background-position: 50%;
-        }
-
-        &::after {
-            @include clouds-bottom(200px, -198px, -198px);
-        }
     }
 }

@@ -3,7 +3,7 @@
 <main>
   <section class="block">
     <div class="container">
-      <img src="../wp-content/themes/js-corp/images/svg/sokrat_mobile.svg" alt="Sokrat" width="188" height="188">
+      <img src="/wp-content/themes/js-corp/images/svg/sokrat_mobile.svg" alt="Sokrat" width="188" height="188">
       <div class="block__teaser">
         <h1 class="block__title">Sokrat. - самый быстрый<br> поиск курсов</h1>
         <button class="btn  btn--small  btn--accent  news-slider__cat-btn">

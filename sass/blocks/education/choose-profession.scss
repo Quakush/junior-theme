@@ -1,9 +1,6 @@
-.choose-profession {
-	padding: 50px 0;
-
-}
-
 .choose-profession .container {
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
 }
 
@@ -102,8 +99,8 @@
 
 @media (min-width: 1024px) {
 
-	.choose-profession {
-		padding: 50px 0 111px;
+	.choose-profession .container {
+		padding-bottom: 111px;
 	}
 
 	.choose-profession p {

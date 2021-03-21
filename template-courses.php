@@ -49,22 +49,26 @@ get_header();
         </div>
     </section>
     <section class="banners">
-        <div class="container">
-            <h2 class="banners__title">наши партнеры</h2>
-            <div class="banners__list">
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+            <div class="banners__background-wrap">
+            <div class="container">
+                <h2 class="banners__title">наши партнеры</h2>
+                <div class="banners__list">
 
-            <?php if ($partners->have_posts()) :
+                <?php if ($partners->have_posts()) :
 
-                      while($partners->have_posts()) : $partners-> the_post(); ?>
+                          while($partners->have_posts()) : $partners-> the_post(); ?>
+                        
+                            <div class="banners__item">
+                                <img src="<?=get_field('logo-svg')['url'];?>" alt="banner">
+                            </div>
+
+                <?php endwhile; endif; ?>
                     
-                        <div class="banners__item">
-                            <img src="<?=get_field('logo-svg')['url'];?>" alt="banner">
-                        </div>
-
-            <?php endwhile; endif; ?>
-                
+                </div>
             </div>
         </div>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
     <section class="filters">
         <div class="container">
@@ -108,7 +112,11 @@ get_header();
         </div>
     </section>
     <section class="aggregator">
-        <?php get_template_part('/includes/block', 'aggregator');?>
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+            <div class="aggregator__background-wrap">
+            <?php get_template_part('/includes/block', 'aggregator');?>
+        </div>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
     <?php get_template_part('/includes/block', 'ask_questions');?>
     <section class="education-paltforms-proposal">

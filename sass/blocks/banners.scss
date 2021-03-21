@@ -1,17 +1,12 @@
 .banners {
-	position: relative;
-    margin: 79px 0;
-    height: 60px;
+	width: 100%;
 	color: $dark-text;
+	overflow: hidden;
+}
+
+.banners__background-wrap {
+	height: 60px;
 	background-color: $white;
-
-	&::before {
-		@include clouds(80px, -79px);
-	}
-
-	&::after {
-		@include clouds-bottom(80px, -79px, -79px);
-	}
 }
 
 .banners__title {
@@ -37,16 +32,7 @@
 @media (min-width: 1024px) {
 
 	.banners {
-		margin: 100px 0;
 		height: unset;
-
-		&::before {
-            @include clouds(100px, -99px);
-        }
-
-        &::after {
-            @include clouds-bottom(100px, -99px, -98px);
-        }
 	}
 
 	.banners__title {
@@ -71,18 +57,6 @@
 }
 
 @media (min-width: 1440px) {
-
-	.banners {
-		margin: 131px 0;
-
-		&::before {
-		@include clouds(131px, -130px);
-	    }
-
-	    &::after {
-            @include clouds-bottom(131px, -130px, -129px);
-        }
-	}
 	
 	.banners__item {
 		margin-right: 32px;
@@ -91,20 +65,4 @@
 	.banners__item img {
 		width: 144px;
 	}
-}
-
-@media (min-width: 1820px) {
-
-    .banners {
-        margin: 200px 0;
-
-        &::before {
-            @include clouds(200px, -199px);
-            background-position: 50%;
-        }
-
-        &::after {
-            @include clouds-bottom(200px, -198px, -198px);
-        }
-    }
 }

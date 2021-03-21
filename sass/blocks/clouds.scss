@@ -1,0 +1,28 @@
+.clouds {
+	display: block;
+	width: 1220px;
+	height: auto;
+	transform: translate(-27%);
+}
+
+.clouds--bottom {
+	transform: translate(-27%) rotate(180deg);
+}
+
+@media (min-width: 768px) {
+
+	.clouds {
+		transform: translate(-20px, 2px);
+	}
+
+	.clouds--bottom {
+		transform: translate(-20px, -2px) rotate(180deg);
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.clouds {
+		width: 2000px;
+	}
+}

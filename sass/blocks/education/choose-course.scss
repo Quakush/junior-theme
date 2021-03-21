@@ -1,16 +1,16 @@
 .choose-course {
-    position: relative;
-    margin: 80px 0;
+    width: 100%;
     color: $dark-text;
+    overflow: hidden;
+}
+
+.choose-course__background-wrap {
+    width: 100%;
     background-color: $white;
+}
 
-    &::before {
-      @include clouds(80px, -79px);
-    }
-
-    &::after {
-      @include clouds-bottom(80px, -79px, -79px);
-    }
+.choose-course .container {
+    padding-bottom: 10px;
 }
 
 .choose-course__wrap {
@@ -24,7 +24,6 @@
 
 .choose-course__btn {
     margin-top: 30px;
-    margin-bottom: 10px;
 }
 
 .choose-course p {
@@ -66,20 +65,6 @@
 
 @media (min-width: 1440px) {
 
-    .choose-course {
-        position: relative;
-        margin: 135px 0;
-
-        &::before {
-            @include clouds(135px, -133px);
-            background-position: 50%
-        }
-
-        &::after {
-            @include clouds-bottom(135px, -133px, -133px);
-        }
-    }
-
     .choose-course .container {
         padding: 0;
         background-position:
@@ -108,21 +93,5 @@
     .choose-course__btn {
         margin-top: 47px;
        width: 267px;
-    }
-}
-
-@media (min-width: 1820px) {
-
-    .choose-course {
-        margin: 200px 0;
-
-        &::before {
-          @include clouds(200px, -199px);
-          background-position: 50%
-        }
-
-        &::after {
-          @include clouds-bottom(200px, -198px, -198px);
-        }
     }
 }

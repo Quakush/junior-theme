@@ -40,6 +40,15 @@
 	width: 100%;
 }
 
+@media (min-width: 1024px) {
+
+    .form input {
+		height: 48px;
+		font-size: 16px;
+		border-radius: 15px;
+	}	
+}
+
 @media (min-width: 1440px) {
 
 	::-webkit-input-placeholder {
@@ -56,12 +65,6 @@
 
 	:-ms-input-placeholder {
 		font-size: 16px;
-	}
-
-	.form input {
-		height: 48px;
-		font-size: 16px;
-		border-radius: 15px;
 	}
     
 }

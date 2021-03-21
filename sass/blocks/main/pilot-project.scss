@@ -1,18 +1,12 @@
 .pilot-project {
-    position: relative;
-    margin: 79px 0;
+    color: $dark-text;
+    overflow: hidden;
+}
+
+.pilot-project__background-wrap {
     padding-top: 8px;
     padding-bottom: 20px;
-    color: $dark-text;
     background-color: $white;
-
-    &::before {
-        @include clouds(80px, -79px);
-    }
-
-    &::after {
-        @include clouds-bottom(80px, -79px, -79px);
-    }
 }
 
 .pilot-project .container {
@@ -191,16 +185,8 @@
 @media (min-width: 1024px) {
 
     .pilot-project {
-        margin: 100px 0;
+        
         background-image: none;
-
-        &::before {
-            @include clouds(100px, -99px);
-        }
-
-        &::after {
-            @include clouds-bottom(100px, -99px, -99px);
-        }
     }
 
     .pilot-project__meeting {
@@ -315,19 +301,6 @@
 
 @media (min-width: 1440px) {
 
-    .pilot-project {
-        margin: 131px 0;
-
-        &::before {
-            @include clouds(131px, -130px);
-            background-position: 50%;
-        }
-
-        &::after {
-            @include clouds-bottom(131px, -129px, -129px);
-        }
-    }
-
     .pilot-project .container {
         background-size: 487px;
         background-position: left 22px top 30px;
@@ -408,21 +381,5 @@
     .pilot-project__text-block p {
         font-size: 23px;
         letter-spacing: -1px;
-    }
-}
-
-@media (min-width: 1820px) {
-
-    .pilot-project {
-        margin: 200px 0;
-
-        &::before {
-            @include clouds(200px, -199px);
-            background-position: 50%;
-        }
-
-        &::after {
-            @include clouds-bottom(200px, -198px, -198px);
-        }
     }
 }
