@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114" height="114" viewBox="0 0 114 114">
+  <defs>
+    <filter id="Прямоугольник_1061" x="0" y="0" width="114" height="114" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef4864"/>
+      <stop offset="1" stop-color="#c10020"/>
+    </linearGradient>
+    <filter id="Контур_18501" x="28" y="27" width="59.25" height="59.25" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Сгруппировать_4738" data-name="Сгруппировать 4738" transform="translate(-1377 -1723)">
+    <g transform="matrix(1, 0, 0, 1, 1377, 1723)" filter="url(#Прямоугольник_1061)">
+      <g id="Прямоугольник_1061-2" data-name="Прямоугольник 1061" transform="translate(9 6)" fill="#1c1f23" stroke="#ef4864" stroke-width="2">
+        <rect width="96" height="96" rx="17" stroke="none"/>
+        <rect x="1" y="1" width="94" height="94" rx="16" fill="none"/>
+      </g>
+    </g>
+    <g id="call" transform="translate(1414 1756)">
+      <g id="Сгруппировать_634" data-name="Сгруппировать 634">
+        <g transform="matrix(1, 0, 0, 1, -37, -33)" filter="url(#Контур_18501)">
+          <path id="Контур_18501-2" data-name="Контур 18501" d="M37.94,27.076A23.42,23.42,0,0,1,30.585,25.9a3.362,3.362,0,0,0-3.27.689l-4.638,3.5A25.632,25.632,0,0,1,11.153,18.573l3.4-4.517a3.334,3.334,0,0,0,.82-3.378A23.456,23.456,0,0,1,14.2,3.31,3.314,3.314,0,0,0,10.885,0H3.31A3.314,3.314,0,0,0,0,3.31,37.983,37.983,0,0,0,37.94,41.25a3.314,3.314,0,0,0,3.31-3.31V30.386A3.314,3.314,0,0,0,37.94,27.076Z" transform="translate(37 33)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
