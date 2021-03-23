@@ -1,0 +1,143 @@
+.digital-teaser {
+  margin-bottom: 100px;
+
+  .container {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  .digital-teaser__title {
+    text-transform: uppercase;
+    color: #EF4864;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 19px;
+    width: 100%;
+
+    .digital-teaser__title-second {
+      color: $white;
+    }
+  }
+
+  .digital-teaser__description {
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 45px;
+  }
+
+  .ask-questions .ask-questions__link {
+    display: none;
+  }
+
+  .ask-questions .container {
+    display: unset;
+  }
+}
+//
+//@media (min-width: 768px) {
+//
+//}
+
+@media (min-width: 1024px) {
+  .digital-teaser {
+    background-image: url("../images/svg/digital_teaser_img.svg");
+    background-repeat: no-repeat;
+    background-size: 400px 437px;
+    background-position: 101% 23%;
+    margin-top: 100px;
+
+    .digital-teaser__title {
+      font-size: 56px;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
+
+    .digital-teaser__description {
+      width: 554px;
+      font-size: 20px;
+      line-height: 40px;
+      margin-bottom: 60px;
+    }
+
+    .ask-questions {
+      width: 60%;
+    }
+
+    .ask-questions__wrap {
+      margin-bottom: 0;
+    }
+
+    .ask-questions__title {
+      margin-bottom: 24px;
+      flex-basis: 100%;
+    }
+
+    .ask-questions .form {
+      margin-left: unset;
+      margin-right: auto;
+    }
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .digital-teaser {
+    background-size: 548px 606px;
+    background-position: 94% -1px;
+    padding-bottom: 75px;
+
+    .container {
+      margin: 0 auto;
+    }
+
+    .digital-teaser__description {
+      width: 623px;
+      font-size: 20px;
+      line-height: 40px;
+      margin-bottom: 0;
+    }
+
+    .ask-questions {
+      width: 100%;
+      padding-top: 30px;
+    }
+
+    .ask-questions__wrap {
+      margin: 0;
+      flex-wrap: wrap;
+      width: 623px;
+    }
+
+    .ask-questions .confidentiality {
+      left: 115px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .digital-teaser {
+    margin-bottom: 0;
+
+    .container {
+      margin: 0 auto;
+    }
+    background-position: 78% -1px;
+
+    .digital-teaser__title {
+      font-size: 70px;
+      margin-bottom: 17px;
+    }
+
+    .digital-teaser__description {
+      width: 649px;
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 17px;
+      letter-spacing: -1px;
+    }
+  }
+}
