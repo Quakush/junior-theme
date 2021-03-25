@@ -1,0 +1,140 @@
+.projects {
+  position: relative;
+  margin: 80px 0;
+  padding: 15px 0;
+  color: $dark-text;
+  background-color: $white;
+
+  &::before {
+    @include clouds(80px, -79px);
+  }
+
+  &::after {
+    @include clouds-bottom(80px, -79px, -79px);
+  }
+
+  .blog-container {
+    padding: 0;
+    min-width: 375px;
+    border: none;
+  }
+
+  .blog-content__list {
+    .blog-content__item:last-of-type {
+      display: none;
+    }
+  }
+}
+
+.projects__title {
+  text-align: left;
+  text-transform: uppercase;
+  color: $black;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .projects__title {
+    text-align: center;
+  }
+
+  .blog-content__btn-container {
+    width: 100%;
+  }
+
+  .blog-content__list,
+  .blog-content__btn-container {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    margin: 135px 0;
+
+    &::before {
+      @include clouds(135px, -133px);
+      background-position: 50%
+    }
+
+    &::after {
+      @include clouds-bottom(135px, -133px, -133px);
+    }
+  }
+  .blog-links-list {
+    justify-content: center;
+  }
+
+  .blog-content__image-wrapper {
+    width: 100%;
+  }
+
+  .blog-content__image-wrapper img {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .blog-content__item {
+    width: 400px;
+  }
+
+  .blog-content__item-description {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projects {
+    .container {
+      padding: 0;
+      margin: 0;
+      margin: 0 auto;
+    }
+
+    .blog-content__list {
+      flex-wrap: wrap;
+    }
+
+    .blog-content__item {
+      margin: 0;
+      width: 476px;
+    }
+
+    .blog-content__item:first-child {
+      margin-right: 140px;
+    }
+
+    .blog-content__image-wrapper img {
+      width: 476px;
+      margin: 0 auto;
+    }
+
+    .blog-content__item-description {
+      width: 476px;
+      margin: 0 auto;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .projects {
+    margin: 200px 0;
+
+    &::before {
+      @include clouds(200px, -198px);
+      background-position: 50%
+    }
+
+    &::after {
+      @include clouds-bottom(200px, -198px, -198px);
+    }
+  }
+}
+

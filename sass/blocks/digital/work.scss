@@ -1,0 +1,184 @@
+.work {
+  &--freelance {
+    background-color: rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+    width: 166px;
+    height: max-content;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 23px 8px;
+    border-radius: 20px;
+  }
+
+  &--our {
+    background-color: rgba(0, 0, 0, .2);
+    border: 2px solid rgba(190, 57, 79, .2);
+    width: 166px;
+    height: max-content;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 34px 6px 23px 6px;
+    border-radius: 20px;
+  }
+}
+
+.work .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  width: 375px;
+}
+
+
+.work-freelance__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 800;
+  margin-bottom: 17px;
+}
+
+.work-freelance__description {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 31px;
+  letter-spacing: -1px;
+  color: #AEAEAE;
+}
+
+.work-freelance__list {
+  @include list-style;
+  margin: 0 auto;
+}
+
+.work-freelance__list-item,
+.work-our__list-item {
+  margin-bottom: 20px;
+
+  & img {
+    width: 64px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  & span {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 800;
+  }
+}
+
+.work-our__title {
+  color: #EF4864;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.work-our__description {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 31px;
+  letter-spacing: -1px;
+  color: #AEAEAE;
+
+}
+
+.work-our__list {
+  @include list-style;
+}
+
+@media (min-width: 768px) {
+  .work .container {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  .work {
+
+    &--freelance,
+    &--our {
+      width: 450px;
+      padding: 31px 28px;
+    }
+  }
+
+  .work-freelance__title,
+  .work-our__title {
+    font-size: 20px;
+    line-height: unset;
+    margin-bottom: 17px;
+  }
+
+  .work-freelance__description,
+  .work-our__description {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: unset;
+    font-weight: 400;
+    margin-bottom: 46px;
+  }
+
+  .work-freelance__list,
+  .work-our__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .work-freelance__list-item,
+  .work-our__list-item {
+    margin-bottom: 20px;
+    width: 96px;
+
+    & img {
+      width: 96px;
+      height: 96px;
+    }
+
+    & span {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 800;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .work {
+    &--freelance,
+    &--our {
+      width: 532px;
+    }
+
+    .container {
+      justify-content: unset;
+    }
+
+    &--freelance {
+      margin: 0;
+      margin-right: 28px;
+    }
+  }
+
+  .work-freelance__list-item,
+  .work-our__list-item {
+    width: 96px;
+
+    & img {
+      width: 96px;
+      height: 96px;
+    }
+  }
+}
+
+//
+//@media (min-width: 1820px) {
+//
+//}
