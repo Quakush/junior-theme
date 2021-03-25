@@ -5,9 +5,13 @@
 }
 
 .educational-programms__background-wrap {
-  padding: 10px 0;
   text-align: center;
   background-color: $white;
+}
+
+.educational-programms .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .educational-programms__title {
@@ -93,8 +97,8 @@
 
 @media (min-width: 1440px) {
    
-    .educational-programms__background-wrap {
-      padding: 0;
+    .educational-programms .container {
+      padding-top: 0;
       padding-bottom: 30px;
     }
 

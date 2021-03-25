@@ -130,7 +130,6 @@ const setAdFormSubmit = (onSuccess) => {
   })
 };
 
-
 setAdFormSubmit(showPopup);
 
 

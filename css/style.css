@@ -800,6 +800,7 @@ html, body {
   color: white;
   font-weight: 700;
   white-space: nowrap;
+  border: none;
   border-radius: 7px;
   background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
   box-sizing: border-box;
@@ -1223,6 +1224,42 @@ html, body {
     border-radius: 4px;
     transform: translate(0, -50%); }
 
+.acceptance-954 span {
+  margin: 0; }
+
+.acceptance-954 .confidentiality__checkbox {
+  display: none; }
+
+.acceptance-954 label span {
+  position: relative;
+  display: inline-block;
+  padding-left: 28px;
+  font-size: 10px;
+  font-weight: 400; }
+  .acceptance-954 label span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    left: 0;
+    top: 50%;
+    border-radius: 4px;
+    transform: translate(0, -50%); }
+
+.acceptance-954 .confidentiality__checkbox:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #00A7CF;
+  left: 5px;
+  top: 50%;
+  border-radius: 2px;
+  transform: translate(0, -50%); }
+
 #mailpoet_form_1 .mailpoet_checkbox_label {
   position: relative;
   display: inline-block;
@@ -1312,13 +1349,40 @@ html, body {
   padding-bottom: 20px; }
 
 .ask-questions input[type="email"] {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-left: 15px;
+  height: 36px;
+  font-size: 12px;
+  background-color: white;
+  border: none;
+  border-radius: 7px; }
+
+.ask-questions input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 167px;
+  height: 36px;
+  font-size: 12px;
+  color: white;
+  font-weight: 700;
+  white-space: nowrap;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient(to bottom, #ef4864 0%, #c10020 100%);
+  box-sizing: border-box;
+  box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer; }
 
 .ask-questions__btn {
   padding: 0;
   width: 167px;
   border-radius: 7px;
   white-space: nowrap; }
+
+#wpcf7-f1810-o1 > form > p > span.ajax-loader {
+  width: 0;
+  height: 0; }
 
 .ask-questions__link {
   display: block;
@@ -1928,7 +1992,7 @@ html, body {
   padding-bottom: 60px;
   width: 100%;
   background-color: #24272D;
-  z-index: 50; }
+  z-index: 100; }
 
 .mobile-nav--shown .mobile-nav__list {
   margin: 0;
@@ -2224,7 +2288,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 70px;
   color: #AEAEAE;
   font-size: 12px; }
 
@@ -2335,7 +2399,7 @@ html, body {
 .contact-us {
   position: absolute;
   left: 37%;
-  top: 205px;
+  top: 282px;
   font-size: 12px; }
 
 .contact-us__title {
@@ -2445,10 +2509,12 @@ html, body {
 
 .main-offer {
   position: relative;
-  padding-top: 26px;
-  padding-bottom: 53px;
   width: 100%;
   background-repeat: no-repeat; }
+
+.main-offer .container {
+  padding-top: 26px;
+  padding-bottom: 53px; }
 
 .main-offer__text-block {
   font-size: 14px;
@@ -2511,7 +2577,7 @@ html, body {
   display: block; }
 
 /* Стили для main-offer страницы Обучение - внутренняя (курсы) */
-.main-offer--courses {
+.main-offer--courses .container {
   padding-bottom: 20px; }
 
 .main-offer--courses .title span {
@@ -2532,7 +2598,9 @@ html, body {
   background-image: url("../images/svg/rocket1.svg");
   background-repeat: no-repeat;
   background-size: 200%;
-  background-position: -15px 152px;
+  background-position: -15px 152px; }
+
+.main-offer--startup .container {
   padding-bottom: 81px;
   padding-top: 16px; }
 
@@ -2566,7 +2634,9 @@ html, body {
   background-image: url("../images/svg/socrat-main-bg.svg");
   background-repeat: no-repeat;
   background-size: 345px;
-  background-position: bottom 200px left 20px;
+  background-position: bottom 200px left 20px; }
+
+.main-offer--socrat .container {
   padding-bottom: 110px;
   padding-top: 25px; }
 
@@ -2604,7 +2674,8 @@ html, body {
   /* Стили для main-offer страницы Стартапам */
   .main-offer--startup {
     background-size: 280%;
-    background-position: -172px 94px;
+    background-position: -172px 94px; }
+  .main-offer--startup .container {
     padding-bottom: 270px; }
   .main-offer--startup .title {
     font-size: 30px; }
@@ -2641,19 +2712,18 @@ html, body {
     width: 52%; }
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
-    padding-top: 40px;
     background-size: 360px;
     background-position: bottom 218px right; }
+  .main-offer--socrat .container {
+    padding-top: 40px; }
   .main-offer--socrat p {
     font-size: 28px;
     width: 50%;
     padding-bottom: 0; } }
 
 @media (min-width: 1024px) {
-  .main-offer {
-    padding-bottom: 140px; }
   .main-offer .container {
-    overflow: visible; }
+    padding-bottom: 140px; }
   /* Стили для main-offer главной страницы */
   .main-offer--main {
     background-image: none; }
@@ -2681,7 +2751,8 @@ html, body {
     margin-right: 30px; }
   /* Стили для main-offer страницы стартапам*/
   .main-offer--startup {
-    background-size: 1326px;
+    background-size: 1326px; }
+  .main-offer--startup .container {
     padding-bottom: 250px;
     padding-top: 80px; }
   .main-offer--startup p {
@@ -2715,7 +2786,6 @@ html, body {
     background-image: none; }
   .main-offer--main .container {
     position: relative;
-    overflow: visible;
     background-image: none; }
     .main-offer--main .container::before {
       content: "";
@@ -2756,9 +2826,10 @@ html, body {
     width: 574px; }
   /* Стили для main-offer страницы Обучение */
   .main-offer--education {
-    padding-top: 130px;
     background-size: contain;
     background-position: 80% 20%; }
+  .main-offer--education .container {
+    padding-top: 130px; }
   .main-offer--education .title {
     margin-top: 10px;
     margin-bottom: 44px; }
@@ -2768,11 +2839,10 @@ html, body {
   .main-offer--education .sign-up__dropdown {
     margin-bottom: 160px; }
   /* Стили для main-offer страницы Обучение - внутренняя (курсы) */
-  .main-offer--courses {
-    padding-top: 44px;
-    padding-bottom: 67px; }
   .main-offer--courses .container {
     padding: 0;
+    padding-top: 44px;
+    padding-bottom: 67px;
     background-position: right 116px top 99px, right 237px top 0, right 0 top 0; }
   .main-offer--courses .title {
     font-size: 70px;
@@ -3017,7 +3087,7 @@ html, body {
   #mailpoet_form_1 form input[type="email"]:-ms-input-placeholder {
     font-size: 16px; } }
 
-.join-us {
+.join-us .container {
   padding-top: 43px;
   padding-bottom: 18px; }
 
@@ -3120,13 +3190,10 @@ html, body {
     flex-basis: 100%; } }
 
 @media (min-width: 1024px) {
-  .join-us {
-    padding: 0;
-    padding-bottom: 130px; }
   .join-us .container {
     position: relative;
     padding-top: 30px;
-    padding-bottom: 10px; }
+    padding-bottom: 140px; }
   .join-us__title {
     flex-basis: 55%; }
   .join-us p {
@@ -3241,7 +3308,7 @@ html, body {
   .options-slider__visual--small {
     width: 167px; }
 
-.options-slider__item img {
+.options-slider__article img {
   display: block;
   width: 79px;
   height: 94px; }
@@ -3518,12 +3585,12 @@ html, body {
   overflow: hidden; }
 
 .pilot-project__background-wrap {
-  padding-top: 8px;
-  padding-bottom: 20px;
   background-color: white; }
 
 .pilot-project .container {
-  position: relative; }
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 20px; }
 
 .pilot-project__meeting {
   position: absolute;
@@ -3625,8 +3692,7 @@ html, body {
 
 .pilot-project__btn {
   margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 10px; }
+  margin-top: 30px; }
 
 @media (min-width: 768px) {
   .pilot-project__meeting {
@@ -5428,6 +5494,7 @@ html, body {
 @media (min-width: 1440px) {
   .choose-course .container {
     padding: 0;
+    padding-bottom: 10px;
     background-position: left 0 top 0,  left 219px top 35px; }
   .choose-course__wrap {
     width: 54%; }
@@ -5882,9 +5949,12 @@ html, body {
   overflow: hidden; }
 
 .educational-programms__background-wrap {
-  padding: 10px 0;
   text-align: center;
   background-color: white; }
+
+.educational-programms .container {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .educational-programms__title {
   text-align: left; }
@@ -5951,8 +6021,8 @@ html, body {
     justify-content: center; } }
 
 @media (min-width: 1440px) {
-  .educational-programms__background-wrap {
-    padding: 0;
+  .educational-programms .container {
+    padding-top: 0;
     padding-bottom: 30px; }
   .educational-programms__title {
     margin-bottom: 30px;
@@ -7151,6 +7221,9 @@ html, body {
     width: 30%; }
     .block-about__item:nth-child(4) .block-about__item-wrapper p {
       width: 478px; } }
+
+.page-template-template-contact-form main {
+  padding-top: 150px; }
 
 .contact-form {
   padding: 28px 0 35px;

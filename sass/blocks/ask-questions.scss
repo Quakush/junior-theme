@@ -12,6 +12,30 @@
 
 .ask-questions input[type="email"] {
 	margin-bottom: 20px;
+	padding-left: 15px;
+	height: 36px;
+	font-size: 12px;
+	background-color: $white;
+	border: none;
+	border-radius: 7px;
+}
+
+.ask-questions input[type="submit"] {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 167px;
+	height: 36px;
+	font-size: 12px;
+	color: $white;
+	font-weight: 700;
+	white-space: nowrap;
+	border: none;
+	border-radius: 7px;
+	background-image: $red-gradient;
+	box-sizing: border-box;
+	box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
+	cursor: pointer;
 }
 
 .ask-questions__btn {
@@ -19,6 +43,11 @@
 	width: 167px;
 	border-radius: 7px;
 	white-space: nowrap;
+}
+
+#wpcf7-f1810-o1 > form > p > span.ajax-loader {
+	width: 0;
+	height: 0;
 }
 
 .ask-questions__link {

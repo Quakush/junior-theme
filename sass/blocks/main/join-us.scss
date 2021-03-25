@@ -1,4 +1,4 @@
-.join-us {
+.join-us .container {
 	padding-top: 43px;
 	padding-bottom: 18px;
 }
@@ -122,15 +122,10 @@
 
 @media (min-width: 1024px) {
 
-	.join-us {
-        padding: 0;
-        padding-bottom: 130px;
-	}
-
 	.join-us .container {
 		position: relative;
 		padding-top: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 140px;
 	}
 
 	.join-us__title {

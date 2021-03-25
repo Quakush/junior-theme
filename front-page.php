@@ -70,7 +70,7 @@ get_header();
         </div>
           <ul class="options-slider__list">
             <li data="1" class="options-slider__item  options-slider__item--hidden">
-              <article class="options-slider__article  options-slider__article--grren" data="1">
+              <article class="options-slider__article  options-slider__article--green" data="1">
                 <div class="options-slider__text">
                   <h2 class="title__secondary  options-slider__item-title">Дорога <span class="title__colored">в digital</span></h2>
                   <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!
@@ -400,6 +400,9 @@ get_header();
             <?php get_template_part('/includes/block', 'getnews'); ?>
         </div>
     </section>
+    
+    
+    
     <?php get_template_part('/includes/block', 'ask_questions'); ?>
 </main>
 
