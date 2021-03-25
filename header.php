@@ -16,7 +16,7 @@ $timer = get_post_meta( 310, 'timer', true);
 <body <?php body_class(); ?>>
 
     <header class="main-header">
-        
+
         <?php if ($timer == 1): ?>
             <div class="top-bar">
                 <div class="container">
@@ -34,7 +34,11 @@ $timer = get_post_meta( 310, 'timer', true);
                 <div class="logo">
                     <a class="logo__link" href="/">
                         <div class="logo__svg-container">
-                            <svg><use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#logo"></use></svg>
+                            <svg width="65" height="94">
+                              <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#logo"></use>
+                            </svg>
+
+
                         </div>
                         <span>Junior<br>Specialists<br>Corporation</span>
                     </a>
@@ -51,16 +55,18 @@ $timer = get_post_meta( 310, 'timer', true);
                             )
                         );?>
                         <button class="btn  btn--small  mobile-nav__btn">
-                            <svg class="top-header__btn-svg"><use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#user"></use></svg>
+                            <svg class="top-header__btn-svg" width="65" height="94">
+                              <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#user"></use>
+                            </svg>
                             Личный кабинет
                         </button>
                     </div>
-                    <?php wp_nav_menu (
+                  <!--  <?php wp_nav_menu (
                         array(
                             'theme_location' => 'top-menu',
                             'menu_class' => 'main-nav__list'
                         )
-                    );?>
+                    );?>  ?-->
                 </nav>
                 <div class="language-switch">
                     <input type="radio" name="lang" id="rus" value="rus" checked>
@@ -69,7 +75,9 @@ $timer = get_post_meta( 310, 'timer', true);
                     <label for="eng">Eng</label>
                 </div>
                 <button class="btn  btn--small  top-header__btn">
-                    <svg class="top-header__btn-svg"><use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#user"></use></svg>
+                  <svg class="top-header__btn-svg" width="65" height="94">
+                    <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#user"></use>
+                  </svg>
                     Войти
                 </button>
             </div>
