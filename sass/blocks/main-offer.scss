@@ -1,9 +1,12 @@
 .main-offer {
 	position: relative;
-	padding-top: 26px;
-	padding-bottom: 53px;
 	width: 100%;
 	background-repeat: no-repeat;
+}
+
+.main-offer .container {
+	padding-top: 26px;
+	padding-bottom: 53px;
 }
 
 .main-offer__text-block {
@@ -54,6 +57,7 @@
 
 .main-offer--main .title__colored {
 	color: $corp-blue;
+
 }
 
 /* Стили для main-offer страницы Обучение */
@@ -84,7 +88,7 @@
 
 /* Стили для main-offer страницы Обучение - внутренняя (курсы) */
 
-.main-offer--courses {
+.main-offer--courses .container {
 	padding-bottom: 20px;
 }
 
@@ -112,7 +116,10 @@
     background-repeat: no-repeat;
 	background-size: 200%;
     background-position: -15px 152px;
-    padding-bottom: 81px;
+}
+
+.main-offer--startup .container {
+	padding-bottom: 81px;
     padding-top: 16px;
 }
 
@@ -156,7 +163,10 @@
     background-repeat: no-repeat;
 	background-size: 345px;
 	background-position: bottom 200px left 20px;
-    padding-bottom: 110px;
+}
+
+.main-offer--socrat .container {
+	padding-bottom: 110px;
     padding-top: 25px;
 }
 
@@ -211,9 +221,12 @@
 	/* Стили для main-offer страницы Стартапам */
 
 	.main-offer--startup {
-	background-size: 280%;
-	background-position: -172px 94px;
-	padding-bottom: 270px;
+		background-size: 280%;
+		background-position: -172px 94px;
+	}
+
+	.main-offer--startup .container {
+		padding-bottom: 270px;
 	}
 	
 	.main-offer--startup .title {
@@ -278,9 +291,12 @@
 
 
 	.main-offer--socrat {
-		padding-top: 40px;
         background-size: 360px;
 		background-position: bottom 218px right;
+	}
+
+	.main-offer--socrat .container {
+		padding-top: 40px;
 	}
 
 	.main-offer--socrat p {
@@ -291,13 +307,9 @@
 }
 
 @media (min-width: 1024px) {
-	
-	.main-offer {
-		padding-bottom: 140px;
-	}
 
 	.main-offer .container {
-		overflow: visible;
+		padding-bottom: 140px;
 	}
 
 	/* Стили для main-offer главной страницы */
@@ -358,6 +370,9 @@
 
 	.main-offer--startup {
 		background-size: 1326px;
+	}
+
+	.main-offer--startup .container {
 		padding-bottom: 250px;
 		padding-top: 80px;
 	}
@@ -415,7 +430,6 @@
 
 	.main-offer--main .container {
 		position: relative;
-		overflow: visible;
 		background-image: none;
 
 		&::before {
@@ -461,9 +475,12 @@
 	/* Стили для main-offer страницы Обучение */
 
 	.main-offer--education {
-		padding-top: 130px;
 		background-size: contain;
 		background-position: 80% 20%;
+	}
+
+	.main-offer--education .container {
+		padding-top: 130px;
 	}
 
 	.main-offer--education .title {
@@ -482,13 +499,10 @@
 
 	/* Стили для main-offer страницы Обучение - внутренняя (курсы) */
 
-	.main-offer--courses {
-		padding-top: 44px;
-		padding-bottom: 67px;
-	}
-
 	.main-offer--courses .container {
 		padding: 0;
+		padding-top: 44px;
+		padding-bottom: 67px;
 		background-position:
 		    right 116px top 99px,
 		    right 237px top 0,
@@ -565,8 +579,8 @@
 	/* Стили для main-offer главной страницы */
 	
 	.main-offer--main .container::after {
-		  bottom: -95px;
-		  } 
+		bottom: -95px;
+    } 
 
 	/* Стили для main-offer страницы Стартапам*/
 

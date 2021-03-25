@@ -105,7 +105,7 @@ get_header();
       <button class="form-popup__button btn" type="button">
         Хорошо
       </button>
-      <img class="form-popup__logo" src="images/svg/logo.svg" alt="Логотип компании JSCorporation" width="52" height="30">
+      <img class="form-popup__logo" src="/wp-content/themes/js-corp/images/svg/logo.svg" alt="Логотип компании JSCorporation" width="52" height="30">
     </div>
   </div>
 </main>

@@ -9,8 +9,8 @@
         <p>
             <?=the_content();?>
         </p>
-        <button class="btn  btn--green btn--big  immigration-slider__item-btn">
-            Оставить заявку
-        </button>
+        <a class="btn  btn--green btn--big  immigration-slider__item-btn" href="<?=get_field('link');?>">
+            Подробнее
+        </a>
     </div>
 </div>

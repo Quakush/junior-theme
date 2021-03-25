@@ -27,7 +27,7 @@ get_header();
 
           <?php foreach ($cats as $cat): ?>
             <div class="swiper-slide blog-links-list__item">
-              <a class="blog-links-list__link blog-links-list__link--active" href="<?= get_category_link($cat->term_id); ?>">
+              <a class="blog-links-list__link blog-links-list__link--active" href="#" data-cat="<?=$cat->term_id;?>">
                   <?= $cat->name; ?>
               </a>
             </div>

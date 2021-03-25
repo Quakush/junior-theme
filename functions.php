@@ -38,7 +38,11 @@ function scripts()
 
     wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery'));
 
+    // wp_enqueue_script( 'ask-questions-form', get_stylesheet_directory_uri() . '/js/ask-questions-form.js', array('jquery'));
+
     wp_enqueue_script( 'true_loadmoreblog', get_stylesheet_directory_uri() . '/js/loadblog.js', array('jquery'));
+
+    wp_enqueue_script( 'load_news_category', get_stylesheet_directory_uri() . '/js/news-category-ajax.js', array('jquery'));
 
     wp_enqueue_script( 'true_loadcategory', get_stylesheet_directory_uri() . '/js/loadcategory.js', array('jquery'));
 
@@ -116,9 +120,21 @@ add_action('widgets_init','my_sidebars');
 
 // Custom post type and taxonomy
 
-function my_courses_cpt()
+add_action('init', 'custom_post_types');
+
+function custom_post_types()
 {
-    $args = array(
+    register_taxonomy('branches', ['courses', 'internship'],[
+        'labels' => array(
+            'name' => 'branches',
+            'singular_name' => 'branch',
+            ),
+        'public' => true,
+        'hierarchical' => true,
+        'show_in_rest' => true,
+    ]);
+
+    register_post_type('courses', [
 
         'labels' => array(
             'name' => 'Курсы',
@@ -134,33 +150,9 @@ function my_courses_cpt()
         'show_in_rest' => true,
         'rest_base' => 'courses',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    );
+        ]);
 
-    register_post_type('courses', $args);
-}
-add_action('init', 'my_courses_cpt');
-
-function my_courses_taxonomy()
-{
-    $args = array(
-        'labels' => array(
-            'name' => 'branches',
-            'singular_name' => 'branch',
-        ),
-
-        'public' => true,
-        'hierarchical' => true,
-        'show_in_rest' => true,
-    );
-
-    register_taxonomy('branches', array('courses', 'internship'), $args);
-}
-add_action('init', 'my_courses_taxonomy');
-
-
-function my_campaigns_cpt()
-{
-    $args = array(
+    register_post_type('campaigns', [
 
         'labels' => array(
             'name' => 'Акции',
@@ -175,15 +167,9 @@ function my_campaigns_cpt()
         'show_in_rest' => true,
         'rest_base' => 'campaigns',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    );
+        ]);
 
-    register_post_type('campaigns', $args);
-}
-add_action('init', 'my_campaigns_cpt');
-
-function my_internship_cpt()
-{
-    $args = array(
+    register_post_type('internship', [
 
         'labels' => array(
             'name' => 'Практики',
@@ -198,15 +184,9 @@ function my_internship_cpt()
         'show_in_rest' => true,
         'rest_base' => 'internship',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    );
+    ]);
 
-    register_post_type('internship', $args);
-}
-add_action('init', 'my_internship_cpt');
-
-function my_categories_cpt()
-{
-    $args = array(
+    register_post_type('categories', [
 
         'labels' => array(
             'name' => 'Категории',
@@ -221,15 +201,9 @@ function my_categories_cpt()
         'show_in_rest' => true,
         'rest_base' => 'categories',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    );
+    ]);
 
-    register_post_type('categories', $args);
-}
-add_action('init', 'my_categories_cpt');
-
-function my_partners_cpt()
-{
-    $args = array(
+    register_post_type('partners', [
 
         'labels' => array(
             'name' => 'Партнеры',
@@ -244,15 +218,9 @@ function my_partners_cpt()
         'show_in_rest' => true,
         'rest_base' => 'partners',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    );
+    ]);
 
-    register_post_type('partners', $args);
-}
-add_action('init', 'my_partners_cpt');
-
-function my_specializations_cpt()
-{
-    $args = array(
+    register_post_type('specializations', [
 
         'labels' => array(
             'name' => 'Специальности',
@@ -267,15 +235,9 @@ function my_specializations_cpt()
         'show_in_rest' => true,
         'rest_base' => 'specializations',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    );
+    ]);
 
-    register_post_type('specializations', $args);
-}
-add_action('init', 'my_specializations_cpt');
-
-function my_skills_cpt()
-{
-    $args = array(
+    register_post_type('skills', [
 
         'labels' => array(
             'name' => 'Навыки',
@@ -290,15 +252,9 @@ function my_skills_cpt()
         'show_in_rest' => true,
         'rest_base' => 'skills',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    );
+    ]);
 
-    register_post_type('skills', $args);
-}
-add_action('init', 'my_skills_cpt');
-
-function guestarbaiter_post()
-{
-    $args = array(
+    register_post_type('guestarbaiter', [
 
         'labels' => array(
             'name' => 'Работа за границей',
@@ -313,14 +269,65 @@ function guestarbaiter_post()
         'show_in_rest' => true,
         'rest_base' => 'skills',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    );
+    ]);
 
-    register_post_type('guestarbaiter', $args);
+    register_taxonomy('news_categories', ['news'],[
+        'labels' => array(
+            'name' => 'Категории новостей',
+            'singular_name' => 'Категория новости',
+            ),
+        'public' => true,
+        'hierarchical' => true,
+        'show_in_rest' => true,
+    ]);
+
+    register_post_type('news', [
+
+        'labels' => array(
+            'name' => 'Новости',
+            'singular_name' => 'Новость',
+        ),
+
+        'hierarchical' => false,
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-buddicons-activity',
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+        'show_in_rest' => true,
+        'rest_base' => 'news',
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
+    ]);
+
+    register_taxonomy('projects_categories', ['projects'],[
+        'labels' => array(
+            'name' => 'Категории проектов',
+            'singular_name' => 'Категория проекта',
+            ),
+        'public' => true,
+        'hierarchical' => true,
+        'show_in_rest' => true,
+    ]);
+
+    register_post_type('projects', [
+
+        'labels' => array(
+            'name' => 'Проекты',
+            'singular_name' => 'Проект',
+        ),
+
+        'hierarchical' => false,
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-buddicons-activity',
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+        'show_in_rest' => true,
+        'rest_base' => 'projects',
+        'rest_controller_class' => 'WP_REST_Posts_Controller',
+    ]);
+   
 }
-add_action('init', 'guestarbaiter_post');
 
-
-// подгрузка постов на страницу
+// подгрузка курсов на страницу по ajax
 
 add_action('wp_ajax_loadmore', 'true_load_posts');
 add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
@@ -350,7 +357,7 @@ function true_load_posts(){
     wp_die();
 }
 
-//подгрузка постов на странице блога
+//подгрузка постов на странице новостей
 
 add_action('wp_ajax_loadmoreblog', 'true_load_blog_posts');
 add_action('wp_ajax_nopriv_loadmoreblog', 'true_load_blog_posts');
@@ -381,7 +388,7 @@ function true_load_blog_posts(){
 }
 
 
-// подгрузка постов по категориям
+// подгрузка курсов по категориям
 
 add_action( 'wp_ajax_get_cat', 'ajax_show_posts_in_cat' );
 add_action( 'wp_ajax_nopriv_get_cat', 'ajax_show_posts_in_cat' );
@@ -404,11 +411,10 @@ function ajax_show_posts_in_cat() {
             'field' => 'term_id',
             'terms' => $link
         ));
+    
     query_posts($args);
 
-
 	if (have_posts()) :
-
 
         while(have_posts()) : the_post();
 
@@ -417,8 +423,6 @@ function ajax_show_posts_in_cat() {
         endwhile; endif;
     get_template_part('includes/block', 'load-button');
     wp_reset_postdata();
-
-
     wp_die();
 }
 
@@ -427,8 +431,6 @@ add_action( 'wp_ajax_get_courses', 'ajax_show_all_courses' );
 add_action( 'wp_ajax_nopriv_get_courses', 'ajax_show_all_courses' );
 
 function ajax_show_all_courses() {
-
-
 
 	$args['post_type'] = 'courses';
 	$args['paged'] = 1;
@@ -450,5 +452,51 @@ function ajax_show_all_courses() {
 	wp_die();
 }
 
+// подгрузка новостей по категориям
+
+add_action( 'wp_ajax_get_news_cat', 'ajax_show_news_in_cat' );
+add_action( 'wp_ajax_nopriv_get_news_cat', 'ajax_show_news_in_cat' );
+
+function ajax_show_news_in_cat() {
+
+    $link = $_POST['link'];
+
+    if (!$link) {
+        die( 'Рубрика не найдена' );
+    }
+
+    $args['post_type'] = 'post';
+    $args['paged'] = 1;
+    $args['post_status'] = 'publish';
+    $args['posts_per_page'] = 3;
+    $args['cat'] = $link;
+
+    query_posts($args);
+    
+    echo $args['max_num_pages'];
+    
+
+    if (have_posts()) :
+
+        while(have_posts()) : the_post();
+
+            get_template_part('includes/section', 'blog-article');
+
+        endwhile; endif;
+    if (  $wp_query->max_num_pages > 1 ) : ?>
+        <script>
+        var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
+        var posts = '<?php echo addslashes(wp_json_encode($wp_query->query_vars)); ?>';
+        var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+        var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
+        </script>
+
+        <div id="true_loadmore_blog" class="btn  blog-content__btn">Загрузить ещё</div>
+
+    <?php endif;
+    
+    wp_reset_postdata();
+    wp_die();
+}
 
 ?>
