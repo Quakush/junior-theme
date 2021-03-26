@@ -313,6 +313,7 @@ function custom_post_types()
         'show_in_rest' => true,
         'rest_base' => 'projects',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
+        'taxonomies' => array('post_tag')
     ]);
    
 }
