@@ -87,7 +87,7 @@ get_header();
               <article class="options-slider__article  options-slider__article--blue" data="2">
                 <div class="options-slider__text">
                   <h2 class="title__secondary  options-slider__item-title">СДЕЛАЙ <span class="title__colored">ПЕРВЫЙ ШАГ</span></h2>
-                  <p>Junior Specialists Corporation - это первый в мире онлайн инкубатор для стартапов. Пройдите Junior Specialists Corporation - это первый в мире онлайн инкубатор для стартапов. Пройдите программу акселерации со своей идее и получите возможность стать резидентом и создать MVP. программу акселерации со своей идее и получите возможность стать резидентом и создать MVP.
+                  <p>Junior Specialists Corporation - это первый в мире онлайн инкубатор для стартапов. Пройдите программу акселерации со своей идее и получите возможность стать резидентом и создать MVP. 
                   </p>
                 </div>
                 <div class="options-slider__visual">
@@ -109,7 +109,7 @@ get_header();
                   <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="222" alt="slider visual image">
                   <span class="options-slider__visual-title">Разработка проектов</span>
                 </div>
-                <a class="btn btn--accent btn--small options-slider__btn" href="#">Оставить заявку</a>
+                <a class="btn btn--accent btn--small options-slider__btn" href="#">Узнать больше</a>
               </article>
             </li>
 
