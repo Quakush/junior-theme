@@ -1,8 +1,8 @@
 <footer class="main-footer">
     <div class="container">
-        
+
         <?php get_template_part('/includes/block', 'getnews');?>
-        
+
         <section class="contact-us">
             <h4 class="contact-us__title title-fourth">Связаться с нами:</h4>
             <ul class="contact-us__list">
@@ -30,12 +30,14 @@
             </div>
         </section>
         <nav class="footer-menu">
-            <?php wp_nav_menu(
+
+           <!-- <?php wp_nav_menu(
                 array(
                     'theme_location' => 'footer-menu',
                     'menu_class' => 'footer-menu__list'
                 )
-            );?>
+            );?> ?-->
+
         </nav>
         <div class="footer-info">
             <div class="footer-info__logo">
@@ -45,13 +47,13 @@
                 </a>
             </div>
              <p class="footer-info__company">2019-2021 © Junior Specialists Corporation llc.
-             </p> 
+             </p>
              <div class="footer-info__polity-box">
                 <a href="#" class="footer-info__polity">Политика конфиденциальности</a>
                 <span>|</span>
                 <a href="#" class="footer-info__polity">Условия использования</a>
-            </div> 
-        </div> 
+            </div>
+        </div>
     </div>
 </footer>
 <?php wp_footer();?>

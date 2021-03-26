@@ -1,52 +1,205 @@
+
 .mobile-nav {
-	display: none;
+  display: none;
 }
 
 .mobile-nav--shown {
-	display: block;
-	position: absolute;
-	top: 52px;
-	left: 0;
-	padding-bottom: 60px;
-	width: 100%;
-	background-color: $dark-text;
-	z-index: 100;
+  display: block;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  padding-bottom: 60px;
+  width: 100%;
+  background-color: $dark-text;
+  z-index: 100;
 }
 
 .mobile-nav--shown .mobile-nav__list {
-	@include list-style;
-	display: flex;
-	flex-direction: column;
-	text-align: left;
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .mobile-nav--shown .sub-menu {
-	@include list-style;
+  @include list-style;
 }
 
-.mobile-nav--shown a {
-	@include link-style;
-	padding: 8px 0;
-	padding-left: 16px;
-	width: 100%;
-	color: $white;
-	font-size: 20px;
-	font-weight: 400;
+.mobile-nav a {
+  @include link-style;
+  padding: 8px 0;
+  padding-left: 16px;
+  width: 100%;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .mobile-nav--shown .sub-menu a {
-	padding-left: 46px;
-	font-size: 16px;
+  padding-left: 46px;
+  font-size: 16px;
 }
 
 .mobile-nav--shown .mobile-menu__link--active {
-	background-color: $corp-blue;
+  background-color: $corp-blue;
 }
 
 .mobile-nav__btn {
-	position: relative;
-	margin: 0 auto;
-	margin-top: 30px;
-	font-size: 11px;
-	height: 30px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 11px;
+  height: 30px;
+}
+
+@media (min-width: 1024px) {
+  .menu-item {
+    position: relative;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav__btn {
+    display: none;
+  }
+
+  .mobile-nav__list {
+    display: flex;
+    @include list-style;
+  }
+
+  .mobile-nav__list > li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    left: 0;
+    top: 50%;
+    background-repeat: no-repeat;
+    transform: translate(0, -50%);
+    @include element-style(17px, 17px, transparent);
+    //transform: translate(0, -50%);
+  }
+
+  .mobile-nav__list > li:first-of-type::before {
+    background-image: url("../images/icons/student-grad-cap.svg");
+  }
+
+  .mobile-nav__list > li:nth-of-type(2)::before {
+    background-image: url("../images/icons/softtware-engineer.svg");
+  }
+
+  .mobile-nav__list > li:last-of-type::before {
+    background-image: url("../images/icons/angel.svg");
+  }
+
+
+  .mobile-nav__list > li {
+    margin-right: 45px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .mobile-nav__list a:first-child {
+    padding: 34px 0;
+    padding-left: 27px;
+    width: unset;
+  }
+
+  .mobile-nav__list .sub-menu a {
+    padding: 9px 0;
+    padding-left: 17px;
+  }
+
+  .top-header__btn {
+    margin-left: unset;
+    border-radius: 10px;
+  }
+
+
+  .sub-menu {
+    @include link-style;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 268px;
+    background-color: #24272D;
+    border-radius: 16px;
+    box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    z-index: -1;
+    transform: translate(0, 100%);
+    color: #AEAEAE;
+  }
+
+  .sub-menu:hover {
+    transition: all 1s ease;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  .sub-menu:hover ~ .menu-item > a {
+    color: $white;
+
+  }
+
+  .mobile-nav__list > li:hover .sub-menu {
+    transition: all 1s ease;
+    opacity: 1;
+    z-index: 100;
+    color: inherit;
+  }
+
+  .mobile-nav__list > li:hover {
+    color: #00A7CF;
+
+    &:first-of-type::before {
+      background-image: url("../images/icons/student-grad-cap-blue.svg");
+    }
+
+    &:nth-of-type(2)::before {
+      background-image: url("../images/icons/softtware-engineer-blue.svg");
+    }
+
+    &:last-of-type::before {
+      background-image: url("../images/icons/angel-blue.svg");
+    }
+  }
+
+  .sub-menu a {
+    color: #AEAEAE;
+  }
+
+  .menu-item > a {
+    color: inherit;
+  }
+  .sub-menu .menu-item {
+    color: #AEAEAE;
+  }
+
+  .sub-menu .menu-item:hover {
+    background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+    color: $white;
+  }
+
+  .sub-menu li:first-of-type:hover {
+    background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .sub-menu li:last-of-type:hover {
+    background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }

@@ -19,44 +19,44 @@
 
 	.main-nav {
 		order: 1;
-		margin-left: auto;
+		margin-left: 160px;
 	}
-    
+
     .main-nav__list {
     	display: flex;
     	flex-direction: row;
-    	justify-content: space-between;
+    	justify-content: unset;
     }
 
-	.main-nav__list li {
-		position: relative;
-		margin-left: 34px;
-		transition: color 0.5s;
+	//.main-nav__list li {
+	//	position: relative;
+	//	margin-left: 34px;
+	//	transition: color 0.5s;
+	//
+	//	&:first-of-type {
+	//		margin-left: 0;
+	//	}
+	//}
 
-		&:first-of-type {
-			margin-left: 0;
-		}
-	}
-
-	.main-nav__list li::before {
-		@include element-style(17px, 17px, transparent);
-		left: 0;
-		top: 50%;
-		background-repeat: no-repeat;
-		transform: translate(0, -50%);
-	}
-
-	.main-nav__list li:first-of-type::before {
-		background-image: url("../images/icons/student-grad-cap.svg");
-	}
-
-	.main-nav__list li:nth-of-type(2)::before {
-		background-image: url("../images/icons/softtware-engineer.svg");
-	}
-
-	.main-nav__list li:last-of-type::before {
-		background-image: url("../images/icons/angel.svg");
-	}
+	//.main-nav__list li::before {
+	//	@include element-style(17px, 17px, transparent);
+	//	left: 0;
+	//	top: 50%;
+	//	background-repeat: no-repeat;
+	//	transform: translate(0, -50%);
+	//}
+	//
+	//.main-nav__list li:first-of-type::before {
+	//	background-image: url("../images/icons/student-grad-cap.svg");
+	//}
+	//
+	//.main-nav__list li:nth-of-type(2)::before {
+	//	background-image: url("../images/icons/softtware-engineer.svg");
+	//}
+	//
+	//.main-nav__list li:last-of-type::before {
+	//	background-image: url("../images/icons/angel.svg");
+	//}
 
 	.main-nav__list a {
 		@include link-style;
@@ -65,30 +65,30 @@
 		font-size: 14px;
 	}
 
-	.main-nav__list li:hover {
-		color: $corp-blue;
-	}
-
-	.main-nav__list li:first-of-type:hover {
-
-		&::before {
-		background-image: url("../images/icons/student-grad-cap-blue.svg");
-	    }
-	}
-
-	.main-nav__list li:nth-of-type(2):hover {
-
-	    &::before {
-		background-image: url("../images/icons/softtware-engineer-blue.svg");
-	    }
-	}
-
-	.main-nav__list li:last-of-type:hover {
-
-		&::before {
-		background-image: url("../images/icons/angel-blue.svg");
-	    }
-	}
+	//.main-nav__list li:hover {
+	//	color: $corp-blue;
+	//}
+	//
+	//.main-nav__list li:first-of-type:hover {
+	//
+	//	&::before {
+	//	background-image: url("../images/icons/student-grad-cap-blue.svg");
+	//    }
+	//}
+	//
+	//.main-nav__list li:nth-of-type(2):hover {
+	//
+	//    &::before {
+	//	background-image: url("../images/icons/softtware-engineer-blue.svg");
+	//    }
+	//}
+	//
+	//.main-nav__list li:last-of-type:hover {
+	//
+	//	&::before {
+	//	background-image: url("../images/icons/angel-blue.svg");
+	//    }
+	//}
 
 	.main-nav__list .menu-item-has-children .sub-menu {
 		position: absolute;
@@ -105,7 +105,7 @@
 		z-index: 100;
 		transition: opacity 1s, height 1s;
 
-		li::before { 
+		li::before {
 			display: none;
 		}
 	}
@@ -114,28 +114,28 @@
 		position: relative;
 	}
 
-	.main-nav__list .menu-item-has-children:hover .sub-menu {
-		height: unset;
-		opacity: 1;
-	}
+	//.main-nav__list .menu-item-has-children:hover .sub-menu {
+	//	height: unset;
+	//	opacity: 1;
+	//}
 
-	.main-nav__list .sub-menu li:hover {
-		background-image: linear-gradient(to bottom, rgba(0,167,207,1) 0%,rgba(1,98,122,1) 100%);
-	}
+	//.main-nav__list .sub-menu li:hover {
+	//	background-image: linear-gradient(to bottom, rgba(0,167,207,1) 0%,rgba(1,98,122,1) 100%);
+	//}
 
-	.main-nav__list .sub-menu li:hover a {
-		color: $white;
-	}
-
-	.main-nav__list .menu-item-has-children:hover li {
-        margin-left: 0;
-        color: $light-text;
-	}
-
-	.main-nav__list .menu-item-has-children:hover li a {
-		padding: 11px 0;
-		padding-left: 16px;
-	}
+	//.main-nav__list .sub-menu li:hover a {
+	//	color: $white;
+	//}
+	//
+	//.main-nav__list .menu-item-has-children:hover li {
+    //    margin-left: 0;
+    //    color: $light-text;
+	//}
+	//
+	//.main-nav__list .menu-item-has-children:hover li a {
+	//	padding: 11px 0;
+	//	padding-left: 16px;
+	//}
 
 	.main-nav__list .sub-menu li:first-of-type {
         border-top-left-radius: 16px;
