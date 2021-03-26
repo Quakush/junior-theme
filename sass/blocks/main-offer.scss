@@ -443,8 +443,8 @@
 
 		&::after {
 			@include element-style(220px, 325px, transparent);
-			left: -95px;
-			bottom: -63px;
+			left: -75px;
+			bottom: 100px;
 			background-image: url("../images/svg/rocket-main-offer.svg");
 			background-repeat: no-repeat;
 			background-size: contain;
