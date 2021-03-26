@@ -126,8 +126,8 @@ function custom_post_types()
 {
     register_taxonomy('branches', ['courses', 'internship'],[
         'labels' => array(
-            'name' => 'branches',
-            'singular_name' => 'branch',
+            'name' => 'Категории курсов',
+            'singular_name' => 'Категория курса',
             ),
         'public' => true,
         'hierarchical' => true,
@@ -271,10 +271,10 @@ function custom_post_types()
         'rest_controller_class' => 'WP_REST_Posts_Controller',
     ]);
 
-    register_taxonomy('news_categories', ['news'],[
+    register_taxonomy('news_projects_categories', ['news', 'projects'], [
         'labels' => array(
-            'name' => 'Категории новостей',
-            'singular_name' => 'Категория новости',
+            'name' => 'Категории новостей и проектов',
+            'singular_name' => 'Категория новости или проекта',
             ),
         'public' => true,
         'hierarchical' => true,
@@ -296,16 +296,6 @@ function custom_post_types()
         'show_in_rest' => true,
         'rest_base' => 'news',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
-    ]);
-
-    register_taxonomy('projects_categories', ['projects'],[
-        'labels' => array(
-            'name' => 'Категории проектов',
-            'singular_name' => 'Категория проекта',
-            ),
-        'public' => true,
-        'hierarchical' => true,
-        'show_in_rest' => true,
     ]);
 
     register_post_type('projects', [
