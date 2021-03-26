@@ -7,9 +7,9 @@ Template Name: News Page
 $cats = get_categories('hide_empty=0');
 
 $args = array(
-    'post_type' => 'post',
+    'post_type' => 'news',
     'post_status' => 'publish',
-    'posts_per_page' => 3,
+    'posts_per_page' => 99999,
     'paged' => 1,
     'order' => 'DESC'
 );
