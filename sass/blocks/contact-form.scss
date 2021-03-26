@@ -1,4 +1,4 @@
-$size-cross: 18px;
+$size-cross: 19px;
 $padding-left: 48px;
 $padding-right: 28px;
 $size-checkbox: 16px;
@@ -8,15 +8,16 @@ $size-checkbox: 16px;
 }
 
 .contact-form {
-  padding: 28px 0 35px;
   width: 486px;
   margin: 0 auto;
+  padding: 28px 0 35px;
 
   font-size: 16px;
   line-height: 19px;
   color: $dark-text;
-  border-radius: 20px;
+
   background-color: $white;
+  border-radius: 20px;
 }
 
 .contact-form__title-wrap {
@@ -36,16 +37,39 @@ $size-checkbox: 16px;
 }
 
 .contact-form__close {
+  position: relative;
+
   flex-shrink: 0;
   width: $size-cross;
   height: $size-cross;
   padding: 0;
 
-  background: url("../images/svg/cross-dark.svg") no-repeat;
-  background-color: transparent;
-  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+
+    width: 2px;
+    height: calc(100% + 6px);
+
+    background-color: $dark-text;
+  }
+
+  &::before {
+    left: 50%;
+
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  &::after {
+    right: 50%;
+
+    transform: translateX(50%) rotate(-45deg);
+  }
 }
 
 .contact-form__field {
@@ -59,7 +83,7 @@ $size-checkbox: 16px;
   }
 
   &--error {
-    border-color: #EF4864;
+    border-color: #ef4864;
   }
 }
 
@@ -91,10 +115,11 @@ $size-checkbox: 16px;
   border-bottom: 1px solid $dark-text;
 
   &--error {
-    border-color: #EF4864;
+    border-color: #ef4864;
   }
 
   &::placeholder {
+    font-size: 16px;
     color: $dark-text;
 
     opacity: 0.5;
@@ -107,8 +132,8 @@ $size-checkbox: 16px;
   left: $padding-left;
 
   font-size: 10px;
-  visibility: hidden;
 
+  visibility: hidden;
   opacity: 0.5;
 }
 
@@ -120,30 +145,34 @@ $size-checkbox: 16px;
   align-items: center;
   width: 100%;
   padding: 14px $padding-right 6px $padding-left;
-  color: $dark-text;
-  opacity: 0.5;
-  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 19px;
+  font-family: inherit;
+  color: rgba($dark-text, 0.5);
 
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 
   &::after {
     content: "";
 
-    width: 14px;
-    height: 8px;
     flex-shrink: 0;
+    width: 8px;
+    height: 8px;
 
-    background: url("../images/svg/down-arrow.svg") no-repeat;
-    background-size: cover;
+    border-right: 2px solid $dark-text;
+    border-bottom: 2px solid $dark-text;
+    transform: rotate(45deg);
   }
 }
 
 .contact-form__select-options {
   @include list-style;
 
-  padding: 11px $padding-right 30px $padding-left;
   display: none;
+  padding: 11px $padding-right 30px $padding-left;
 
   &--show {
     display: block;
@@ -160,7 +189,6 @@ $size-checkbox: 16px;
 
 .contact-form__select-input {
   @include visually-hidden;
-  position: absolute;
 }
 
 .contact-form__select-label {
@@ -168,40 +196,45 @@ $size-checkbox: 16px;
 }
 
 .contact-form__bottom-wrap {
-  text-align: center;
   max-width: 267px;
   margin: 0 auto;
+
+  text-align: center;
 }
 
 .contact-form__checkbox {
   @include visually-hidden;
-  position: absolute;
 }
 
 .contact-form__checkbox-label {
   position: relative;
+
   display: inline-block;
-  text-align: left;
-  padding: 0 0 0 9px + $size-checkbox;
   margin: 0 0 38px;
+  padding: 0 0 0 9px + $size-checkbox;
+
+  text-align: left;
+
   cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
-    box-sizing: border-box;
     top: 2px;
     left: 0;
-    border-radius: 4px;
+
+    box-sizing: border-box;
     width: $size-checkbox;
     height: $size-checkbox;
+
     border: 1px solid $dark-text;
+    border-radius: 4px;
   }
 }
 
 .contact-form__link {
+  color: #00738f;
   text-decoration: none;
-  color: #00738F;
 }
 
 .contact-form__checkbox:checked + .contact-form__checkbox-label {
