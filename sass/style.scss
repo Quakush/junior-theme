@@ -18,6 +18,7 @@
 @import "blocks/ask-questions";
 @import "blocks/write-us";
 @import "blocks/banners";
+@import "blocks/article-mini";
 
 @import "blocks/header/toggler";
 @import "blocks/header/main-header";
@@ -75,17 +76,17 @@
 @import "blocks/courses/aggregator";
 @import "blocks/courses/education-paltforms-proposal";
 
-@import "blocks/blog/blog";
-@import "blocks/blog/blog-links-list";
-@import "sass/blocks/blog/blog-content";
-@import "sass/blocks/blog/block/block";
-@import "sass/blocks/blog/block/block-about";
+@import "blocks/news/news";
+@import "blocks/news/news-links-list";
+@import "blocks/news/news-content";
+/*@import "blocks/news/block/block";
+@import "blocks/news/block/block-about";*/
 
-@import "sass/blocks/digital/digital";
-@import "sass/blocks/digital/command";
-@import "sass/blocks/digital/projects";
-@import "sass/blocks/digital/technologies";
-@import "sass/blocks/digital/work";
+@import "blocks/digital/digital";
+@import "blocks/digital/command";
+@import "blocks/digital/projects";
+@import "blocks/digital/technologies";
+@import "blocks/digital/work";
 
 
 @import "blocks/contact-form";

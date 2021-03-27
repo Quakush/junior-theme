@@ -35,7 +35,7 @@ $timer = get_post_meta(310, 'timer', true);
         <a class="logo__link" href="/">
           <div class="logo__svg-container">
             <svg width="65" height="94">
-              <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#logo"></use>
+              <use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#logo"></use>
             </svg>
           </div>
           <span>Junior<br>Specialists<br>Corporation</span>
@@ -54,7 +54,7 @@ $timer = get_post_meta(310, 'timer', true);
             ); ?>
           <button class="btn  btn--small  mobile-nav__btn">
             <svg class="top-header__btn-svg" width="65" height="94">
-              <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#user"></use>
+              <use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#user"></use>
             </svg>
             Личный кабинет
           </button>
@@ -65,7 +65,7 @@ $timer = get_post_meta(310, 'timer', true);
                 'theme_location' => 'top-menu',
                 'menu_class' => 'main-nav__list'
             )
-        ); ?>?-->
+        ); ?>-->
 
       </nav>
       <div class="language-switch">
@@ -76,7 +76,7 @@ $timer = get_post_meta(310, 'timer', true);
       </div>
       <button class="btn  btn--small  top-header__btn">
         <svg class="top-header__btn-svg" width="65" height="94">
-          <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#user"></use>
+          <use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#user"></use>
         </svg>
         Войти
       </button>

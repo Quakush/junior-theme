@@ -1,0 +1,122 @@
+.news-content__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.news-content__list .article-mini__item {
+    margin-bottom: 30px;
+}
+
+.news-content__list .article-mini__image-wrap {
+    width: 290px;
+    height: 290px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.4);
+
+    &::before {
+        position: absolute;
+        content: "Подробнее...";
+        top: 50%;
+        left: 50%;
+        color: $white;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}
+
+.news-content__list .article-mini__image-wrap img {
+    width: 290px;
+    height: 290px;
+}
+
+.news-content__list .article-mini__image-wrap:hover img {
+    opacity: 0.6;
+}
+
+.news-content__list .article-mini__image-wrap:hover {
+
+    &::before {
+        display: block;
+    }
+}
+
+.news-content__btn-container {
+    margin: 0 auto;
+}
+
+.news-content__btn {
+    margin: 0 auto;
+    width: 167px;
+    height: 36px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: $dark-text;
+    border: 1px solid $corp-green;
+    border-radius: 7px;
+    background-image: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .news-content__list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .news-content__list .article-mini__image-wrap {
+        width: 230px;
+    }
+
+    .news-content__list .article-mini__item {
+        width: 230px;
+        margin-right: 10px;
+    }
+
+    .news-content__btn-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .news-content__btn {
+            display: flex;
+            margin: 0 10%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .news-content__list .article-mini__item {
+        width: 287px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+    }
+
+    .news-content__list .article-mini__image-wrap {
+        width: 287px;
+    }
+
+    .news-content__btn-container {
+
+        .news-content__btn {
+            margin: 0 20%;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .news-content__list .article-mini__item__item {
+        width: 332px;
+        margin-right: 32px;
+    }
+
+    .news-content__list .article-mini__image-wrap {
+        width: 332px;
+    }
+}

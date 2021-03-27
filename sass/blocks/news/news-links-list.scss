@@ -1,14 +1,14 @@
-.blog-container {
+.news-container {
   border-bottom: 1px solid $white;
   margin-bottom: 30px;
 }
 
-.blog-links-list {
+.news-links-list {
   position: relative;
   @include list-style;
 }
 
-.blog-links-list__link {
+.news-links-list__link {
   font-size: 14px;
   line-height: 22px;
   font-weight: bold;
@@ -24,22 +24,21 @@
   //}
 }
 
-.blog-links-list__item {
+.news-links-list__item {
   width: unset;
   flex-shrink: unset;
   margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
-  .blog-links-list__item {
+  .news-links-list__item {
     width: unset;
     flex-shrink: unset;
   }
 }
 
-
 @media (min-width: 1024px) {
-  .blog-links-list__item {
+  .news-links-list__item {
     width: unset;
     flex-shrink: unset;
     margin-right: 33px;
@@ -47,17 +46,17 @@
 }
 
 @media (min-width: 1440px) {
-  .blog-links-list {
+  .news-links-list {
     display: flex;
   }
 
-  .blog-links-list__link {
+  .news-links-list__link {
     font-size: 17px;
     font-weight: 800;
     line-height: 24px;
   }
 
-  .blog-links-list__item {
+  .news-links-list__item {
     margin-right: 33px;
   }
 }
