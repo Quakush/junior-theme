@@ -1,6 +1,8 @@
 <?php
 
-$posts = get_posts(array(
+$news_posts = get_posts(array(
+    'post_type' => 'news',
+    'post_status' => 'publish',
     'numberposts' => 3,
     'category' => 0,
     'orderby' => 'date',
@@ -369,22 +371,23 @@ get_header();
             <div class="news-slider">
                 <div class="news-slider__list">
 
-                <?php if ($posts) :
+                <?php if ($news_posts) :
                     $i = 0;
-                    foreach ($posts as $post) : ?>
+                    foreach ($news_posts as $post) :
+                        $cat_name = get_the_terms(get_the_ID(), 'news_projects_categories')[0]; ?>
 
-                        <div class="news-slider__item">
-                            <div class="news-slider__image-wrap">
+                        <div class="article-mini__item">
+                            <div class="article-mini__image-wrap">
                                 <?php if (has_post_thumbnail()): ?>
 
                                   <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>">
 
                                 <?php endif; ?>
                             </div>
-                            <div class="news-slider__item-caption">
-                                <button class="btn  btn--small  btn--accent  news-slider__cat-btn">
-                                    <?=the_category();?>
-                                </button>
+                            <div class="article-mini__item-caption">
+                                <a class="btn  btn--small  btn--accent  article-mini__cat-btn" href="">
+                                    <span><?=$cat_name->name;?></span>
+                                </a>
                                 <h4><?php the_title(); ?></h4>
                                 <p><?php the_content(); ?></p>
                             </div>
