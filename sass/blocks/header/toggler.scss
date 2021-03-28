@@ -51,6 +51,9 @@
 }
 
 @media (min-width: 768px) {
+	.toggler {
+		display: none;
+	}
 
     .toggler {
 		width: 25px;
@@ -80,9 +83,3 @@
 
 }
 
-@media (min-width: 1024px) {
-
-	.toggler {
-		display: none;
-	}
-}

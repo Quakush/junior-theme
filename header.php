@@ -34,38 +34,41 @@ $timer = get_post_meta(310, 'timer', true);
       <div class="logo">
         <a class="logo__link" href="/">
           <div class="logo__svg-container">
-            <svg width="65" height="94">
+            <svg width="36" height="25">
               <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#logo"></use>
             </svg>
           </div>
           <span>Junior<br>Specialists<br>Corporation</span>
         </a>
       </div>
+
       <nav class="main-nav">
         <div class="toggler">
           <span></span>
         </div>
-        <div class="mobile-nav">
+        <div class="main-nav-wrapper">
+
             <?php wp_nav_menu(
                 array(
-                    'theme_location' => 'mobile-menu',
-                    'menu_class' => 'mobile-nav__list'
+                    'theme_location' => 'top-menu',
+                    'menu_class' => 'main-nav__list'
                 )
             ); ?>
-          <button class="btn  btn--small  mobile-nav__btn">
-            <svg class="top-header__btn-svg" width="65" height="94">
+
+          <button class="btn  btn--small  main-nav-wrapper__btn">
+            <svg class="top-header__btn-svg" width="12" height="17">
               <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#user"></use>
             </svg>
             Личный кабинет
           </button>
         </div>
 
-        <!--<?php wp_nav_menu(
+        <!-- <?php wp_nav_menu(
             array(
-                'theme_location' => 'top-menu',
-                'menu_class' => 'main-nav__list'
+                'theme_location' => 'mobile-menu',
+                'menu_class' => 'mobile-nav__list'
             )
-        ); ?>?-->
+        ); ?> ?-->
 
       </nav>
       <div class="language-switch">
@@ -74,8 +77,9 @@ $timer = get_post_meta(310, 'timer', true);
         <input type="radio" name="lang" value="eng" id="eng">
         <label for="eng">Eng</label>
       </div>
+
       <button class="btn  btn--small  top-header__btn">
-        <svg class="top-header__btn-svg" width="65" height="94">
+        <svg class="top-header__btn-svg" width="12" height="17">
           <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#user"></use>
         </svg>
         Войти
