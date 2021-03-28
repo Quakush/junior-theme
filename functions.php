@@ -26,6 +26,9 @@ function scripts()
     wp_register_script('mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', [], 1, true);
     wp_enqueue_script('mobile-menu');
 
+    wp_register_script('contact-form', get_template_directory_uri() . '/js/contact-form.js', [], 1, true);
+    wp_enqueue_script('contact-form');
+
     wp_register_script('timer', get_template_directory_uri() . '/js/timer.js', [], 1, true);
     wp_enqueue_script('timer');
 
