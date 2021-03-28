@@ -9,7 +9,7 @@ jQuery(function($){
 
 	$('.news-slider__list').slick({
 		infinite: true,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 2000,
 		arrows: false,
 		dots: true

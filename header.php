@@ -34,6 +34,8 @@ $timer = get_post_meta(310, 'timer', true);
       <div class="logo">
         <a class="logo__link" href="/">
           <div class="logo__svg-container">
+            <svg width="65" height="94">
+              <use xlink:href="/wp-content/themes/js-corp/images/svg/sprite.svg#logo"></use>
             <svg width="36" height="25">
               <use xlink:href="./wp-content/themes/js-corp/images/svg/sprite.svg#logo"></use>
             </svg>

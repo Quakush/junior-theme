@@ -99,13 +99,12 @@ get_header();
             <?php if ($courses->max_num_pages > 1) : ?>
 
                 <script>
-                var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
                 var posts = '<?php echo addslashes(wp_json_encode($courses->query_vars)); ?>';
                 var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
                 var max_pages = '<?php echo $courses->max_num_pages; ?>';
                 </script>
 
-                <div id="true_loadmore" class="btn  courses__btn">Загрузить ещё</div>
+                <div id="courses" class="btn  courses__btn">Загрузить ещё</div>
             <?php endif; ?>
 
             </div>

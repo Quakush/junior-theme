@@ -172,11 +172,11 @@
 
   .options-slider__text {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
     margin: 0;
     width: 58%;
-  
+    transform: translate(0, -50%);
   }
 
   .options-slider__text p {

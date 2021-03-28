@@ -1,6 +1,9 @@
 <?php
 
 // Load stylesheets and js
+
+add_action('wp_enqueue_scripts', 'scripts');
+
 function scripts()
 {
     wp_register_style('style', get_template_directory_uri() . '/css/style.css', [], 1, 'all');
@@ -23,6 +26,9 @@ function scripts()
     wp_register_script('mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js', [], 1, true);
     wp_enqueue_script('mobile-menu');
 
+    wp_register_script('contact-form', get_template_directory_uri() . '/js/contact-form.js', [], 1, true);
+    wp_enqueue_script('contact-form');
+
     wp_register_script('timer', get_template_directory_uri() . '/js/timer.js', [], 1, true);
     wp_enqueue_script('timer');
 
@@ -36,33 +42,51 @@ function scripts()
 
     wp_enqueue_script( 'slick-slider', get_stylesheet_directory_uri() . '/js/slick.js', array('jquery'));
 
-    wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/js/loadmore.js', array('jquery'));
-
     // wp_enqueue_script( 'ask-questions-form', get_stylesheet_directory_uri() . '/js/ask-questions-form.js', array('jquery'));
 
-    wp_enqueue_script( 'true_loadmoreblog', get_stylesheet_directory_uri() . '/js/loadblog.js', array('jquery'));
+    //ajax rerquests
 
-    wp_enqueue_script( 'load_news_category', get_stylesheet_directory_uri() . '/js/news-category-ajax.js', array('jquery'));
+    $ajax_param = array('ajaxurl' => admin_url('admin-ajax.php'));
 
-    wp_enqueue_script( 'true_loadcategory', get_stylesheet_directory_uri() . '/js/loadcategory.js', array('jquery'));
+    wp_enqueue_script( 'load-more-course', get_stylesheet_directory_uri() . '/js/load-more-course.js', array('jquery'));
+    wp_localize_script('load-more-course', 'myPlugin', $ajax_param);
 
-    wp_localize_script('true_loadcategory', 'myPlugin', array(
-        'ajaxurl' => admin_url('admin-ajax.php')
-    ));
+    wp_enqueue_script( 'load-more-news', get_stylesheet_directory_uri() . '/js/load-more-news.js', array('jquery'));
+    wp_localize_script('load-more-news', 'myPlugin', $ajax_param);
+
+    wp_enqueue_script( 'load-news-category', get_stylesheet_directory_uri() . '/js/load-news-category.js', array('jquery'));
+
+    wp_localize_script('load-news-category', 'myPlugin', $ajax_param);
+
+    wp_enqueue_script( 'load-course-category', get_stylesheet_directory_uri() . '/js/load-course-category.js', array('jquery'));
+
+    wp_localize_script('load-course-category', 'myPlugin', $ajax_param);
 }
 
-add_action('wp_enqueue_scripts', 'scripts');
+// колонка "ID" в админке
+add_action('admin_init', 'admin_area_ID');
+function admin_area_ID() {
+    // для таксономий (рубрик, меток и т.д.)
+    foreach (get_taxonomies() as $taxonomy) {
+        add_action("manage_edit-${taxonomy}_columns",          'tax_add_col');
+        add_filter("manage_edit-${taxonomy}_sortable_columns", 'tax_add_col');
+        add_filter("manage_${taxonomy}_custom_column",         'tax_show_id', 10, 3);
+    }
+    add_action('admin_print_styles-edit-tags.php', 'tax_id_style');
+    function tax_add_col($columns) {return $columns + array ('tax_id' => 'ID');}
+    function tax_show_id($v, $name, $id) {return 'tax_id' === $name ? $id : $v;}
+    function tax_id_style() {print '<style>#tax_id{width:4em}</style>';}
+    // для постов и страниц
+    add_filter('manage_posts_columns', 'posts_add_col', 5);
+    add_action('manage_posts_custom_column', 'posts_show_id', 5, 2);
+    add_filter('manage_pages_columns', 'posts_add_col', 5);
+    add_action('manage_pages_custom_column', 'posts_show_id', 5, 2);
+    add_action('admin_print_styles-edit.php', 'posts_id_style');
+    function posts_add_col($defaults) {$defaults['wps_post_id'] = __('ID'); return $defaults;}
+    function posts_show_id($column_name, $id) {if ($column_name === 'wps_post_id') echo $id;}
+    function posts_id_style() {print '<style>#wps_post_id{width:4em}</style>';}
+}
 
-// добавление колонки с ID в админку
-function true_id($args){
-	$args['post_page_id'] = 'ID';
-	return $args;
-}
-function true_custom($column, $id){
-	if($column === 'post_page_id'){
-		echo $id;
-	}
-}
 
 add_filter('manage_pages_columns', 'true_id', 5);
 add_action('manage_pages_custom_column', 'true_custom', 5, 2);
@@ -126,8 +150,8 @@ function custom_post_types()
 {
     register_taxonomy('branches', ['courses', 'internship'],[
         'labels' => array(
-            'name' => 'branches',
-            'singular_name' => 'branch',
+            'name' => 'Категории курсов',
+            'singular_name' => 'Категория курса',
             ),
         'public' => true,
         'hierarchical' => true,
@@ -271,10 +295,10 @@ function custom_post_types()
         'rest_controller_class' => 'WP_REST_Posts_Controller',
     ]);
 
-    register_taxonomy('news_categories', ['news'],[
+    register_taxonomy('news_projects_categories', ['news', 'projects'], [
         'labels' => array(
-            'name' => 'Категории новостей',
-            'singular_name' => 'Категория новости',
+            'name' => 'Категории новостей и проектов',
+            'singular_name' => 'Категория новости или проекта',
             ),
         'public' => true,
         'hierarchical' => true,
@@ -298,16 +322,6 @@ function custom_post_types()
         'rest_controller_class' => 'WP_REST_Posts_Controller',
     ]);
 
-    register_taxonomy('projects_categories', ['projects'],[
-        'labels' => array(
-            'name' => 'Категории проектов',
-            'singular_name' => 'Категория проекта',
-            ),
-        'public' => true,
-        'hierarchical' => true,
-        'show_in_rest' => true,
-    ]);
-
     register_post_type('projects', [
 
         'labels' => array(
@@ -323,28 +337,27 @@ function custom_post_types()
         'show_in_rest' => true,
         'rest_base' => 'projects',
         'rest_controller_class' => 'WP_REST_Posts_Controller',
+        'taxonomies' => array('post_tag')
     ]);
    
 }
 
 // подгрузка курсов на страницу по ajax
 
-add_action('wp_ajax_loadmore', 'true_load_posts');
-add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
+add_action('wp_ajax_loadmore', 'load_more_courses');
+add_action('wp_ajax_nopriv_loadmore', 'load_more_courses');
 
-function true_load_posts(){
+function load_more_courses(){
 
     $args = json_decode( stripslashes( $_POST['query'] ), true );
     $args['paged'] = $_POST['page'] + 1; // следующая страница
     $args['post_status'] = 'publish';
     $args['posts_per_page'] = 5;
-
-    // обычно лучше использовать WP_Query, но не здесь
+    
     query_posts( $args );
-    // если посты есть
+    
     if( have_posts() ) :
-
-        // запускаем цикл
+        
         while( have_posts() ): the_post();
 
             get_template_part('includes/section', 'courses');
@@ -359,25 +372,23 @@ function true_load_posts(){
 
 //подгрузка постов на странице новостей
 
-add_action('wp_ajax_loadmoreblog', 'true_load_blog_posts');
-add_action('wp_ajax_nopriv_loadmoreblog', 'true_load_blog_posts');
+add_action('wp_ajax_loadMoreNews', 'load_more_news');
+add_action('wp_ajax_nopriv_loadMoreNews', 'load_more_news');
 
-function true_load_blog_posts(){
+function load_more_news(){
 
     $args = json_decode( stripslashes( $_POST['query'] ), true );
     $args['paged'] = $_POST['page'] + 1; // следующая страница
     $args['post_status'] = 'publish';
     $args['posts_per_page'] = 3;
-
-    // обычно лучше использовать WP_Query, но не здесь
+    
     query_posts( $args );
-    // если посты есть
+    
     if( have_posts() ) :
-
-        // запускаем цикл
+       
         while( have_posts() ): the_post();
 
-            get_template_part('includes/section', 'blog-article');
+            get_template_part('includes/section', 'article');
 
         endwhile;
         wp_reset_postdata();
@@ -387,13 +398,12 @@ function true_load_blog_posts(){
     wp_die();
 }
 
-
 // подгрузка курсов по категориям
 
-add_action( 'wp_ajax_get_cat', 'ajax_show_posts_in_cat' );
-add_action( 'wp_ajax_nopriv_get_cat', 'ajax_show_posts_in_cat' );
+add_action( 'wp_ajax_get_cat', 'ajax_course_cat' );
+add_action( 'wp_ajax_nopriv_get_cat', 'ajax_course_cat' );
 
-function ajax_show_posts_in_cat() {
+function ajax_course_cat() {
 
     $link = $_POST['link'];
 
@@ -427,6 +437,7 @@ function ajax_show_posts_in_cat() {
 }
 
 // ajax загрузка всех курсов по нажатию кнопки "ALL"
+
 add_action( 'wp_ajax_get_courses', 'ajax_show_all_courses' );
 add_action( 'wp_ajax_nopriv_get_courses', 'ajax_show_all_courses' );
 
@@ -454,10 +465,10 @@ function ajax_show_all_courses() {
 
 // подгрузка новостей по категориям
 
-add_action( 'wp_ajax_get_news_cat', 'ajax_show_news_in_cat' );
-add_action( 'wp_ajax_nopriv_get_news_cat', 'ajax_show_news_in_cat' );
+add_action( 'wp_ajax_get_news_cat', 'ajax_news_cat' );
+add_action( 'wp_ajax_nopriv_get_news_cat', 'ajax_news_cat' );
 
-function ajax_show_news_in_cat() {
+function ajax_news_cat() {
 
     $link = $_POST['link'];
 
@@ -465,37 +476,28 @@ function ajax_show_news_in_cat() {
         die( 'Рубрика не найдена' );
     }
 
-    $args['post_type'] = 'post';
+    $args['post_type'] = 'news';
     $args['paged'] = 1;
     $args['post_status'] = 'publish';
     $args['posts_per_page'] = 3;
-    $args['cat'] = $link;
+    $args['tax_query'] = array(
+        array(
+            'taxonomy' => 'news_projects_categories', // taxonomy name
+            'field' => 'term_id',
+            'terms' => $link
+        ));
 
     query_posts($args);
-    
-    echo $args['max_num_pages'];
-    
 
     if (have_posts()) :
 
         while(have_posts()) : the_post();
 
-            get_template_part('includes/section', 'blog-article');
+            get_template_part('includes/section', 'article');
 
-        endwhile; endif;
-    if (  $wp_query->max_num_pages > 1 ) : ?>
-        <script>
-        var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
-        var posts = '<?php echo addslashes(wp_json_encode($wp_query->query_vars)); ?>';
-        var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
-        var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
-        </script>
-
-        <div id="true_loadmore_blog" class="btn  blog-content__btn">Загрузить ещё</div>
-
-    <?php endif;
-    
-    wp_reset_postdata();
+        endwhile; endif; 
+        get_template_part('includes/block', 'load-button');
+        wp_reset_postdata();
     wp_die();
 }
 

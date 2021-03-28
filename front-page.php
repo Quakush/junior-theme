@@ -1,6 +1,8 @@
 <?php
 
-$posts = get_posts(array(
+$news_posts = get_posts(array(
+    'post_type' => 'news',
+    'post_status' => 'publish',
     'numberposts' => 3,
     'category' => 0,
     'orderby' => 'date',
@@ -87,7 +89,7 @@ get_header();
               <article class="options-slider__article  options-slider__article--blue" data="2">
                 <div class="options-slider__text">
                   <h2 class="title__secondary  options-slider__item-title">СДЕЛАЙ <span class="title__colored">ПЕРВЫЙ ШАГ</span></h2>
-                  <p>Junior Specialists Corporation - это первый в мире онлайн инкубатор для стартапов. Пройдите Junior Specialists Corporation - это первый в мире онлайн инкубатор для стартапов. Пройдите программу акселерации со своей идее и получите возможность стать резидентом и создать MVP. программу акселерации со своей идее и получите возможность стать резидентом и создать MVP.
+                  <p>Junior Specialists Corporation - это первый в мире онлайн инкубатор для стартапов. Пройдите программу акселерации со своей идее и получите возможность стать резидентом и создать MVP. 
                   </p>
                 </div>
                 <div class="options-slider__visual">
@@ -109,7 +111,7 @@ get_header();
                   <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="222" alt="slider visual image">
                   <span class="options-slider__visual-title">Разработка проектов</span>
                 </div>
-                <a class="btn btn--accent btn--small options-slider__btn" href="#">Оставить заявку</a>
+                <a class="btn btn--accent btn--small options-slider__btn" href="#">Узнать больше</a>
               </article>
             </li>
 
@@ -363,28 +365,28 @@ get_header();
         <div class="container">
             <div class="read-us__title-container">
                 <h2 class="title__secondary read-us__title">Читайте нас</h2>
-                <a class="read-us__link" href="/news">Все статьи</a>
+                <a class="read-us__link" href="/news/">Все статьи</a>
             </div>
 
             <div class="news-slider">
                 <div class="news-slider__list">
 
-                <?php if ($posts) :
+                <?php if ($news_posts) :
                     $i = 0;
-                    foreach ($posts as $post) : ?>
+                    foreach ($news_posts as $post) :
+                        $cat_name = get_the_terms(get_the_ID(), 'news_projects_categories')[0];
+                        $category_link = get_term_link($cat_name, $taxonomy = 'news_projects_categories'); ?>
 
-                        <div class="news-slider__item">
-                            <div class="news-slider__image-wrap">
+                        <div class="article-mini__item">
+                            <a class="article-mini__image-wrap" href="<?=get_permalink();?>">
                                 <?php if (has_post_thumbnail()): ?>
-
                                   <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>">
-
                                 <?php endif; ?>
-                            </div>
-                            <div class="news-slider__item-caption">
-                                <button class="btn  btn--small  btn--accent  news-slider__cat-btn">
-                                    <?=the_category();?>
-                                </button>
+                            </a>
+                            <div class="article-mini__item-caption">
+                                <a class="btn  btn--small  btn--accent  article-mini__cat-btn" href="<?=$category_link;?>">
+                                    <span><?=$cat_name->name;?></span>
+                                </a>
                                 <h4><?php the_title(); ?></h4>
                                 <p><?php the_content(); ?></p>
                             </div>

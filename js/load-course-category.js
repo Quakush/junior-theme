@@ -30,18 +30,16 @@ jQuery(document).ready(function ($) {
         ajaxAllCourses();
     });
 
-	 // Отслеживание события нажатия кнопок браузера "Вперед/Назад"
+	// Отслеживание события нажатия кнопок браузера "Вперед/Назад"
     window.addEventListener("popstate", function (event) {
         document.title = event.state.page_title;
         ajaxCat(location.href);
     }, false);
-
-
-    /**
-     * Ajax запрос постов из рубрики по переданной ссылке на неё
-     *
-     * @param linkCat ссылка на рубрику
-     */
+    
+    //Ajax запрос постов из рубрики по переданной ссылке на неё
+    
+    //@param linkCat ссылка на рубрику
+    
     function ajaxCat(linkCat) {
         $mainBox.animate({opacity: 0.5}, 300);
 
