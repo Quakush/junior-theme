@@ -1,6 +1,10 @@
+.main-nav-wrapper {
+	display: none;
+}
+
 .main-nav {
 	order: 2;
-	margin-left: 20px;
+	margin-left: 52px;
 }
 
 .main-nav__list {
@@ -8,55 +12,110 @@
 	display: none;
 }
 
-@media (min-width: 375px) {
-
-	.main-nav {
-		margin-left: 52px;
-	}
+.main-nav-wrapper--shown {
+	display: block;
+	position: absolute;
+	top: 52px;
+	left: 0;
+	padding-bottom: 60px;
+	width: 100%;
+	background-color: $dark-text;
+	z-index: 100;
 }
 
-@media (min-width: 1024px) {
+.main-nav-wrapper--shown .main-nav__list {
+	@include list-style;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
 
+.main-nav-wrapper--shown .sub-menu {
+	@include list-style;
+}
+
+.sub-menu .menu-item:hover {
+	background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+	color: $white;
+}
+
+.main-nav-wrapper a {
+	@include link-style;
+	padding: 8px 0;
+	padding-left: 16px;
+	width: 100%;
+	color: $white;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.main-nav-wrapper--shown .sub-menu a {
+	padding-left: 46px;
+	font-size: 16px;
+}
+
+.main-nav-wrapper__btn {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 11px;
+	height: 30px;
+}
+
+@media (min-width: 768px) {
 	.main-nav {
 		order: 1;
-		margin-left: 160px;
+		display: block;
+		margin-left: 0;
+		list-style: none;
 	}
 
-    .main-nav__list {
-    	display: flex;
-    	flex-direction: row;
-    	justify-content: unset;
-    }
+	.main-nav-wrapper__btn {
+		display: none;
+	}
 
-	//.main-nav__list li {
-	//	position: relative;
-	//	margin-left: 34px;
-	//	transition: color 0.5s;
-	//
-	//	&:first-of-type {
-	//		margin-left: 0;
-	//	}
-	//}
+	.main-nav-wrapper {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: unset;
+	}
 
-	//.main-nav__list li::before {
-	//	@include element-style(17px, 17px, transparent);
-	//	left: 0;
-	//	top: 50%;
-	//	background-repeat: no-repeat;
-	//	transform: translate(0, -50%);
-	//}
-	//
-	//.main-nav__list li:first-of-type::before {
-	//	background-image: url("../images/icons/student-grad-cap.svg");
-	//}
-	//
-	//.main-nav__list li:nth-of-type(2)::before {
-	//	background-image: url("../images/icons/softtware-engineer.svg");
-	//}
-	//
-	//.main-nav__list li:last-of-type::before {
-	//	background-image: url("../images/icons/angel.svg");
-	//}
+	.main-nav__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: unset;
+		list-style: none;
+	}
+
+	.main-nav__list li:hover {
+		color: $corp-blue;
+	}
+
+	.main-nav__list li:first-of-type:hover {
+
+		&::before {
+			background-image: url("../images/icons/student-grad-cap-blue.svg");
+		}
+	}
+
+	.main-nav__list li:nth-of-type(2):hover {
+
+		&::before {
+			background-image: url("../images/icons/softtware-engineer-blue.svg");
+		}
+	}
+
+	.main-nav__list li:last-of-type:hover {
+		&::before {
+			background-image: url("../images/icons/angel-blue.svg");
+		}
+	}
+
+
+	.menu-item-has-children {
+		position: relative;
+	}
 
 	.main-nav__list a {
 		@include link-style;
@@ -65,97 +124,149 @@
 		font-size: 14px;
 	}
 
-	//.main-nav__list li:hover {
-	//	color: $corp-blue;
-	//}
-	//
-	//.main-nav__list li:first-of-type:hover {
-	//
-	//	&::before {
-	//	background-image: url("../images/icons/student-grad-cap-blue.svg");
-	//    }
-	//}
-	//
-	//.main-nav__list li:nth-of-type(2):hover {
-	//
-	//    &::before {
-	//	background-image: url("../images/icons/softtware-engineer-blue.svg");
-	//    }
-	//}
-	//
-	//.main-nav__list li:last-of-type:hover {
-	//
-	//	&::before {
-	//	background-image: url("../images/icons/angel-blue.svg");
-	//    }
-	//}
+	.main-nav__list li::before {
+		@include element-style(17px, 17px, transparent);
+		left: 0;
+		top: 48%;
+		background-repeat: no-repeat;
+		transform: translate(0, -50%);
+	}
 
-	.main-nav__list .menu-item-has-children .sub-menu {
+	.main-nav__list li:first-of-type::before {
+		background-image: url("../images/icons/student-grad-cap.svg");
+	}
+
+	.main-nav__list li:nth-of-type(2)::before {
+		background-image: url("../images/icons/softtware-engineer.svg");
+	}
+
+	.main-nav__list li:last-of-type::before {
+		background-image: url("../images/icons/angel.svg");
+	}
+
+	.main-nav__list > li {
+		margin-right: 45px;
+
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+
+	.main-nav__list a:first-child {
+		padding: 34px 0;
+		padding-left: 27px;
+		width: unset;
+	}
+
+	.main-nav__list .sub-menu a {
+		padding: 9px 0;
+		padding-left: 17px;
+	}
+
+	.top-header__btn {
+		margin-left: unset;
+		border-radius: 10px;
+	}
+
+
+	.sub-menu {
+		@include link-style;
+		list-style: none;
+		padding: 0;
+		margin: 0;
 		position: absolute;
 		left: 0;
-		bottom: 5px;
-		@include list-style;
+		bottom: 0;
 		width: 268px;
-		height: 0;
-		background-color: $dark-text;
+		background-color: #24272D;
 		border-radius: 16px;
-		transform: translate(0, 100%);
 		box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
 		opacity: 0;
+		z-index: -1;
+		transform: translate(0, 100%);
+		color: #AEAEAE;
+	}
+
+	.sub-menu:hover {
+		transition: all 1s ease;
+		opacity: 1;
 		z-index: 100;
-		transition: opacity 1s, height 1s;
+	}
+
+	.sub-menu:hover ~ .menu-item > a {
+		color: $white;
+	}
+
+	.main-nav__list > li:hover .sub-menu {
+		transition: all 1s ease;
+		opacity: 1;
+		z-index: 100;
+		color: inherit;
 
 		li::before {
 			display: none;
 		}
 	}
 
-	.menu-item-has-children {
-		position: relative;
+	.main-nav__list > li:hover {
+		color: #00A7CF;
+
+		&:first-of-type::before {
+			background-image: url("../images/icons/student-grad-cap-blue.svg");
+		}
+
+		&:nth-of-type(2)::before {
+			background-image: url("../images/icons/softtware-engineer-blue.svg");
+		}
+
+		&:last-of-type::before {
+			background-image: url("../images/icons/angel-blue.svg");
+		}
 	}
 
-	//.main-nav__list .menu-item-has-children:hover .sub-menu {
-	//	height: unset;
-	//	opacity: 1;
-	//}
+	.sub-menu a {
+		color: #AEAEAE;
+	}
 
-	//.main-nav__list .sub-menu li:hover {
-	//	background-image: linear-gradient(to bottom, rgba(0,167,207,1) 0%,rgba(1,98,122,1) 100%);
-	//}
 
-	//.main-nav__list .sub-menu li:hover a {
-	//	color: $white;
-	//}
-	//
-	//.main-nav__list .menu-item-has-children:hover li {
-    //    margin-left: 0;
-    //    color: $light-text;
-	//}
-	//
-	//.main-nav__list .menu-item-has-children:hover li a {
-	//	padding: 11px 0;
-	//	padding-left: 16px;
-	//}
+	.menu-item > a {
+		color: inherit;
+	}
+	.sub-menu .menu-item {
+		color: #AEAEAE;
+	}
+
+	.sub-menu .menu-item:hover {
+		background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+		color: $white;
+	}
+
+	.sub-menu li:first-of-type:hover {
+		background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.sub-menu li:last-of-type:hover {
+		background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
 
 	.main-nav__list .sub-menu li:first-of-type {
-        border-top-left-radius: 16px;
-        border-top-right-radius: 16px;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
 	}
 
 	.main-nav__list .sub-menu li:last-of-type {
-        border-bottom-left-radius: 16px;
-        border-bottom-right-radius: 16px;
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
 	}
 }
 
-@media (min-width: 1440px) {
-
-	.main-nav__list li {
-		margin-left: 44px;
-	}
-
-	.main-nav__list a {
-		padding-left: 37px;
-		font-size: 16px;
+@media (min-width: 1024px) {
+	.main-nav {
+		order: 1;
+		margin-left: 160px;
 	}
 }
