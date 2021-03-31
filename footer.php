@@ -31,12 +31,12 @@
         </section>
         <nav class="footer-menu">
 
-           <!-- <?php wp_nav_menu(
+            <?php wp_nav_menu(
                 array(
                     'theme_location' => 'footer-menu',
                     'menu_class' => 'footer-menu__list'
                 )
-            );?> ?-->
+            );?>
 
         </nav>
         <div class="footer-info">
