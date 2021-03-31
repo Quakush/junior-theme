@@ -1,11 +1,16 @@
 .news-container {
   border-bottom: 1px solid $white;
-  margin-bottom: 30px;
 }
 
 .news-links-list {
   position: relative;
   @include list-style;
+  padding-bottom: 10px;
+
+  &::before {
+    @include element-style (100%, 2px, $light-text);
+    bottom: 0;
+  }
 }
 
 .news-links-list__link {
@@ -19,15 +24,15 @@
     color: $white;
   }
 
-  //&--active {
-  //  color: $white;
-  //}
+  &--active {
+    color: $white;
+  }
 }
 
 .news-links-list__item {
   width: unset;
   flex-shrink: unset;
-  margin-bottom: 10px;
+  margin-right: 25px;
 }
 
 @media (min-width: 768px) {
@@ -52,7 +57,7 @@
 
   .news-links-list__link {
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 24px;
   }
 

@@ -1,5 +1,6 @@
 .article-mini__image-wrap {
 	@include link-style;
+	display: block;
 	align-self: center;
 	position: relative;
 	margin: 0 auto 20px;
@@ -32,16 +33,16 @@
 	display: inline-block;
 }
 
-.article-mini__item-caption {
+.article-mini__caption {
 	padding-left: 5px;
 }
 
-.article-mini__item-caption h4 {
+.article-mini__caption h4 {
 	margin-bottom: 10px;
 	font-size: 16px;
 }
 
-.article-mini__item-caption p {
+.article-mini__caption p {
 	font-size: 12px;
 	color: $white;
 }
@@ -72,12 +73,12 @@
 		height: 343px;
 	}
 
-	.article-mini__item-caption h4 {
+	.article-mini__caption h4 {
 		margin-bottom: 16px;
 		font-size: 22px;
 	}
 
-	.article-mini__item-caption p {
+	.article-mini__caption p {
 		font-size: 16px;
 	}
 
