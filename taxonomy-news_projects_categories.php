@@ -35,10 +35,7 @@ get_header();
                   var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
                   var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
               </script>
-
-              <div class="news-content__btn-container">
-                <div id="news" class="btn  news-content__btn">Загрузить ещё</div>
-              </div>
+                <div id="news" class="btn  news__btn">Загрузить ещё</div>
             <?php endif; ?>
 
         </div>

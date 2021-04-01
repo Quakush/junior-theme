@@ -8,6 +8,6 @@ if (  $wp_query->max_num_pages > 1 ) : ?>
         var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
         </script>
 
-        <div id="<?=get_query_var('post_type');?>" class="btn  courses__btn">Загрузить ещё</div>
+        <div id="<?=get_query_var('post_type');?>" class="btn  <?=get_query_var('post_type');?>__btn">Загрузить ещё</div>
 
 <?php endif;
