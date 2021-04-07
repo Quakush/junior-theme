@@ -1,9 +1,5 @@
 <?php
 
-/*
-Template Name: StartUp Page
-*/
-
 get_header();
 
 ?>

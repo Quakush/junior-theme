@@ -1,9 +1,5 @@
 <?php
 
-/*
-Template Name: Digital Page
-*/
-
 $cats = get_categories('hide_empty=0');
 
 $args = array(

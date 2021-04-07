@@ -1,9 +1,5 @@
 <?php
 
-/*
-Template Name: Education Page
-*/
-
 $guestarbaiter_args = array(
     'post_type' => 'guestarbaiter',
     'post_status' => 'publish',

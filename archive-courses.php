@@ -1,9 +1,5 @@
  <?php
 
-/*
-Template Name: All courses
-*/
-
 $courses_args = array(
     'post_type' => 'courses',
     'post_status' => 'publish',

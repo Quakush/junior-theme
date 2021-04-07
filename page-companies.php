@@ -1,9 +1,5 @@
 <?php
 
-/*
-Template Name: Companies Page
-*/
-
 get_header(); ?>
 
 <main>
