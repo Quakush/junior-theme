@@ -67,7 +67,7 @@ get_header();
                 <img src="/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
                 <span class="options-slider__visual-title">Startup University</span>
               </div>
-              <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
+              <a class="btn btn--green btn--small options-slider__btn" href="/courses">Выбрать обучение</a>
             </article>
         </div>
           <ul class="options-slider__list">
@@ -82,7 +82,7 @@ get_header();
                   <img src="/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
                   <span class="options-slider__visual-title">Startup University</span>
                 </div>
-                <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
+                <a class="btn btn--green btn--small options-slider__btn" href="/courses">Выбрать обучение</a>
             </article>
           </li>
             <li data="2" class="options-slider__item">
@@ -124,111 +124,7 @@ get_header();
         </div>
       </div>
     </section>
-
-    <!-- <section class="options-slider">
-        <div class="container">
-            <div class="options-slider__shown-container swiper-container">
-                <ul class="options-slider__list swiper-wrapper">
-
-                <li class="swiper-slide options-slider__item options-slider__item--green options-slider__item--active">
-                    <div class="options-slider__text">
-                      <h2 class="title__secondary  options-slider__item-title">Дорога<span class="title__colored">в digital</span></h2>
-                      <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!
-                      </p>
-                    </div>
-                    <div class="options-slider__visual">
-                      <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="222" alt="slider visual image">
-                      <span class="options-slider__visual-title">Startup University</span>
-                    </div>
-                    <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
-                </li>
-
-                <li class="swiper-slide options-slider__item  options-slider__item--blue  options-slider__item--active">
-                    <div class="options-slider__text">
-                      <h2 class="title__secondary  options-slider__item-title">СДЕЛАЙ<span class="title__colored">ПЕРВЫЙ ШАГ</span></h2>
-                      <p>Текст текст текст текс ттекст текс ттекст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-                      </p>
-                    </div>
-                    <div class="options-slider__visual">
-                      <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/start-up.svg" width="222" alt="slider visual image">
-                      <span class="options-slider__visual-title">Создай STARTUP</span>
-                    </div>
-                    <a class="btn  btn--small options-slider__btn" href="#">Подать заявку</a>
-                </li>
-
-                <li class="swiper-slide options-slider__item  options-slider__item--red  options-slider__item--active">
-                    <div class="options-slider__text">
-                      <h2 class="title__secondary  options-slider__item-title">КОММЕРЧЕСКАЯ<br><span class="title__colored">РАЗРАБОТКА</span></h2>
-                      <p>Текст текст текст текс ттекст текс ттекст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-                      </p>
-                    </div>
-                    <div class="options-slider__visual">
-                      <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="222" alt="slider visual image">
-                      <span class="options-slider__visual-title">Разработка проектов</span>
-                    </div>
-                    <a class="btn btn--accent btn--small options-slider__btn" href="#">Оставить заявку</a>
-                </li>
-
-            </ul>
-        </div>
-
-        <div class="swiper-container swiper-small">
-            <ul class="swiper-wrapper swiper-small__wrapper">
-                <li class="swiper-slide options-slider__item options-slider__item--green swiper-small__item">
-                    <div class="options-slider__text">
-                      <h2 class="title__secondary  options-slider__item-title">
-                        <span class="title__colored">Startup University</span>
-                      </h2>
-                      <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!
-                      </p>
-                    </div>
-                    <div class="options-slider__visual options-slider__visual--small">
-                      <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/student-with-graduation-cap.svg" width="78" alt="slider visual image">
-                      <span class="options-slider__visual-title">Startup University</span>
-                    </div>
-                    <a class="btn btn--green btn--small options-slider__btn" href="/all-courses">Выбрать обучение</a>
-                </li>
-
-                <li class="swiper-slide options-slider__item options-slider__item--blue swiper-small__item">
-                    <div class="options-slider__text">
-                      <h2 class="title__secondary  options-slider__item-title">
-                        <span class="title__colored">КОММЕРЧЕСКАЯ РАЗРАБОТКА</span>
-                      </h2>
-                      <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!
-                      </p>
-                    </div>
-                    <div class="options-slider__visual options-slider__visual--small">
-                      <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/start-up.svg" width="93" alt="slider visual image">
-                      <span class="options-slider__visual-title">Создай STARTUP</span>
-                    </div>
-                    <a class="btn btn--small btn--accent options-slider__btn" href="#">Оставить заявку</a>
-                </li>
-
-                <li class="swiper-slide options-slider__item options-slider__item--red swiper-small__item">
-                    <div class="options-slider__text">
-                      <h2 class="title__secondary  options-slider__item-title">
-                        <span class="title__colored">КОММЕРЧЕСКАЯ РАЗРАБОТКА</span>
-                      </h2>
-                      <p>Junior Specialists Corporation - это возможность выбрать проффессию в сфере ИТ, пройти обучение в одном из онлайн-университетов и получить гарантированную практику в нашей компании!
-                      </p>
-                    </div>
-                    <div class="options-slider__visual options-slider__visual--small">
-                      <img src="https://u99351.test-handyhost.ru/wp-content/themes/js-corp/images/svg/softtware-engineer.svg" width="86" alt="slider visual image">
-                      <span class="options-slider__visual-title">Разработка проектов</span>
-                    </div>
-                    <a class="btn btn--small btn--accent options-slider__btn" href="#">Оставить заявку</a>
-                </li>
-            </ul>
-            <div class="swiper-pagination-wrapper">
-                <div class="options-slider__paginator-element  options-slider__paginator-element--back"></div>
-                <div class="options-slider__paginator-element  options-slider__paginator-element--forward"></div>
-                <span class="swiper-pagination__line"></span>
-                <div class="options-slider__paginator swiper-pagination"></div>
-            </div>
-        </div>
-        </div>
-    </section>
- -->
+    
     <section class="ecosystem">
       <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
       <div class="ecosystem__wrap">
