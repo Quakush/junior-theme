@@ -48,7 +48,7 @@ get_header();
                         чтобы получить гарантированную практику после
                         окончания обучения.
                     </p>
-                    <a class="btn btn--big  btn--green  choose-course__btn" href="/all-courses">Выбрать курс</a>
+                    <a class="btn btn--big  btn--green  choose-course__btn" href="/courses">Выбрать курс</a>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@ get_header();
                     <a class="choose-profession__link" href="#">Developer</a>
                 </li>
             </ul>
-            <a class="btn btn--big  btn--green  choose-profession__btn" href="/all-courses">Еще 50+ профессий</a>
+            <a class="btn btn--big  btn--green  choose-profession__btn" href="/courses">Еще 50+ профессий</a>
         </div>
     </section>
     <section class="career">
@@ -123,7 +123,7 @@ get_header();
                 заказы от нашего отдела разработки, трудоустройство
                 у наших партнеров и даже переезд в другую страну.
             </p>
-            <a class="btn  btn--green  btn--big  credences__btn" href="/all-courses">Выбрать курс</a>
+            <a class="btn  btn--green  btn--big  credences__btn" href="/courses">Выбрать курс</a>
         </div>
     </section>
     <section id="internship" class="immigration-slider">
@@ -177,7 +177,7 @@ get_header();
                         </li>
                     </ul>
                 </div>
-                <a class="btn btn--big  btn--green  educational-programms__btn" href="/all-courses">Выбрать курс</a>
+                <a class="btn btn--big  btn--green  educational-programms__btn" href="/courses">Выбрать курс</a>
             </div>
         </div>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
