@@ -1,12 +1,12 @@
 .ideas {
     position: relative;
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 26px;
+    padding-bottom: 221px;
     color: $white;
     background-image: url("../images/svg/building.svg");
     background-repeat: no-repeat;
     background-size: 284px;
-    background-position: -100px 280px;
+    background-position: left -86px bottom 0;
 }
 
 .ideas .title__secondary {
@@ -23,7 +23,6 @@
     display: flex;
     justify-content: center;
     margin-top: 25px;
-    padding-bottom: 74px;
 }
 
 @media (min-width: 768px) {

@@ -129,8 +129,12 @@
 
 .main-offer--startup p {
 	margin-bottom: 50px;
-	width: 80%;
+	width: 100%;
 	line-height: 1.5;
+}
+
+.main-offer--startup p span {
+	display: block;
 }
 
 .main-offer--startup .title {
@@ -231,9 +235,6 @@
 	
 	.main-offer--startup .title {
 		font-size: 30px;
-	}
-	.main-offer--startup p {
-		width: 72%;
 	}
 
 	/* Стили для main-offer страницы Кубок Сократа */

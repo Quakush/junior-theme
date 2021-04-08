@@ -4,7 +4,6 @@
 
 .news-links-list {
   position: relative;
-  @include list-style;
   padding-bottom: 10px;
 
   &::before {
