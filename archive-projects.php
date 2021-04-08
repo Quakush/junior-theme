@@ -26,6 +26,7 @@ get_header(); ?>
 	    </ul>
 	
 		<div class="projects-content">
+			<img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
 	        <div class="projects-content__list">
 
 	            <?php if ($projects_query->have_posts()) :
@@ -45,6 +46,7 @@ get_header(); ?>
 	                <?php endif; ?>
 	            <?php wp_reset_postdata(); ?>
 	        </div>
+	        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
         </div>
 		
 	</div>

@@ -35,6 +35,7 @@ get_header();
     </div>
   </section>
   <section class="command">
+    <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     <div class="container">
       <h2 class="command__title">Готовая команда<br>
         <span class="command__title-second">для вашего бизнеса</span>
@@ -47,7 +48,7 @@ get_header();
       </p>
       <button type="submit" class="btn  btn--accent">Связаться со мной</button>
     </div>
-
+  <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
   </section>
   <section class="work">
     <div class="container">
@@ -117,6 +118,7 @@ get_header();
     </div>
   </section>
   <section class="projects">
+    <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     <div class="container">
       <h2 class="projects__title">Наши проекты</h2>
 
@@ -162,7 +164,7 @@ get_header();
 
         </div>
       </div>
-
+    <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
   </section>
   <div class="feedback__get-news">
       <?php get_template_part('/includes/block', 'getnews'); ?>

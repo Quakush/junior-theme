@@ -23,6 +23,7 @@ get_header();
         </div>
     </section>
     <section class="first-step">
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
         <div class="container">
             <div class="first-step__inner-wrap">
                 <h2 class="title__secondary"><span class="title__colored">Сделай</span> первый шаг</h2>
@@ -48,6 +49,7 @@ get_header();
                 </div>
             </div>
         </div>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
     <section class="team">
         <div class="container">
@@ -70,6 +72,7 @@ get_header();
         </div>
     </section>
     <section class="prospects">
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
         <div class="container">
             <h2 class="title__secondary">Ваши&nbsp;перспективы <br> после&nbsp;инкубатора</h2>
             <ul class="prospects__list">
@@ -91,6 +94,7 @@ get_header();
             </ul>
             <a class="btn btn--green btn--big" href="#">Перейти в акселератор</a>
         </div>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
     <section class="ideas">
         <div class="container">
@@ -105,9 +109,11 @@ get_header();
             </div>
         </div>
     </section>
-    <!--<section class="projects">
-       Наши проекты
-    </section>-->
+    <section class="projects">
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+        <h2>Наши проекты</h2>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+    </section>
     <section class="feedback">
         <div class="container">
             <div class="feedback__grid">

@@ -18,6 +18,7 @@
   </section>
 
   <section class="block-about">
+    <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     <div class="container">
       <div class="block-about__item">
         <h2 class="block-about__item-title">Sokrat.</h2>
@@ -65,7 +66,7 @@
         <img src="../wp-content/themes/js-corp/images/back_item.jpg" alt="green">
       </div>
     </div>
-
+    <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
   </section>
 
 
