@@ -1,6 +1,6 @@
 .feedback {
     position: relative;
-    padding-top: 100px;
+    padding-top: 10px;
     color: $white;
 }
 
@@ -16,12 +16,13 @@
     line-height: 1.66;
 }
 
-.feedback__write-us {
+.feedback .write-us {
     margin-bottom: 45px;
 }
 
 @media (min-width: 768px) {
-    .feedback__grid {
+
+    /*.feedback__grid {
         display: grid;
         grid-template-columns: 57% 40%;
         justify-items: center;
@@ -30,14 +31,16 @@
 
     .feedback .title__secondary {
         padding-right: 0;
+    }*/
+    
+    .feedback .getnews {
+        display: none;
     }
+}
 
-
+@media (min-width: 1024px) {
     .feedback__text-block {
         font-size: 20px;
-    }
-    .feedback__get-news {
-        display: none;
     }
 }
 

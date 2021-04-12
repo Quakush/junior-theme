@@ -1,6 +1,9 @@
 .first-step {
+    position: relative;
     margin-top: -80px;
+    width: 100%;
     color: $dark-text;
+    overflow: hidden;
 }
 
 .first-step__background-wrap {
@@ -41,24 +44,17 @@
     margin-top: 20px;
 }
 
-@media (min-width: 375px) {
-    .first-step {
-        background-position: -115% 92%;
-    }
-}
-
 @media (min-width: 768px) {
+
     .first-step {
-        background-size: 340px;
-        background-position: 0% 100px;
+        margin-top: -190px;
     }
-    .first-step__text-block {
-        font-size: 20px;
-        line-height: 2;
+
+    .first-step__background-wrap {
+        background-position: left 0 bottom 0;
     }
 
     .first-step__inner-wrap {
-        width: 50%;
         padding-left: 40%;
     }
 
@@ -80,6 +76,7 @@
 }
 
 @media (min-width: 1024px) {
+
     .first-step {
         background-size: 430px;
         background-position: 10% 20%;
@@ -87,6 +84,11 @@
 
     .first-step__inner-wrap {
         padding-left: 50%;
+    }
+
+    .first-step__text-block {
+        font-size: 20px;
+        line-height: 2;
     }
 
     .first-step__legend {

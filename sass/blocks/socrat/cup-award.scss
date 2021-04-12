@@ -1,32 +1,27 @@
 .cup-award {
-    position: relative;
-    margin: 0 0 79px 0;
-    padding-top: 15px;
+    width: 100%;
     color: $dark-text;
+    overflow: hidden;
+}
+
+.cup-award .title__colored {
+    color: $accent-color;
+}
+
+.cup-award .title__secondary {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cup-award__background-wrap {
+    padding-top: 15px;
     background-color: $white;
     background-repeat: no-repeat;
     background-size: 305px;
     background-position: -560% 92%;
     padding-bottom: 15px;
-
-    &::before {
-        @include clouds(80px, -77px);
-    }
-
-    &::after {
-        @include clouds-bottom(80px, -79px, -77px);
-    }
-
-    .title__colored {
-        color: $accent-color;
-    }
-
-    .title__secondary {
-        margin-bottom: 30px;
-        font-weight: 800;
-        font-size: 25px;
-        text-align: center;
-    }
 }
 
 .cup-award__text-block {
@@ -104,12 +99,15 @@
     .cup-award__item {
         width: 24%;
         height: 340px;
+
         &:first-child {
             order: 1;
         }
+
         &:nth-child(2) {
             order: 2;
         }
+
         .title__secondary {
             font-size: 22px;
         }
@@ -124,51 +122,23 @@
             font-size: 37px;
         }
     }
+
     .cup-award__legend {
         font-size: 12px;
     }
+
     .cup-award__item-title {
         font-size: 30px;
-    }
-
-    .cup-award {
-        &::before {
-            @include clouds(110px, -105px);
-        }
-
-        &::after {
-            @include clouds-bottom(110px, -79px, -105px);
-        }
     }
 }
 
 @media (min-width: 1440px) {
-    .cup-award {
-        &::before {
-            @include clouds(150px, -145px);
-        }
 
-        &::after {
-            @include clouds-bottom(150px, -79px, -145px);
-        }
-
-        .cup-award__item {
-            height: 300px;
-        }
-        .cup-award__legend {
-            font-size: 13px;
-        }
+    .cup-award__item {
+        height: 300px;
     }
-}
-
-@media (min-width: 1820px) {
-    .cup-award {
-        &::before {
-            @include clouds(170px, -160px);
-        }
-
-        &::after {
-            @include clouds-bottom(190px, -150px, -170px);
-        }
+    
+    .cup-award__legend {
+        font-size: 13px;
     }
 }

@@ -1,5 +1,7 @@
 .projects {
+  width: 100%;
   color: $dark-text;
+  overflow: hidden;
 }
 
 .projects--startup {
@@ -52,7 +54,7 @@
   display: block;
   position: relative;
   margin: 0 auto;
-  padding-right: 30px;
+  padding-right: 25px;
   width: 110px;
   color: $corp-blue;
   font-weight: 600;
@@ -62,7 +64,7 @@
   &::before {
     @include element-style(6px, 6px, transparent);
     right: 0;
-    top: 3px;
+    top: 4px;
     border: 2px solid $corp-blue;
     border-radius: 2px;
     border-bottom: none;

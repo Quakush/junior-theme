@@ -1,28 +1,22 @@
 .cup-start {
-    position: relative;
-    margin: 0 0 79px 0;
+    width: 100%;
     padding-top: 15px;
     color: $dark-text;
-    background-color: $white;
-
     padding-bottom: 15px;
+    overflow: hidden;
+}
 
-    &::before {
-        @include clouds(80px, -79px);
-    }
+.cup-start__background-wrap {
+    background-color: $white;
+}
 
-    &::after {
-        @include clouds-bottom(80px, -79px, -77px);
-    }
+.cup-start .title__colored {
+    color: $accent-color;
+}
 
-    .title__colored {
-        color: $accent-color;
-    }
-
-    .title__secondary {
-        margin-bottom: 14px;
-        font-weight: 800;
-    }
+.cup-start .title__secondary {
+    margin-bottom: 14px;
+    font-weight: 800;
 }
 
 .cup-start__text-block {
@@ -32,38 +26,35 @@
 }
 
 @media (min-width: 768px) {
-    .cup-start {
-        background-repeat: no-repeat;
-        background-image: url("../images/svg/socrat-start-bg.svg");
-        background-size: 300px;
-        background-position: left 10% top 60px;
 
-        .btn-socrat {
-            margin-left: 50%;
-        }
+    .btn-socrat {
+        margin-left: 50%;
+    }
 
-        .title__secondary {
-            margin-left: 50%;
-        }
+    .cup-start .title__secondary {
+        margin-left: 50%;
     }
 
     .cup-start__text-block {
         padding-left: 50%;
         height: 320px;
     }
+
+    .cup-start__background-wrap {
+        background-repeat: no-repeat;
+        background-image: url("../images/svg/socrat-start-bg.svg");
+        background-size: 300px;
+        background-position: left 10% top 60px; 
+    }
 }
 
 @media (min-width: 1024px) {
+
     .cup-start {
         padding-bottom: 70px;
         background-position: left 15% top 40px;
     }
-    .cup-start::before {
-        @include clouds(120px, -115px);
-    }
-    .cup-start::after {
-        @include clouds-bottom(120px, -135px, -115px);
-    }
+    
     .cup-start__text-block {
         height: auto;
         margin-bottom: 30px;
@@ -71,29 +62,17 @@
 }
 
 @media (min-width: 1440px) {
+
     .cup-start {
         padding-bottom: 70px;
         background-position: left 25% top 40px;
         background-size: 350px;
     }
-    .cup-start::before {
-        @include clouds(150px, -145px);
-    }
-    .cup-start::after {
-        @include clouds-bottom(150px, -135px, -130px);
-    }
 }
 
 @media (min-width: 1820px) {
+
     .cup-start {
         background-size: 400px;
-    }
-
-    .cup-start::before {
-        @include clouds(170px, -160px);
-    }
-
-    .cup-start::after {
-        @include clouds-bottom(190px, -150px, -170px);
     }
 }

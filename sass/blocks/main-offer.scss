@@ -248,6 +248,7 @@
 }
 
 @media (min-width: 768px) {
+
 	.main-offer__text-block {
 		font-size: 20px;
 	}
@@ -277,15 +278,20 @@
 	/* Стили для main-offer страницы стартапам*/
 
 	.main-offer--startup {
-		background-size: 170%;
-		background-position: right -570px top 55px;
+		background-size: 1193px;
+		background-position: right -530px bottom -400px;
 	}
 
 	.main-offer--startup .title__strong {
 		font-size: 50px;
 	}
+
 	.main-offer--startup p {
-		width: 52%;
+		width: 60%;
+	}
+
+	.main-offer--startup p span {
+		display: inline;
 	}
 
     /* Стили для main-offer страницы Кубок Сократа*/
