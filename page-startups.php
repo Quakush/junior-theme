@@ -122,7 +122,7 @@ get_header();
                     техника продаж и работа с конкурентами. Мы
                     созданы, чтобы помочь вам разобраться в этом.
                 </p>
-                <div class="ideas__sign-up"><?php get_template_part('/includes/block', 'sign_up'); ?></div>
+                <?php get_template_part('/includes/block', 'sign_up'); ?>
             </div>
         </div>
     </section>
@@ -162,23 +162,17 @@ get_header();
     </section>
     <section class="feedback">
         <div class="container">
-            <div class="feedback__grid">
-                <div class="feedback__inner-wrap">
-                    <h2 class="title__secondary">Ищете проект для пилота или&nbsp;инвестиций</h2>
-                    <p class="feedback__text-block">Мы проводим скоринг новаторов и доводим
-                        проект до первых продаж, чтобы вы были
-                        уверены в своих инвестициях, а также
-                        помогаем с интеграцией проектов в бизнес.
-                    </p>
-                </div>
-                <div class="feedback__form-wrap">
-                    <div class="feedback__write-us">
-                        <?php get_template_part('/includes/block', 'write_us'); ?></div>
-                    <div class="feedback__get-news">
-                        <?php get_template_part('/includes/block', 'getnews'); ?>
-
-                    </div>
-                </div>
+            <div class="feedback__inner-wrap">
+                <h2 class="title__secondary">Ищете проект для пилота или&nbsp;инвестиций</h2>
+                <p class="feedback__text-block">Мы проводим скоринг новаторов и доводим
+                    проект до первых продаж, чтобы вы были
+                    уверены в своих инвестициях, а также
+                    помогаем с интеграцией проектов в бизнес.
+                </p>
+            </div>
+            <div class="feedback__form-wrap">
+                <?php get_template_part('/includes/block', 'write_us'); ?>
+                <?php get_template_part('/includes/block', 'getnews'); ?>
             </div>
         </div>
     </section>

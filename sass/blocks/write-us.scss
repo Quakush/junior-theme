@@ -29,7 +29,13 @@
 	text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+
+	.write-us {
+		border-radius: 20px;
+		box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
+	}
+
 	.write-us .container {
 		overflow: visible;
 	}
@@ -41,8 +47,6 @@
 		padding: 25px;
 		padding-left: 28px;
 		background-color: $dark-text;
-		border-radius: 20px;
-		box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
 		box-sizing: border-box;
 	}
 
@@ -79,9 +83,7 @@
 	.write-us .confidentiality {
 		text-align: center;
 	}
-}
 
-@media (min-width: 1024px) {
 	.write-us input[type="email"],
 	.write-us input[type="text"] {
 		height: 44px;

@@ -1,23 +1,18 @@
 .command {
-  position: relative;
-  margin: 80px 0;
-  padding-top: 15px;
+  width: 100%;
   color: $dark-text;
-  background-color: $white;
-  background-image: url("../images/svg/cosmonaut_red.svg");
-  background-repeat: no-repeat;
-  background-size: 305px 266px;
-  background-position: -90% 108%;
-  padding-bottom: 130px;
+  overflow: hidden;
 
-  &::before {
-    @include clouds(80px, -79px);
+  .command__background-wrap {
+    padding-top: 15px;
+    background-color: $white;
+    background-image: url("../images/svg/cosmonaut_red.svg");
+    background-repeat: no-repeat;
+    background-size: 305px 266px;
+    background-position: -90% 108%;
+    padding-bottom: 130px;
   }
-
-  &::after {
-    @include clouds-bottom(80px, -79px, -79px);
-  }
-
+  
   .command__title {
     text-transform: uppercase;
     color: #EF4864;

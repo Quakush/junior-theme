@@ -25,6 +25,7 @@
 }
 
 @media (min-width: 768px) {
+
     .cup-guarantee {
         background-image: url("../images/svg/prize.svg");
         background-repeat: no-repeat;
@@ -43,6 +44,7 @@
 }
 
 @media (min-width: 1024px) {
+
     .cup-guarantee {
 
         background-position: right 20% top 90px;
@@ -59,15 +61,14 @@
 }
 
 @media (min-width: 1440px) {
+
     .cup-guarantee {
 
         background-position: right 30% top 90px;
         background-size: 180px;
-      
     }
 
     .cup-guarantee__text-block {
         width: 37%;
     }
-
 }

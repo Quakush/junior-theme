@@ -1,16 +1,20 @@
 .ideas {
     position: relative;
     padding-top: 26px;
-    padding-bottom: 221px;
-    color: $white;
+    color: $light-text;
     background-image: url("../images/svg/building.svg");
     background-repeat: no-repeat;
     background-size: 284px;
     background-position: left -86px bottom 0;
 }
 
+.ideas .container {
+    padding-bottom: 221px;
+}
+
 .ideas .title__secondary {
     text-align: center;
+    color: $white;
 }
 
 .ideas__text-block {
@@ -19,46 +23,66 @@
     line-height: 1.66;
 }
 
-.ideas__sign-up {
-    display: flex;
-    justify-content: center;
+.ideas .sign-up {
+    margin: 0 auto;
     margin-top: 25px;
 }
 
 @media (min-width: 768px) {
+
     .ideas {
         background-size: 336px;
-        background-position: -87px 202px;
+        background-position: left -56px bottom 115px;
         padding-bottom: 20px;
     }
-    .ideas__text-block {
-        font-size: 20px;
+
+    .ideas .container {
+        padding-bottom: 0;
     }
 
-    .ideas__sign-up {
-        margin-top: 100px;
-        padding-bottom: 180px;
+    .ideas__inner-wrap {
+        margin-left: auto;
+        width: 60%;
+    }
+
+    .ideas .title__secondary {
+        text-align: left;
+    }
+
+    .ideas__text-block {
+        font-size: 16px;
+    }
+
+    .ideas .sign-up {
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 30px;
+        padding-bottom: 90px;
     }
 }
 
 @media (min-width: 1024px) {
+
     .ideas {
         background-size: 350px;
         background-position: 20px 12px;
     }
-    .ideas__inner-wrap {
-        width: 60%;
-        padding-left: 40%;
+
+    .ideas__text-block {
+        font-size: 20px;
     }
+
     .ideas .title__secondary {
         text-align: left;
     }
+
     .ideas__sign-up {
         margin-top: 50px;
     }
 }
 
 @media (min-width: 1440px) {
+
     .ideas {
         background-position: left 180px top 42px;
     }
@@ -69,10 +93,10 @@
 }
 
 @media (min-width: 1820px) {
+
     .ideas {
         background-position: left 400px top 110px;
         padding-top: 100px;
         padding-bottom: 0px;
     }
 }
-

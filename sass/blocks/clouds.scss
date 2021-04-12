@@ -2,11 +2,11 @@
 	display: block;
 	width: 1220px;
 	height: auto;
-	transform: translate(-27%);
+	transform: translate(-27%, 2px);
 }
 
 .clouds--bottom {
-	transform: translate(-27%) rotate(180deg);
+	transform: translate(-27%, -2px) rotate(180deg);
 }
 
 @media (min-width: 768px) {

@@ -1,16 +1,16 @@
 <?php
 
-$cats = get_categories('hide_empty=0');
+$cats = get_terms('news_projects_categories', 'orderby=count&hide_empty=0');
 
 $args = array(
-    'post_type' => 'post',
-    'post_status' => 'publish',
-    'posts_per_page' => 3,
-    'paged' => 1,
-    'order' => 'DESC'
-);
+     'post_type' => 'projects',
+     'post_status' => 'publish',
+     'posts_per_page' => 2,
+     'paged' => 1,
+     'order' => 'DESC'
+ );
 
-$query = new WP_Query($args);
+$projects_query = new WP_Query($args);
 
 get_header();
 
@@ -36,17 +36,19 @@ get_header();
   </section>
   <section class="command">
     <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
-    <div class="container">
-      <h2 class="command__title">Готовая команда<br>
-        <span class="command__title-second">для вашего бизнеса</span>
-      </h2>
-      <p class="command__description">
-        Мы сотрудничаем с агентствами, которые
-        готовы к работе с командами разработчиков.
-        Вы работаете с клиентом и создаете дизайн,
-        а мы превращаем его в код.
-      </p>
-      <button type="submit" class="btn  btn--accent">Связаться со мной</button>
+    <div class="command__background-wrap">
+      <div class="container">
+        <h2 class="command__title">Готовая команда<br>
+          <span class="command__title-second">для вашего бизнеса</span>
+        </h2>
+        <p class="command__description">
+          Мы сотрудничаем с агентствами, которые
+          готовы к работе с командами разработчиков.
+          Вы работаете с клиентом и создаете дизайн,
+          а мы превращаем его в код.
+        </p>
+        <button type="submit" class="btn  btn--accent">Связаться со мной</button>
+      </div>
     </div>
   <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
   </section>
@@ -117,55 +119,40 @@ get_header();
       </div>
     </div>
   </section>
-  <section class="projects">
-    <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
-    <div class="container">
-      <h2 class="projects__title">Наши проекты</h2>
+  <section class="projects  projects--digital">
+        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+        <div class="projects__background-wrap">
+            <div class="container">
+                <h2 class="title__secondary">Наши проекты</h2>
 
-      <div class="blog">
-        <div class="container swiper-container blog-container">
-          <div class="swiper-wrapper blog-links-list">
-
-              <?php foreach ($cats as $cat): ?>
-                <div class="swiper-slide blog-links-list__item">
-                  <a class="blog-links-list__link blog-links-list__link--active" href="<?= get_category_link($cat->term_id); ?>">
-                      <?= $cat->name; ?>
-                  </a>
+                <div class="swiper-wrapper blog-categories-list">
+                    <?php foreach ($cats as $cat): ?>
+                        <div class="swiper-slide blog-categories__item">
+                            <a class="blog-categories__link" href="#" data-cat="<?=$cat->term_id;?>">
+                              <?= $cat->name; ?>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
-              <?php endforeach; ?>
 
-          </div>
+                <?php if ($projects_query->have_posts()) : ?>
+                    <ul class="projects__list">
+                    <?php while ($projects_query->have_posts()) : $projects_query->the_post(); ?>
+
+                        <li class="projects__item">
+
+                        <?php get_template_part('includes/section', 'article'); ?>
+
+                        </li>
+
+                <?php endwhile; endif; ?>
+                    </ul>
+
+                    <a class="projects__link" href="/projects">все проекты</a>
+            </div>
         </div>
-
-        <div class="blog-content">
-          <div class="blog-content__list">
-
-              <?php if ($query->have_posts()) :
-                  while ($query->have_posts()) : $query->the_post(); ?>
-
-                      <?php get_template_part('includes/section', 'blog-article'); ?>
-
-                  <?php endwhile; endif; ?>
-              <?php wp_reset_postdata(); ?>
-              <?php if ($query->max_num_pages > 1) : ?>
-                <script>
-                    var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
-                    var posts = '<?php echo addslashes(wp_json_encode($query->query_vars)); ?>';
-                    var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
-                    var max_pages = '<?php echo $query->max_num_pages; ?>';
-                </script>
-
-                <div class="blog-content__btn-container">
-                  <div id="true_loadmore_blog" class="btn blog-content__btn">Загрузить ещё</div>
-                </div>
-              <?php endif; ?>
-
-          </div>
-
-        </div>
-      </div>
-    <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
-  </section>
+        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
+    </section>
   <div class="feedback__get-news">
       <?php get_template_part('/includes/block', 'getnews'); ?>
   </div>
