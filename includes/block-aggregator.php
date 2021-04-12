@@ -15,7 +15,7 @@
                 </a>
             </li>
             <li class="aggregator__download-links-item  aggregator__download-links-item--google">
-                <a href=""><img src="/wp-content/themes/js-corp/images/icons/icon-download-google.svg" alt="download link"></a>
+                <a href="https://play.google.com/store/apps/details?id=space.jscorp.sokrat"><img src="/wp-content/themes/js-corp/images/icons/icon-download-google.svg" alt="download link"></a>
             </li>
         </ul>
     </div>

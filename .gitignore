@@ -9,5 +9,4 @@ build/
 nginx-wordpress.conf
 package-lock.json
 package.json
-gulpfile.js
 .idea/

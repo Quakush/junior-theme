@@ -24,7 +24,7 @@
                 <a class="contact-us__download-item  contact-us__download-item--apple" href="https://apps.apple.com/ru/app/sokrat/id1548987952">
                     <img src="/wp-content/themes/js-corp/images/icons/icon-download-apple.svg">
                 </a>
-                <a class="contact-us__download-item  contact-us__download-item--google" href="#">
+                <a class="contact-us__download-item  contact-us__download-item--google" href="https://play.google.com/store/apps/details?id=space.jscorp.sokrat">
                     <img src="/wp-content/themes/js-corp/images/icons/icon-download-google.svg">
                 </a>
             </div>

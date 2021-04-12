@@ -29,5 +29,8 @@
     "postcss-focus": "^5.0.1",
     "posthtml-include": "^1.4.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1"
+  }
 }
