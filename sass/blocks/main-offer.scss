@@ -214,10 +214,44 @@
 	color: $corp-blue;
 }
 
+
+/* Стили для main-offer страницы Компаниям */
+
+.main-offer--companies {
+	padding-bottom: 130px;
+	background-image: url("../images/svg/robots.svg");
+	background-repeat: no-repeat;
+	background-size: 221px;
+	background-position: bottom 10px left -40px;
+}
+
+.main-offer--companies .title {
+	margin-bottom: 16px;
+	font-size: 36px;
+}
+
+.main-offer--companies .title__colored {
+	color: $corp-blue;
+}
+
+.main-offer--companies p {
+	margin-bottom: 39px;
+	width: 100%;
+	font-size: 14px;
+}
+
+.main-offer--companies .title span {
+	display: block;
+}
+
+.main-offer--companies .companies__btn {
+	margin-left: auto;
+
 .main-offer--investors p {
 	margin-bottom: 29px;
 	width: 100%;
 	font-size: 13px;
+
 }
 
 .main-offer--investors .title span {
@@ -359,6 +393,18 @@
 		padding-bottom: 0;
 	}
 
+
+	/* Стили для main-offer страницы Компаниям */
+
+	.main-offer--companies {
+		padding-bottom: 0;
+		background-size: 300px;
+		background-position: top right 10%;
+	}
+
+	.main-offer--companies .companies__btn {
+		margin-left: 0;
+
 	/* Стили для main-offer страницы Инвесторам */
 
 	.main-offer--investors {
@@ -372,6 +418,7 @@
 
 	.main-offer--investors .sign-up {
 		width: 202px;
+
 	}
 }
 
@@ -484,6 +531,26 @@
 		padding-bottom: 0;
 	}
 
+
+	/* Стили для main-offer страницы Копаниям*/
+
+	.main-offer--companies {
+		background-size: 380px;
+		background-position: top right 20%;
+	}
+
+	.main-offer--companies .title {
+		margin-bottom: 23px;
+		font-size: 52px;
+	}
+
+	.main-offer--companies .main-offer__text {
+		margin-bottom: 31px;
+	}
+
+	.main-offer--companies .companies__btn {
+		width: 267px;
+
 	/* Стили для main-offer страницы Инвесторам */
 
 	.main-offer--investors {
@@ -497,6 +564,7 @@
 
 	.main-offer--investors .sign-up {
 		width: 584px;
+
 	}
 }
 
@@ -657,6 +725,22 @@
 		width: 60%;
 	}
 
+
+	/* Стили для main-offer страницы Компаниям */
+
+	.main-offer--companies {
+		background-size: 438px;
+		background-position: top right 25%;
+	}
+
+	.main-offer--companies .title {
+		font-size: 70px;
+	}
+
+	.main-offer--companies .main-offer__text {
+		font-size: 24px;
+	};
+
 	/* Стили для main-offer страницы Инвесторам */
 
 	.main-offer--investors {
@@ -669,6 +753,7 @@
 		margin-bottom: 27px;
 		font-size: 70px;
 	}
+
 }
 
 

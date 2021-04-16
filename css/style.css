@@ -2934,6 +2934,33 @@ html, body {
 .main-offer--socrat .btn-socrat {
   margin-right: auto; }
 
+
+/* Стили для main-offer страницы Компаниям */
+.main-offer--companies {
+  padding-bottom: 130px;
+  background-image: url("../images/svg/robots.svg");
+  background-repeat: no-repeat;
+  background-size: 221px;
+  background-position: bottom 10px left -40px; }
+
+.main-offer--companies .title {
+  margin-bottom: 16px;
+  font-size: 36px; }
+
+.main-offer--companies .title__colored {
+  color: #00A7CF; }
+
+.main-offer--companies p {
+  margin-bottom: 39px;
+  width: 100%;
+  font-size: 14px; }
+
+.main-offer--companies .title span {
+  display: block; }
+
+.main-offer--companies .companies__btn {
+  margin-left: auto; }
+
 /* Стили для main-offer страницы Инвесторам */
 .main-offer--investors {
   background-image: url("../images/svg/money.svg");
@@ -2968,6 +2995,7 @@ html, body {
 
 .main-offer--investors .sign-up__btn {
   width: 100%; }
+
 
 @media (min-width: 375px) {
   /* Стили для main-offer главной страницы */
@@ -3034,6 +3062,15 @@ html, body {
     font-size: 28px;
     width: 50%;
     padding-bottom: 0; }
+
+  /* Стили для main-offer страницы Компаниям */
+  .main-offer--companies {
+    padding-bottom: 0;
+    background-size: 300px;
+    background-position: top right 10%; }
+  .main-offer--companies .companies__btn {
+    margin-left: 0; } }
+
   /* Стили для main-offer страницы Инвесторам */
   .main-offer--investors {
     background-size: 300px;
@@ -3042,6 +3079,7 @@ html, body {
     font-size: 52px; }
   .main-offer--investors .sign-up {
     width: 202px; } }
+
 
 @media (min-width: 1024px) {
   .main-offer .container {
@@ -3059,9 +3097,15 @@ html, body {
   .main-offer--courses .container {
     padding-bottom: 70px;
     background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg"), url("../images/svg/socrat2.svg");
-    background-size: 188px, 200px, 200px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: right 100px top 50px, right 210px top 0, right 0 top 0; }
+    background-size: 188px,
+ 200px,
+ 200px;
+    background-repeat: no-repeat,
+ no-repeat,
+ no-repeat;
+    background-position: right 100px top 50px,
+ right 210px top 0,
+ right 0 top 0; }
   .main-offer--courses .title {
     margin-bottom: 22px; }
   .main-offer--courses p {
@@ -3098,6 +3142,19 @@ html, body {
   .main-offer--socrat p {
     width: 50%;
     padding-bottom: 0; }
+
+  /* Стили для main-offer страницы Копаниям*/
+  .main-offer--companies {
+    background-size: 380px;
+    background-position: top right 20%; }
+  .main-offer--companies .title {
+    margin-bottom: 23px;
+    font-size: 52px; }
+  .main-offer--companies .main-offer__text {
+    margin-bottom: 31px; }
+  .main-offer--companies .companies__btn {
+    width: 267px; } }
+
   /* Стили для main-offer страницы Инвесторам */
   .main-offer--investors {
     background-size: 380px;
@@ -3106,6 +3163,7 @@ html, body {
     margin-top: 110px; }
   .main-offer--investors .sign-up {
     width: 584px; } }
+
 
 @media (min-width: 1440px) {
   .main-offer p {
@@ -3173,7 +3231,9 @@ html, body {
     padding: 0;
     padding-top: 44px;
     padding-bottom: 67px;
-    background-position: right 116px top 99px, right 237px top 0, right 0 top 0; }
+    background-position: right 116px top 99px,
+ right 237px top 0,
+ right 0 top 0; }
   .main-offer--courses .title {
     font-size: 70px;
     line-height: 1.4; }
@@ -3190,8 +3250,10 @@ html, body {
   /* Стили для main-offer страницы стартапам*/
   .main-offer--startup {
     background-image: url("../images/svg/rocket1.svg"), url("../images/svg/rocket-small.svg");
-    background-size: 1326px, 450px;
-    background-position: right -472px top 17px, left -105px bottom -219px; }
+    background-size: 1326px,
+ 450px;
+    background-position: right -472px top 17px,
+ left -105px bottom -219px; }
   .main-offer--startup .title {
     margin-bottom: 0; }
   .main-offer--startup p {
@@ -3205,6 +3267,16 @@ html, body {
   .main-offer--socrat p {
     font-size: 34px;
     width: 60%; }
+
+  /* Стили для main-offer страницы Компаниям */
+  .main-offer--companies {
+    background-size: 438px;
+    background-position: top right 25%; }
+  .main-offer--companies .title {
+    font-size: 70px; }
+  .main-offer--companies .main-offer__text {
+    font-size: 24px; } }
+
   /* Стили для main-offer страницы Инвесторам */
   .main-offer--investors {
     background-size: 420px;
@@ -3214,13 +3286,15 @@ html, body {
     margin-bottom: 27px;
     font-size: 70px; } }
 
+
 @media (min-width: 1820px) {
   /* Стили для main-offer главной страницы */
   .main-offer--main .container::after {
     bottom: -95px; }
   /* Стили для main-offer страницы Стартапам*/
   .main-offer--startup {
-    background-position: right -222px top 17px, left 25px bottom -219px; }
+    background-position: right -222px top 17px,
+ left 25px bottom -219px; }
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
     background-size: 550px;
@@ -3943,9 +4017,12 @@ html, body {
   width: 282px;
   height: 360px;
   background-image: url("../images/svg/corn.svg"), url("../images/svg/meeting-table.svg");
-  background-size: 72px 88px, contain;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center bottom 12.64%, center;
+  background-size: 72px 88px,
+ contain;
+  background-repeat: no-repeat,
+ no-repeat;
+  background-position: center bottom 12.64%,
+ center;
   box-sizing: border-box; }
   .pilot-project__meeting::before {
     content: "";
@@ -4066,7 +4143,8 @@ html, body {
     padding-top: 70px;
     width: 370px;
     height: 472px;
-    background-size: 94px 114px, contain; }
+    background-size: 94px 114px,
+ contain; }
     .pilot-project__meeting::before {
       width: 193px;
       height: 77px; }
@@ -4129,7 +4207,8 @@ html, body {
     padding-top: 95px;
     width: 487px;
     height: 621px;
-    background-size: 146px 185px, contain; }
+    background-size: 146px 185px,
+ contain; }
     .pilot-project__meeting::before {
       width: 254px;
       height: 101px; }
@@ -5317,9 +5396,12 @@ html, body {
   .choose-course .container {
     padding: 30px 36px;
     background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 188px, 165px;
-    background-position: left 36px top 0,  left 255px top 35px; }
+    background-repeat: no-repeat,
+ no-repeat;
+    background-size: 188px,
+ 165px;
+    background-position: left 36px top 0, 
+ left 255px top 35px; }
   .choose-course__wrap {
     margin-left: auto;
     width: 50%; }
@@ -5332,7 +5414,8 @@ html, body {
   .choose-course .container {
     padding: 0;
     padding-bottom: 10px;
-    background-position: left 0 top 0,  left 219px top 35px; }
+    background-position: left 0 top 0, 
+ left 219px top 35px; }
   .choose-course__wrap {
     width: 54%; }
   .choose-course__title {
@@ -6460,9 +6543,12 @@ html, body {
     padding-top: 20px;
     padding-bottom: 40px;
     background-image: url("../images/svg/campaigns.svg"), url("../images/svg/socrat.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right 228px top 45px, right 20px top 10px;
-    background-size: 165px, 188px; }
+    background-repeat: no-repeat,
+ no-repeat;
+    background-position: right 228px top 45px,
+ right 20px top 10px;
+    background-size: 165px,
+ 188px; }
   .aggregator__text {
     width: 52%; }
   .aggregator__download-links-list {
@@ -6505,10 +6591,41 @@ html, body {
 .education-paltforms-proposal {
   display: none; }
 
-.angels-club {
+
+
   width: 100%;
   color: #24272D;
   overflow: hidden; }
+
+
+.trainee__background-wrap {
+  width: 100%;
+  background-color: white; }
+
+.trainee .container {
+  padding-bottom: 120px;
+  background-image: url("../images/svg/presentation.svg");
+  background-size: 192px;
+  background-repeat: no-repeat;
+  background-position: bottom 10px left 10px; }
+
+.trainee__title {
+  margin-bottom: 13px;
+  font-size: 28px;
+  font-weight: 800; }
+
+.trainee .title__colored {
+  color: #00A7CF; }
+
+.trainee__title span {
+  display: inline-block; }
+
+.trainee .companies__btn {
+  width: 167px;
+  margin-left: auto; }
+
+.trainee p {
+  margin-bottom: 49px;
 
 .angels-club__background-wrap {
   background-color: white; }
@@ -6640,10 +6757,50 @@ html, body {
   margin-top: 25px; }
 
 .choose-project p {
+
   font-size: 14px;
   line-height: 1.87; }
 
 @media (min-width: 375px) {
+
+  .trainee__title {
+    font-size: 30px; } }
+
+@media (min-width: 768px) {
+  .trainee .container {
+    padding-bottom: 10px;
+    background-size: 350px;
+    background-position: bottom 10px left 10px; }
+  .trainee__wrap {
+    width: 50%;
+    margin-left: auto; }
+  .trainee__title {
+    font-size: 36px; }
+  .trainee p {
+    margin-left: auto;
+    margin-bottom: 22px;
+    font-size: 20px; } }
+
+.trainee .companies__btn {
+  margin-left: 0; }
+
+@media (min-width: 1024px) {
+  .trainee .container {
+    background-size: 380px;
+    background-position: bottom 10px left 10px; }
+  .trainee .companies__btn {
+    width: 267px;
+    margin-right: auto; } }
+
+@media (min-width: 1440px) {
+  .trainee__wrap {
+    width: 54%; }
+  .trainee__title {
+    font-size: 40px; }
+  .trainee p {
+    font-size: 24px;
+    line-height: 1.88; } }
+=======
   .choose-project .container {
     background-position: top -10px left 20px; } }
 
@@ -6885,6 +7042,7 @@ html, body {
     font-size: 40px; }
   .pilot__text-block {
     font-size: 24px; } }
+
 
 .news-container {
   border-bottom: 1px solid white; }
