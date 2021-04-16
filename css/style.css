@@ -2913,6 +2913,32 @@ html, body {
 .main-offer--socrat .btn-socrat {
   margin-right: auto; }
 
+/* Стили для main-offer страницы Компаниям */
+.main-offer--companies {
+  padding-bottom: 130px;
+  background-image: url("../images/svg/robots.svg");
+  background-repeat: no-repeat;
+  background-size: 221px;
+  background-position: bottom 10px left -40px; }
+
+.main-offer--companies .title {
+  margin-bottom: 16px;
+  font-size: 36px; }
+
+.main-offer--companies .title__colored {
+  color: #00A7CF; }
+
+.main-offer--companies p {
+  margin-bottom: 39px;
+  width: 100%;
+  font-size: 14px; }
+
+.main-offer--companies .title span {
+  display: block; }
+
+.main-offer--companies .companies__btn {
+  margin-left: auto; }
+
 @media (min-width: 375px) {
   /* Стили для main-offer главной страницы */
   .main-offer--main {
@@ -2975,7 +3001,14 @@ html, body {
   .main-offer--socrat p {
     font-size: 28px;
     width: 50%;
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  /* Стили для main-offer страницы Компаниям */
+  .main-offer--companies {
+    padding-bottom: 0;
+    background-size: 300px;
+    background-position: top right 10%; }
+  .main-offer--companies .companies__btn {
+    margin-left: 0; } }
 
 @media (min-width: 1024px) {
   .main-offer .container {
@@ -3031,7 +3064,16 @@ html, body {
     font-size: 60px; }
   .main-offer--socrat p {
     width: 50%;
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  /* Стили для main-offer страницы Копаниям*/
+  .main-offer--companies {
+    background-size: 380px;
+    background-position: top right 20%; }
+  .main-offer--companies .title {
+    margin-bottom: 23px;
+    font-size: 52px; }
+  .main-offer--companies .main-offer__text {
+    margin-bottom: 31px; } }
 
 @media (min-width: 1440px) {
   .main-offer p {
@@ -3130,7 +3172,15 @@ html, body {
     background-position: bottom 151px right 15%; }
   .main-offer--socrat p {
     font-size: 34px;
-    width: 60%; } }
+    width: 60%; }
+  /* Стили для main-offer страницы Компаниям */
+  .main-offer--companies {
+    background-size: 438px;
+    background-position: top right 25%; }
+  .main-offer--companies .title {
+    font-size: 70px; }
+  .main-offer--companies .main-offer__text {
+    font-size: 24px; } }
 
 @media (min-width: 1820px) {
   /* Стили для main-offer главной страницы */
