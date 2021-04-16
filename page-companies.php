@@ -35,7 +35,7 @@ get_header(); ?>
                        готовы к трудоустройству в вашу компанию. Ищите стажеров или
                        расширяете бизнес? Свяжитесь с нами!
                     </p>
-                    <a class="btn  btn--blue  btn--big  companies__btn" href="#">Стать партнером</a>
+                    <a class="btn  btn--blue  btn--big  trainee__btn" href="#">Стать партнером</a>
                </div>
            </div>
        </div>
@@ -43,31 +43,31 @@ get_header(); ?>
    </section>
    <section class="companies-accelerator">
        <div class="container">
-           <h2 class="title__secondary  companies__title">Корпоративный акселератор</h2>
-           <p>
+           <h2 class="title__secondary  companies-accelerator__title">Корпоративный акселератор</h2>
+           <p class="companies-accelerator__info">
                Программа ускоренного развития для проектов инновационной
                и ИТ напрвленности через взаимодействие своих решений в компаниях.
            </p>
-           <ul class="companies__list">
-               <li class="companies__item  companies__item--search">
-                   <a class="companies__link" href="#">Поиск проектов</a>
-                   <p class="companies__text companies__text--mobile">Вы один или у вас есть команда, с которой вы планируете запустить бизнес.</p>
-                   <p class="companies__text companies__text--desktop">Организуем поиск проектов по необходимым направлениям и проведем их обучение.</p>
+           <ul class="companies-accelerator__list">
+               <li class="companies-accelerator__item  companies-accelerator__item--search">
+                   <a class="companies-accelerator__link" href="#">Поиск проектов</a>
+                   <p class="companies-accelerator__text companies-accelerator__text--mobile">Вы один или у вас есть команда, с которой вы планируете запустить бизнес.</p>
+                   <p class="companies-accelerator__text companies-accelerator__text--desktop">Организуем поиск проектов по необходимым направлениям и проведем их обучение.</p>
                </li>
-               <li class="companies__item  companies__item--scoring">
-                  <a class="companies__link" href="#">Скоринг команд</a>
-                  <p class="companies__text companies__text--mobile">Вы закрепились на своем рынке, хотите лучше понимать свой бизнес и улучшать показатели.</p>
-                  <p class="companies__text companies__text--desktop">Проверим проекты на предмет соответствия вашим критериям.</p>
+               <li class="companies-accelerator__item  companies-accelerator__item--scoring">
+                  <a class="companies-accelerator__link" href="#">Скоринг команд</a>
+                  <p class="companies-accelerator__text companies-accelerator__text--mobile">Вы закрепились на своем рынке, хотите лучше понимать свой бизнес и улучшать показатели.</p>
+                  <p class="companies-accelerator__text companies-accelerator__text--desktop">Проверим проекты на предмет соответствия вашим критериям.</p>
               </li>
-              <li class="companies__item  companies__item--programm">
-                 <a class="companies__link" href="#">Образовательная программа</a>
-                 <p class="companies__text companies__text--mobile">У вас интернет-проект, не знаете как начать продавать или выйти на новый рынок.</p>
-                 <p class="companies__text companies__text--desktop">У вас интернет-проект, не знаете как начать продавать или выйти на новый рынок.</p>
+              <li class="companies-accelerator__item  companies-accelerator__item--programm">
+                 <a class="companies-accelerator__link" href="#">Образовательная программа</a>
+                 <p class="companies-accelerator__text companies-accelerator__text--mobile">У вас интернет-проект, не знаете как начать продавать или выйти на новый рынок.</p>
+                 <p class="companies-accelerator__text companies-accelerator__text--desktop">У вас интернет-проект, не знаете как начать продавать или выйти на новый рынок.</p>
              </li>
-             <li class="companies__item  companies__item--tracks">
-                  <a class="companies__link" href="#">Трекеры</a>
-                  <p class="companies__text companies__text--mobile">С проектами будут работать специалисты в области маркетинга и тд.</p>
-                  <p class="companies__text companies__text--desktop">С проектами будут работать специалисты в области маркетинга и тд.</p>
+             <li class="companies-accelerator__item  companies-accelerator__item--tracks">
+                  <a class="companies-accelerator__link" href="#">Трекеры</a>
+                  <p class="companies-accelerator__text companies-accelerator__text--mobile">С проектами будут работать специалисты в области маркетинга и тд.</p>
+                  <p class="companies-accelerator__text companies-accelerator__text--desktop">С проектами будут работать специалисты в области маркетинга и тд.</p>
               </li>
            </ul>
        </div>
