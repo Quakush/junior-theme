@@ -1,0 +1,215 @@
+.technology {
+  width: 100%;
+  overflow: hidden;
+}
+
+.technology .container {
+  padding-top: 10px;
+}
+
+.technology__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.technology__title span {
+  display: inline-block;
+}
+
+.technology__title .title__bottom {
+  font-size: 15px;
+}
+
+.technology p {
+  margin-bottom: 12px;
+  color: $light-text;
+  font-size: 14px;
+}
+
+.technology .title__colored {
+  color: $corp-blue;
+}
+
+.technology__text-desktop {
+  display: none;
+}
+
+.technology__list {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.technology__item {
+  margin-bottom: 50px;
+  padding-left: 102px;
+  background-repeat: no-repeat;
+}
+
+.technology__link {
+  @include link-style;
+  padding-left: 5px;
+  padding-bottom: 12px;
+  color: $corp-blue;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.technology__item--scoring {
+  background-image: url("../images/svg/shield.svg"),
+                    url("../images/svg/border.svg");
+  background-size: 40px, 82px;
+  background-position: left 21px top 16px, 0 0;
+}
+
+.technology__item--hypothesis {
+  background-image: url("../images/svg/question.svg"),
+                    url("../images/svg/border.svg");
+  background-size: 33px, 82px;
+  background-position: left 24px top 16px, 0 0;
+}
+
+.technology__item--team  {
+  background-image: url("../images/svg/group.svg"),
+                    url("../images/svg/border.svg");
+  background-size: 40px, 82px;
+  background-position: left 21px top 20px, 0 0;
+}
+
+.technology__item--mvp  {
+  background-image: url("../images/svg/mobile.svg"),
+                    url("../images/svg/border.svg");
+  background-size: 33px, 82px;
+  background-position: left 24px top 14px, 0 0;
+}
+
+.technology__item--strategy  {
+  background-image: url("../images/svg/strategy.svg"),
+                    url("../images/svg/border.svg");
+  background-size: 43px, 82px;
+  background-position: left 21px top 19px, 0 0;
+}
+
+.technology__item--sale  {
+  background-image: url("../images/svg/bag.svg"),
+                    url("../images/svg/border.svg");
+  background-size: 36px, 82px;
+  background-position: left 23px top 14px, 0 0;
+}
+
+@media (min-width: 375px) {
+
+  .technology__title {
+    font-size: 20px
+  }
+
+  .technology__item p {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .technology__title {
+    font-size: 28px;
+  }
+
+  .technology__title .title__bottom {
+    font-size: 22px;
+  }
+
+  .technology p {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .technology__list p {
+    width: 93%;
+    margin-left: 0;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .technology__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .technology__item {
+    width: 38%;
+  }
+
+  .technology__item--scoring {
+    order: 0;
+    background-size: 40px, 100px;
+    background-position: left 30px top 20px, 0 -4px;
+  }
+
+  .technology__item--hypothesis {
+    order: 2;
+    background-size: 33px, 100px;
+    background-position: left 32px top 20px, 0 -4px;
+  }
+
+  .technology__item--team {
+    order: 4;
+    background-size: 40px, 100px;
+    background-position: left 30px top 24px, 0 -4px;
+  }
+
+  .technology__item--mvp {
+    order: 1;
+    background-size: 33px, 100px;
+    background-position: left 34px top 20px, 0 -4px;
+  }
+
+  .technology__item--strategy {
+    order: 3;
+    background-size: 43px, 100px;
+    background-position: left 30px top 24px, 0 -4px;
+
+    & p {
+      width: 94%
+    }
+  }
+
+  .technology__item--sale {
+    order: 5;
+    background-size: 36px, 100px;
+    background-position: left 33px top 20px, 0 -4px;
+  }
+
+
+  .technology__link {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .technology__title {
+    font-size: 40px;
+  }
+
+  .technology__title .title__bottom {
+    font-size: 40px;
+  }
+
+  .technology__text-mobile {
+    display: none;
+  }
+
+  .technology__text-desktop {
+    display: block;
+  }
+
+  .technology__list {
+    width: 100%;
+  }
+}
