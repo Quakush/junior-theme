@@ -14,7 +14,7 @@ get_header('socrat'); ?>
                     обучение одной из
                     современных&nbsp;профессий.</p>
             </div>
-            <button class="btn-socrat">Принять участие</button>
+            <a href="https://onlinetestpad.com/hoi7tdqdxlyha" class="btn-socrat" target="_blank">Принять участие</a>
         </div>
     </section>
     <section class="cup-start">
@@ -36,7 +36,7 @@ get_header('socrat'); ?>
                     гранд на обучение одной из
                     современных профессий.
                 </p>
-                <button class="btn-socrat">Принять участие</button>
+                <a href="https://onlinetestpad.com/hoi7tdqdxlyha" class="btn-socrat" target="_blank">Принять участие</a>
             </div>
         </div>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
@@ -72,7 +72,7 @@ get_header('socrat'); ?>
                     представленных в нашем
                     приложении "Sokrat."
                 </p>
-                <button class="btn-socrat">Принять участие</button>
+                <a href="https://onlinetestpad.com/hoi7tdqdxlyha" class="btn-socrat" target="_blank">Принять участие</a>
             </div>
         </div>
     </section>
@@ -143,7 +143,7 @@ get_header('socrat'); ?>
                 получит приз после того, как
                 ответит на все вопросы.
             </p>
-            <button class="btn-socrat">Принять участие</button>
+            <a href="https://onlinetestpad.com/hoi7tdqdxlyha" class="btn-socrat" target="_blank">Принять участие</a>
         </div>
     </section>
 

@@ -30,6 +30,7 @@
 @import "blocks/header/top-header";
 @import "blocks/header/logo";
 @import "blocks/header/main-nav";
+@import "blocks/header/main-nav-socrat";
 @import "blocks/header/mobile-nav";
 @import "blocks/header/language-switch";
 
@@ -78,7 +79,14 @@
 @import "blocks/courses/aggregator";
 @import "blocks/courses/education-paltforms-proposal";
 
+
 @import "blocks/companies/trainee";
+=======
+@import "blocks/investors/angels-club";
+@import "blocks/investors/choose-project";
+@import "blocks/investors/technology";
+@import "blocks/investors/pilot";
+
 
 @import "blocks/news/news-links-list";
 @import "blocks/news/news-content";

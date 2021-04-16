@@ -2021,7 +2021,9 @@ html, body {
     order: 3;
     margin-left: 27px; }
   .top-header--socrat .btn-socrat {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     order: 2;
     margin-left: 50px; } }
 
@@ -2285,6 +2287,25 @@ html, body {
   .main-nav {
     order: 1;
     margin-left: 160px; } }
+
+.main-nav-socrat {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+
+.main-nav-socrat a {
+  font-size: 16px; }
+  .main-nav-socrat a:hover, .main-nav-socrat a:focus {
+    color: #00A7CF; }
+
+@media (min-width: 768px) {
+  .main-nav-socrat {
+    flex-direction: row;
+    margin-left: -60px; }
+  .main-nav-socrat a {
+    margin-left: 50px; } }
 
 .language-switch {
   display: none;
@@ -2913,6 +2934,7 @@ html, body {
 .main-offer--socrat .btn-socrat {
   margin-right: auto; }
 
+
 /* Стили для main-offer страницы Компаниям */
 .main-offer--companies {
   padding-bottom: 130px;
@@ -2938,6 +2960,42 @@ html, body {
 
 .main-offer--companies .companies__btn {
   margin-left: auto; }
+
+/* Стили для main-offer страницы Инвесторам */
+.main-offer--investors {
+  background-image: url("../images/svg/money.svg");
+  background-repeat: no-repeat;
+  background-size: 243px;
+  background-position: top 18px left 50%; }
+
+.main-offer--investors .title {
+  margin-top: 284px;
+  margin-bottom: 16px;
+  font-size: 28px; }
+
+.main-offer--investors .title__colored {
+  color: #00A7CF; }
+
+.main-offer--investors p {
+  margin-bottom: 29px;
+  width: 100%;
+  font-size: 13px; }
+
+.main-offer--investors .title span {
+  display: block; }
+
+.main-offer--investors .sign-up {
+  width: 100%; }
+
+.main-offer--investors .sign-up__dropdown {
+  width: 100%; }
+
+.main-offer--investors .sign-up__mark {
+  width: 100%; }
+
+.main-offer--investors .sign-up__btn {
+  width: 100%; }
+
 
 @media (min-width: 375px) {
   /* Стили для main-offer главной страницы */
@@ -2965,7 +3023,9 @@ html, body {
   .main-offer--socrat title {
     font-size: 50px; }
   .main-offer--socrat p {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .main-offer--investors {
+    background-position: top 20px left 50px; } }
 
 @media (min-width: 768px) {
   .main-offer__text-block {
@@ -3002,6 +3062,7 @@ html, body {
     font-size: 28px;
     width: 50%;
     padding-bottom: 0; }
+
   /* Стили для main-offer страницы Компаниям */
   .main-offer--companies {
     padding-bottom: 0;
@@ -3009,6 +3070,16 @@ html, body {
     background-position: top right 10%; }
   .main-offer--companies .companies__btn {
     margin-left: 0; } }
+
+  /* Стили для main-offer страницы Инвесторам */
+  .main-offer--investors {
+    background-size: 300px;
+    background-position: top left 50%; }
+  .main-offer--investors .title {
+    font-size: 52px; }
+  .main-offer--investors .sign-up {
+    width: 202px; } }
+
 
 @media (min-width: 1024px) {
   .main-offer .container {
@@ -3026,9 +3097,15 @@ html, body {
   .main-offer--courses .container {
     padding-bottom: 70px;
     background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg"), url("../images/svg/socrat2.svg");
-    background-size: 188px, 200px, 200px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: right 100px top 50px, right 210px top 0, right 0 top 0; }
+    background-size: 188px,
+ 200px,
+ 200px;
+    background-repeat: no-repeat,
+ no-repeat,
+ no-repeat;
+    background-position: right 100px top 50px,
+ right 210px top 0,
+ right 0 top 0; }
   .main-offer--courses .title {
     margin-bottom: 22px; }
   .main-offer--courses p {
@@ -3065,6 +3142,7 @@ html, body {
   .main-offer--socrat p {
     width: 50%;
     padding-bottom: 0; }
+
   /* Стили для main-offer страницы Копаниям*/
   .main-offer--companies {
     background-size: 380px;
@@ -3076,6 +3154,16 @@ html, body {
     margin-bottom: 31px; }
   .main-offer--companies .companies__btn {
     width: 267px; } }
+
+  /* Стили для main-offer страницы Инвесторам */
+  .main-offer--investors {
+    background-size: 380px;
+    background-position: bottom 140px right; }
+  .main-offer--investors .title {
+    margin-top: 110px; }
+  .main-offer--investors .sign-up {
+    width: 584px; } }
+
 
 @media (min-width: 1440px) {
   .main-offer p {
@@ -3143,7 +3231,9 @@ html, body {
     padding: 0;
     padding-top: 44px;
     padding-bottom: 67px;
-    background-position: right 116px top 99px, right 237px top 0, right 0 top 0; }
+    background-position: right 116px top 99px,
+ right 237px top 0,
+ right 0 top 0; }
   .main-offer--courses .title {
     font-size: 70px;
     line-height: 1.4; }
@@ -3160,8 +3250,10 @@ html, body {
   /* Стили для main-offer страницы стартапам*/
   .main-offer--startup {
     background-image: url("../images/svg/rocket1.svg"), url("../images/svg/rocket-small.svg");
-    background-size: 1326px,  450px;
-    background-position: right -472px top 17px,  left -105px bottom -219px; }
+    background-size: 1326px,
+ 450px;
+    background-position: right -472px top 17px,
+ left -105px bottom -219px; }
   .main-offer--startup .title {
     margin-bottom: 0; }
   .main-offer--startup p {
@@ -3175,6 +3267,7 @@ html, body {
   .main-offer--socrat p {
     font-size: 34px;
     width: 60%; }
+
   /* Стили для main-offer страницы Компаниям */
   .main-offer--companies {
     background-size: 438px;
@@ -3184,17 +3277,32 @@ html, body {
   .main-offer--companies .main-offer__text {
     font-size: 24px; } }
 
+  /* Стили для main-offer страницы Инвесторам */
+  .main-offer--investors {
+    background-size: 420px;
+    background-position: bottom 140px right 20%; }
+  .main-offer--investors .title {
+    margin-top: 100px;
+    margin-bottom: 27px;
+    font-size: 70px; } }
+
+
 @media (min-width: 1820px) {
   /* Стили для main-offer главной страницы */
   .main-offer--main .container::after {
     bottom: -95px; }
   /* Стили для main-offer страницы Стартапам*/
   .main-offer--startup {
-    background-position: right -222px top 17px,   left 25px bottom -219px; }
+    background-position: right -222px top 17px,
+ left 25px bottom -219px; }
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
     background-size: 550px;
-    background-position: bottom 151px right 27%; } }
+    background-position: bottom 151px right 27%; }
+  /* стили для main-offer стриницы Инвесторам */
+  .main-offer--investors {
+    background-size: 456px;
+    background-position: bottom 140px right 22%; } }
 
 .ecosystem {
   width: 100%;
@@ -3909,9 +4017,12 @@ html, body {
   width: 282px;
   height: 360px;
   background-image: url("../images/svg/corn.svg"), url("../images/svg/meeting-table.svg");
-  background-size: 72px 88px, contain;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center bottom 12.64%, center;
+  background-size: 72px 88px,
+ contain;
+  background-repeat: no-repeat,
+ no-repeat;
+  background-position: center bottom 12.64%,
+ center;
   box-sizing: border-box; }
   .pilot-project__meeting::before {
     content: "";
@@ -4032,7 +4143,8 @@ html, body {
     padding-top: 70px;
     width: 370px;
     height: 472px;
-    background-size: 94px 114px, contain; }
+    background-size: 94px 114px,
+ contain; }
     .pilot-project__meeting::before {
       width: 193px;
       height: 77px; }
@@ -4095,7 +4207,8 @@ html, body {
     padding-top: 95px;
     width: 487px;
     height: 621px;
-    background-size: 146px 185px, contain; }
+    background-size: 146px 185px,
+ contain; }
     .pilot-project__meeting::before {
       width: 254px;
       height: 101px; }
@@ -4867,6 +4980,8 @@ html, body {
 
 @media (min-width: 768px) {
   .btn-socrat {
+    margin-left: 0; }
+  .cup-start .btn-socrat {
     margin-left: 50%; }
   .cup-start .title__secondary {
     margin-left: 50%; }
@@ -5281,9 +5396,12 @@ html, body {
   .choose-course .container {
     padding: 30px 36px;
     background-image: url("../images/svg/socrat.svg"), url("../images/svg/campaigns.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 188px, 165px;
-    background-position: left 36px top 0,  left 255px top 35px; }
+    background-repeat: no-repeat,
+ no-repeat;
+    background-size: 188px,
+ 165px;
+    background-position: left 36px top 0, 
+ left 255px top 35px; }
   .choose-course__wrap {
     margin-left: auto;
     width: 50%; }
@@ -5296,7 +5414,8 @@ html, body {
   .choose-course .container {
     padding: 0;
     padding-bottom: 10px;
-    background-position: left 0 top 0,  left 219px top 35px; }
+    background-position: left 0 top 0, 
+ left 219px top 35px; }
   .choose-course__wrap {
     width: 54%; }
   .choose-course__title {
@@ -6424,9 +6543,12 @@ html, body {
     padding-top: 20px;
     padding-bottom: 40px;
     background-image: url("../images/svg/campaigns.svg"), url("../images/svg/socrat.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right 228px top 45px, right 20px top 10px;
-    background-size: 165px, 188px; }
+    background-repeat: no-repeat,
+ no-repeat;
+    background-position: right 228px top 45px,
+ right 20px top 10px;
+    background-size: 165px,
+ 188px; }
   .aggregator__text {
     width: 52%; }
   .aggregator__download-links-list {
@@ -6469,10 +6591,12 @@ html, body {
 .education-paltforms-proposal {
   display: none; }
 
-.trainee {
+
+
   width: 100%;
   color: #24272D;
   overflow: hidden; }
+
 
 .trainee__background-wrap {
   width: 100%;
@@ -6502,10 +6626,143 @@ html, body {
 
 .trainee p {
   margin-bottom: 49px;
+
+.angels-club__background-wrap {
+  background-color: white; }
+
+.angels-club .container {
+  padding-top: 230px;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+  background-image: url("../images/svg/angel.svg");
+  background-size: 207px;
+  background-position: center top; }
+
+.angels-club__title {
+  margin-bottom: 17px;
+  font-size: 24px;
+  font-weight: 800; }
+  .angels-club__title:last-of-type {
+    margin-bottom: 37px;
+    text-align: center; }
+
+.angels-club__title span {
+  display: inline-block; }
+
+.angels-club .title__colored {
+  color: #00A7CF; }
+
+.angels-club__text--mobile {
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 1.57; }
+
+.angels-club__text--desktop {
+  display: none; }
+
+.angels-club__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px; }
+
+.angels-club__list h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #00A7CF; }
+
+.angels-club__list .padding-left {
+  padding-left: 18px; }
+
+.angels-club__list p {
+  font-size: 14px; }
+  .angels-club__list p:last-of-type {
+    margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .angels-club__title {
+    font-size: 26px; } }
+
+@media (min-width: 1024px) {
+  .angels-club__text--desktop {
+    display: block;
+    margin-bottom: 60px;
+    font-size: 16px; }
+  .angels-club__text--mobile {
+    display: none; }
+  .angels-club__item {
+    width: 40%;
+    margin-bottom: 33px; }
+  .angels-club .choose-project__btn {
+    margin: 0 auto; } }
+
+@media (min-width: 1440px) {
+  .angels-club .container {
+    padding-top: 30px;
+    padding-bottom: 64px;
+    background-size: 290px;
+    background-position: right 15% top; }
+  .angels-club__title {
+    font-size: 40px; }
+  .angels-club__text--desktop {
+    width: 47%;
+    font-size: 24px; }
+  .angels-club__list {
+    width: 100%;
+    justify-content: center;
+    padding-left: 100px; }
+  .angels-club__item {
+    width: 30%;
+    margin-right: 15%; }
+  .angels-club__list h3 {
+    font-size: 25px; }
+  .angels-club .padding-left {
+    padding-left: 0; }
+  .angels-club__list p {
+    font-size: 17px; } }
+
+.choose-project {
+  width: 100%;
+  color: #24272D;
+  overflow: hidden; }
+
+.choose-project__background-wrap {
+  width: 100%;
+  background-color: white; }
+
+.choose-project .container {
+  padding-top: 167px;
+  padding-bottom: 10px;
+  background-image: url("../images/svg/arrow.svg");
+  background-size: 296px;
+  background-repeat: no-repeat;
+  background-position: top -10px left 50%; }
+
+.choose-project__title {
+  margin-bottom: 13px;
+  font-size: 25px; }
+
+.choose-project .title__colored {
+  color: #00A7CF; }
+
+.choose-project__title span {
+  display: block; }
+
+.choose-project__btn {
+  width: 100%;
+  margin-top: 25px; }
+
+.choose-project p {
+
   font-size: 14px;
   line-height: 1.87; }
 
 @media (min-width: 375px) {
+
   .trainee__title {
     font-size: 30px; } }
 
@@ -6543,6 +6800,249 @@ html, body {
   .trainee p {
     font-size: 24px;
     line-height: 1.88; } }
+=======
+  .choose-project .container {
+    background-position: top -10px left 20px; } }
+
+@media (min-width: 768px) {
+  .choose-project .container {
+    background-position: top -10px left 50%; } }
+
+@media (min-width: 1024px) {
+  .choose-project .container {
+    padding: 10px 36px;
+    background-size: 448px;
+    background-position: center left 10%; }
+  .choose-project__wrap {
+    margin-left: auto;
+    width: 50%; }
+  .choose-project__title {
+    font-size: 34px;
+    font-weight: 800; }
+  .choose-project__btn {
+    width: 202px;
+    margin-right: auto; } }
+
+@media (min-width: 1440px) {
+  .choose-project .container {
+    padding: 10px 36px;
+    background-size: 448px;
+    background-position: bottom 73% left; }
+  .choose-project__wrap {
+    width: 54%; }
+  .choose-project__title {
+    letter-spacing: -2px; }
+  .choose-project__title span {
+    display: inline-block; }
+  .choose-project p {
+    font-size: 24px;
+    line-height: 1.88;
+    letter-spacing: -1px; }
+  .choose-project__btn {
+    margin-top: 47px;
+    width: 267px; } }
+
+.technology {
+  width: 100%;
+  overflow: hidden; }
+
+.technology .container {
+  padding-top: 10px; }
+
+.technology__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-align: center; }
+
+.technology__title span {
+  display: inline-block; }
+
+.technology__title .title__bottom {
+  font-size: 15px; }
+
+.technology p {
+  margin-bottom: 12px;
+  color: #AEAEAE;
+  font-size: 14px; }
+
+.technology .title__colored {
+  color: #00A7CF; }
+
+.technology__text-desktop {
+  display: none; }
+
+.technology__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+
+.technology__item {
+  margin-bottom: 50px;
+  padding-left: 102px;
+  background-repeat: no-repeat; }
+
+.technology__link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  padding-left: 5px;
+  padding-bottom: 12px;
+  color: #00A7CF;
+  font-size: 16px;
+  white-space: nowrap; }
+
+.technology__item--scoring {
+  background-image: url("../images/svg/shield.svg"), url("../images/svg/border.svg");
+  background-size: 40px, 82px;
+  background-position: left 21px top 16px, 0 0; }
+
+.technology__item--hypothesis {
+  background-image: url("../images/svg/question.svg"), url("../images/svg/border.svg");
+  background-size: 33px, 82px;
+  background-position: left 24px top 16px, 0 0; }
+
+.technology__item--team {
+  background-image: url("../images/svg/group.svg"), url("../images/svg/border.svg");
+  background-size: 40px, 82px;
+  background-position: left 21px top 20px, 0 0; }
+
+.technology__item--mvp {
+  background-image: url("../images/svg/mobile.svg"), url("../images/svg/border.svg");
+  background-size: 33px, 82px;
+  background-position: left 24px top 14px, 0 0; }
+
+.technology__item--strategy {
+  background-image: url("../images/svg/strategy.svg"), url("../images/svg/border.svg");
+  background-size: 43px, 82px;
+  background-position: left 21px top 19px, 0 0; }
+
+.technology__item--sale {
+  background-image: url("../images/svg/bag.svg"), url("../images/svg/border.svg");
+  background-size: 36px, 82px;
+  background-position: left 23px top 14px, 0 0; }
+
+@media (min-width: 375px) {
+  .technology__title {
+    font-size: 20px; }
+  .technology__item p {
+    margin-bottom: 25px; } }
+
+@media (min-width: 1024px) {
+  .technology__title {
+    font-size: 28px; }
+  .technology__title .title__bottom {
+    font-size: 22px; }
+  .technology p {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    font-size: 24px;
+    text-align: center; }
+  .technology__list p {
+    width: 93%;
+    margin-left: 0;
+    font-size: 18px;
+    text-align: left; }
+  .technology__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; }
+  .technology__item {
+    width: 38%; }
+  .technology__item--scoring {
+    order: 0;
+    background-size: 40px, 100px;
+    background-position: left 30px top 20px, 0 -4px; }
+  .technology__item--hypothesis {
+    order: 2;
+    background-size: 33px, 100px;
+    background-position: left 32px top 20px, 0 -4px; }
+  .technology__item--team {
+    order: 4;
+    background-size: 40px, 100px;
+    background-position: left 30px top 24px, 0 -4px; }
+  .technology__item--mvp {
+    order: 1;
+    background-size: 33px, 100px;
+    background-position: left 34px top 20px, 0 -4px; }
+  .technology__item--strategy {
+    order: 3;
+    background-size: 43px, 100px;
+    background-position: left 30px top 24px, 0 -4px; }
+    .technology__item--strategy p {
+      width: 94%; }
+  .technology__item--sale {
+    order: 5;
+    background-size: 36px, 100px;
+    background-position: left 33px top 20px, 0 -4px; }
+  .technology__link {
+    font-size: 25px; } }
+
+@media (min-width: 1440px) {
+  .technology__title {
+    font-size: 40px; }
+  .technology__title .title__bottom {
+    font-size: 40px; }
+  .technology__text-mobile {
+    display: none; }
+  .technology__text-desktop {
+    display: block; }
+  .technology__list {
+    width: 100%; } }
+
+.pilot .container {
+  padding-top: 270px;
+  padding-bottom: 75px;
+  color: #AEAEAE;
+  background-image: url("../images/svg/cosmonaut.svg");
+  background-repeat: no-repeat;
+  background-size: 306px;
+  background-position: 50% top; }
+
+.pilot .title__secondary {
+  margin-bottom: 21px;
+  color: white; }
+
+.pilot__text-block {
+  font-size: 14px;
+  line-height: 1.66; }
+
+.pilot__btn {
+  width: 100%;
+  margin-top: 45px; }
+
+@media (min-width: 768px) {
+  .pilot__text-block {
+    font-size: 16px; } }
+
+@media (min-width: 1024px) {
+  .pilot .container {
+    padding-top: 55px;
+    background-size: 477px;
+    background-position: left top; }
+  .pilot__inner-wrap {
+    width: 50%;
+    margin-left: auto; }
+  .pilot__text-block {
+    font-size: 20px; }
+  .pilot__btn {
+    width: 267px; } }
+
+@media (min-width: 1440px) {
+  .pilot .container {
+    padding-top: 45px;
+    background-size: 477px;
+    background-position: left 50%; }
+  .pilot .title__secondary {
+    font-size: 40px; }
+  .pilot__text-block {
+    font-size: 24px; } }
+
 
 .news-container {
   border-bottom: 1px solid white; }

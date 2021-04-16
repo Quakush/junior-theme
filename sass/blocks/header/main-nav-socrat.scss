@@ -1,0 +1,28 @@
+.main-nav-socrat {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav-socrat a {
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    color: $corp-blue;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav-socrat {
+    flex-direction: row;
+    margin-left: -60px;
+  }
+
+  .main-nav-socrat a {
+    margin-left: 50px;
+  }
+}
+
+
+
