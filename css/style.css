@@ -2021,7 +2021,9 @@ html, body {
     order: 3;
     margin-left: 27px; }
   .top-header--socrat .btn-socrat {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     order: 2;
     margin-left: 50px; } }
 
@@ -2285,6 +2287,25 @@ html, body {
   .main-nav {
     order: 1;
     margin-left: 160px; } }
+
+.main-nav-socrat {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+
+.main-nav-socrat a {
+  font-size: 16px; }
+  .main-nav-socrat a:hover, .main-nav-socrat a:focus {
+    color: #00A7CF; }
+
+@media (min-width: 768px) {
+  .main-nav-socrat {
+    flex-direction: row;
+    margin-left: -60px; }
+  .main-nav-socrat a {
+    margin-left: 50px; } }
 
 .language-switch {
   display: none;
@@ -4880,6 +4901,8 @@ html, body {
 
 @media (min-width: 768px) {
   .btn-socrat {
+    margin-left: 0; }
+  .cup-start .btn-socrat {
     margin-left: 50%; }
   .cup-start .title__secondary {
     margin-left: 50%; }
