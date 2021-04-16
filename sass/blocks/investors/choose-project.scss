@@ -1,0 +1,110 @@
+.choose-project {
+  width: 100%;
+  color: $dark-text;
+  overflow: hidden;
+}
+
+.choose-project__background-wrap {
+  width: 100%;
+  background-color: $white;
+}
+
+.choose-project .container {
+  padding-top: 167px;
+  padding-bottom: 10px;
+  background-image: url("../images/svg/arrow.svg");
+  background-size: 296px;
+  background-repeat: no-repeat;
+  background-position: top -10px left 50%;
+}
+
+.choose-project__title {
+  margin-bottom: 13px;
+  font-size: 25px;
+}
+
+.choose-project .title__colored {
+  color: $corp-blue;
+}
+
+.choose-project__title span {
+  display: block;
+}
+
+.choose-project__btn {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.choose-project p {
+  font-size: 14px;
+  line-height: 1.87;
+}
+
+@media (min-width: 375px) {
+  .choose-project .container {
+    background-position: top -10px left 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .choose-project .container {
+    background-position: top -10px left 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .choose-project .container {
+    padding: 10px 36px;
+    background-size: 448px;
+    background-position: center left 10%;
+  }
+
+  .choose-project__wrap {
+    margin-left: auto;
+    width: 50%;
+  }
+
+  .choose-project__title {
+    font-size: 34px;
+    font-weight: 800;
+  }
+
+  .choose-project__btn {
+    width: 202px;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .choose-project .container {
+    padding: 10px 36px;
+    background-size: 448px;
+    background-position: bottom 73% left;
+  }
+
+  .choose-project__wrap {
+    width: 54%;
+  }
+
+  .choose-project__title {
+    letter-spacing: -2px;
+  }
+
+  .choose-project__title span {
+    display: inline-block;
+  }
+
+  .choose-project p {
+    font-size: 24px;
+    line-height: 1.88;
+    letter-spacing: -1px;
+  }
+
+  .choose-project__btn {
+    margin-top: 47px;
+    width: 267px;
+  }
+}
