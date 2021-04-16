@@ -1,0 +1,68 @@
+
+.pilot .container {
+  padding-top: 270px;
+  padding-bottom: 75px;
+  color: $light-text;
+  background-image: url("../images/svg/cosmonaut.svg");
+  background-repeat: no-repeat;
+  background-size: 306px;
+  background-position: 50% top;
+}
+
+.pilot .title__secondary {
+  margin-bottom: 21px;
+  color: $white;
+}
+
+.pilot__text-block {
+  font-size: 14px;
+  line-height: 1.66;
+}
+
+.pilot__btn {
+  width: 100%;
+  margin-top: 45px;
+}
+
+@media (min-width: 768px) {
+  .pilot__text-block {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pilot .container {
+    padding-top: 55px;
+    background-size: 477px;
+    background-position: left top;
+  }
+
+  .pilot__inner-wrap {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .pilot__text-block {
+    font-size: 20px;
+  }
+
+  .pilot__btn {
+    width: 267px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pilot .container {
+    padding-top: 45px;
+    background-size: 477px;
+    background-position: left 50%;
+  }
+
+  .pilot .title__secondary {
+    font-size: 40px;
+  }
+
+  .pilot__text-block {
+    font-size: 24px;
+  }
+}
