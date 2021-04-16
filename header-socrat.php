@@ -48,14 +48,15 @@ $timer = get_post_meta(310, 'timer', true);
                         <span></span>
                     </div>
 
+                    <div class="main-nav-wrapper">
                     <?php wp_nav_menu(
                         array(
                             'theme_location' => 'socrat-menu',
-                            'menu_class' => ''
+                            'menu_class' => 'main-nav-socrat'
                         )
                     ); ?>
                 </nav>
-                <button class="btn-socrat">Принять участие</button>
+                <a href="https://onlinetestpad.com/hoi7tdqdxlyha" class="btn-socrat" target="_blank">Принять участие</a>
 
             </div>
         </div>
