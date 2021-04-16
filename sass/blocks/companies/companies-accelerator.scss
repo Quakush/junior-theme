@@ -1,0 +1,156 @@
+.companies-accelerator {
+  padding-top: 40px;
+  color: $light-text;
+}
+
+.companies-accelerator__title {
+  margin-bottom: 27px;
+  font-size: 26px;
+  color: $white;
+}
+
+.companies-accelerator__info {
+  margin-bottom: 27px;
+}
+
+.companies-accelerator__list {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.companies-accelerator__item {
+  margin-bottom: 30px;
+  padding-left: 118px;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+
+  &:last-child,
+  &:nth-last-child(2){
+    margin-bottom: 0;
+  }
+
+  &--search {
+    background-image: url("../images/svg/search.svg"),
+                      url("../images/svg/border.svg");
+    background-size: 55px, 98px;
+    background-position: 25px 20px, top left;
+  }
+
+  &--scoring {
+    background-image: url("../images/svg/graph.svg"),
+                      url("../images/svg/border.svg");
+    background-size: 55px, 98px;
+    background-position: 23px 18px, top left;
+  }
+
+  &--programm {
+    background-image: url("../images/svg/teacher.svg"),
+                      url("../images/svg/border.svg");
+    background-size: 55px, 98px;
+    background-position: 22px 20px, top left;
+  }
+
+  &--tracks {
+    display: none;
+  }
+}
+
+.companies-accelerator__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $corp-blue;
+}
+
+.companies-accelerator__text {
+  font-size: 12px;
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .companies-accelerator__title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .companies-accelerator__info {
+    text-align: center;
+  }
+
+  .companies-accelerator__text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .companies-accelerator__info {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 79px;
+  }
+
+  .companies-accelerator__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .companies-accelerator__item {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 200px 40px 0 40px;
+
+    &--search {
+      background-size: 88px, 158px;
+      background-position: center 30px, top center;
+    }
+
+    &--scoring {
+      background-size: 88px, 158px;
+      background-position: center 30px, top center;
+    }
+
+    &--programm {
+      display: none;
+    }
+
+    &--tracks {
+      display: flex;
+      background-image: url("../images/svg/teacher.svg"),
+                        url("../images/svg/border.svg");
+      background-size: 88px, 158px;
+      background-position: center 30px, top center;
+    }
+  }
+
+  .companies-accelerator__link {
+    width: 100%;
+    margin-bottom: 4px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .companies-accelerator__text {
+    font-size: 18px;
+    text-align: center;
+
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .companies-accelerator__title {
+    font-size: 40px;
+  }
+}
+

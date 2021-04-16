@@ -19,7 +19,7 @@
 
 .trainee__title {
   margin-bottom: 13px;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
 }
 
@@ -31,13 +31,13 @@
   display: inline-block;
 }
 
-.trainee .companies__btn {
+.trainee__btn {
   width: 167px;
   margin-left: auto;
 }
 
 .trainee p {
-  margin-bottom: 49px;
+  margin-bottom: 19px;
   font-size: 14px;
   line-height: 1.87;
 }
@@ -69,10 +69,10 @@
     margin-bottom: 22px;
     font-size: 20px;
   }
-}
 
-.trainee .companies__btn {
-  margin-left: 0;
+  .trainee__btn {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -81,7 +81,7 @@
     background-position: bottom 10px left 10px;
   }
 
-  .trainee .companies__btn {
+  .trainee__btn {
     width: 267px;
     margin-right: auto;
   }
