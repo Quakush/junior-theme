@@ -6735,6 +6735,78 @@ html, body {
   .companies-accelerator__title {
     font-size: 40px; } }
 
+.programms {
+  color: #24272D;
+  overflow: hidden; }
+
+.programms__background-wrap {
+  padding-bottom: 295px;
+  background-color: white;
+  background-image: url("../images/svg/programms.svg");
+  background-repeat: no-repeat;
+  background-size: 344px;
+  background-position: bottom 40px center; }
+
+.programms__title {
+  margin-bottom: 17px;
+  font-size: 26px;
+  font-weight: 800; }
+
+.programms__title span {
+  display: block; }
+
+.programms__title .title__colored {
+  color: #00A7CF; }
+
+.programms__text {
+  margin-bottom: 19px;
+  padding-right: 30px;
+  font-size: 14px; }
+  .programms__text--desktop {
+    display: none; }
+
+.programms__btn {
+  margin-left: auto; }
+
+@media (min-width: 375px) {
+  .programms__title {
+    font-size: 30px; } }
+
+@media (min-width: 768px) {
+  .programms__title {
+    font-size: 36px; }
+  .programms__text {
+    font-size: 20px; } }
+
+@media (min-width: 1024px) {
+  .programms__background-wrap {
+    padding-top: 20px;
+    padding-bottom: 120px;
+    background-size: 520px;
+    background-position: top right 10%; }
+  .programms__wrap {
+    width: 50%; }
+  .programms__title {
+    margin-bottom: 13px;
+    font-size: 40px; }
+  .programms__text {
+    margin-bottom: 18px;
+    font-size: 24px; }
+    .programms__text--mobile {
+      display: none; }
+    .programms__text--desktop {
+      display: block; }
+  .programms__btn {
+    width: 267px;
+    margin-left: 0; } }
+
+@media (min-width: 1440px) {
+  .programms__background-wrap {
+    background-size: 578px;
+    background-position: top right 10%; }
+  .programms__wrap {
+    width: 55%; } }
+
 .angels-club {
   width: 100%;
   color: #24272D;
