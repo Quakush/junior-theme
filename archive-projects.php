@@ -32,6 +32,7 @@ get_header(); ?>
 		<div class="projects__background-wrap">
 
 			<div class="container">
+			    <h2 class="title__secondary projects__title">Наши проекты</h2>
 
 				<div class="swiper-wrapper news-links-list">
 			        <?php foreach ($cats as $cat): ?>
