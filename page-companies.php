@@ -76,24 +76,25 @@ get_header(); ?>
        <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
        <div class="programms__background-wrap">
            <div class="container">
-               <h2 class="title__secondary  programms__title"><span class="title__colored">Образовательные</span> программы</h2>
-               <p class="programms__text--mobile">
-                   Компании теряют много денег на обучение сотрудников во время работы.
-                   Разработайте свою собственную программу обучения и ваши стажеры
-                   заранее будут готовы к работе в вашей компании.
-               </p>
-               <p class="programms__text--desktop">
-                    У вас есть собственная программа обучения для будущих сотрудников?
-                    Вы можете разместить ее в нашем приложении Sokrat, а мы уже позаботимся,
-                    чтобы о ней узнало как можно болше людей.
-               </p>
-               <a class="btn btn--big  btn--blue  programms__btn" href="#">Стать партнером</a>
+               <div class="programms__wrap">
+                   <h2 class="title__secondary  programms__title"><span class="title__colored">Образовательные</span> программы</h2>
+                   <p class="programms__text programms__text--mobile">
+                       Компании теряют много денег на обучение сотрудников во время работы.
+                       Разработайте свою собственную программу обучения и ваши стажеры
+                       заранее будут готовы к работе в вашей компании.
+                   </p>
+                   <p class="programms__text programms__text--desktop">
+                        У вас есть собственная программа обучения для будущих сотрудников?
+                        Вы можете разместить ее в нашем приложении Sokrat, а мы уже позаботимся,
+                        чтобы о ней узнало как можно больше людей.
+                   </p>
+                   <a class="btn btn--big  btn--blue  programms__btn" href="#">Стать партнером</a>
+               </div>
            </div>
        </div>
+       <?php get_template_part('/includes/block', 'ask_questions');?>
        <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
    </section>
-
-   <?php get_template_part('/includes/block', 'ask_questions');?>
 </main>
 
 <?php get_footer();?>
