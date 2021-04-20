@@ -14,7 +14,7 @@ $projects_query = new WP_Query($args);
 get_header(); ?>
 
 <main>
-    <section class="main-offer main-offer--projects">
+    <div class="filter">
         <div class="container">
             <h1 class="title">Наши <span class="title__colored">проекты</span></h1>
 
@@ -27,7 +27,7 @@ get_header(); ?>
                 </li>
             </ul>
         </div>
-	</section>
+	</div>
 	
 	<section class="projects">
 		<img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">

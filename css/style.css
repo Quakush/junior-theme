@@ -1825,6 +1825,71 @@ html, body {
   .blog-categories__link--active {
     opacity: 1; }
 
+.filter .title {
+  font-size: 34px;
+  letter-spacing: -2px; }
+
+.filter .title__colored {
+  color: #00A7CF; }
+
+.filter .tags-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px; }
+
+.filter .tags-list__link {
+  display: block;
+  padding: 12px 50px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #AEAEAE;
+  background-color: transparent;
+  border: 1px solid #AEAEAE;
+  border-radius: 7px; }
+  .filter .tags-list__link--active {
+    transform: scale(1.1);
+    color: white;
+    background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
+    border: none;
+    overflow: hidden; }
+
+@media (min-width: 375px) {
+  .filter .title {
+    font-size: 36px; } }
+
+@media (min-width: 768px) {
+  .filter .title {
+    font-size: 50px; }
+  .filter .tags-list__link {
+    padding: 12px 70px 10px; } }
+
+@media (min-width: 1024px) {
+  .filter .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px; }
+  .filter .title {
+    font-size: 70px;
+    text-align: center; }
+  .filter .tags-list {
+    margin-top: 35px;
+    padding: 4px 5px;
+    border: 1px solid #AEAEAE;
+    border-radius: 15px; }
+  .filter .tags-list__link {
+    font-size: 16px;
+    border-radius: 15px;
+    border: none; }
+    .filter .tags-list__link--active {
+      transform: none; } }
+
 .toggler {
   width: 15px;
   height: 10px;
@@ -3041,40 +3106,6 @@ html, body {
 .main-offer--investors .sign-up__btn {
   width: 100%; }
 
-/* Стили для main-offer страницы Проекты */
-.main-offer .title {
-  font-size: 34px;
-  letter-spacing: -2px; }
-
-.main-offer--projects .title__colored {
-  color: #00A7CF; }
-
-.main-offer--projects .tags-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 48px; }
-
-.main-offer--projects .tags-list__link {
-  display: block;
-  padding: 12px 50px 10px;
-  font-size: 12px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #AEAEAE;
-  background-color: transparent;
-  border: 1px solid #AEAEAE;
-  border-radius: 7px; }
-  .main-offer--projects .tags-list__link--active {
-    transform: scale(1.1);
-    color: white;
-    background-image: linear-gradient(to bottom, #00a7cf 0%, #01627a 100%);
-    border: none;
-    overflow: hidden; }
-
 @media (min-width: 375px) {
   /* Стили для main-offer главной страницы */
   .main-offer--main {
@@ -3103,10 +3134,7 @@ html, body {
   .main-offer--socrat p {
     font-size: 25px; }
   .main-offer--investors {
-    background-position: top 20px left 50px; }
-  /* Стили для main-offer страницы Проекты */
-  .main-offer .title {
-    font-size: 36px; } }
+    background-position: top 20px left 50px; } }
 
 @media (min-width: 768px) {
   .main-offer__text-block {
@@ -3157,12 +3185,7 @@ html, body {
   .main-offer--investors .title {
     font-size: 52px; }
   .main-offer--investors .sign-up {
-    width: 202px; }
-  /* Стили для main-offer страницы Проекты */
-  .main-offer .title {
-    font-size: 50px; }
-  .main-offer--projects .tags-list__link {
-    padding: 12px 70px 10px; } }
+    width: 202px; } }
 
 @media (min-width: 1024px) {
   .main-offer .container {
@@ -3237,28 +3260,7 @@ html, body {
   .main-offer--investors .title {
     margin-top: 110px; }
   .main-offer--investors .sign-up {
-    width: 584px; }
-  /* Стили для main-offer страницы Проекты*/
-  .main-offer--projects .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px; }
-  .main-offer .title {
-    font-size: 70px;
-    text-align: center; }
-  .main-offer--projects .tags-list {
-    margin-top: 35px;
-    padding: 4px 5px;
-    border: 1px solid #AEAEAE;
-    border-radius: 15px; }
-  .main-offer--projects .tags-list__link {
-    font-size: 16px;
-    border-radius: 15px;
-    border: none; }
-    .main-offer--projects .tags-list__link--active {
-      transform: none; } }
+    width: 584px; } }
 
 @media (min-width: 1440px) {
   .main-offer p {
