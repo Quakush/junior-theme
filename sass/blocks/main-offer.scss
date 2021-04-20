@@ -275,6 +275,45 @@
 	width: 100%;
 }
 
+/* Стили для main-offer страницы Проекты */
+
+.main-offer .title {
+	font-size: 34px;
+	letter-spacing: -2px;
+}
+
+.main-offer--projects .title__colored {
+	color: $corp-blue;
+}
+
+.main-offer--projects .tags-list {
+	@include list-style;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 48px;
+}
+
+.main-offer--projects .tags-list__link {
+	display: block;
+	padding: 12px 50px 10px;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+	color: $light-text;
+	background-color: transparent;
+	border: 1px solid $light-text;
+	border-radius: 7px;
+
+	&--active {
+		transform: scale(1.1);
+		color: $white;
+		background-image: $blue-gradient;
+		border: none;
+		overflow: hidden;
+	}
+}
+
 @media (min-width: 375px) {
 	/* Стили для main-offer главной страницы */
 
@@ -327,6 +366,12 @@
 
 	.main-offer--investors {
 		background-position: top 20px left 50px;
+	}
+
+	/* Стили для main-offer страницы Проекты */
+
+	.main-offer .title {
+		font-size: 36px;
 	}
 }
 
@@ -422,6 +467,16 @@
 	.main-offer--investors .sign-up {
 		width: 202px;
 
+	}
+
+	/* Стили для main-offer страницы Проекты */
+
+	.main-offer .title {
+		font-size: 50px;
+	}
+
+	.main-offer--projects .tags-list__link {
+		padding: 12px 70px 10px;
 	}
 }
 
@@ -570,8 +625,39 @@
 		width: 584px;
 
 	}
-}
 
+	/* Стили для main-offer страницы Проекты*/
+
+	.main-offer--projects .container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 10px;
+	}
+
+	.main-offer .title {
+		font-size: 70px;
+		text-align: center;
+	}
+
+	.main-offer--projects .tags-list {
+		margin-top: 35px;
+		padding: 4px 5px;
+		border: 1px solid $light-text;
+		border-radius: 15px;
+	}
+
+	.main-offer--projects .tags-list__link {
+		font-size: 16px;
+		border-radius: 15px;
+		border: none;
+
+		&--active {
+			transform: none;
+		}
+	}
+}
 
 @media (min-width: 1440px) {
 
