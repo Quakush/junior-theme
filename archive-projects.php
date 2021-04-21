@@ -14,7 +14,7 @@ $projects_query = new WP_Query($args);
 get_header(); ?>
 
 <main>
-    <div class="filter">
+    <div class="projects-filter">
         <div class="container">
             <h1 class="title">Наши <span class="title__colored">проекты</span></h1>
 

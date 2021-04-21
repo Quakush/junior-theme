@@ -1,13 +1,13 @@
-.filter .title {
+.projects-filter .title {
   font-size: 34px;
   letter-spacing: -2px;
 }
 
-.filter .title__colored {
+.projects-filter .title__colored {
   color: $corp-blue;
 }
 
-.filter .tags-list {
+.projects-filter .tags-list {
   @include list-style;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
   margin-top: 48px;
 }
 
-.filter .tags-list__link {
+.projects-filter .tags-list__link {
   display: block;
   padding: 12px 50px 10px;
   font-size: 12px;
@@ -36,23 +36,23 @@
 }
 
 @media (min-width: 375px) {
-  .filter .title {
+  .projects-filter .title {
     font-size: 36px;
   }
 }
 
 @media (min-width: 768px) {
-  .filter .title {
+  .projects-filter .title {
     font-size: 50px;
   }
 
-  .filter .tags-list__link {
+  .projects-filter .tags-list__link {
     padding: 12px 70px 10px;
   }
 }
 
 @media (min-width: 1024px) {
-  .filter .container {
+  .projects-filter .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,19 +60,19 @@
     padding-bottom: 10px;
   }
 
-  .filter .title {
+  .projects-filter .title {
     font-size: 70px;
     text-align: center;
   }
 
-  .filter .tags-list {
+  .projects-filter .tags-list {
     margin-top: 35px;
     padding: 4px 5px;
     border: 1px solid $light-text;
     border-radius: 15px;
   }
 
-  .filter .tags-list__link {
+  .projects-filter .tags-list__link {
     font-size: 16px;
     border-radius: 15px;
     border: none;

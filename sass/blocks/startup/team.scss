@@ -1,7 +1,8 @@
 .team__text-block {
-    padding: 20px 0 40px;
+    padding: 0 0 30px;
     font-size: 14px;
     line-height: 22px;
+    color: $light-text;
 }
 
 .team .title__secondary {
@@ -60,7 +61,7 @@
 }
 @media (min-width: 375px) {
     .team .title__secondary {
-        font-size: 26px;
+        font-size: 28px;
     }
     .team__list {
         display: flex;
@@ -94,6 +95,7 @@
     }
 
     .team .title__secondary {
+        font-size: 28px;
         text-align: center;
     }
 }
@@ -103,6 +105,10 @@
         &::before {
             @include clouds(100px, -99px);
         }
+    }
+
+    .team .title__secondary {
+        font-size: 40px;
     }
 
     .team__list {
@@ -123,6 +129,7 @@
     .team__link {
         padding-top: 172px;
         font-size: 25px;
+        color: $corp-blue;
     }
 
     .team__item--designer .team__link::before,

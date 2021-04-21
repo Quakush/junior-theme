@@ -1,6 +1,7 @@
 .feedback {
     position: relative;
     padding-top: 10px;
+    padding-bottom: 20px;
     color: $white;
 }
 
@@ -39,6 +40,23 @@
 }
 
 @media (min-width: 1024px) {
+    .feedback {
+        padding-bottom: 0;
+    }
+
+    .feedback .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feedback__inner-wrap {
+        width: 55%;
+    }
+
+    .feedback__form-wrap {
+        width: 40%;
+    }
+
     .feedback__text-block {
         font-size: 20px;
     }

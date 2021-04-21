@@ -303,8 +303,8 @@
 	/* Стили для main-offer страницы Стартапам */
 
 	.main-offer--startup {
-		background-size: 280%;
-		background-position: -172px 94px;
+		background-size: 220%;
+		background-position: -120px 94px;
 	}
 
 	.main-offer--startup .container {
@@ -362,7 +362,7 @@
 
 	.main-offer--startup {
 		background-size: 1193px;
-		background-position: right -530px bottom -400px;
+		background-position: right -530px bottom -440px;
 	}
 
 	.main-offer--startup .title__strong {
@@ -487,7 +487,7 @@
 	/* Стили для main-offer страницы стартапам*/
 
 	.main-offer--startup {
-		background-size: 1326px;
+		background-size: 1193px;
 	}
 
 	.main-offer--startup .container {
@@ -700,8 +700,12 @@
 						1326px,
 						450px;
 		background-position:
-						right -472px top 17px,
-						left -105px bottom -219px;
+						right -472px top 0px,
+						left -105px bottom -170px;
+	}
+
+	.main-offer--startup .container {
+		padding-bottom: 320px;
 	}
 
 	.main-offer--startup .title {

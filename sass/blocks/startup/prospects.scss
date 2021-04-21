@@ -90,6 +90,7 @@
 
     .prospects .title__secondary {
         width: 50%;
+        font-size: 28px;
     }
 
     .prospects__inner-wrap {
@@ -108,8 +109,17 @@
         border-radius: 10px;
     }
 
+    .prospects__background-wrap {
+        background-position: right 100px top;
+
+    }
+
     .prospects__list {
-        width: 400px;
+        width: 50%;
+    }
+
+    .prospects .title__secondary {
+        font-size: 40px;
     }
 }
 
@@ -119,8 +129,13 @@
         top: 11px;
     }
 
+    .prospects__background-wrap {
+        background-position: right 18% top;
+
+    }
+
     .prospects__list {
         font-size: 24px;
-        width: 600px;
+        width: 60%;
     }
 }
