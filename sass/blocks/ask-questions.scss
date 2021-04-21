@@ -52,6 +52,9 @@
 
 .ask-questions__link {
 	display: block;
+	margin: 18px 0 39px;
+	font-size: 12px;
+	font-weight: 700;
 	text-align: center;
 	color: $corp-blue;
 	text-decoration: underline;
@@ -90,7 +93,6 @@
 	}
 
 	.ask-questions input[type="email"] {
-		margin-bottom: 0;
 		width: 303px;
 		height: 36px;
 		border-radius: 30px;
@@ -113,13 +115,21 @@
 
 @media (min-width: 1024px) {
 
+	.ask-questions__wrap {
+		flex-wrap: nowrap;
+	}
+
 	.ask-questions__title {
 		margin: 0;
 		flex-basis: 30%;
 	}
 
-	.ask-questions .form {
-		margin-left: auto;
+	.ask-questions form p {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		flex-wrap: nowrap;
 	}
 
 	.ask-questions input[type="email"] {
@@ -128,6 +138,14 @@
 
 	.ask-questions__btn {
 		height: 44px;
+	}
+
+	.ask-questions__link {
+		display: none;
+	}
+
+	.ask-questions .acceptance-954 {
+		display: none;
 	}
 }
 

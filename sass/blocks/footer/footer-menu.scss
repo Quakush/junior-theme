@@ -18,7 +18,7 @@
 }
 
 .footer-menu__list li:nth-of-type(2) {
-	flex-basis: 50%;
+	flex-basis: 41%;
 }
 
 .footer-menu__list li:nth-of-type(3) {
@@ -82,9 +82,9 @@
 @media (min-width: 1024px) {
 
 	.footer-menu {
-		flex-basis: unset;
+		flex: 1 0 auto;
 		margin: 0;
-		margin-left: auto;
+		margin-left: 25px;
 		padding: 0;
 	}
 
@@ -112,6 +112,9 @@
 }
 
 @media (min-width: 1440px) {
+	.footer-menu {
+		margin-left: 30px;
+	}
 
 	.footer-menu__list li {
 		margin-left: 54px;

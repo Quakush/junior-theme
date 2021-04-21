@@ -47,7 +47,7 @@ get_header();
           Вы работаете с клиентом и создаете дизайн,
           а мы превращаем его в код.
         </p>
-        <button type="submit" class="btn  btn--accent">Связаться со мной</button>
+        <button type="submit" class="btn  btn--accent command__btn">Связаться со мной</button>
       </div>
     </div>
   <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
