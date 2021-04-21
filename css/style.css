@@ -7482,39 +7482,41 @@ html, body {
 
 /*@import "blocks/news/block/block";
 @import "blocks/news/block/block-about";*/
-.digital-teaser {
-  margin-bottom: 100px; }
-  .digital-teaser .container {
-    min-width: 375px;
-    margin: 0; }
-  .digital-teaser .digital-teaser__title {
-    text-transform: uppercase;
-    color: #EF4864;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin-bottom: 19px;
-    width: 100%; }
-    .digital-teaser .digital-teaser__title .digital-teaser__title-second {
-      color: white; }
-  .digital-teaser .digital-teaser__description {
-    color: #AEAEAE;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
-    margin-bottom: 45px; }
-  .digital-teaser .ask-questions .ask-questions__link {
-    display: none; }
-  .digital-teaser .ask-questions .container {
-    display: unset; }
+.digital-teaser .container {
+  min-width: 375px;
+  margin: 0; }
+
+.digital-teaser .digital-teaser__title {
+  text-transform: uppercase;
+  color: #EF4864;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 19px;
+  width: 100%; }
+  .digital-teaser .digital-teaser__title .digital-teaser__title-second {
+    color: white; }
+
+.digital-teaser .digital-teaser__description {
+  color: #AEAEAE;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 45px; }
+
+.digital-teaser .ask-questions .ask-questions__link {
+  display: none; }
+
+.digital-teaser .ask-questions .container {
+  display: unset; }
 
 @media (min-width: 1024px) {
   .digital-teaser {
     background-image: url("../images/svg/digital_teaser_img.svg");
     background-repeat: no-repeat;
-    background-size: 400px 437px;
-    background-position: 101% 23%;
+    background-size: 548px;
+    background-position: 90% 23%;
     margin-top: 100px; }
     .digital-teaser .digital-teaser__title {
       font-size: 56px;
@@ -7538,8 +7540,8 @@ html, body {
 
 @media (min-width: 1440px) {
   .digital-teaser {
-    background-size: 548px 606px;
-    background-position: 94% -1px;
+    background-size: 548px;
+    background-position: 90% top;
     padding-bottom: 75px; }
     .digital-teaser .container {
       margin: 0 auto; }
@@ -7578,26 +7580,28 @@ html, body {
   width: 100%;
   color: #24272D;
   overflow: hidden; }
-  .command .command__background-wrap {
-    padding-top: 15px;
-    background-color: white;
-    background-image: url("../images/svg/cosmonaut_red.svg");
-    background-repeat: no-repeat;
-    background-size: 305px 266px;
-    background-position: -90% 108%;
-    padding-bottom: 130px; }
-  .command .command__title {
-    text-transform: uppercase;
-    color: #EF4864;
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin-bottom: 35px;
-    width: 100%; }
-    .command .command__title .command__title-second {
-      color: black; }
-  .command .command__description {
+
+.command__background-wrap {
+  padding-top: 15px;
+  background-color: white;
+  background-image: url("../images/svg/cosmonaut_red.svg");
+  background-repeat: no-repeat;
+  background-size: 343px;
+  background-position: -90px 110%;
+  padding-bottom: 130px; }
+
+.command__title {
+  text-transform: uppercase;
+  color: #EF4864;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 35px;
+  width: 100%; }
+  .command__title .command__title-second {
+    color: black; }
+  .command__title .command__description {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
@@ -7611,156 +7615,60 @@ html, body {
   line-height: 20px; }
 
 @media (min-width: 768px) {
-  .command {
-    background-position: 102% -43%;
-    background-size: 325px 356px;
-    padding-bottom: 15px;
-    margin: 100px 0; }
-    .command::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -99px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%; }
-    .command::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      top: -98px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -98px;
-      transform: rotate(180deg); }
-    .command .command__title {
-      width: 58%;
-      font-size: 34px;
-      line-height: 41px;
-      margin-bottom: 10px; }
-    .command .command__description {
-      width: 58%;
-      font-size: 18px;
-      line-height: 35px;
-      margin-bottom: 40px; }
-    .command .btn {
-      margin: 0 auto; } }
+  .command__title {
+    width: 58%;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 10px; }
+  .command__description {
+    width: 58%;
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 40px; }
+  .btn {
+    margin: 0 auto; } }
 
 @media (min-width: 1024px) {
   .command {
     background-size: 425px 400px;
     background-position: 4% 115%; }
-    .command .command__title {
-      font-size: 40px;
-      line-height: 50px;
-      margin-bottom: 0;
-      width: 59%;
-      margin-left: auto; }
-    .command .command__description {
-      width: 59%;
-      font-size: 24px;
-      line-height: 35px;
-      margin-left: auto;
-      margin-bottom: 25px; } }
+  .command__background-wrap {
+    padding-bottom: 10px;
+    background-size: 427px;
+    background-position: 10% bottom; }
+  .command__title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 0;
+    width: 59%;
+    margin-left: auto; }
+  .command__description {
+    width: 59%;
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: auto;
+    margin-bottom: 25px; } }
 
 @media (min-width: 1440px) {
   .command {
-    background-size: 537px 463px;
-    background-position: 15% 67%;
-    margin: 135px 0;
     padding-bottom: 30px; }
-    .command::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      background-color: transparent;
-      top: -133px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .command::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 135px;
-      background-color: transparent;
-      top: -133px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -133px;
-      transform: rotate(180deg); }
-    .command .command__title {
-      width: 51%; }
-    .command .command__description {
-      width: 51%; }
-    .command .btn {
-      margin-left: 49%;
-      margin-right: auto; } }
+  .command__title {
+    width: 51%; }
+  .command__background-wrap {
+    background-position: 20% bottom; }
+  .command__description {
+    width: 51%; }
+  .btn {
+    margin-left: 49%;
+    margin-right: auto; } }
 
 @media (min-width: 1920px) {
-  .command {
-    background-size: 627px 578px;
-    background-position: 29% 67%;
-    margin: 200px 0; }
-    .command::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      background-position: 50%; }
-    .command::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 200px;
-      background-color: transparent;
-      top: -198px;
-      left: 0;
-      background-image: url("../images/svg/clouds.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 39%;
-      top: unset;
-      bottom: -198px;
-      transform: rotate(180deg); }
-    .command .command__description {
-      line-height: 45px; }
-    .command .btn {
-      width: 267px; } }
-
-.technologies {
-  margin-bottom: 100px; }
+  .command__description {
+    line-height: 45px; }
+  .command__background-wrap {
+    background-position: 30% bottom; }
+  .btn {
+    width: 267px; } }
 
 .technologies__title {
   text-align: center;
