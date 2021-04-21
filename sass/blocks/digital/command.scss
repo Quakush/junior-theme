@@ -2,30 +2,30 @@
   width: 100%;
   color: $dark-text;
   overflow: hidden;
+}
 
-  .command__background-wrap {
-    padding-top: 15px;
-    background-color: $white;
-    background-image: url("../images/svg/cosmonaut_red.svg");
-    background-repeat: no-repeat;
-    background-size: 305px 266px;
-    background-position: -90% 108%;
-    padding-bottom: 130px;
-  }
-  
-  .command__title {
-    text-transform: uppercase;
-    color: #EF4864;
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin-bottom: 35px;
-    width: 100%;
+.command__background-wrap {
+  padding-top: 15px;
+  background-color: $white;
+  background-image: url("../images/svg/cosmonaut_red.svg");
+  background-repeat: no-repeat;
+  background-size: 343px;
+  background-position: -90px 110%;
+  padding-bottom: 130px;
+}
 
-    .command__title-second {
-      color: $black;
-    }
+.command__title {
+  text-transform: uppercase;
+  color: #EF4864;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 35px;
+  width: 100%;
+
+  .command__title-second {
+    color: $black;
   }
 
   .command__description {
@@ -45,20 +45,6 @@
 }
 
 @media (min-width: 768px) {
-  .command {
-    background-position: 102% -43%;
-    background-size: 325px 356px;
-    padding-bottom: 15px;
-    margin: 100px 0;
-
-    &::before {
-      @include clouds(100px, -99px);
-    }
-
-    &::after {
-      @include clouds-bottom(100px, -98px, -98px);
-    }
-
     .command__title {
       width: 58%;
       font-size: 34px;
@@ -72,90 +58,69 @@
       line-height: 35px;
       margin-bottom: 40px;
     }
-
-    .btn {
-      margin: 0 auto;
-    }
   }
-}
 
 @media (min-width: 1024px) {
   .command {
     background-size: 425px 400px;
     background-position: 4% 115%;
+  }
 
-    .command__title {
-      font-size: 40px;
-      line-height: 50px;
-      margin-bottom: 0;
-      width: 59%;
-      margin-left: auto;
-    }
+  .command__background-wrap {
+    padding-bottom: 10px;
+    background-size: 427px;
+    background-position: 10% bottom;
+  }
 
-    .command__description {
-      width: 59%;
-      font-size: 24px;
-      line-height: 35px;
-      margin-left: auto;
-      margin-bottom: 25px;
-    }
+  .command__title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 0;
+    width: 59%;
+    margin-left: auto;
+  }
+
+  .command__description {
+    width: 59%;
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: auto;
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: 1440px) {
   .command {
-    background-size: 537px 463px;
-    background-position: 15% 67%;
-    margin: 135px 0;
     padding-bottom: 30px;
+  }
 
-    &::before {
-      @include clouds(135px, -133px);
-      background-position: 50%
-    }
+  .command__title {
+    width: 51%;
+  }
 
-    &::after {
-      @include clouds-bottom(135px, -133px, -133px);
-    }
+  .command__background-wrap {
+    background-position: 20% bottom;
+  }
 
-    .command__title {
-      width: 51%;
-    }
-
-    .command__description {
-      width: 51%;
-    }
-
-    .btn {
-      margin-left: 49%;
-      margin-right: auto;
-    }
+  .command__description {
+    width: 51%;
   }
 }
+
 
 
 @media (min-width: 1920px) {
-  .command {
-    background-size: 627px 578px;
-    background-position: 29% 67%;
-    margin: 200px 0;
+  .command__description {
+    line-height: 45px;
+  }
 
-    &::before {
-      @include clouds(200px, -198px);
-      background-position: 50%
-    }
+  .command__background-wrap {
+    background-position: 30% bottom;
+  }
 
-    &::after {
-      @include clouds-bottom(200px, -198px, -198px);
-    }
-
-    .command__description {
-      line-height: 45px;
-    }
-
-    .btn {
-      width: 267px;
-    }
+  .btn {
+    width: 267px;
   }
 }
+
 

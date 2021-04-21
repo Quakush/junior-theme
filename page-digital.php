@@ -153,9 +153,6 @@ get_header();
         </div>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
-  <div class="feedback__get-news">
-      <?php get_template_part('/includes/block', 'getnews'); ?>
-  </div>
 </main>
 
 <?php get_footer(); ?>

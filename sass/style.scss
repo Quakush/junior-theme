@@ -20,7 +20,6 @@
 @import "blocks/write-us";
 @import "blocks/banners";
 @import "blocks/article-mini";
-@import "blocks/projects";
 @import "blocks/blog-categories-list";
 
 @import "blocks/header/toggler";
@@ -88,6 +87,9 @@
 @import "blocks/investors/choose-project";
 @import "blocks/investors/technology";
 @import "blocks/investors/pilot";
+
+@import "blocks/projects/projects";
+@import "blocks/projects/projects-filter";
 
 
 @import "blocks/news/news-links-list";

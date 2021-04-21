@@ -130,7 +130,7 @@ get_header();
         <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
         <div class="projects__background-wrap">
             <div class="container">
-                <h2 class="title__secondary">Наши проекты</h2>
+                <h2 class="title__secondary projects__title">Наши проекты</h2>
 
                 <div class="swiper-wrapper blog-categories-list">
                     <?php foreach ($cats as $cat): ?>

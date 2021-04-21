@@ -1,5 +1,4 @@
 .digital-teaser {
-  margin-bottom: 100px;
 
   .container {
     min-width: 375px;
@@ -46,8 +45,8 @@
   .digital-teaser {
     background-image: url("../images/svg/digital_teaser_img.svg");
     background-repeat: no-repeat;
-    background-size: 400px 437px;
-    background-position: 101% 23%;
+    background-size: 548px;
+    background-position: 90% 23%;
     margin-top: 100px;
 
     .digital-teaser__title {
@@ -86,8 +85,8 @@
 
 @media (min-width: 1440px) {
   .digital-teaser {
-    background-size: 548px 606px;
-    background-position: 94% -1px;
+    background-size: 548px;
+    background-position: 90% top;
     padding-bottom: 75px;
 
     .container {

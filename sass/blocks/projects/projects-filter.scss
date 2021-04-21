@@ -1,0 +1,84 @@
+.projects-filter .title {
+  font-size: 34px;
+  letter-spacing: -2px;
+}
+
+.projects-filter .title__colored {
+  color: $corp-blue;
+}
+
+.projects-filter .tags-list {
+  @include list-style;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.projects-filter .tags-list__link {
+  display: block;
+  padding: 12px 50px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $light-text;
+  background-color: transparent;
+  border: 1px solid $light-text;
+  border-radius: 7px;
+
+  &--active {
+    transform: scale(1.1);
+    color: $white;
+    background-image: $blue-gradient;
+    border: none;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 375px) {
+  .projects-filter .title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-filter .title {
+    font-size: 50px;
+  }
+
+  .projects-filter .tags-list__link {
+    padding: 12px 70px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-filter .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .projects-filter .title {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .projects-filter .tags-list {
+    margin-top: 35px;
+    padding: 4px 5px;
+    border: 1px solid $light-text;
+    border-radius: 15px;
+  }
+
+  .projects-filter .tags-list__link {
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+
+    &--active {
+      transform: none;
+    }
+  }
+}

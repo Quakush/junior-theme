@@ -146,7 +146,7 @@ get_header(); ?>
                     провести пилот с бизнесом? Пройдите один их наших акселераторов
                     и получите доступ к нашим партнерам.
                 </p>
-                <a class="btn btn--big  btn--green  pilot__btn" href="https://panel.quizgo.ru/q/5491">Перейти в акселератор</a>
+                <a class="btn btn--big  btn--green  pilot__btn" href="/accelerator">Перейти в акселератор</a>
             </div>
         </div>
     </section>

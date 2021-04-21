@@ -14,17 +14,19 @@ $projects_query = new WP_Query($args);
 get_header(); ?>
 
 <main>
-	<div class="container">
-	    <h1 class="title">Наши проекты</h1>
+    <div class="projects-filter">
+        <div class="container">
+            <h1 class="title">Наши <span class="title__colored">проекты</span></h1>
 
-	    <ul class="tags-list">
-	    	<li class="tags-list__item">
-	    		<a class="tags-list__link" href="/startups">Стартапы</a>
-	    	</li>
-	    	<li class="tags-list__item">
-	    		<a class="tags-list__link" href="/digital">Digital</a>
-	    	</li>
-	    </ul>
+            <ul class="tags-list">
+                <li class="tags-list__item">
+                    <a class="tags-list__link tags-list__link--active" href="/startups">Стартапы</a>
+                </li>
+                <li class="tags-list__item">
+                    <a class="tags-list__link" href="/digital">Digital</a>
+                </li>
+            </ul>
+        </div>
 	</div>
 	
 	<section class="projects">
@@ -61,7 +63,7 @@ get_header(); ?>
 		                      var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
 		                      var max_pages = '<?php echo $projects_query->max_num_pages; ?>';
 		                  </script>
-		                  <div id="projects" class="btn  projects__btn">Загрузить ещё</div>
+		                  <div id="projects" class="btn projects__btn">Загрузить ещё</div>
 		                  
 		                <?php endif; ?>
 		            <?php wp_reset_postdata(); ?>
