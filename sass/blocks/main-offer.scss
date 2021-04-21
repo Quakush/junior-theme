@@ -600,7 +600,7 @@
 		&::after {
 			@include element-style(220px, 325px, transparent);
 			left: -75px;
-			bottom: 100px;
+			bottom: 80px;
 			background-image: url("../images/svg/rocket-main-offer.svg");
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -767,7 +767,8 @@
 	/* Стили для main-offer главной страницы */
 
 	.main-offer--main .container::after {
-		bottom: -95px;
+		left: -100px;
+		bottom: 80px;
 	}
 
 	/* Стили для main-offer страницы Стартапам*/

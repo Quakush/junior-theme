@@ -1386,6 +1386,9 @@ html, body {
 
 .ask-questions__link {
   display: block;
+  margin: 18px 0 39px;
+  font-size: 12px;
+  font-weight: 700;
   text-align: center;
   color: #00A7CF;
   text-decoration: underline; }
@@ -1414,7 +1417,6 @@ html, body {
     padding-bottom: 30px;
     align-items: center; }
   .ask-questions input[type="email"] {
-    margin-bottom: 0;
     width: 303px;
     height: 36px;
     border-radius: 30px; }
@@ -1429,15 +1431,25 @@ html, body {
     left: 0; } }
 
 @media (min-width: 1024px) {
+  .ask-questions__wrap {
+    flex-wrap: nowrap; }
   .ask-questions__title {
     margin: 0;
     flex-basis: 30%; }
-  .ask-questions .form {
-    margin-left: auto; }
+  .ask-questions form p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap; }
   .ask-questions input[type="email"] {
     height: 44px; }
   .ask-questions__btn {
-    height: 44px; } }
+    height: 44px; }
+  .ask-questions__link {
+    display: none; }
+  .ask-questions .acceptance-954 {
+    display: none; } }
 
 @media (min-width: 1440px) {
   .ask-questions {
@@ -2325,9 +2337,11 @@ html, body {
 
 @media (min-width: 1024px) {
   .main-footer .container {
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 26px; }
   .main-footer .getnews {
-    margin-right: 30px; }
+    margin-right: 20px; }
   .main-footer .getnews__btn {
     margin-top: 13px; }
   .main-footer label[for="getnews-accept"] {
@@ -2351,7 +2365,7 @@ html, body {
 
 @media (min-width: 1440px) {
   .main-footer .container {
-    padding: 0 40px;
+    padding: 0 0px;
     padding-top: 35px; } }
 
 .footer-menu__list {
@@ -2371,7 +2385,7 @@ html, body {
   flex-basis: 50%; }
 
 .footer-menu__list li:nth-of-type(2) {
-  flex-basis: 50%; }
+  flex-basis: 41%; }
 
 .footer-menu__list li:nth-of-type(3) {
   flex-basis: 41%; }
@@ -2421,9 +2435,9 @@ html, body {
 
 @media (min-width: 1024px) {
   .footer-menu {
-    flex-basis: unset;
+    flex: 1 0 auto;
     margin: 0;
-    margin-left: auto;
+    margin-left: 25px;
     padding: 0; }
   .footer-menu__list li {
     margin-left: 24px;
@@ -2439,6 +2453,8 @@ html, body {
     margin-bottom: 15px; } }
 
 @media (min-width: 1440px) {
+  .footer-menu {
+    margin-left: 30px; }
   .footer-menu__list li {
     margin-left: 54px; } }
 
@@ -2630,8 +2646,7 @@ html, body {
   margin-right: 20px;
   height: 29px; }
   .contact-us__download-item:last-of-type {
-    margin-right: 0;
-    opacity: 0.2; }
+    margin-right: 0; }
 
 .contact-us__download-item--apple img {
   width: 87px;
@@ -3066,7 +3081,7 @@ html, body {
       height: 325px;
       background-color: transparent;
       left: -75px;
-      bottom: 100px;
+      bottom: 80px;
       background-image: url("../images/svg/rocket-main-offer.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -3156,7 +3171,8 @@ html, body {
 @media (min-width: 1820px) {
   /* Стили для main-offer главной страницы */
   .main-offer--main .container::after {
-    bottom: -95px; }
+    left: -100px;
+    bottom: 80px; }
   /* Стили для main-offer страницы Стартапам*/
   .main-offer--startup {
     background-position: right -222px top 17px, left 25px bottom -219px; }
@@ -4318,13 +4334,12 @@ html, body {
 @media (min-width: 1440px) {
   .partners {
     top: -115px;
-    right: 0;
+    right: 45px;
     width: 344px; }
   .partners__link {
     display: block;
-    margin: 0 auto;
     margin-bottom: 64px;
-    text-align: center; }
+    text-align: left; }
   .partners__item {
     margin-right: 50px;
     margin-bottom: 20px; }

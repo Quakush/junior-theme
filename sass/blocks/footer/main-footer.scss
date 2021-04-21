@@ -95,10 +95,12 @@
 @media (min-width: 1024px) {
     .main-footer .container {
         justify-content: space-between;
+        padding: 10px;
+        padding-top: 26px;
     }
 
     .main-footer .getnews {
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     .main-footer .getnews__btn {
@@ -139,7 +141,7 @@
 
 @media (min-width: 1440px) {
     .main-footer .container {
-        padding: 0 40px;
+        padding: 0 0px;
         padding-top: 35px;
     }
 }

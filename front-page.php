@@ -149,7 +149,7 @@ get_header();
             Присоединяйтесь к нам из любой точки мира
             </h2>
 
-            <p><span>Junior Specialists Corporation -</span> это возможность выбрать проффессию<span>в сфере ИТ, пройти обучение</span>в одном из онлайн-университетов и получить гарантированную практику в нашей компании!</p>
+            <p><span>Junior Specialists Corporation -</span> это возможность выбрать профессию<span>в сфере ИТ, пройти обучение</span>в одном из онлайн-университетов и получить гарантированную практику в нашей компании!</p>
 
             <div class="slider  join-us__slider">
                 <div class="slider join-us__slider-list">
@@ -169,7 +169,7 @@ get_header();
                     <div class="join-us__slider-item-img-wrap">
                       <img src="/wp-content/themes/js-corp/images/svg/innovator.svg" alt="student picture">
                     </div>
-                    <span class="join-us__slider-caption">Новатор</span>
+                    <span class="join-us__slider-caption">Основатель</span>
                   </div>
                   <div class="join-us__slider-item">
                     <div class="join-us__slider-item-img-wrap">
@@ -238,7 +238,7 @@ get_header();
                 <h2 class="title__secondary  pilot-project__text-block-title">
                   <span>Инвестируйте</span>
                   в стартапы
-                  <span class="pilot-project__text-block-title-small">с первыми продажами</span>
+                  <span class="pilot-project__text-block-title-small">на ранних стадиях</span>
                 </h2>
 
                 <p class="pilot-project__text">
