@@ -67,6 +67,7 @@
     }
 
     .ask-questions__wrap {
+      flex-wrap: wrap;
       margin-bottom: 0;
     }
 
@@ -78,6 +79,14 @@
     .ask-questions .form {
       margin-left: unset;
       margin-right: auto;
+    }
+
+    .ask-questions .wpcf7 {
+      margin-left: 0;
+    }
+
+    .ask-questions input[type="email"] {
+      margin-left: 0;
     }
   }
 }
