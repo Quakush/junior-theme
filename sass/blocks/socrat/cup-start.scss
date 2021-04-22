@@ -44,11 +44,12 @@
         height: 320px;
     }
 
-    .cup-start__background-wrap {
+    .cup-start .container {
+        padding-bottom: 10px;
         background-repeat: no-repeat;
         background-image: url("../images/svg/socrat-start-bg.svg");
         background-size: 300px;
-        background-position: left 10% top 60px; 
+        background-position: left 10% top 40px;
     }
 }
 
