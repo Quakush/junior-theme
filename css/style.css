@@ -1356,6 +1356,10 @@ html, body {
   background-color: white;
   border: none;
   border-radius: 7px; }
+  .ask-questions input[type="email"]::placeholder {
+    font-family: inherit;
+    font-size: 16px;
+    color: #AEAEAE; }
 
 .ask-questions input[type="submit"] {
   display: flex;
@@ -1432,20 +1436,35 @@ html, body {
 
 @media (min-width: 1024px) {
   .ask-questions__wrap {
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    align-items: center; }
   .ask-questions__title {
     margin: 0;
     flex-basis: 30%; }
+  .ask-questions form {
+    display: block;
+    padding-bottom: 0; }
   .ask-questions form p {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    width: 100%; }
+  .ask-questions .wpcf7 {
+    margin-left: auto; }
   .ask-questions input[type="email"] {
-    height: 44px; }
+    height: 44px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    margin-left: 100px; }
+  .ask-questions input[type="submit"] {
+    align-self: center;
+    border-radius: 35px; }
   .ask-questions__btn {
     height: 44px; }
+  .ask-questions .wpcf7-acceptance {
+    display: none; }
   .ask-questions__link {
     display: none; }
   .ask-questions .acceptance-954 {
@@ -1534,14 +1553,15 @@ html, body {
   overflow: hidden; }
 
 .banners__background-wrap {
-  height: 60px;
   background-color: white; }
 
 .banners__title {
   display: none; }
 
 .banners__list {
-  height: 60px; }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
 
 .banners__item:nth-child(odd) {
   margin-top: auto; }
@@ -1563,7 +1583,7 @@ html, body {
   .banners__item:nth-child(even) {
     margin: 0; }
   .banners__item:nth-child(odd) {
-    margin: 0; }
+    margin: 18px; }
   .banners__item {
     margin: 0;
     margin-right: 18px; } }
@@ -2290,6 +2310,9 @@ html, body {
   display: none; }
 
 /* Стили для main-footer страницы Кубок Сократа */
+.main-footer--socrat .container:before {
+  height: 0; }
+
 .main-footer--socrat .contact-us {
   position: static; }
 
@@ -4888,11 +4911,12 @@ html, body {
   .cup-start__text-block {
     padding-left: 50%;
     height: 320px; }
-  .cup-start__background-wrap {
+  .cup-start .container {
+    padding-bottom: 10px;
     background-repeat: no-repeat;
     background-image: url("../images/svg/socrat-start-bg.svg");
     background-size: 300px;
-    background-position: left 10% top 60px; } }
+    background-position: left 10% top 40px; } }
 
 @media (min-width: 1024px) {
   .cup-start {
@@ -6695,6 +6719,38 @@ html, body {
 .programms__btn {
   margin-left: auto; }
 
+.programms .ask-questions {
+  padding-bottom: 10px;
+  background-color: white; }
+
+.programms .ask-questions__wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background-color: #24272D;
+  border-radius: 20px;
+  box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.16);
+  box-sizing: border-box; }
+
+.programms .ask-questions__title {
+  color: white; }
+
+.programms .ask-questions__link {
+  display: none; }
+
+.programms .wpcf7-acceptance {
+  display: none; }
+
+.programms .ask-questions form {
+  padding-bottom: 0; }
+
+.programms .ask-questions input[type="email"] {
+  width: 100%; }
+
+.programms .ask-questions input[type="submit"] {
+  flex-shrink: 0; }
+
 @media (min-width: 375px) {
   .programms__title {
     font-size: 30px; } }
@@ -6725,7 +6781,9 @@ html, body {
       display: block; }
   .programms__btn {
     width: 267px;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .programms .ask-questions__wrap {
+    flex-direction: row; } }
 
 @media (min-width: 1440px) {
   .programms__background-wrap {
@@ -7545,13 +7603,18 @@ html, body {
     .digital-teaser .ask-questions {
       width: 60%; }
     .digital-teaser .ask-questions__wrap {
+      flex-wrap: wrap;
       margin-bottom: 0; }
     .digital-teaser .ask-questions__title {
       margin-bottom: 24px;
       flex-basis: 100%; }
     .digital-teaser .ask-questions .form {
       margin-left: unset;
-      margin-right: auto; } }
+      margin-right: auto; }
+    .digital-teaser .ask-questions .wpcf7 {
+      margin-left: 0; }
+    .digital-teaser .ask-questions input[type="email"] {
+      margin-left: 0; } }
 
 @media (min-width: 1440px) {
   .digital-teaser {

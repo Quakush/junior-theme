@@ -18,6 +18,12 @@
 	background-color: $white;
 	border: none;
 	border-radius: 7px;
+
+	&::placeholder {
+		font-family: inherit;
+		font-size: 16px;
+		color: $light-text;
+	}
 }
 
 .ask-questions input[type="submit"] {
@@ -115,11 +121,17 @@
 @media (min-width: 1024px) {
 	.ask-questions__wrap {
 		flex-wrap: nowrap;
+		align-items: center;
 	}
 
 	.ask-questions__title {
 		margin: 0;
 		flex-basis: 30%;
+	}
+
+	.ask-questions form {
+		display: block;
+		padding-bottom: 0;
 	}
 
 	.ask-questions form p {
@@ -128,14 +140,31 @@
 		justify-content: flex-end;
 		align-items: center;
 		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	.ask-questions .wpcf7 {
+		margin-left: auto;
 	}
 
 	.ask-questions input[type="email"] {
 		height: 44px;
+		margin-bottom: 0;
+		margin-right: 15px;
+		margin-left: 100px;
+	}
+
+	.ask-questions input[type="submit"] {
+		align-self: center;
+		border-radius: 35px;
 	}
 
 	.ask-questions__btn {
 		height: 44px;
+	}
+
+	.ask-questions .wpcf7-acceptance {
+		display: none;
 	}
 
 	.ask-questions__link {
