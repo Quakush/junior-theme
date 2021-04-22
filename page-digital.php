@@ -30,7 +30,7 @@ get_header();
         технологическим партнером.
       </p>
 
-        <?php get_template_part('/includes/block', 'ask_questions'); ?>
+       <?php get_template_part('/includes/block', 'ask_questions'); ?>
 
     </div>
   </section>
