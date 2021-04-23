@@ -1,0 +1,67 @@
+.training .title__secondary {
+  font-size: 34px;
+  font-weight: 800;
+  color: $white;
+}
+
+.training__text-block {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.training__list {
+  @include list-style;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+  background-image: url("../images/svg/aside.svg");
+  background-position: left top -7px;
+}
+
+.training__list li {
+  margin-bottom: 9px;
+}
+
+.training__list h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: $corp-green;
+}
+
+.training__list p {
+  font-size: 15px;
+  font-weight: 800;
+  color: $white;
+}
+
+.training__quest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 0 16px;
+  background-color: $dark-text;
+
+  & p {
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: $white;
+  }
+}
+
+.training__btn {
+  width: 203px;
+  padding: 11px 0;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .training .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .training__wrap {
+    width: 50%;
+  }
+}
