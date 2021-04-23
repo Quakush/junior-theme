@@ -1,0 +1,53 @@
+.faq {
+  overflow: hidden;
+
+  &__background-wrap {
+    padding-bottom: 18px;
+    background-color: $white;
+  }
+
+  .title__secondary {
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: none;
+    color: $dark-text;
+  }
+
+  .faq__list {
+    @include list-style;
+    margin-bottom: 50px;
+
+    & h3 {
+      font-size: 25px;
+      font-weight: 800;
+      text-transform: none;
+      color: $dark-text;
+    }
+
+    & p {
+      margin-bottom: 15px;
+      font-size: 18px;
+      text-transform: none;
+      color: $dark-text;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .title__secondary {
+      font-size: 39px;
+    }
+
+    .faq__list {
+
+      & h3 {
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+
+      & p {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

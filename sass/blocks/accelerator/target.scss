@@ -1,0 +1,73 @@
+.target {
+  .title__secondary {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 800;
+    color: $white;
+    text-align: center;
+  }
+
+  &__slider-item {
+    width: 100%;
+    padding-top: 150px;
+    background-repeat: no-repeat;
+    background-position: center 20%, center top;
+    background-size: 84px, 158px;
+  }
+
+  &__slider-item--idea {
+    background-image: url("../images/svg/creativity.svg"),
+                      url("../images/svg/border.svg");
+  }
+
+  &__slider-item--classic {
+    background-image: url("../images/svg/shell.svg"),
+                      url("../images/svg/border.svg");
+  }
+
+  &__slider-item--technology {
+    background-image: url("../images/svg/chip2.svg"),
+                      url("../images/svg/border.svg");
+  }
+
+  &__slider-item h3 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $corp-green;
+    text-align: center;
+  }
+
+  &__slider-item p {
+    font-size: 18px;
+    color: $light-text;
+    text-align: center;
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+
+  &__slider-list {
+    display: flex;
+    width: 300%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .target {
+    .title__secondary {
+      font-size: 40px;
+    }
+
+    &__slider-list {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    &__slider-item {
+      width: 25%;
+    }
+  }
+}
