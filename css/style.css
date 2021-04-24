@@ -5510,6 +5510,9 @@ html, body {
   .scenario__background-wrap {
     background-position: left 30% top; } }
 
+.training__background-wrap {
+  padding-top: 20px; }
+
 .training .title__secondary {
   font-size: 34px;
   font-weight: 800;
@@ -5548,7 +5551,9 @@ html, body {
   justify-content: center;
   align-items: center;
   padding: 13px 0 16px;
-  background-color: #24272D; }
+  background-color: black;
+  border: 2px solid #AEAEAE;
+  border-radius: 20px; }
   .training__quest p {
     margin-bottom: 10px;
     font-size: 21px;
@@ -5562,9 +5567,34 @@ html, body {
 @media (min-width: 768px) {
   .training .container {
     display: flex;
-    justify-content: space-between; }
+    flex-wrap: wrap; }
   .training__wrap {
-    width: 50%; } }
+    width: 50%;
+    margin-bottom: 60px; }
+  .training__list {
+    margin-left: 5%; }
+  .training__quest {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 60px;
+    padding: 20px; }
+    .training__quest p {
+      margin-right: 43px; } }
+
+@media (min-width: 1024px) {
+  .training .container {
+    align-items: flex-start;
+    justify-content: space-between; }
+  .training .title__secondary {
+    font-size: 39px;
+    font-weight: 800;
+    color: white; }
+  .training__text-block {
+    margin-bottom: 20px;
+    font-size: 18px; }
+  .training__wrap {
+    width: 50%;
+    margin-bottom: 30px; } }
 
 .faq {
   overflow: hidden; }

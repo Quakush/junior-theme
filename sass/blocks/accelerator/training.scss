@@ -1,3 +1,7 @@
+.training__background-wrap {
+  padding-top: 20px;
+}
+
 .training .title__secondary {
   font-size: 34px;
   font-weight: 800;
@@ -40,7 +44,9 @@
   justify-content: center;
   align-items: center;
   padding: 13px 0 16px;
-  background-color: $dark-text;
+  background-color: $black;
+  border: 2px solid $light-text;
+  border-radius: 20px;
 
   & p {
     margin-bottom: 10px;
@@ -58,10 +64,49 @@
 @media (min-width: 768px) {
   .training .container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .training__wrap {
     width: 50%;
+    margin-bottom: 60px;
+  }
+
+  .training__list {
+    margin-left: 5%;
+  }
+
+  .training__quest {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 60px;
+    padding: 20px;
+
+    p {
+      margin-right: 43px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .training .container {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .training .title__secondary {
+    font-size: 39px;
+    font-weight: 800;
+    color: $white;
+  }
+  
+  .training__text-block {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .training__wrap {
+    width: 50%;
+    margin-bottom: 30px;
   }
 }

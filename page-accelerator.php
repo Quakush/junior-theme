@@ -121,7 +121,7 @@ get_header('socrat'); ?>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
     <section class="training">
-        <div class="training__background-wrap"
+        <div class="training__background-wrap">
             <div class="container">
                 <div class="training__wrap">
                     <h2 class="title__secondary">
