@@ -45,13 +45,38 @@
   }
 
   &__slider {
+    position: relative;
     overflow: hidden;
   }
 
   &__slider-list {
-    display: flex;
-    width: 300%;
     overflow: hidden;
+  }
+
+  .slick-dotted.slick-slider {
+    margin: 0;
+  }
+  
+  .slick-list {
+    padding: 0;
+    padding-bottom: 70px;
+  }
+  
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
+    z-index: 100;
+
+    & li button {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .slick-dots .slick-active button {
+    background-color: $corp-green;
   }
 }
 
@@ -62,6 +87,7 @@
     }
 
     &__slider-list {
+      display: flex;
       width: 100%;
       justify-content: space-around;
     }

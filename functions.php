@@ -40,7 +40,7 @@ function scripts()
 
     wp_enqueue_script( 'slick-slider-lib', get_stylesheet_directory_uri() . '/js/vendor/slick.min.js', array('jquery'));
 
-    wp_enqueue_script( 'slick-slider', get_stylesheet_directory_uri() . '/js/slick.js', array('jquery'));
+    wp_enqueue_script( 'slick-slider', get_stylesheet_directory_uri() . '/js/slick.js', array('jquery'), true);
 
     // wp_enqueue_script( 'ask-questions-form', get_stylesheet_directory_uri() . '/js/ask-questions-form.js', array('jquery'));
 
@@ -76,6 +76,7 @@ register_nav_menus(
         'mobile-menu' => 'Mobile Menu Location',
         'footer-menu' => 'Footer Menu Location',
         'socrat-menu' => 'Socrat Page Top Menu Location',
+        'accelerator-menu' => 'Accelerator Page Top Menu Location'
     )
 );
 

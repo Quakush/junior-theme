@@ -1,3 +1,11 @@
+.ask-questions__wrap {
+	padding: 25px;
+	background-color: $dark-text;
+	border-radius: 20px;
+	box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
+	box-sizing: border-box;
+}
+
 .ask-questions__title {
 	margin-bottom: 24px;
 	font-size: 24px;
