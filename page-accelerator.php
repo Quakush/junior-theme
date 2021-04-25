@@ -31,7 +31,10 @@ get_header('socrat'); ?>
                     после его окончания.
                 </p>
                 <div class="reason__video">
-                    <iframe src="https://media.xiph.org/mango/tears_of_steel_1080p.webm" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <video  controls="controls">
+                        <source src="https://media.xiph.org/mango/tears_of_steel_1080p.webm" type='video/webm; codecs="vp8, vorbis"'>
+                        Тег video не поддерживается вашим браузером.
+                    </video>
                 </div>
                 <a href="#" class="btn  btn--accent reason__btn">Подать заявку</a>
             </div>
@@ -121,7 +124,7 @@ get_header('socrat'); ?>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
     <section class="training">
-        <div class="training__background-wrap"
+        <div class="training__background-wrap">
             <div class="container">
                 <div class="training__wrap">
                     <h2 class="title__secondary">
@@ -175,38 +178,49 @@ get_header('socrat'); ?>
     </section>
     <section class="result">
         <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
-        <div class="container">
-            <h2 class="title__secondary">
-                Что вы получите в итоге?
-            </h2>
-            <div class="slider  result__slider">
-                <div class="slider result__slider-list">
-                    <div class="result__slider-item result__slider-item--dev">
-                        <h3>Самостоятельное развитие</h3>
-                        <p>
-                            Во время программы вы поймете, как быстро тестировать
-                            гипотезы, получить быстрые продажи и найдете точки
-                            роста для бизнеса.
-                        </p>
-                    </div>
-                    <div class="result__slider-item result__slider-item--pilot">
-                        <h3>Пилот с бизнесом</h3>
-                        <p>
-                            За вашими успехами будут следить спецмалисты из разных
-                            компаний. В случае достижения определенных показателей
-                            мы поможем в пилоте с ними.
-                        </p>
-                    </div>
-                    <div class="result__slider-item result__slider-item--mvp">
-                        <h3>Инвестиции для разработки MVP</h3>
-                        <p>
-                            Те, кто докажет жизнеспособность своей идеи, получат
-                            возможность разработать mvp и выйти с ним на рынок.
-                        </p>
+        <div class="result__background-wrap">
+            <div class="container">
+                <h2 class="title__secondary">
+                    Что вы получите в итоге?
+                </h2>
+                <div class="slider  result__slider">
+                    <div class="slider result__slider-list">
+                        <div class="result__slider-item result__slider-item--dev">
+                            <div class="result__img">
+                                <img src="/wp-content/themes/js-corp/images/svg/rocket-graph.svg" width="52" height="52">
+                            </div>
+                            <h3>Самостоятельное развитие</h3>
+                            <p>
+                                Во время программы вы поймете, как быстро тестировать
+                                гипотезы, получить быстрые продажи и найдете точки
+                                роста для бизнеса.
+                            </p>
+                        </div>
+                        <div class="result__slider-item result__slider-item--pilot">
+                            <div class="result__img">
+                                <img src="/wp-content/themes/js-corp/images/svg/skill.svg" width="52" height="52">
+                            </div>                            
+                            <h3>Пилот с бизнесом</h3>
+                            <p>
+                                За вашими успехами будут следить спецмалисты из разных
+                                компаний. В случае достижения определенных показателей
+                                мы поможем в пилоте с ними.
+                            </p>
+                        </div>
+                        <div class="result__slider-item result__slider-item--mvp">
+                            <div class="result__img">
+                                <img src="/wp-content/themes/js-corp/images/svg/app.svg" width="52" height="52">
+                            </div>
+                            <h3>Инвестиции для разработки MVP</h3>
+                            <p>
+                                Те, кто докажет жизнеспособность своей идеи, получат
+                                возможность разработать mvp и выйти с ним на рынок.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <a href="#" class="btn  btn--accent result__btn">Отправить заявку</a>
             </div>
-            <a href="#" class="btn  btn--accent">Отправить заявку</a>
         </div>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
@@ -219,8 +233,10 @@ get_header('socrat'); ?>
                 <div class="slider price__slider-list">
                     <div class="price__slider-item price__slider-item--grand">
                         <h3>Гранд на обучение</h3>
-                        <span>только для проектов с mvp</span>
-                        <p>
+                        <p class="price__sub-title">
+                            <span>только для проектов с mvp</span>
+                        </p>
+                        <p class="price__text">
                             Бизнес постоянно ищет новые проекты. Мы сотрудничаем с рядом
                             компаний, помогаем им найти вас. У вас есть возможность
                             провести пилот с одним из наших партнеров, если вы подходите
@@ -240,14 +256,16 @@ get_header('socrat'); ?>
                                 Лучшие проекты получат возможность запустить пилот
                             </li>
                         </ul>
-                        <a href="#" class="btn  btn--accent">Отправить заявку</a>
+                        <a href="#" class="btn  btn--accent price__btn">Отправить заявку</a>
                     </div>
                     <div class="price__slider-item price__slider-item--base">
                         <h3>Платная основа</h3>
-                        <span>стадии идеи</span>
-                        <span>традиционный бизнес</span>
-                        <span>непрофильные проекты</span>
-                        <p>
+                        <p class="price__sub-title">
+                            <span>стадии идеи</span>
+                            <span>традиционный бизнес</span>
+                            <span>непрофильные проекты</span>
+                        </p>
+                        <p class="price__text">
                             У вас есть идея и вы хотите воплотить ее в жизнь, тогда наш
                             акселератор то, что вам нужно. Ваш бизнес в тупике? Найдите
                             новые точки роста для него. Создали продуки и не знаете как
@@ -267,7 +285,7 @@ get_header('socrat'); ?>
                                 Лучшие проекты получат гранд на разработку своего MVP
                             </li>
                         </ul>
-                        <a href="#" class="btn  btn--accent">Перейти к оформлению</a>
+                        <a href="#" class="btn  btn--accent price__btn">Перейти к оформлению</a>
                     </div>
                 </div>
             </div>
