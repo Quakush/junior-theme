@@ -1,0 +1,121 @@
+.price .title__secondary {
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 800;
+    color: $white
+}
+
+.price__slider {
+    font-size: 10px;
+    line-height: 1.8;
+    color: $white;
+    overflow: hidden;
+}
+
+.price__slider-list {
+    display: flex;
+    width: 200%;
+}
+
+.price__slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10px;
+    border: 2px solid $white;
+    border-radius: 20px;
+}
+
+.price__slider h3 {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.price__sub-title span {
+    position: relative;
+    margin-right: 28px;
+    font-size: 7px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $accent-color;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 2px;
+        right: -18px;
+        width: 6px;
+        height: 6px;
+        background-color: $accent-color;
+        border-radius: 50%;
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.price__text {
+    margin-bottom: 15px;
+}
+
+.price__sub-title {
+    margin-bottom: 0;
+}
+
+.price__check-list {
+    margin-left: 40px;
+    padding-left: 0
+}
+
+.price__check-list li {
+    @include list-style;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: left top;
+    background-image: url("../images/svg/check-blue.svg");
+}
+
+.price__btn {
+    margin: 0 auto;
+    width: 250px;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+    .price__slider-list {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .price__slider-item {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .price .title__secondary {
+        font-size: 39px;
+    }
+
+    .price__slider {
+        font-size: 16px;
+    }
+
+    .price__slider h3 {
+        font-size: 25px;
+    } 
+
+    .price__sub-title span {
+        font-size: 12px;
+    }
+}
