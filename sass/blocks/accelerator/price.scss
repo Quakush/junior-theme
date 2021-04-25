@@ -14,7 +14,6 @@
 
 .price__slider-list {
     display: flex;
-    width: 200%;
 }
 
 .price__slider-item {
@@ -90,6 +89,32 @@
     padding: 10px 0;
     border-radius: 15px;
 }
+
+.price .slick-dotted.slick-slider {
+    margin: 0;
+  }
+  
+.price .slick-list {
+padding: 0;
+padding-bottom: 70px;
+}
+  
+.price .slick-dots {
+position: absolute;
+left: 50%;
+bottom: 30px;
+transform: translate(-50%);
+z-index: 100;
+
+& li button {
+    width: 15px;
+    height: 15px;
+    }
+}
+
+.price .slick-dots .slick-active button {
+    background-color: $corp-green;
+  }
 
 @media (min-width: 768px) {
     .price__slider-list {

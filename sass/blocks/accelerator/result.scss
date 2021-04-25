@@ -20,7 +20,6 @@
 
 .result__slider-list {
     display: flex;
-    width: 300%;
 }
 
 .result__slider-item {
@@ -62,6 +61,33 @@
     padding: 11px 0;
     border-radius: 15px;
 }
+
+.result .slick-dotted.slick-slider {
+    margin: 0;
+  }
+  
+  .result .slick-list {
+    padding: 0;
+    padding-bottom: 70px;
+  }
+  
+  .result .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
+    z-index: 100;
+
+    & li button {
+        width: 15px;
+        height: 15px;
+        background-color: $dark-text;
+      }
+  }
+
+  .result .slick-dots .slick-active button {
+    background-color: $corp-green;
+  }
 
 @media (min-width: 768px) {
     .result .title__secondary {

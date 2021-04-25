@@ -7,6 +7,38 @@ jQuery(function($){
 		dots: true
 	});
 
+	$('.target__slider-list').slick({
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: false,
+		dots: true,
+	});
+
+	$('.scenario__slider-list').slick({
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: false,
+		dots: true
+	});
+
+	$('.result__slider-list').slick({
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: false,
+		dots: true
+	});
+
+	$('.price__slider-list').slick({
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: false,
+		dots: true
+	});
+
 	$('.news-slider__list').slick({
 		infinite: true,
 		autoplay: false,
@@ -31,7 +63,6 @@ jQuery(function($){
 			arrows: false,
 			slidesToShow: 3,
 			slidesToScroll: 1,
-			
 	    });
 	// вызов slick
     }

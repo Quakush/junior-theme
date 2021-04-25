@@ -1,6 +1,6 @@
 <?php
 
-get_header('socrat'); ?>
+get_header('accelerator'); ?>
 
 <main>
     <section class="accelerator-promo">
@@ -17,7 +17,7 @@ get_header('socrat'); ?>
             </div>
         </div>
     </section>
-    <section class="reason">
+    <section class="reason" id="reason">
         <img class="clouds" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
         <div class="reason__background-wrap">
             <div class="container">
@@ -41,12 +41,12 @@ get_header('socrat'); ?>
         </div>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
-    <section class="target">
+    <section class="target" id="target">
         <div class="container">
             <h2 class="title__secondary">
                 Для кого акселератор?
             </h2>
-            <div class="slider  target__slider">
+            <div class="target__slider">
                 <div class="slider target__slider-list">
                     <div class="target__slider-item target__slider-item--idea">
                         <h3>Есть идея</h3>
@@ -123,7 +123,7 @@ get_header('socrat'); ?>
             </div>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
-    <section class="training">
+    <section class="training" id="training">
         <div class="training__background-wrap">
             <div class="container">
                 <div class="training__wrap">
@@ -224,7 +224,7 @@ get_header('socrat'); ?>
         </div>
         <img class="clouds  clouds--bottom" src="/wp-content/themes/js-corp/images/svg/clouds.svg">
     </section>
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <h2 class="title__secondary">
                 Сколько это стоит?
